@@ -138,3 +138,6 @@ Astro bygger ruter og genbruger komponenter; CSS Grid/Flex og media queries gens
 | `ef2cf6e` | Fase 4: Supabasevurdering og dokumenteret fravalg |
 | `832e497` | Fase 5: Netlify-konfiguration og linkchecks |
 | `62fd998` | Fase 5: bestået reel CLI-offline-build |
+| `64b7d83` | Fase 6: afsluttende QA, optimerede fonte/billeder, fokusrettelse, screenshots og audits |
+
+Den afsluttende rapportregistrering gemmes i et separat dokumentationscommit. Alle ovenstående commits er lokale på `feature/fase-2-6`. Den lokale leverance er verificeret; de særskilt beskrevne database-læringsmål, eksterne links, tilladelser og hostede preview er fortsat udeståender.
