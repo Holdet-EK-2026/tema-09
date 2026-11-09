@@ -1,0 +1,29 @@
+# Fase 5 – lokal Netlify-klargøring
+
+## Implementeret og verificeret lokalt
+
+`netlify.toml` bruger `npm run build && npm test`, output `dist` og Node 22.23.4. Deploy Preview og branch-deploy anvender samme checks. Der er ikke behov for en Netlify-adapter, da løsningen er statisk. Der er ingen Netlify Functions, Forms eller databaseintegration.
+
+Konfigurationen tilføjer `nosniff`, en restriktiv referrer-policy og lang browsercache for Astro-filer med indholdshash. Der er ingen SPA-rewrite: hver underside har sin egen byggede HTML-fil. En fallback af alle adresser til forsiden ville skjule manglende ruter og er ikke anvendt.
+
+Netlify-konfigurationsskillen og Netlifys coding-context blev læst før ændringerne. Den officielle `netlify-cli` 27.16.3 er installeret isoleret under `/tmp/kinddesign-netlify-cli`, ikke som applikationsdependency. Kommandoen er en lokal build, ikke en deploy:
+
+```sh
+netlify build --offline --context deploy-preview
+```
+
+Se `docs/qa/fase-5/netlify-offline-build.log` og `config-check.json`. TOML-parsing og buildværdier er kontrolleret. Den lokale build bygger siderne og kontrollerer alle interne links, ankre og assets.
+
+## Miljøvariabler
+
+`.env.example` indeholder kun fire tomme, valgfrie `PUBLIC_LUMA_*_URL`-værdier. De er offentlige eventadresser, ikke nøgler. Kun HTTPS-adresser til de tilladte Luma-domæner med en eventsti accepteres; uden konfiguration bevares Figma-demoflowet. En adresse skal matche et faktisk godkendt event, før den bruges.
+
+Ingen Supabase-, service-role-, secret- eller API-nøgler er nødvendige. `.env` og øvrige lokale miljøfiler er fortsat ignoreret. `.netlify` er også ignoreret. Fremtidige secrets skal opbevares i Netlifys sikre miljøvariabler og aldrig under et `PUBLIC_`-navn.
+
+## Status for ekstern hosting
+
+**Ingen GitHub-push, repository-forbindelse, ekstern Deploy Preview, merge eller produktionsdeployment er udført.** Denne opgave autoriserer fortsat lokale, reversible ændringer og forbyder produktion uden særskilt godkendelse. Offline-builden er ikke et bevis på en afprøvet Netlify-hostet side.
+
+Der mangler en valgt Netlify-site-/repository-forbindelse og en godkendt publiceringshandling, før et rigtigt preview kan oprettes. Efter en senere godkendelse skal en Deploy Preview kontrolleres med rigtige miljøværdier, dybe links, 404, cache og responseheaders. Før produktion skal de dokumenterede eksempeldata og eventlinks erstattes af godkendt indhold.
+
+Siderne beholder `noindex, nofollow`. Dette beskytter en ufærdig prototype mod indeksering og begrænser med vilje Lighthouse SEO-scoren. Indeksering, canonical-domæne og sitemap skal først aktiveres, når det rigtige domæne og publicering er besluttet. Ingen fiktiv canonical-URL er tilføjet.

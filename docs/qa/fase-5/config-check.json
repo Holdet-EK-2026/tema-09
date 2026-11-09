@@ -1,0 +1,10 @@
+{
+  "publish": "dist",
+  "command": "npm run build && npm test",
+  "node": "22.23.4",
+  "contexts": [
+    "deploy-preview",
+    "branch-deploy"
+  ],
+  "headers": 2
+}
