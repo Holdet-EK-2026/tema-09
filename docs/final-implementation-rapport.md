@@ -177,6 +177,8 @@ Før produktion: afklar de to Luma-kildekonflikter, gennemgå nye/ændrede event
 | `04aef1b` | Tidligere fase 1-reference for fonte og visuel kvalitet |
 | `a1c1323` | Udgangspunkt: den afsluttede lokale fase 2–6-leverance |
 | `6dd09c8` | Ny glass-carousel, verificeret Luma-katalog, kalender, rettelser, tests og samlet QA |
+| `ff48f1e` | Registrering af implementeringscommit i rapporten |
+| `e3c91ab` | Centrerede navigationspile og opdateret afsluttende screenshot-/video-QA |
 
 Hashregistreringen gemmes i et separat lokalt dokumentationscommit. Alle ændringer ligger på `feature/fase-2-6`; ingen remotehandling er udført.
 
