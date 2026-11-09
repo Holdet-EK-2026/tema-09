@@ -1,6 +1,6 @@
 # KindDesign – teknisk dokumentation
 
-Opdateret 10. november 2026. Den lokale implementering omfatter forside, carousel, undersider og Figma-demoflows. [Samlet rapport](fase-2-6-rapport.md) beskriver verifikation, afgrænsninger og commits. Den tidligere dokumentation er bevaret i [fase 1-arkivet](arkiv/dokumentation-fase-1.md); [fase 1-rapporten](fase-1-rapport.md) er uændret.
+Opdateret 10. november 2026. Den publicerede implementering omfatter forside, carousel, undersider og Figma-demoflows. [Samlet rapport](fase-2-6-rapport.md) beskriver verifikation, afgrænsninger og commits. Den tidligere dokumentation er bevaret i [fase 1-arkivet](arkiv/dokumentation-fase-1.md); [fase 1-rapporten](fase-1-rapport.md) er uændret.
 
 ## Teknologi og struktur
 
@@ -46,7 +46,7 @@ Den oprindelige opgave kræver praktisk Supabase/SQL/CRUD. Det er stadig et udes
 
 Luma har en officiel API, men den kræver Luma Plus og en nøgle til den enkelte kalender. Der er ingen sådan nøgle eller dokumenteret API-adgang til rådighed. Den aktuelle integration bruger derfor direkte verificerede links og lokal dataadministration. API-nøgler må aldrig lægges i browseren. Se [Lumas officielle adgangskrav](https://docs.luma.com/reference/getting-started-with-your-api).
 
-`netlify.toml` kører `npm run build && npm test`, publicerer `dist` og konfigurerer preview-/branch-builds, cache for hash-assets, nosniff og referrer-policy. Der er ingen SPA-rewrite. Den officielle CLI er testet med lokal `build --offline --context deploy-preview`. Dette opretter ikke et hostet preview. Der er ingen push, merge, repository-forbindelse eller deployment. Se [fase 5](fase-5-netlify.md).
+`netlify.toml` kører `npm run build && npm test`, publicerer `dist` og konfigurerer preview-/branch-builds, cache for hash-assets, nosniff og referrer-policy. Der er ingen SPA-rewrite. Den officielle CLI er testet med lokal `build --offline --context deploy-preview`. Den 10. november 2026 blev koden pushet til GitHub på `main` og `feature/fase-2-6`, og den testede statiske build blev publiceret direkte på [Netlify](https://kinddesign-holdet-ek-2026.netlify.app). Automatisk GitHub-deployment er ikke aktiveret, da organisationen blokerer deploy keys, og Netlify-appen ikke er installeret på repositoryet. Ingen organisationsrettigheder blev ændret. Se [publiceringsrapporten](publicering-rapport.md) og den historiske [fase 5](fase-5-netlify.md).
 
 Siderne har bevidst `noindex, nofollow`, så en prototype ikke indekseres. Titler, beskrivelser og OpenGraph-tekst er tilføjet. Canonical-domæne, sitemap og indeksering afventer et besluttet produktionsdomæne; ingen URL er opfundet. `.env.example` forklarer, at det lokale katalog ikke kræver credentials. Secrets skal aldrig have `PUBLIC_`-præfiks.
 
@@ -79,6 +79,7 @@ Visuel sammenligning bruger aktuelle Figma-kontekster og de bevarede referencer 
 - [Fase 2: carousel](fase-2-rapport.md)
 - [Fase 3: sider, frames og visuel QA](fase-3-rapport.md)
 - [Fase 4: Supabasevurdering](fase-4-supabase-vurdering.md)
+- [Publicering på GitHub og Netlify](publicering-rapport.md)
 - [Fase 5: Netlify](fase-5-netlify.md)
 - [Samlet fase 2–6-rapport](fase-2-6-rapport.md)
 - [Ny afsluttende carousel-/Luma-rapport](final-implementation-rapport.md)
@@ -86,7 +87,7 @@ Visuel sammenligning bruger aktuelle Figma-kontekster og de bevarede referencer 
 
 ## Hostingbegreber til gruppens gennemgang
 
-En build omsætter Astro-komponenter til HTML, CSS, JavaScript og lokale assets i `dist`. Hosting gør disse filer tilgængelige fra en webserver. Continuous Deployment betyder, at en forbundet repository-branch udløser en ny build ved en ændring. Et Deploy Preview viser en foreslået ændring på en særskilt URL før produktion. Konfigurationen til disse builds er klar, men den eksterne GitHub-/Netlify-forbindelse er ikke oprettet. Git-commits er lokale versionspunkter; et commit er hverken et push, et review, et merge eller en publicering.
+En build omsætter Astro-komponenter til HTML, CSS, JavaScript og lokale assets i `dist`. Hosting gør disse filer tilgængelige fra en webserver. Continuous Deployment betyder, at en forbundet repository-branch udløser en ny build ved en ændring. Et Deploy Preview viser en foreslået ændring på en særskilt URL før produktion. Konfigurationen til disse builds er klar. Den aktuelle side er publiceret direkte via CLI; pushes udløser endnu ikke en automatisk Netlify-build. Git-commits er lokale versionspunkter; et commit er hverken et push, et review, et merge eller en publicering.
 
 ## Seneste visuelle ændring · 10. november 2026
 

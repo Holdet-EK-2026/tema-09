@@ -1,5 +1,7 @@
 # Fase 5 – lokal Netlify-klargøring
 
+> Historisk faserapport. Siden blev efter brugerens særskilte godkendelse publiceret den 10. november 2026. Se [den aktuelle publiceringsrapport](publicering-rapport.md) for GitHub, liveadresse og verificeret status. Nedenstående beskriver den tidligere lokale fase.
+
 ## Implementeret og verificeret lokalt
 
 `netlify.toml` bruger `npm run build && npm test`, output `dist` og Node 22.23.4. Deploy Preview og branch-deploy anvender samme checks. Der er ikke behov for en Netlify-adapter, da løsningen er statisk. Der er ingen Netlify Functions, Forms eller databaseintegration.

@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-09T23:41:21.351Z",
+  "base": "https://kinddesign-holdet-ek-2026.netlify.app",
+  "sourceCommit": "b74463182363cd48e6fa91064eae4e6f17ac7f05",
+  "deployId": "6af2596b83942c9725b7d4ef",
+  "results": [
+    {
+      "width": 390,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/events/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/events/kalender/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/events/from-ballet-to-technology/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/ny-her/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/om-kinddesign/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 390,
+      "controlsRemoved": true,
+      "imagesDecoded": true,
+      "keyboard": true,
+      "navigation": true,
+      "filters": true,
+      "lumaHref": true,
+      "ics": true,
+      "custom404": true,
+      "javascriptErrors": []
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/events/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/events/kalender/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/events/from-ballet-to-technology/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/ny-her/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/om-kinddesign/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 768,
+      "controlsRemoved": true,
+      "imagesDecoded": true,
+      "keyboard": true,
+      "navigation": true,
+      "filters": true,
+      "lumaHref": true,
+      "ics": true,
+      "custom404": true,
+      "javascriptErrors": []
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/events/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/events/kalender/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/events/from-ballet-to-technology/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/ny-her/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/om-kinddesign/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "route": "/kontakt/",
+      "status": 200
+    },
+    {
+      "width": 1440,
+      "controlsRemoved": true,
+      "imagesDecoded": true,
+      "keyboard": true,
+      "navigation": true,
+      "filters": true,
+      "lumaHref": true,
+      "ics": true,
+      "custom404": true,
+      "javascriptErrors": []
+    }
+  ]
+}
