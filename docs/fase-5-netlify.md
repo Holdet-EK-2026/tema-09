@@ -12,7 +12,7 @@ Netlify-konfigurationsskillen og Netlifys coding-context blev læst før ændrin
 netlify build --offline --context deploy-preview
 ```
 
-Se `docs/qa/fase-5/netlify-offline-build.log` og `config-check.json`. TOML-parsing og buildværdier er kontrolleret. Den lokale build bygger siderne og kontrollerer alle interne links, ankre og assets.
+Se `docs/qa/fase-5/netlify-offline-build.log` og `config-check.json`. TOML-parsing og buildværdier er kontrolleret. Offline-builden bestod: Netlify CLI kørte `npm run build && npm test`, byggede 18 sider og bestod kontrollen af interne links, ankre og assets. Første forsøg blev stoppet af sandboxens filadgang til CLI-præferencer; samme offline-kommando bestod med den nødvendige lokale filadgang. Ingen netværksfunktion eller deployment blev aktiveret.
 
 ## Miljøvariabler
 
