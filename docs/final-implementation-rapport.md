@@ -171,6 +171,12 @@ Før produktion: afklar de to Luma-kildekonflikter, gennemgå nye/ændrede event
 
 ## Lokale commits og kodeforståelse
 
-Udgangspunktet er `a1c1323`, og fase 1-fontreferencen er fortsat `04aef1b`. Implementering og den dokumenterede QA gemmes i ét samlet lokalt commit; hash registreres i det efterfølgende dokumentationscommit.
+| Commit | Indhold |
+| --- | --- |
+| `04aef1b` | Tidligere fase 1-reference for fonte og visuel kvalitet |
+| `a1c1323` | Udgangspunkt: den afsluttede lokale fase 2–6-leverance |
+| `6dd09c8` | Ny glass-carousel, verificeret Luma-katalog, kalender, rettelser, tests og samlet QA |
+
+Hashregistreringen gemmes i et separat lokalt dokumentationscommit. Alle ændringer ligger på `feature/fase-2-6`; ingen remotehandling er udført.
 
 Gruppen skal kunne forklare arrays, modulo, DOM-events, timeout/pause, `matchMedia`, IntersectionObserver, native pointer/touch, ARIA og browserhistorik. Luma-data er lokale kildeposter med tidszoner; de er ikke en database eller et live-API. Kalenderfilen er en statisk fil, ikke en reservation. Det adskiller den leverede frontend fra de stadig udestående CRUD- og hostinglæringsmål.
