@@ -1,0 +1,26 @@
+---
+import '../styles/global.css';
+---
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="KindDesign er et kreativt fællesskab for alle slags designere. Mød andre kreative og find dit fællesskab." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/webp" href="/images/af5ee.webp" />
+    <link rel="preload" href="/fonts/bricolage-variable.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/dm-sans-variable.ttf" as="font" type="font/ttf" crossorigin />
+    <title>KindDesign – Et kreativt fællesskab</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#indhold">Spring til indhold</a>
+    <slot />
+    <dialog id="phase-dialog" aria-labelledby="phase-heading">
+      <h2 id="phase-heading">Denne side kommer i næste fase</h2>
+      <p>Du ser forsiden i fase 1. Events, Om KindDesign, Ny her og Kontakt implementeres i fase 3.</p>
+      <form method="dialog"><button class="button">Tilbage til forsiden</button></form>
+    </dialog>
+    <script src="../scripts/navigation.js"></script>
+  </body>
+</html>

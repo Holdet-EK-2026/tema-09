@@ -1,0 +1,14 @@
+[
+  {
+    "width": 1440,
+    "height": 3088,
+    "meanAbsoluteChannelDifference": 4.443433062272117,
+    "pixelsAbove30Percent": 3.4958801093839953
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "meanAbsoluteChannelDifference": 8.093989751691174,
+    "pixelsAbove30Percent": 5.174383278648682
+  }
+]

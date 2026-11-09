@@ -1,0 +1,32 @@
+---
+// Kun statisk komposition i fase 1. Billederne er eksporteret direkte fra Figma.
+const desktopImages = ['04de3', '1124d', '60cf8', 'de95f', '039da', 'ae42c'];
+const mobileImages = ['45ced', 'adb04', '4c7ac', 'e2097'];
+const descriptions = [
+  'Deltagere samlet ved et KindDesign-arrangement',
+  'En deltager med kasket og et glas i hånden',
+  'To deltagere til et KindDesign-arrangement',
+  'En deltager i samtale ved et arrangement',
+  'Fællesskab omkring et bord',
+  'Deltagere og samtaler fra KindDesign'
+];
+---
+<section class="gallery-section" aria-labelledby="gallery-title">
+  <div class="gallery-intro">
+    <h2 id="gallery-title">FÆLLES NYSGERRIGHED.<br />NYE FORBINDELSER.</h2>
+    <p>Design giver os noget at mødes om. Samtalerne giver os mulighed for at lære hinanden at kende. Her kan du dele din nysgerrighed, møde andre kreative og opdage nye perspektiver. Et event kan være dit første møde med KindDesign. Fællesskabet er det, vi bygger videre på sammen.</p>
+  </div>
+  <div class="gallery-window" tabindex="0" role="region" aria-label="Billeder fra fællesskabet, rul vandret">
+    <div class="desktop-gallery">
+      {desktopImages.map((image, index) => <img class={`gallery-card card-${index + 1}`} src={`/images/${image}.webp`} alt={descriptions[index]} loading="lazy" />)}
+    </div>
+    <div class="mobile-gallery">
+      {mobileImages.map((image, index) => <img src={`/images/${image}.webp`} alt={descriptions[index]} width="260" height="260" loading="lazy" />)}
+    </div>
+  </div>
+  <div class="gallery-controls">
+    <span class="static-arrow" aria-hidden="true">←</span>
+    <span class="static-arrow next" aria-hidden="true">→</span>
+    <p>TRÆK GENNEM FÆLLESSKABET</p>
+  </div>
+</section>

@@ -1,0 +1,86 @@
+[
+  {
+    "file": "public/images/039da.webp",
+    "width": 630,
+    "sourceBytes": 1193461,
+    "optimizedBytes": 138184
+  },
+  {
+    "file": "public/images/04de3.webp",
+    "width": 640,
+    "sourceBytes": 1441849,
+    "optimizedBytes": 226704
+  },
+  {
+    "file": "public/images/0bb08.webp",
+    "width": 2880,
+    "sourceBytes": 5390367,
+    "optimizedBytes": 1829582
+  },
+  {
+    "file": "public/images/1124d.webp",
+    "width": 630,
+    "sourceBytes": 1625687,
+    "optimizedBytes": 249956
+  },
+  {
+    "file": "public/images/1207b.webp",
+    "width": 780,
+    "sourceBytes": 8116555,
+    "optimizedBytes": 122202
+  },
+  {
+    "file": "public/images/45ced.webp",
+    "width": 520,
+    "sourceBytes": 523428,
+    "optimizedBytes": 72678
+  },
+  {
+    "file": "public/images/4c7ac.webp",
+    "width": 520,
+    "sourceBytes": 504179,
+    "optimizedBytes": 61992
+  },
+  {
+    "file": "public/images/60cf8.webp",
+    "width": 780,
+    "sourceBytes": 1441456,
+    "optimizedBytes": 130718
+  },
+  {
+    "file": "public/images/adb04.webp",
+    "width": 520,
+    "sourceBytes": 435380,
+    "optimizedBytes": 45652
+  },
+  {
+    "file": "public/images/ae42c.webp",
+    "width": 660,
+    "sourceBytes": 1197534,
+    "optimizedBytes": 113418
+  },
+  {
+    "file": "public/images/af5ee.webp",
+    "width": 248,
+    "sourceBytes": 1022719,
+    "optimizedBytes": 36528
+  },
+  {
+    "file": "public/images/ca544.webp",
+    "width": 1000,
+    "sourceBytes": 9304569,
+    "optimizedBytes": 307520
+  },
+  {
+    "file": "public/images/de95f.webp",
+    "width": 590,
+    "sourceBytes": 1211221,
+    "optimizedBytes": 174470
+  },
+  {
+    "file": "public/images/e2097.webp",
+    "width": 520,
+    "sourceBytes": 446359,
+    "optimizedBytes": 55130
+  }
+]
