@@ -1,0 +1,61 @@
+{
+  "browser": "156.0.8078.80",
+  "results": [
+    {
+      "width": 390,
+      "navOrder": [
+        "Events",
+        "Om os",
+        "Ny her?",
+        "Kontakt"
+      ],
+      "checkedLinks": 11,
+      "skipLink": true,
+      "keyboardDialogFocusAndReturn": true,
+      "dialogAxeViolations": 0,
+      "nativeGalleryKeyboardScroll": true,
+      "logoNavigation": true,
+      "reducedMotion": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 768,
+      "navOrder": [
+        "Forside",
+        "Events",
+        "Om Kind Design",
+        "Kontakt",
+        "Ny her?  ↗"
+      ],
+      "checkedLinks": 12,
+      "skipLink": true,
+      "keyboardDialogFocusAndReturn": true,
+      "dialogAxeViolations": 0,
+      "nativeGalleryKeyboardScroll": true,
+      "logoNavigation": true,
+      "reducedMotion": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 1440,
+      "navOrder": [
+        "Forside",
+        "Events",
+        "Om Kind Design",
+        "Kontakt",
+        "Ny her?  ↗"
+      ],
+      "checkedLinks": 12,
+      "skipLink": true,
+      "keyboardDialogFocusAndReturn": true,
+      "dialogAxeViolations": 0,
+      "nativeGalleryKeyboardScroll": true,
+      "logoNavigation": true,
+      "reducedMotion": true,
+      "errors": [],
+      "failed": []
+    }
+  ]
+}

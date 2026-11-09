@@ -1,0 +1,22 @@
+
+> kinddesign@0.1.0 build
+> node ./node_modules/astro/bin/astro.mjs build
+
+21:19:06 [types] Generated 28ms
+21:19:06 [build] output: "static"
+21:19:06 [build] mode: "static"
+21:19:06 [build] directory: /Users/martingerlach/Desktop/Skole/EK/2 Semester/Temaer/T09 UX:UI II/kinddesign/dist/
+21:19:06 [build] Collecting build info...
+21:19:06 [build] ✓ Completed in 36ms.
+21:19:06 [build] Building static entrypoints...
+21:19:06 [vite] ✓ built in 96ms
+21:19:06 [vite] ✓ built in 28ms
+21:19:06 [build] Rearranging server assets...
+
+ generating static routes 
+21:19:06   ├─ /index.html (+5ms) 
+21:19:06 ✓ Completed in 11ms.
+
+21:19:06 [build] ✓ Completed in 156ms.
+21:19:06 [build] 1 page(s) built in 194ms
+21:19:06 [build] Complete!

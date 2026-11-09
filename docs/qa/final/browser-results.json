@@ -1,0 +1,425 @@
+[
+  {
+    "width": 390,
+    "errors": [],
+    "geometry": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2792,
+      "sections": [
+        {
+          "name": "site-header",
+          "top": 0,
+          "width": 390,
+          "height": 144
+        },
+        {
+          "name": "hero",
+          "top": 144,
+          "width": 390,
+          "height": 690
+        },
+        {
+          "name": "gallery-section",
+          "top": 834,
+          "width": 390,
+          "height": 692
+        },
+        {
+          "name": "community-section",
+          "top": 1526,
+          "width": 390,
+          "height": 874
+        },
+        {
+          "name": "site-footer",
+          "top": 2400,
+          "width": 390,
+          "height": 392
+        }
+      ],
+      "images": [
+        {
+          "source": "/images/af5ee.webp",
+          "loaded": true,
+          "width": 54,
+          "height": 54
+        },
+        {
+          "source": "/images/0bb08.webp",
+          "loaded": true,
+          "width": 390,
+          "height": 690
+        },
+        {
+          "source": "/images/04de3.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/1124d.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/60cf8.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/de95f.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/039da.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/ae42c.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/45ced.webp",
+          "loaded": true,
+          "width": 260,
+          "height": 260
+        },
+        {
+          "source": "/images/adb04.webp",
+          "loaded": true,
+          "width": 260,
+          "height": 260
+        },
+        {
+          "source": "/images/4c7ac.webp",
+          "loaded": true,
+          "width": 260,
+          "height": 260
+        },
+        {
+          "source": "/images/e2097.webp",
+          "loaded": true,
+          "width": 260,
+          "height": 260
+        },
+        {
+          "source": "/images/ca544.webp",
+          "loaded": true,
+          "width": 342,
+          "height": 270
+        },
+        {
+          "source": "/images/af5ee.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        }
+      ]
+    },
+    "violations": [],
+    "dialogOpened": true,
+    "focusReturned": true,
+    "galleryScroll": 40
+  },
+  {
+    "width": 768,
+    "errors": [],
+    "geometry": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 3110,
+      "sections": [
+        {
+          "name": "site-header",
+          "top": 0,
+          "width": 768,
+          "height": 116
+        },
+        {
+          "name": "hero",
+          "top": 0,
+          "width": 768,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section",
+          "top": 1000,
+          "width": 768,
+          "height": 1045
+        },
+        {
+          "name": "community-section",
+          "top": 2045,
+          "width": 768,
+          "height": 779.5
+        },
+        {
+          "name": "site-footer",
+          "top": 2824.5,
+          "width": 768,
+          "height": 285
+        }
+      ],
+      "images": [
+        {
+          "source": "/images/af5ee.webp",
+          "loaded": true,
+          "width": 90,
+          "height": 90
+        },
+        {
+          "source": "/images/0bb08.webp",
+          "loaded": true,
+          "width": 768,
+          "height": 1000
+        },
+        {
+          "source": "/images/04de3.webp",
+          "loaded": true,
+          "width": 320,
+          "height": 555
+        },
+        {
+          "source": "/images/1124d.webp",
+          "loaded": true,
+          "width": 315,
+          "height": 650
+        },
+        {
+          "source": "/images/60cf8.webp",
+          "loaded": true,
+          "width": 390,
+          "height": 610
+        },
+        {
+          "source": "/images/de95f.webp",
+          "loaded": true,
+          "width": 295,
+          "height": 520
+        },
+        {
+          "source": "/images/039da.webp",
+          "loaded": true,
+          "width": 315,
+          "height": 580
+        },
+        {
+          "source": "/images/ae42c.webp",
+          "loaded": true,
+          "width": 330,
+          "height": 590
+        },
+        {
+          "source": "/images/45ced.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/adb04.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/4c7ac.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/e2097.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/ca544.webp",
+          "loaded": true,
+          "width": 289.453125,
+          "height": 289.453125
+        },
+        {
+          "source": "/images/af5ee.webp",
+          "loaded": true,
+          "width": 100,
+          "height": 124
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        }
+      ]
+    },
+    "violations": [],
+    "dialogOpened": true,
+    "focusReturned": true,
+    "galleryScroll": 40
+  },
+  {
+    "width": 1440,
+    "errors": [],
+    "geometry": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 3088,
+      "sections": [
+        {
+          "name": "site-header",
+          "top": 0,
+          "width": 1440,
+          "height": 116
+        },
+        {
+          "name": "hero",
+          "top": 0,
+          "width": 1440,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section",
+          "top": 1000,
+          "width": 1440,
+          "height": 1045
+        },
+        {
+          "name": "community-section",
+          "top": 2045,
+          "width": 1440,
+          "height": 758
+        },
+        {
+          "name": "site-footer",
+          "top": 2803,
+          "width": 1440,
+          "height": 285
+        }
+      ],
+      "images": [
+        {
+          "source": "/images/af5ee.webp",
+          "loaded": true,
+          "width": 90,
+          "height": 90
+        },
+        {
+          "source": "/images/0bb08.webp",
+          "loaded": true,
+          "width": 1440,
+          "height": 1000
+        },
+        {
+          "source": "/images/04de3.webp",
+          "loaded": true,
+          "width": 320,
+          "height": 555
+        },
+        {
+          "source": "/images/1124d.webp",
+          "loaded": true,
+          "width": 315,
+          "height": 650
+        },
+        {
+          "source": "/images/60cf8.webp",
+          "loaded": true,
+          "width": 390,
+          "height": 610
+        },
+        {
+          "source": "/images/de95f.webp",
+          "loaded": true,
+          "width": 295,
+          "height": 520
+        },
+        {
+          "source": "/images/039da.webp",
+          "loaded": true,
+          "width": 315,
+          "height": 580
+        },
+        {
+          "source": "/images/ae42c.webp",
+          "loaded": true,
+          "width": 330,
+          "height": 590
+        },
+        {
+          "source": "/images/45ced.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/adb04.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/4c7ac.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/e2097.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "source": "/images/ca544.webp",
+          "loaded": true,
+          "width": 500,
+          "height": 500
+        },
+        {
+          "source": "/images/af5ee.webp",
+          "loaded": true,
+          "width": 124,
+          "height": 124
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        }
+      ]
+    },
+    "violations": [],
+    "dialogOpened": true,
+    "focusReturned": true,
+    "galleryScroll": 40
+  }
+]

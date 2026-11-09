@@ -2,7 +2,7 @@
 
 Astro-forside baseret på de aktive Figma-frames. Kun fase 1 er implementeret.
 
-**Status: Build og automatiske browserchecks består. Visuel 1:1-godkendelse afventer, fordi fonttegningen stadig afviger fra Figma-eksporten.**
+**Status: Afsluttende fase 1-QA er gennemført. Fontafvigelsen er rettet, og hele mobil- og desktopsiden er sammenlignet. Mindre rasterforskelle og manglende tabletframe er dokumenteret i rapporten.**
 
 ## Kør lokalt
 

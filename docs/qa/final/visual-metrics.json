@@ -1,0 +1,30 @@
+[
+  {
+    "width": 390,
+    "stage": "before",
+    "height": 2792,
+    "meanAbsoluteChannelDifference": 6.257882717409938,
+    "pixelsAbove30Percent": 5.131694952611858
+  },
+  {
+    "width": 390,
+    "stage": "after",
+    "height": 2792,
+    "meanAbsoluteChannelDifference": 2.4628453089412976,
+    "pixelsAbove30Percent": 2.431672911615605
+  },
+  {
+    "width": 1440,
+    "stage": "before",
+    "height": 3088,
+    "meanAbsoluteChannelDifference": 4.443433062272117,
+    "pixelsAbove30Percent": 3.4958801093839953
+  },
+  {
+    "width": 1440,
+    "stage": "after",
+    "height": 3088,
+    "meanAbsoluteChannelDifference": 2.171452891119747,
+    "pixelsAbove30Percent": 1.6286836139896372
+  }
+]

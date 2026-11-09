@@ -26,10 +26,9 @@ body {
   background: var(--sand);
   color: var(--tekst);
   font-family: "DM Sans", sans-serif;
-  font-optical-sizing: none;
-  font-variation-settings:
-    "opsz" 14,
-    "wght" 400;
+  font-synthesis: none;
+  letter-spacing: 0;
+  font-optical-sizing: auto;
 }
 h1,
 h2,
@@ -41,10 +40,7 @@ h2,
 strong {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 700;
-  font-optical-sizing: none;
-  font-variation-settings:
-    "opsz" 14,
-    "wdth" 100;
+  font-optical-sizing: auto;
 }
 a {
   color: inherit;
@@ -236,10 +232,7 @@ button:focus-visible,
   font-size: 12px;
   white-space: pre;
 }
-.countdown-units > span:not(.mobile-label) {
-  display: inline-block;
-  width: 13px;
-}
+
 .countdown-link {
   position: absolute;
   top: 158px;
@@ -679,9 +672,7 @@ dialog p {
     font-size: 11px;
     line-height: 1.45;
   }
-  .countdown-units > span:not(.mobile-label) {
-    width: 7px;
-  }
+
   .countdown-link {
     font-size: 16px;
     line-height: 1.45;
@@ -820,18 +811,6 @@ dialog p {
   }
 }
 
-.site-header nav {
-  font-variation-settings:
-    "opsz" 14,
-    "wght" 700;
-}
-@media (max-width: 600px) {
-  .site-header nav {
-    font-variation-settings:
-      "opsz" 14,
-      "wght" 400;
-  }
-}
 /* Figma afrunder mobilens tekstlinjer til hele pixels. */
 @media (max-width: 600px) {
   .hero h1 {
@@ -880,11 +859,6 @@ dialog p {
     line-height: 26px;
   }
 }
-.site-header .new-link {
-  font-variation-settings:
-    "opsz" 14,
-    "wght" 400;
-}
 @media (min-width: 1251px) {
   .hero h1 {
     line-height: 174px;
@@ -903,5 +877,22 @@ dialog p {
   }
   .community-body p + p {
     margin-top: 28px;
+  }
+}
+
+/* Visuel rækkefølge og tabrækkefølge skal følge hinanden på begge layouts. */
+.site-header nav.mobile-navigation {
+  display: none;
+}
+.static-arrow {
+  justify-content: flex-start;
+  padding-left: 23px;
+}
+@media (max-width: 600px) {
+  .site-header nav.desktop-navigation {
+    display: none;
+  }
+  .site-header nav.mobile-navigation {
+    display: grid;
   }
 }
