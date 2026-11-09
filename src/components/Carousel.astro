@@ -25,13 +25,8 @@ const photos = [
       </figure>)}
     </div>
   </div>
-  <div class="gallery-controls">
-    <div class="gallery-arrows"><button class="static-arrow" type="button" disabled data-carousel-direction="-1" aria-label="Forrige billede">←</button><button class="static-arrow next" type="button" disabled data-carousel-direction="1" aria-label="Næste billede">→</button></div>
-    <p id="carousel-instructions">TRÆK GENNEM FÆLLESSKABET<span class="sr-only">. Brug venstre og højre piletast, eller swipe mellem billederne.</span></p>
-    <div class="carousel-indicators" role="group" aria-label="Vælg billede">{photos.map((_,index)=><button type="button" disabled data-carousel-slide={index} aria-label={`Vis billede ${index+1}`} aria-pressed={index===0?'true':'false'}><span></span></button>)}</div>
-    <button type="button" class="carousel-pause" disabled data-carousel-pause aria-pressed="false">Pause billedskift</button>
-    <span class="sr-only" role="status" aria-atomic="true" data-carousel-status></span>
-  </div>
+  <p id="carousel-instructions" class="sr-only">Brug venstre og højre piletast, eller swipe mellem billederne. Tryk mellemrum for at sætte automatiske billedskift på pause eller genoptage dem.</p>
+  <span class="sr-only" role="status" aria-atomic="true" data-carousel-status></span>
 </section>
 <noscript><style is:inline>.gallery-card > img[data-gallery-source] { display: none; }</style></noscript>
 <script src="../scripts/carousel.js"></script>

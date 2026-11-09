@@ -159,7 +159,7 @@ const assert = require("node:assert/strict");
   await page.locator("#name").press("Enter");
   assert(!page.url().includes("?"));
   await page.goto("http://127.0.0.1:4321/");
-  assert(await page.locator("[data-carousel-pause]").isDisabled());
+  assert.equal(await page.locator(".gallery-controls").count(), 0);
   assert(
     !(await page.locator("[data-carousel]").getAttribute("class")).includes(
       "carousel-ready",

@@ -110,43 +110,6 @@
   transition: none;
   opacity: 0;
 }
-.gallery-controls {
-  right: 64px;
-  flex-wrap: wrap;
-}
-.gallery-arrows {
-  display: flex;
-  gap: 13px;
-}
-.carousel-indicators {
-  display: flex;
-  margin-left: auto;
-}
-.carousel-indicators button {
-  display: grid;
-  place-items: center;
-  width: 32px;
-  height: 44px;
-  background: none;
-  padding: 0;
-}
-.carousel-indicators button span {
-  display: block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--bordeaux);
-  opacity: 0.35;
-}
-.carousel-indicators button[aria-pressed="true"] span {
-  width: 20px;
-  border-radius: 4px;
-  opacity: 1;
-}
-.carousel-pause {
-  margin-left: 4px;
-  min-height: 44px;
-}
 @media (min-width: 601px) and (max-width: 1000px) {
   .gallery-card {
     width: 300px;
@@ -163,14 +126,6 @@
   }
   [data-carousel].carousel-ready .gallery-card[data-slot="2"] {
     --x: 390px;
-  }
-  .gallery-controls {
-    right: 32px;
-    gap: 4px 12px;
-  }
-  .gallery-controls p {
-    margin-left: 0;
-    font-size: 11px;
   }
 }
 @media (max-width: 600px) {
@@ -211,30 +166,6 @@
   [data-carousel].carousel-ready .gallery-card[data-slot="2"] {
     --x: 340px;
   }
-  .gallery-controls {
-    display: flex;
-    gap: 4px 8px;
-  }
-  .gallery-controls .gallery-arrows .static-arrow {
-    display: flex;
-    padding: 0;
-    width: 48px;
-    height: 44px;
-  }
-  .gallery-controls p {
-    order: -1;
-    flex: 0 0 100%;
-  }
-  .carousel-indicators {
-    margin-left: auto;
-  }
-  .carousel-indicators button {
-    width: 28px;
-  }
-  .carousel-pause {
-    margin: 0;
-    padding-left: 0;
-  }
   [data-carousel]:not(.carousel-ready) .gallery-card {
     flex-basis: 260px;
     height: 330px;
@@ -244,19 +175,6 @@
   [data-carousel].carousel-ready .gallery-card {
     transition: none;
   }
-}
-.gallery-controls .static-arrow {
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-}
-.carousel-pause {
-  background: transparent;
-  color: var(--bordeaux);
-  padding: 12px;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  font-size: 13px;
 }
 /* Sekundære kort er visuel kontekst. Kun det aktive kort viser læsbar billedtekst. */
 .carousel-ready .gallery-card[aria-hidden="true"] figcaption {
@@ -271,9 +189,8 @@
   overflow: visible;
 }
 
-@media (min-width: 601px) and (max-width: 1000px) {
-  .gallery-controls {
-    top: auto;
-    bottom: 20px;
+@media (min-width: 601px) {
+  .gallery-section {
+    height: 960px;
   }
 }

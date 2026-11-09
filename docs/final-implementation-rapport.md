@@ -1,5 +1,7 @@
 # KindDesign – afsluttende carousel- og Luma-implementering
 
+**Efterfølgende ændring:** Kontrolrækken er fjernet efter brugerens screenshot. Se seneste afsnit i [teknisk dokumentation](dokumentation.md); denne rapport bevarer den tidligere QA som historik.
+
 9.–10. november 2026 · lokal branch `feature/fase-2-6` · udgangspunkt `a1c1323`.
 
 Ingen push, merge, produktionsdeployment, databaseændring eller ekstern tilmelding er udført. Figma er læst, ikke redigeret. Fase 1–6-rapporterne og originale fotografier er bevaret som historik.

@@ -2,8 +2,6 @@ const carousel = document.querySelector("[data-carousel]");
 if (carousel) {
   const cards = [...carousel.querySelectorAll(".gallery-card")];
   const viewport = carousel.querySelector(".gallery-window");
-  const pauseButton = carousel.querySelector("[data-carousel-pause]");
-  const indicators = [...carousel.querySelectorAll("[data-carousel-slide]")];
   const status = carousel.querySelector("[data-carousel-status]");
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
   const interval = 4500;
@@ -33,25 +31,14 @@ if (carousel) {
           requestAnimationFrame(() => card.classList.remove("is-wrapping")),
         );
     });
-    indicators.forEach((button, index) =>
-      button.setAttribute("aria-pressed", String(index === activeIndex)),
-    );
     carousel.dataset.activeIndex = activeIndex;
     if (announce)
       status.textContent = `Billede ${activeIndex + 1} af ${cards.length}.`;
   }
   function schedule() {
     clearTimeout(timer);
-    pauseButton.disabled = reducedMotion.matches;
-    pauseButton.setAttribute(
-      "aria-pressed",
-      String(userPaused || reducedMotion.matches),
-    );
-    pauseButton.textContent = reducedMotion.matches
-      ? "Automatik slået fra"
-      : userPaused
-        ? "Afspil billedskift"
-        : "Pause billedskift";
+    carousel.dataset.userPaused = String(userPaused);
+    carousel.dataset.reducedMotion = String(reducedMotion.matches);
     const blocked =
       !visible ||
       document.hidden ||
@@ -76,22 +63,6 @@ if (carousel) {
   function move(direction, manual = true) {
     select(activeIndex + direction, manual);
   }
-  carousel
-    .querySelectorAll("[data-carousel-direction]")
-    .forEach((button) =>
-      button.addEventListener("click", () =>
-        move(Number(button.dataset.carouselDirection)),
-      ),
-    );
-  indicators.forEach((button) =>
-    button.addEventListener("click", () =>
-      select(Number(button.dataset.carouselSlide)),
-    ),
-  );
-  pauseButton.addEventListener("click", () => {
-    userPaused = !userPaused;
-    schedule();
-  });
   viewport.addEventListener("keydown", (event) => {
     if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
       event.preventDefault();
@@ -99,6 +70,17 @@ if (carousel) {
     } else if (event.key === "Home" || event.key === "End") {
       event.preventDefault();
       select(event.key === "Home" ? 0 : cards.length - 1);
+    } else if (event.key === " ") {
+      event.preventDefault();
+      if (reducedMotion.matches) {
+        status.textContent = "Automatiske billedskift er slået fra via systemets indstillinger.";
+        return;
+      }
+      userPaused = !userPaused;
+      status.textContent = userPaused
+        ? "Automatiske billedskift er sat på pause."
+        : "Automatiske billedskift genoptages, når du forlader galleriet.";
+      schedule();
     }
   });
   carousel.addEventListener("pointerenter", (event) => {
@@ -189,9 +171,6 @@ if (carousel) {
     { rootMargin: "150px" },
   );
   photoObserver.observe(viewport);
-  carousel.querySelectorAll("button").forEach((button) => {
-    button.disabled = false;
-  });
   carousel.classList.add("carousel-ready");
   render();
   schedule();

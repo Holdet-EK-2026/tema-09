@@ -43,23 +43,23 @@ const fs = require("node:fs");
     await out();
     await page.clock.runFor(4600);
     assert.equal(await index(), (before + 1) % 6);
-    await page.locator('[data-carousel-direction="1"]').click();
+    await viewport.focus();
+    await page.keyboard.press("ArrowRight");
     await out();
     before = await index();
     await page.clock.runFor(7900);
     assert.equal(await index(), before);
     await page.clock.runFor(200);
     assert.equal(await index(), (before + 1) % 6);
-    await page.locator("[data-carousel-pause]").click();
+    await viewport.focus();
+    await page.keyboard.press("Space");
     await out();
     before = await index();
     await page.clock.runFor(10000);
     assert.equal(await index(), before);
-    assert.equal(
-      await page.locator("[data-carousel-pause]").getAttribute("aria-pressed"),
-      "true",
-    );
-    await page.locator("[data-carousel-pause]").click();
+    assert.equal(await gallery.getAttribute("data-user-paused"), "true");
+    await viewport.focus();
+    await page.keyboard.press("Space");
     await out();
     await page.clock.runFor(4600);
     assert.equal(await index(), (before + 1) % 6);
@@ -104,10 +104,12 @@ const fs = require("node:fs");
     await page.clock.runFor(200);
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.waitForFunction(
-      () => document.querySelector("[data-carousel-pause]").disabled,
+      () =>
+        document.querySelector("[data-carousel]").dataset.reducedMotion ===
+        "true",
     );
     await page.clock.runFor(200);
-    assert(await page.locator("[data-carousel-pause]").isDisabled());
+    assert.equal(await page.locator(".gallery-controls").count(), 0);
     before = await index();
     await page.clock.runFor(10000);
     assert.equal(await index(), before);
@@ -133,7 +135,8 @@ const fs = require("node:fs");
       .locator(".gallery-card.is-active img")
       .getAttribute("alt");
     for (let i = 0; i < 6; i++) {
-      await page.locator('[data-carousel-direction="1"]').click();
+      await viewport.focus();
+      await page.keyboard.press("ArrowRight");
       assert.equal(
         await page.locator('.gallery-card[aria-hidden="false"]').count(),
         1,
@@ -144,17 +147,11 @@ const fs = require("node:fs");
       await page.locator(".gallery-card.is-active img").getAttribute("alt"),
       firstAlt,
     );
-    for (let i = 0; i < 6; i++)
-      await page.locator('[data-carousel-direction="-1"]').click();
+    for (let i = 0; i < 6; i++) await page.keyboard.press("ArrowLeft");
     assert.equal(await index(), 0);
-    await page.locator('[data-carousel-slide="3"]').click();
-    assert.equal(await index(), 3);
-    assert.equal(
-      await page.locator('[data-carousel-slide][aria-pressed="true"]').count(),
-      1,
-    );
+    await page.evaluate(() => document.activeElement?.blur());
     await gallery.screenshot({
-      path: `docs/qa/final-implementation/carousel-${width}.png`,
+      path: `docs/qa/controls-removed/carousel-${width}.png`,
     });
     assert.equal(
       await page.evaluate(
@@ -169,12 +166,12 @@ const fs = require("node:fs");
       hoverPause: true,
       focusPause: true,
       manualResume8000ms: true,
-      pausePlay: true,
+      keyboardPausePlay: true,
       hiddenTabPause: true,
       hiddenTabMethod: nativeHidden ? "native" : "simulated visibilitychange",
       offscreenPause: true,
       reducedMotion: true,
-      keyboardAndIndicators: true,
+      keyboardNavigation: true,
       infiniteLoopBothDirections: true,
       errors,
     });
@@ -213,7 +210,7 @@ const fs = require("node:fs");
   results.push({ mobileTouchSwipe: true, noAccidentalNavigation: true });
   await touch.close();
   fs.writeFileSync(
-    "docs/qa/final-implementation/carousel.json",
+    "docs/qa/controls-removed/carousel.json",
     JSON.stringify(results, null, 2),
   );
   console.log(results);

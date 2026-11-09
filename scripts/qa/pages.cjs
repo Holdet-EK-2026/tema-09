@@ -5,7 +5,8 @@ const AxeBuilder = require(
 ).default;
 const fs = require("fs");
 const assert = require("assert");
-const folder = "docs/qa/final-implementation";
+const folder =
+  process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/final-implementation";
 (async () => {
   fs.mkdirSync(folder, { recursive: true });
   const b = await chromium.launch({ channel: "chrome" });
