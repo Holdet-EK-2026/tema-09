@@ -150,8 +150,10 @@ if (carousel) {
     },
     { threshold: 0.15 },
   ).observe(carousel);
-  carousel.classList.add('carousel-ready');
-  carousel.querySelectorAll('button').forEach(button => {button.disabled = false;});
+  carousel.classList.add("carousel-ready");
+  carousel.querySelectorAll("button").forEach((button) => {
+    button.disabled = false;
+  });
   render();
   updateTimer();
 }

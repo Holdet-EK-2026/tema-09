@@ -1,0 +1,12 @@
+[
+  {
+    "name": "heading",
+    "meanPixelDifference": 0,
+    "sameDimensions": true
+  },
+  {
+    "name": "body",
+    "meanPixelDifference": 0,
+    "sameDimensions": true
+  }
+]

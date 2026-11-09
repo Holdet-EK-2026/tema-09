@@ -1,0 +1,196 @@
+
+> kinddesign@0.1.0 test:lighthouse
+> node scripts/qa/lighthouse.cjs
+
+{
+  route: '/',
+  mode: 'mobile',
+  scores: {
+    performance: 86,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 4277.8933,
+  CLS: 0
+}
+{
+  route: '/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 203.28390000000002,
+  CLS: 0
+}
+{
+  route: '/events/',
+  mode: 'mobile',
+  scores: {
+    performance: 91,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 3453.9430999999995,
+  CLS: 0
+}
+{
+  route: '/events/',
+  mode: 'desktop',
+  scores: {
+    performance: 97,
+    accessibility: 100,
+    'best-practices': 96,
+    seo: 63
+  },
+  LCP: 1204.4075,
+  CLS: 0
+}
+{
+  route: '/events/kalender/',
+  mode: 'mobile',
+  scores: {
+    performance: 82,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 4953.4933,
+  CLS: 0
+}
+{
+  route: '/events/kalender/',
+  mode: 'desktop',
+  scores: {
+    performance: 99,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 922.6549,
+  CLS: 0
+}
+{
+  route: '/om-kinddesign/',
+  mode: 'mobile',
+  scores: {
+    performance: 95,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 3005.0836,
+  CLS: 0
+}
+{
+  route: '/om-kinddesign/',
+  mode: 'desktop',
+  scores: {
+    performance: 98,
+    accessibility: 100,
+    'best-practices': 96,
+    seo: 63
+  },
+  LCP: 1143.9305,
+  CLS: 0
+}
+{
+  route: '/ny-her/',
+  mode: 'mobile',
+  scores: {
+    performance: 92,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 3379.1171999999997,
+  CLS: 0
+}
+{
+  route: '/ny-her/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 96,
+    seo: 63
+  },
+  LCP: 704.4134000000001,
+  CLS: 0
+}
+{
+  route: '/kontakt/',
+  mode: 'mobile',
+  scores: {
+    performance: 93,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 3227.9319000000005,
+  CLS: 0
+}
+{
+  route: '/kontakt/',
+  mode: 'desktop',
+  scores: {
+    performance: 98,
+    accessibility: 100,
+    'best-practices': 96,
+    seo: 63
+  },
+  LCP: 1083.93,
+  CLS: 0
+}
+{
+  route: '/events/design-og-nye-forbindelser/',
+  mode: 'mobile',
+  scores: {
+    performance: 79,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 5928.7346,
+  CLS: 0
+}
+{
+  route: '/events/design-og-nye-forbindelser/',
+  mode: 'desktop',
+  scores: {
+    performance: 98,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 1082.5528,
+  CLS: 0
+}
+{
+  route: '/tilmelding/design-og-nye-forbindelser/',
+  mode: 'mobile',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 904.4056,
+  CLS: 0
+}
+{
+  route: '/tilmelding/design-og-nye-forbindelser/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 244.4814,
+  CLS: 0
+}

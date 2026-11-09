@@ -2067,49 +2067,199 @@
     margin: 0;
   }
 }
-@media(max-width:600px) {
- .events-intro { gap: 28px; margin-bottom: 28px; }
- .events-intro .eyebrow { line-height: 19px; }
- .events-intro h2 { line-height: 43px; margin-top: 28px; }
- .events-intro > p { line-height: 25px; }
- .event-toolbar { gap: 28px; margin-bottom: 28px; }
- .event-program-note { line-height: 18px !important; margin-bottom: 28px; }
- .event-list { gap: 28px; }
- .event-copy > p { line-height: 23px; }
- .event-copy .event-type, .event-copy .event-meta { line-height: 20px; }
- .event-copy .event-example { line-height: 18px; }
- .new-banner { margin: 28px 0 0; gap: 16px; border-radius: 0; }
- .new-banner h2 { font-size: 30px; line-height: 38px; margin-bottom: 16px; }
- .new-banner p { font-size: 19px; line-height: 24px; }
- .new-banner .button { width: 170px; min-height: 56px; font-size: 17px; }
- .about-intro h2 { line-height: 43px; }
- .about-intro > p { line-height: 28px; }
- .founders-intro .eyebrow { font-size: 16px; line-height: 20px; }
- .founders-intro h2 { line-height: 48px; }
- .founder h3 { line-height: 34px; }
- .founder-role { line-height: 18px; }
- .founder > p:last-child { line-height: 23px; }
- .story-banner h2 { line-height: 45px; }
- .values article p { line-height: 23px; }
- .mobile-about-actions .button { min-height: 56px; font-size: 17px; }
- .inner-page.version-legacy .site-footer h2 { font-size: 30px; line-height: 1.05; }
+@media (max-width: 600px) {
+  .events-intro {
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+  .events-intro .eyebrow {
+    line-height: 19px;
+  }
+  .events-intro h2 {
+    line-height: 43px;
+    margin-top: 28px;
+  }
+  .events-intro > p {
+    line-height: 25px;
+  }
+  .event-toolbar {
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+  .event-program-note {
+    line-height: 18px !important;
+    margin-bottom: 28px;
+  }
+  .event-list {
+    gap: 28px;
+  }
+  .event-copy > p {
+    line-height: 23px;
+  }
+  .event-copy .event-type,
+  .event-copy .event-meta {
+    line-height: 20px;
+  }
+  .event-copy .event-example {
+    line-height: 18px;
+  }
+  .new-banner {
+    margin: 28px 0 0;
+    gap: 16px;
+    border-radius: 0;
+  }
+  .new-banner h2 {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 16px;
+  }
+  .new-banner p {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .new-banner .button {
+    width: 170px;
+    min-height: 56px;
+    font-size: 17px;
+  }
+  .about-intro h2 {
+    line-height: 43px;
+  }
+  .about-intro > p {
+    line-height: 28px;
+  }
+  .founders-intro .eyebrow {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .founders-intro h2 {
+    line-height: 48px;
+  }
+  .founder h3 {
+    line-height: 34px;
+  }
+  .founder-role {
+    line-height: 18px;
+  }
+  .founder > p:last-child {
+    line-height: 23px;
+  }
+  .story-banner h2 {
+    line-height: 45px;
+  }
+  .values article p {
+    line-height: 23px;
+  }
+  .mobile-about-actions .button {
+    min-height: 56px;
+    font-size: 17px;
+  }
+  .inner-page.version-legacy .site-footer h2 {
+    font-size: 30px;
+    line-height: 1.05;
+  }
 }
-@media(max-width:600px) { .mobile-brand-name { position: absolute; top: 30px; left: 86px; font-size: 24px; font-weight: 700; } }
-@media(min-width:1251px) {
- .event-copy h3 { margin-bottom: 12px; }
- .event-copy .event-meta { margin-top: 22px; }
- .event-copy .event-example { margin-top: 25px; }
- .founders { margin-bottom: 46px; }
- .values article > span { display: block; height: 36px; line-height: 36px; }
- .values article h3 { line-height: 30px; margin: 17px 0 13px; }
- .values article p { line-height: 1.2; }
- .event-practical { padding-bottom: 9px; }
- .practical-card .eyebrow { line-height: 19px; }
- .practical-card h2 { font-size: 45px; line-height: 56px; }
- .practical-card > div > p:not(.eyebrow) { font-size: 23px; line-height: 29px; margin-bottom: 29px; }
- .practical-card > div > p:not(.eyebrow):last-of-type { margin-bottom: 22px; }
- .practical-card aside { height: 180px; padding: 24px 24px 20px; }
- .practical-card aside p { font-size: 15px; line-height: 19px; margin-bottom: 19px; }
- .practical-card aside .eyebrow { margin-bottom: 23px; }
- .prototype-note { line-height: 19px; margin-top: 12px; }
+@media (max-width: 600px) {
+  .mobile-brand-name {
+    position: absolute;
+    top: 30px;
+    left: 86px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1251px) {
+  .event-copy h3 {
+    margin-bottom: 12px;
+  }
+  .event-copy .event-meta {
+    margin-top: 22px;
+  }
+  .event-copy .event-example {
+    margin-top: 25px;
+  }
+  .founders {
+    margin-bottom: 46px;
+  }
+  .values article > span {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+  }
+  .values article h3 {
+    line-height: 30px;
+    margin: 17px 0 13px;
+  }
+  .values article p {
+    line-height: 1.2;
+  }
+  .event-practical {
+    padding-bottom: 9px;
+  }
+  .practical-card .eyebrow {
+    line-height: 19px;
+  }
+  .practical-card h2 {
+    font-size: 45px;
+    line-height: 56px;
+  }
+  .practical-card > div > p:not(.eyebrow) {
+    font-size: 23px;
+    line-height: 29px;
+    margin-bottom: 29px;
+  }
+  .practical-card > div > p:not(.eyebrow):last-of-type {
+    margin-bottom: 22px;
+  }
+  .practical-card aside {
+    height: 180px;
+    padding: 24px 24px 20px;
+  }
+  .practical-card aside p {
+    font-size: 15px;
+    line-height: 19px;
+    margin-bottom: 19px;
+  }
+  .practical-card aside .eyebrow {
+    margin-bottom: 23px;
+  }
+  .prototype-note {
+    line-height: 19px;
+    margin-top: 12px;
+  }
+}
+@media (min-width: 601px) {
+  .first-event-program .program-grid ol {
+    gap: 0;
+  }
+  .first-event-program .program-grid li {
+    min-height: 70px;
+    align-items: center;
+    font-size: 21px;
+    line-height: 28px;
+    gap: 20px;
+  }
+  .first-event-program .program-grid li::before {
+    content: "";
+    flex: 0 0 12px;
+    height: 12px;
+    background: url("/images/54eeb.svg") no-repeat center;
+  }
+  .first-event-program .program-invitation {
+    margin-top: -16px;
+  }
+}
+@media (max-width: 600px) {
+  .about-intro > p {
+    color: var(--tekst);
+  }
+  .mobile-about-actions .button:first-child {
+    width: 200px;
+  }
+  .mobile-about-actions .button:last-child {
+    width: 170px;
+  }
+}
+.membership-concept img {
+  object-fit: contain;
 }

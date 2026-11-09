@@ -7,7 +7,9 @@
     "dev": "node ./node_modules/astro/bin/astro.mjs dev",
     "build": "node ./node_modules/astro/bin/astro.mjs build",
     "preview": "node ./node_modules/astro/bin/astro.mjs preview",
-    "test": "node scripts/check-build.js"
+    "test": "node scripts/check-build.js",
+    "test:browser": "node scripts/qa/pages.cjs && node scripts/qa/flows.cjs",
+    "test:lighthouse": "node scripts/qa/lighthouse.cjs"
   },
   "dependencies": {
     "astro": "7.4.8"

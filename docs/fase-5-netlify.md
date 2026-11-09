@@ -27,3 +27,7 @@ Ingen Supabase-, service-role-, secret- eller API-nøgler er nødvendige. `.env`
 Der mangler en valgt Netlify-site-/repository-forbindelse og en godkendt publiceringshandling, før et rigtigt preview kan oprettes. Efter en senere godkendelse skal en Deploy Preview kontrolleres med rigtige miljøværdier, dybe links, 404, cache og responseheaders. Før produktion skal de dokumenterede eksempeldata og eventlinks erstattes af godkendt indhold.
 
 Siderne beholder `noindex, nofollow`. Dette beskytter en ufærdig prototype mod indeksering og begrænser med vilje Lighthouse SEO-scoren. Indeksering, canonical-domæne og sitemap skal først aktiveres, når det rigtige domæne og publicering er besluttet. Ingen fiktiv canonical-URL er tilføjet.
+
+## Afsluttende regression i fase 6
+
+Efter optimeringerne er samme offline-build gentaget med succes på 19 sider inklusive 404. Log: [fase 6 Netlify-build](qa/fase-6/netlify-offline-build.log). De statiske checks består fortsat. Ingen ekstern hosting er aktiveret.

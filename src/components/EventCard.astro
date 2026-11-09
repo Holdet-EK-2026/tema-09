@@ -2,7 +2,7 @@
 const {event, index} = Astro.props;
 ---
 <article class="event-card" data-event-type={event.type}>
-  <a class="event-photo-link" href={`/events/${event.slug}/`} tabindex="-1" aria-hidden="true"><img src={`/images/${event.image}.webp`} width="422" height="244" alt="" loading="lazy" /></a>
+  <a class="event-photo-link" href={`/events/${event.slug}/`} tabindex="-1" aria-hidden="true"><img src={`/images/${event.image}.webp`} srcset={`/images/${event.image}-500.webp 500w, /images/${event.image}.webp ${event.image === 'ca544' ? 1000 : 1400}w`} sizes="(max-width:600px) calc(100vw - 48px), (max-width:1250px) 35vw, 422px" width="422" height="244" alt="" loading="lazy" /></a>
   <time class="event-date" datetime={event.date}><strong>{event.day}</strong><span>NOV</span></time>
   <div class="event-copy">
     <p class="event-type">{event.type.toUpperCase()}<span class="mobile-label"> · {event.day} NOV</span></p>

@@ -1,0 +1,194 @@
+[
+  {
+    "route": "/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 86,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 4277.8933,
+    "CLS": 0
+  },
+  {
+    "route": "/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 203.28390000000002,
+    "CLS": 0
+  },
+  {
+    "route": "/events/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 91,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 3453.9430999999995,
+    "CLS": 0
+  },
+  {
+    "route": "/events/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 63
+    },
+    "LCP": 1204.4075,
+    "CLS": 0
+  },
+  {
+    "route": "/kontakt/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 3227.9319000000005,
+    "CLS": 0
+  },
+  {
+    "route": "/kontakt/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 63
+    },
+    "LCP": 1083.93,
+    "CLS": 0
+  },
+  {
+    "route": "/tilmelding/design-og-nye-forbindelser/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 904.4056,
+    "CLS": 0
+  },
+  {
+    "route": "/tilmelding/design-og-nye-forbindelser/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 244.4814,
+    "CLS": 0
+  },
+  {
+    "route": "/events/kalender/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 89,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 3829.8073000000004,
+    "CLS": 0
+  },
+  {
+    "route": "/events/kalender/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 884.7744,
+    "CLS": 0
+  },
+  {
+    "route": "/om-kinddesign/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 3003.5591,
+    "CLS": 0
+  },
+  {
+    "route": "/om-kinddesign/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 63
+    },
+    "LCP": 1143.0157,
+    "CLS": 0
+  },
+  {
+    "route": "/ny-her/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 3379.9987,
+    "CLS": 0
+  },
+  {
+    "route": "/ny-her/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 703.0671,
+    "CLS": 0
+  },
+  {
+    "route": "/events/design-og-nye-forbindelser/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 90,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 3602.7215000000006,
+    "CLS": 0
+  },
+  {
+    "route": "/events/design-og-nye-forbindelser/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 1084.0951,
+    "CLS": 0
+  }
+]

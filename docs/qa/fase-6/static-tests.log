@@ -1,0 +1,5 @@
+
+> kinddesign@0.1.0 test
+> node scripts/check-build.js
+
+19 HTML-sider: titler, h1, sprog, lokale links, ankre og assets består.

@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Bricolage Grotesque";
-  src: url("/fonts/bricolage-variable.ttf") format("truetype");
+  src: url("/fonts/bricolage-variable.woff2") format("woff2");
   font-weight: 200 800;
   font-display: swap;
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("/fonts/dm-sans-variable.ttf") format("truetype");
+  src: url("/fonts/dm-sans-variable.woff2") format("woff2");
   font-weight: 100 1000;
   font-display: swap;
 }
@@ -898,10 +898,68 @@ dialog p {
 }
 
 /* Carousel: kun kortenes placering og størrelse animeres. */
-[data-carousel].carousel-ready .gallery-card { left: 0; top: 0; transition: transform .7s ease, width .7s ease, height .7s ease, opacity .3s; }
-[data-carousel].carousel-ready .gallery-card.is-wrapping { transition: none; opacity: 0; }
-[data-carousel] .mobile-gallery { width: max-content; }
-.carousel-pause { background: none; color: var(--bordeaux); text-decoration: underline; padding: 12px; margin-left: 20px; font-size: 13px; }
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-@media(max-width:600px) { .gallery-controls { display: flex; flex-wrap: wrap; gap: 8px; } .gallery-controls .static-arrow { display: flex; width: 48px; height: 44px; padding-left: 14px; } .gallery-controls p { width: 100%; order: -1; } .carousel-pause { margin: 0; font-size: 12px; } }
-@media(prefers-reduced-motion:reduce) { [data-carousel].carousel-ready .gallery-card { transition: none; } }
+[data-carousel].carousel-ready .gallery-card {
+  left: 0;
+  top: 0;
+  transition:
+    transform 0.7s ease,
+    width 0.7s ease,
+    height 0.7s ease,
+    opacity 0.3s;
+}
+[data-carousel].carousel-ready .gallery-card.is-wrapping {
+  transition: none;
+  opacity: 0;
+}
+[data-carousel] .mobile-gallery {
+  width: max-content;
+}
+.carousel-pause {
+  background: none;
+  color: var(--bordeaux);
+  text-decoration: underline;
+  padding: 12px;
+  margin-left: 20px;
+  font-size: 13px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .gallery-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .gallery-controls .static-arrow {
+    display: flex;
+    width: 48px;
+    height: 44px;
+    padding-left: 14px;
+  }
+  .gallery-controls p {
+    width: 100%;
+    order: -1;
+  }
+  .carousel-pause {
+    margin: 0;
+    font-size: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-carousel].carousel-ready .gallery-card {
+    transition: none;
+  }
+}
+
+.brand img,
+.footer-brand img {
+  object-fit: contain;
+}

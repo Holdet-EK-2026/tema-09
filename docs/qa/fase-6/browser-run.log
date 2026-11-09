@@ -1,0 +1,38 @@
+
+> kinddesign@0.1.0 test:browser
+> node scripts/qa/pages.cjs && node scripts/qa/flows.cjs
+
+[]
+[
+  {
+    width: 390,
+    filters: true,
+    filterReloadAndBack: true,
+    eventFlows: 4,
+    calendarDemos: 4,
+    contactValidationAndReset: true,
+    posts: [],
+    errors: []
+  },
+  {
+    width: 768,
+    filters: true,
+    filterReloadAndBack: true,
+    eventFlows: 4,
+    calendarDemos: 4,
+    contactValidationAndReset: true,
+    posts: [],
+    errors: []
+  },
+  {
+    width: 1440,
+    filters: true,
+    filterReloadAndBack: true,
+    eventFlows: 4,
+    calendarDemos: 4,
+    contactValidationAndReset: true,
+    posts: [],
+    errors: []
+  },
+  { autoplay: true, pause: true }
+]

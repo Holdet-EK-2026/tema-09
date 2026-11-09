@@ -1,0 +1,14 @@
+[
+  {
+    configuration: 'valid',
+    expected: 'https://lu.ma/kinddesign-qa-fixture',
+    passed: true,
+    externalRequests: false
+  },
+  {
+    configuration: 'invalid-domain',
+    expected: '/tilmelding/design-og-nye-forbindelser/',
+    passed: true,
+    externalRequests: false
+  }
+]

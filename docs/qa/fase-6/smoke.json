@@ -1,0 +1,27 @@
+[
+  {
+    "keyboardSkipNavAndFilter": true,
+    "membershipDialogKeyboard": "desktop-only",
+    "width": 390,
+    "demoNavCurrent": true,
+    "contactErrorAndConfirmationAxe": 0,
+    "registrationConfirmationAxe": 0,
+    "custom404": true,
+    "errors": []
+  },
+  {
+    "keyboardSkipNavAndFilter": true,
+    "membershipDialogKeyboard": true,
+    "width": 1440,
+    "demoNavCurrent": true,
+    "contactErrorAndConfirmationAxe": 0,
+    "registrationConfirmationAxe": 0,
+    "custom404": true,
+    "errors": []
+  },
+  {
+    "noJavaScriptContactSafe": true,
+    "staticCarouselFallback": true,
+    "retinaHero": "http://127.0.0.1:4321/images/1207b-1200.webp"
+  }
+]

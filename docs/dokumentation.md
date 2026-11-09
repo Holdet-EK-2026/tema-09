@@ -1,79 +1,74 @@
 # KindDesign – teknisk dokumentation
 
-Dato: 9. november 2026. Denne fil dokumenterer udført arbejde i fase 1 og adskiller det fra senere planer. Resultater og billeder findes i [fase-1-rapport.md](fase-1-rapport.md).
+Opdateret 9. november 2026. Den lokale implementering omfatter forside, carousel, undersider og Figma-demoflows. [Samlet rapport](fase-2-6-rapport.md) beskriver verifikation, afgrænsninger og commits. Den tidligere dokumentation er bevaret i [fase 1-arkivet](arkiv/dokumentation-fase-1.md); [fase 1-rapporten](fase-1-rapport.md) er uændret.
 
-## Teknologivalg
+## Teknologi og struktur
 
-**Astro 7.4.8** samler genbrugelige komponenter og bygger HTML-filer. Forsiden kræver ingen server ved visning. Semantisk **HTML** beskriver navigation, overskrifter og sektioner. **CSS** styrer farver, typografi, Grid, Flexbox og responsivitet. **Vanilla JavaScript** håndterer previewets navigation med browserens DOM-API. Kun Astro er direkte npm-dependency i applikationen. React, Vue, Svelte, Tailwind og egen TypeScript er fravalgt i overensstemmelse med opgaven. Astro kan selv generere typer i sin ignorerede `.astro`-mappe; det er ikke selvskrevet applikationskode.
+Astro 7.4.8 genererer 19 statiske HTML-sider inklusive 404. HTML, CSS og Vanilla JavaScript er applikationens teknologier; Astro er eneste direkte npm-dependency. Ingen React, Tailwind, egen TypeScript, serverfunktioner eller database er nødvendige for de dokumenterede demoflows. Node skal være mindst 22.23.4; `.nvmrc`, `engines` og Netlify bruger denne version.
 
-**Supabase** er planlagt som læringsmål i fase 4, hvor et begrundet indholdsmodul kan demonstrere SQL, relationer, CRUD, API-kald og RLS. Der er endnu ikke valgt datamodel, oprettet tabeller eller nøgler eller implementeret databasekode. **Netlify** er planlagt som hosting i fase 5. **GitHub** er det fælles repository til versionshistorik og senere review gennem branches og pull requests. Ingen eksterne tjenester er oprettet i denne fase.
+`BaseLayout.astro` indeholder dokument, dansk sprog, metadata, fontpreloads og skip-link. `InnerLayout.astro` genbruger Header/Footer og indlæser global CSS før underside-CSS. Rækkefølgen er vigtig: generelle resets må ikke overskrive sidernes spacing. Forsiden henter ikke underside-CSS. `PageHero` og `EventCard` genbruges. `src/data/events.js` er den fælles kilde til de fire Figma-eksempel-events; Astro bygger detail- og demoruter med `getStaticPaths()`.
 
-Node 22.23.4 er minimum for den installerede Astro-version. Den eksisterende system-Node var 22.20.0. Build og QA blev derfor udført med en isoleret Node 22.23.4 i `/tmp/kinddesign-tools`; systemets installation blev ikke ændret. Projektets `.nvmrc`, `engines` og Netlify-konfiguration angiver den krævede version.
+Farverne er fortsat salvie #A5B39B, sand #E8DCC6, bordeaux #722F37, lyseblå #C0E7F6 og tekst #280E11. Grid fordeler kolonner, Flexbox stabler indhold, og media queries vælger mobilkompositionen ved 600 px. Mellembredder må vokse efter indholdet. Der er ingen identificeret 768 px-Figma-frame; tablet følger de eksisterende responsive principper.
 
-## Fra Figma til kode
+## Typografi og billeder
 
-Kilderne er desktop `753:847` og mobil `757:2326` med indhold i `757:2327`, i fil `upaKrrIg3bRBgo4Md8s12F`. Frames markeret ARKIV er ikke anvendt. Designkontekst, laggeometri og tekstegenskaber blev aflæst gennem Figma-værktøjerne. Figma blev ikke ændret.
+Bricolage Grotesque og DM Sans hostes lokalt. Fase 1-referencecommit `04aef1b` fastlagde vægt 700/400, normal bredde, automatisk optisk størrelse, nul letter-spacing og `font-synthesis: none`. Disse egenskaber er bevaret. Undersidernes overskrifter, inklusive V2-heroer, bruger DM Sans Bold efter deres egne Figma-frames. Fonte er komprimeret fra de samme TTF-filer til WOFF2 uden ændring af glyffer eller variable akser. Originaler ligger i `docs/source-fonts`, og OFL-licenser er bevaret. En kontrolleret mobiltest af overskrift og brødtekst gav identiske pixels før/efter komprimering.
 
-De fem godkendte farver er CSS-variabler i `:root`: salvie `#A5B39B`, sand `#E8DCC6`, bordeaux `#722F37`, lyseblå `#C0E7F6` og tekst `#280E11`. Overskrifter bruger Bricolage Grotesque Bold, brødtekst DM Sans Regular og navigation på desktop DM Sans Bold. Variable fonte hostes lokalt med automatisk optisk størrelse, normal breddeakse 100 og CSS-vægt 700/400. Den afsluttende QA viste, at fastlåst `opsz: 14` fra Figma-metadata ikke matcher referenceeksportens faktiske glyffer. Kontrollerede browserforsøg med samme fonte og vægte viste et markant bedre match med optisk størrelse svarende til fontstørrelsen. Dette er en empirisk renderingkonklusion, ikke bevis for Figma-rendererens interne funktion. Fontfilerne kommer fra Google Fonts' officielle repository, med OFL-licenser vedlagt.
+Autentiske Figma-fotos og perspektivkort er bevaret; ingen AI- eller stockerstatninger er anvendt. Originaleksporter ligger i `docs/source-assets`. WebP bruger kvalitet 92; `srcset` giver mindre varianter af samme foto og større hero/logo til retinaskærme. Hero har høj henteprioritet, øvrige fotos lazy loading. Dekorative fotos har tom alt-tekst, meningsbærende fotos beskrivende alt-tekst. Founderportrætter afventer fortsat tilladelse som i Figma.
 
-Astro-komponenter skaber en forståelig opdeling uden et JavaScript-framework. Grid styrer desktopnavigation og community-kort, Flexbox styrer lodrette indholdsstakke. Heroens billede, eksempel-nedtælling og desktopgalleriets forskudte kort har positionsstyret komposition, som kræves af designet. Billederne er enkeltassets fra Figma; hele frames er ikke anvendt som hjemmesidens indhold.
+## JavaScript og dataflow
 
-Ved 390 px skifter siden til den selvstændige mobilkomposition: anden hero, navigation i to rækker, fuldbreddeknap, fire kvadratiske gallerifotos og salviegrøn community. Media query ved 600 px adskiller mobilkompositionen fra de større bredder. Ved 768 px bruges fleksible kolonner, 32 px sidemargen og mindre tekst. Tablet har ingen identificeret godkendt frame og er et dokumenteret layoutvalg. Ved større tekst eller andre bredder må sektioner vokse med indholdet.
+**Carousel:** Et aktivt indeks og modulo bestemmer næste kort. Desktop bruger målte Figma-positioner, mobil native horisontal scroll med en skjult overgangskopi. Pile, piletaster og swipe giver manuel navigation. Automatisk skift sker hvert sjette sekund, når galleriet er synligt og ikke er pauset af bruger, fokus, hover, berøring, skjult fane eller reduced-motion. Status annonceres ved manuelle skift. Uden JavaScript bevares det statiske galleri, og kontrollerne er deaktiveret.
 
-Figma afrunder tekstfelternes mobilhøjder til hele pixels. Aflæste linjehøjder er derfor omsat til eksempelvis 69 px i herooverskriften, 36 px i tagline og 25 px i mobilbrødtekst. Det giver samme sektionstoppe og højder som Figma ved 390 px, uden faste højder på hele tekstsektioner.
+**Eventfiltre:** Kategoriknapper opdaterer kortenes `hidden`, `aria-pressed` og URL-parametret `type`. `popstate` genskaber filteret ved tilbage/frem. Uden JavaScript vises alle events. Novemberkalenderen er statisk og linker til de samme detailruter.
 
-## Billeder
+**Tilmelding:** Figma-reactions fører til interne demoer. Der er ikke fundet faktiske Luma-eventadresser. Uden konfiguration går CTA til lokal tilmeldingsdemo med en tydelig bekræftelse af, at brugeren IKKE er tilmeldt. Kalenderdemoen tilføjer intet til en rigtig kalender. Fire valgfrie `PUBLIC_LUMA_*_URL` kan ved build pege på godkendte events. Koden accepterer kun HTTPS med eventsti hos lu.ma/luma.com og uden URL-credentials; dette validerer format og domæne, ikke eventets autenticitet. Ingen booking er foretaget.
 
-Figma-assets blev hentet lokalt og originalerne bevaret i `docs/source-assets`. WebP-filerne i `public/images` bruger kvalitet 92; fotos med stor originalopløsning og logoet er nedskaleret til deres brug. Alpha bevares på galleriets perspektivkort. Samlet billedstørrelse faldt fra 33.854.764 til 3.564.734 bytes, cirka 89,5 %. Dette er filstørrelsen for samtlige assets, ikke et målt netværksbudget pr. viewport. Se `qa/asset-optimization.json`.
+**Kontakt:** Klik vælger emne, og submit validerer navn, e-mail og besked. Fejloverblik får fokus, felter forbindes med fejl via ARIA, og rettelser opdateres efter første validering. Gyldige felter viser en lokal demobekræftelse med fokusretur/nulstilling. Ingen fetch, POST, database eller localStorage anvendes. Uden JavaScript er submit deaktiveret, så persondata heller ikke sendes som GET-parametre. Kontakt er fortsat »PROTOTYPE · Intet sendes«.
 
-Hero har høj henteprioritet, øvrige fotos lazy loading og alt-tekster. `<picture>` vælger korrekt hero til mobil. Logo og community-foto genbruges. Opgaven og Figma er kilde til fotografierne; fotografrettigheder er ikke uafhængigt dokumenteret i det tilgængelige materiale. Der er ikke anvendt AI-billeder eller stockerstatninger.
+**Medlemskort:** En native dialog forklarer desktopkonceptet. Der er ingen konto, login eller medlemsregistrering. Links og native knapper bevarer tastaturbetjening, Escape og fokusretur.
 
-## JavaScript: navigation til kommende sider
+## Backend og hosting
 
-Formål: Gør fase 1-previewet forståeligt, mens de øvrige sider endnu ikke er bygget.
+Supabase er vurderet og fravalgt efter den seneste instruktion om kun at implementere dokumenterede, relevante backendfunktioner. Ingen redaktørrolle, rigtig tilmelding eller medlemskonto er besluttet, og kontaktdata må ikke sendes. Praktisk SQL/CRUD/RLS er derfor ikke gennemført; se [vurderingen](fase-4-supabase-vurdering.md).
 
-1. `querySelectorAll('[data-future-page]')` finder links til senere sider.
-2. `querySelector('#phase-dialog')` finder HTML-dialogen.
-3. `forEach()` tilføjer en `click`-event listener til hvert link.
-4. `preventDefault()` stopper den almindelige navigation ved klik.
-5. `showModal()` åbner dialogen. En HTML-formular med `method="dialog"` lukker den; Escape virker gennem browseren.
+`netlify.toml` kører `npm run build && npm test`, publicerer `dist` og konfigurerer preview-/branch-builds, cache for hash-assets, nosniff og referrer-policy. Der er ingen SPA-rewrite. Den officielle CLI er testet med lokal `build --offline --context deploy-preview`. Dette opretter ikke et hostet preview. Der er ingen push, merge, repository-forbindelse eller deployment. Se [fase 5](fase-5-netlify.md).
 
-Dataflowet er klik → event listener → dialog. Der sendes ingen data til en server. Browserens native dialog håndterer fokus inde i dialogen og returnerer fokus ved lukning. Testen aktiverede hero-CTA, kontrollerede åben dialog, trykkede Escape og kontrollerede tilbageført fokus ved alle tre bredder. Linkenes fremtidige adresser er bevaret, men kontekstmenuens »åbn i ny fane« går til en endnu ikke bygget rute; dette preview er kun forsiden.
+Siderne har bevidst `noindex, nofollow`, så en prototype ikke indekseres. Titler, beskrivelser og OpenGraph-tekst er tilføjet. Canonical-domæne, sitemap og indeksering afventer et besluttet produktionsdomæne; ingen URL er opfundet. `.env.example` indeholder kun tomme offentlige Luma-adresser. Secrets skal aldrig have `PUBLIC_`-præfiks.
 
-Der er ingen automatisk carousel, timer, touch/swipe-kode eller Supabase-kald. Vandret scroll bruger browserens egen funktion; galleriet kan fokuseres med tastatur. Pilene er dekorative spans, ikke knapper der foregiver funktionalitet.
+## Kørsel og tests
 
-## Build, hosting og versionsstyring
+```sh
+npm ci
+npm run build
+npm test
+npm run preview -- --host 127.0.0.1 --port 4321
+```
 
-`npm run build` genererer den statiske side i `dist`. `npm run dev` er til udvikling, og `npm run preview` viser en bygget udgave lokalt. `netlify.toml` klargør `npm run build`, `dist` og Node-version. Der er ikke brug for en adapter til den nuværende statiske forside.
+Npm-scripts kalder Astro via Node direkte for at understøtte kolon i projektets overordnede mappe. `npm test` kræver først en build og kontrollerer alle HTML-filer, interne links, ankre og assets samt sprog, h1 og titler.
 
-I fase 5 skal gruppen forbinde GitHub med Netlify, kontrollere en Deploy Preview og siden beslutte merge/publicering. Continuous Deployment betyder, at en kodeændring på en forbundet branch udløser en ny build. Miljøvariabler oprettes først, når en funktion kræver dem; ingen nøgler er nødvendige i fase 1.
+Browser- og Lighthouse-værktøjer holdes uden for applikationens dependencies. QA bruger Playwright 1.65.0, @axe-core/playwright 4.14.0, Lighthouse 13.6.0, Sharp og installeret Google Chrome. Standardplacering er `/tmp/kinddesign-tools`; `KINDDESIGN_QA_TOOLS` kan angive en anden mappe med `node_modules`. Installer disse værktøjer i en separat QA-mappe med npm, og start preview på port 4321 før:
 
-Repositoryet blev undersøgt med GitHub-connector og klonet; det var tomt og uden eksisterende commits. En lokal orphan-featurebranch blev derfor oprettet. Der er endnu ingen `main`-base at oprette en normal pull request mod. Remote er ikke ændret. Gruppen kan senere vælge den første basebranch og workflow.
+```sh
+npm run test:browser
+node scripts/qa/smoke.cjs
+node scripts/qa/luma-config.cjs
+npm run test:lighthouse
+node scripts/qa/visual.cjs
+```
 
-## Verifikation og begrænsninger
+Visuel sammenligning bruger de bevarede Figma-referencer i `docs/qa/fase-3/references`. Screenshot- og auditresultater ligger i `docs/qa/fase-6`. Lighthouse er en enkelt lokal laboratoriemåling pr. rute/profil, ikke feltdata eller en garanti for alle enheder. Automatiske axe-checks erstatter ikke manuel skærmlæser- og browsergennemgang. Safari/Firefox og alle zoomniveauer er ikke testet.
 
-Builden bestod. Chrome-screenshots ved 390, 768 og 1440 px findes i `qa`. Ingen dokument-overflow eller JavaScript-fejl blev registreret. Axe fandt ingen automatiske WCAG A/AA-fund i det testede, lukkede dialogstadium. Dette er ikke bevis for fuld tilgængelighed: skærmlæser, alle zoomniveauer og komplet manuel WCAG-gennemgang er ikke udført.
+## Kilder og rapporter
 
-Afsluttende fuldsideoverlay og difference ligger i `qa/final` ved 1440×3088 og 390×2792. Mobilens indhold blev klonet midlertidigt til samme Figma-page uden den klippende parent, eksporteret og slettet igen. Originalens design og geometri blev ikke ændret. Alle sektioner under folden er nu direkte sammenlignet. Figma havde stadig kun aktive forsideframes ved 390 og 1440 px; 768 px er kontrolleret responsivt, uden en påstået Figma-reference ved den bredde.
+- [Figma – aktiv side](https://www.figma.com/design/upaKrrIg3bRBgo4Md8s12F/Prototype---Tema-9?node-id=753-846)
+- [Fase 2: carousel](fase-2-rapport.md)
+- [Fase 3: sider, frames og visuel QA](fase-3-rapport.md)
+- [Fase 4: Supabasevurdering](fase-4-supabase-vurdering.md)
+- [Fase 5: Netlify](fase-5-netlify.md)
+- [Samlet fase 2–6-rapport](fase-2-6-rapport.md)
+- [Google Fonts: Bricolage Grotesque](https://github.com/google/fonts/tree/main/ofl/bricolagegrotesque) og [DM Sans](https://github.com/google/fonts/tree/main/ofl/dmsans)
 
-Fontfamilier, CSS-vægt 400/700, normal bredde, nul letter-spacing og de eksisterende Figma-aflæste linjehøjder er bevaret. Den fastlåste optiske akse er erstattet af `font-optical-sizing: auto`, og `font-synthesis: none` forhindrer syntetiske fonte. Der er ikke brugt skaleret tekst eller vilkårlig tracking som kompensation. De store bredde- og ombrydningsforskelle er fjernet. Mindre forskelle i tekstbaseline/antialiasing og komprimerede fotopixels består; se den aktuelle rapport. Figma-eksport og Chrome er stadig forskellige renderere, så bitidentitet eller et verificeret fælles renderingmiljø hævdes ikke.
+## Hostingbegreber til gruppens gennemgang
 
-Afsluttende tests kontrollerede alle synlige links til kommende sider (11 på mobil, 12 på tablet/desktop) med Enter, dialoglukning med knap/Enter og Escape samt fokusretur. Skip-link, synlig navigation, mobilens tabrækkefølge, logonavigation, vandret galleriscroll og reduced-motion blev kontrolleret. Axe bestod både på forsiden og med åben dialog. Chrome kan under Tab flytte fokus til browserens egen grænseflade; testen accepterer dette, men ikke fokus på bagvedliggende sideelementer. To separate navigationsblokke, hvor CSS kun viser én, sikrer korrekt DOM-rækkefølge på begge layouts.
-
-## Kort kodegennemgang til gruppen
-
-**Hvad er lavet?** `index.astro` samler Header, Hero, Carousel, Community og Footer inde i BaseLayout. Carousel er i fase 1 et statisk galleri. Alle billeder og fonte indlæses lokalt.
-
-**Hvordan virker det?** Astro bygger komponenterne til HTML. CSS Grid fordeler kolonner; Flexbox stabler indhold; media queries vælger det responsive layout. HTML-links identificeres via en data-attribut. JavaScript finder disse DOM-elementer og reagerer med en event listener. Den native dialog forklarer de kommende sider.
-
-**Hvorfor denne løsning?** Der er ét lille script og én direkte dependency. Komponentenhederne følger sidens sektioner, så gruppen kan fordele arbejdet uden state management eller et UI-framework. Almindeligt scroll og native dialog begrænser specialkode.
-
-**Hvad skal I kunne forklare?** Semantisk HTML, heading-hierarki, Astro-komponenter og layouts, CSS-variabler, Grid, Flexbox, media queries, billedbeskæring med `object-fit`, DOM, `querySelectorAll`, `forEach`, events og `preventDefault`, tastaturfokus samt forskellen på lokal udvikling, build og hosting. API, CRUD, SQL, RLS og deployment er senere læringsmål, ikke allerede implementerede resultater.
-
-## Kilder
-
-- [Aktiv Figma-desktop](https://www.figma.com/design/upaKrrIg3bRBgo4Md8s12F/Prototype---Tema-9?node-id=753-847)
-- [Aktiv Figma-mobil](https://www.figma.com/design/upaKrrIg3bRBgo4Md8s12F/Prototype---Tema-9?node-id=757-2326)
-- [Astro-installation og krav](https://docs.astro.build/en/install-and-setup/)
-- [Google Fonts: Bricolage Grotesque](https://github.com/google/fonts/tree/main/ofl/bricolagegrotesque)
-- [Google Fonts: DM Sans](https://github.com/google/fonts/tree/main/ofl/dmsans)
+En build omsætter Astro-komponenter til HTML, CSS, JavaScript og lokale assets i `dist`. Hosting gør disse filer tilgængelige fra en webserver. Continuous Deployment betyder, at en forbundet repository-branch udløser en ny build ved en ændring. Et Deploy Preview viser en foreslået ændring på en særskilt URL før produktion. Konfigurationen til disse builds er klar, men den eksterne GitHub-/Netlify-forbindelse er ikke oprettet. Git-commits er lokale versionspunkter; et commit er hverken et push, et review, et merge eller en publicering.

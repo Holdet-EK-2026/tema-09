@@ -1,0 +1,76 @@
+​
+Netlify Build                                                 
+────────────────────────────────────────────────────────────────
+​
+❯ Version
+  @netlify/build 37.7.6
+​
+❯ Flags
+  dry: false
+  offline: true
+​
+❯ Current directory
+  /Users/martingerlach/Desktop/Skole/EK/2 Semester/Temaer/T09 UX:UI II/kinddesign
+​
+❯ Config file
+  /Users/martingerlach/Desktop/Skole/EK/2 Semester/Temaer/T09 UX:UI II/kinddesign/netlify.toml
+​
+❯ Context
+  deploy-preview
+​
+build.command from netlify.toml                               
+────────────────────────────────────────────────────────────────
+​
+$ npm run build && npm test
+
+> kinddesign@0.1.0 build
+> node ./node_modules/astro/bin/astro.mjs build
+
+22:20:34 [types] Generated 24ms
+22:20:34 [build] output: "static"
+22:20:34 [build] mode: "static"
+22:20:34 [build] directory: /Users/martingerlach/Desktop/Skole/EK/2 Semester/Temaer/T09 UX:UI II/kinddesign/dist/
+22:20:34 [build] Collecting build info...
+22:20:34 [build] ✓ Completed in 42ms.
+22:20:34 [build] Building static entrypoints...
+22:20:35 [vite] ✓ built in 127ms
+22:20:35 [vite] ✓ built in 88ms
+22:20:35 [build] Rearranging server assets...
+
+ generating static routes 
+22:20:35   ├─ /404.html (+7ms) 
+22:20:35   ├─ /events/kalender/index.html (+3ms) 
+22:20:35   ├─ /events/design-og-nye-forbindelser/index.html (+1ms) 
+22:20:35   ├─ /events/ideer-paa-papir/index.html (+1ms) 
+22:20:35   ├─ /events/design-i-virkeligheden/index.html (+2ms) 
+22:20:35   ├─ /events/et-bord-nye-ansigter/index.html (+3ms) 
+22:20:35   ├─ /events/index.html (+2ms) 
+22:20:35   ├─ /kalender/design-og-nye-forbindelser/index.html (+2ms) 
+22:20:35   ├─ /kalender/ideer-paa-papir/index.html (+2ms) 
+22:20:35   ├─ /kalender/design-i-virkeligheden/index.html (+1ms) 
+22:20:35   ├─ /kalender/et-bord-nye-ansigter/index.html (+0ms) 
+22:20:35   ├─ /kontakt/index.html (+1ms) 
+22:20:35   ├─ /ny-her/index.html (+1ms) 
+22:20:35   ├─ /om-kinddesign/index.html (+1ms) 
+22:20:35   ├─ /tilmelding/design-og-nye-forbindelser/index.html (+1ms) 
+22:20:35   ├─ /tilmelding/ideer-paa-papir/index.html (+1ms) 
+22:20:35   ├─ /tilmelding/design-i-virkeligheden/index.html (+0ms) 
+22:20:35   ├─ /tilmelding/et-bord-nye-ansigter/index.html (+0ms) 
+22:20:35   ├─ /index.html (+1ms) 
+22:20:35 ✓ Completed in 40ms.
+
+22:20:35 [build] ✓ Completed in 284ms.
+22:20:35 [build] 19 page(s) built in 331ms
+22:20:35 [build] Complete!
+
+> kinddesign@0.1.0 test
+> node scripts/check-build.js
+
+19 HTML-sider: titler, h1, sprog, lokale links, ankre og assets består.
+​
+(build.command completed in 1.3s)
+​
+Netlify Build Complete                                        
+────────────────────────────────────────────────────────────────
+​
+(Netlify Build completed in 1.3s)
