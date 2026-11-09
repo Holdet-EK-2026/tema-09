@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node ./node_modules/astro/bin/astro.mjs dev",
     "build": "node ./node_modules/astro/bin/astro.mjs build",
-    "preview": "node ./node_modules/astro/bin/astro.mjs preview"
+    "preview": "node ./node_modules/astro/bin/astro.mjs preview",
+    "test": "node scripts/check-build.js"
   },
   "dependencies": {
     "astro": "7.4.8"

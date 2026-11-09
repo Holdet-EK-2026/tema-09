@@ -1,0 +1,8 @@
+---
+const {title, subtitle, about = false} = Astro.props;
+---
+<section class:list={['page-hero', about && 'about-hero']} aria-labelledby="page-title">
+  <img src="/images/0bb08.webp" width="2880" height="1909" alt="Deltagere i samtale til et KindDesign-arrangement" fetchpriority="high" />
+  <div class="page-hero-shade"></div>
+  <h1 id="page-title">{title}</h1><p>{subtitle}</p>
+</section>

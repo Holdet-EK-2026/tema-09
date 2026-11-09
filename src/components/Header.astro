@@ -1,16 +1,21 @@
+---
+const path = Astro.url.pathname;
+function current(href) { return href === '/' ? path === '/' : path.startsWith(href); }
+---
 <header class="site-header">
   <a href="/" class="brand" aria-label="KindDesign – forside"><img src="/images/af5ee.webp" width="90" height="90" alt="KindDesign" /></a>
+  {path.startsWith('/ny-her') && <span class="mobile-brand-name mobile-label">KindDesign</span>}
   <nav class="desktop-navigation" aria-label="Hovednavigation">
-    <a class="home-link" href="/" aria-current="page">Forside</a>
-    <a href="/events/" data-future-page>Events</a>
-    <a href="/om-kinddesign/" data-future-page><span class="desktop-label">Om Kind Design</span><span class="mobile-label">Om os</span></a>
-    <a class="contact-link" href="/kontakt/" data-future-page>Kontakt</a>
-    <a class="new-link" href="/ny-her/" data-future-page>Ny her?<span class="desktop-label">&nbsp; ↗</span></a>
+    <a class="home-link" href="/" aria-current={current('/') ? 'page' : undefined}>Forside</a>
+    <a href="/events/" aria-current={current('/events/') ? 'page' : undefined}>Events</a>
+    <a href="/om-kinddesign/" aria-current={current('/om-kinddesign/') ? 'page' : undefined}><span class="desktop-label">Om Kind Design</span><span class="mobile-label">Om os</span></a>
+    <a class="contact-link" href="/kontakt/" aria-current={current('/kontakt/') ? 'page' : undefined}>Kontakt</a>
+    <a class="new-link" href="/ny-her/" aria-current={current('/ny-her/') ? 'page' : undefined}>Ny her?<span class="desktop-label">&nbsp; ↗</span></a>
   </nav>
   <nav class="mobile-navigation" aria-label="Hovednavigation">
-    <a href="/events/" data-future-page>Events</a>
-    <a href="/om-kinddesign/" data-future-page>Om os</a>
-    <a class="new-link" href="/ny-her/" data-future-page>Ny her?</a>
-    <a class="contact-link" href="/kontakt/" data-future-page>Kontakt</a>
+    <a href="/events/" aria-current={current('/events/') ? 'page' : undefined}>Events</a>
+    <a href="/om-kinddesign/" aria-current={current('/om-kinddesign/') ? 'page' : undefined}>Om os</a>
+    <a class="new-link" href="/ny-her/" aria-current={current('/ny-her/') ? 'page' : undefined}>Ny her?</a>
+    <a class="contact-link" href="/kontakt/" aria-current={current('/kontakt/') ? 'page' : undefined}>Kontakt</a>
   </nav>
 </header>

@@ -18,17 +18,17 @@ const descriptions = [
   </div>
   <div class="gallery-window" tabindex="0" role="region" aria-label="Billeder fra fællesskabet, rul vandret">
     <div class="desktop-gallery">
-      {desktopImages.map((image, index) => <img class={`gallery-card card-${index + 1}`} src={`/images/${image}.webp`} alt={descriptions[index]} loading="lazy" />)}
+      {desktopImages.map((image, index) => <img draggable="false" class={`gallery-card card-${index + 1}`} src={`/images/${image}.webp`} alt={descriptions[index]} loading="lazy" />)}
     </div>
     <div class="mobile-gallery">
-      {mobileImages.map((image, index) => <img src={`/images/${image}.webp`} alt={descriptions[index]} width="260" height="260" loading="lazy" />)}
+      {mobileImages.map((image, index) => <img draggable="false" src={`/images/${image}.webp`} alt={descriptions[index]} width="260" height="260" loading="lazy" />)}
     </div>
   </div>
   <div class="gallery-controls">
-    <button class="static-arrow" type="button" data-carousel-direction="-1" aria-label="Forrige billede">←</button>
-    <button class="static-arrow next" type="button" data-carousel-direction="1" aria-label="Næste billede">→</button>
+    <button class="static-arrow" type="button" disabled data-carousel-direction="-1" aria-label="Forrige billede">←</button>
+    <button class="static-arrow next" type="button" disabled data-carousel-direction="1" aria-label="Næste billede">→</button>
     <p>TRÆK GENNEM FÆLLESSKABET</p>
-    <button type="button" class="carousel-pause" data-carousel-pause aria-pressed="false">Pause billedskift</button>
+    <button type="button" class="carousel-pause" disabled data-carousel-pause aria-pressed="false">Pause billedskift</button>
     <span class="sr-only" role="status" data-carousel-status></span>
   </div>
 </section>

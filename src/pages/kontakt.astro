@@ -1,0 +1,22 @@
+---
+import InnerLayout from '../components/InnerLayout.astro';
+import PageHero from '../components/PageHero.astro';
+---
+<InnerLayout title="Kontakt">
+  <PageHero title="KONTAKT" subtitle="Har du spørgsmål, idéer eller vil du samarbejde?" />
+  <section class="contact-section" aria-labelledby="contact-title">
+    <div class="contact-intro"><p class="eyebrow desktop-label">KONTAKT OS</p><h2 id="contact-title"><span class="desktop-label">Lad os<br /> tage en snak.</span><span class="mobile-label">Lad os tage en snak.</span></h2><p><span class="desktop-label">Uanset om du har et spørgsmål, en idé til et event, ønsker at samarbejde eller bare vil sige hej — vi vil gerne høre fra dig.</span><span class="mobile-label">Uanset om du har et spørgsmål, en idé til et event eller bare vil sige hej — vi vil gerne høre fra dig.</span></p><img src="/images/ca544.webp" width="530" height="460" alt="To deltagere i samtale ved et KindDesign-arrangement" loading="lazy" /></div>
+    <form class="contact-form" id="contact-form" novalidate>
+      <p class="form-notice">PROTOTYPE · Intet sendes</p>
+      <div class="form-error-summary" role="alert" tabindex="-1" hidden></div>
+      <div class="form-field"><label for="name">NAVN *</label><input id="name" name="name" autocomplete="name" placeholder="Dit navn" required maxlength="100" aria-describedby="name-error" /><p class="field-error" id="name-error"></p></div>
+      <div class="form-field"><label for="email">E-MAIL *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="Din e-mail" required maxlength="254" aria-describedby="email-error" /><p class="field-error" id="email-error"></p></div>
+      <div class="form-field"><label for="subject">EMNE</label><select id="subject" name="subject"><option value="">Vælg emne</option><option>Spørgsmål</option><option>Idé til et event</option><option>Samarbejde</option></select></div>
+      <div class="form-field"><label for="message">BESKED *</label><textarea id="message" name="message" placeholder="Skriv din besked her …" required maxlength="5000" aria-describedby="message-error"></textarea><p class="field-error" id="message-error"></p></div>
+      <noscript><p>Formularens demo kræver JavaScript. Ingen oplysninger sendes.</p></noscript>
+      <button class="button" type="submit" disabled>Afprøv besked ↗</button>
+    </form>
+    <section class="contact-confirmation" tabindex="-1" aria-labelledby="confirmation-title" hidden><h2 id="confirmation-title">Demobekræftelse</h2><p>Intet er sendt. Tak for at afprøve prototypen.</p><button class="button" type="button" data-contact-reset>Tilbage til kontakt ↗</button></section>
+  </section>
+</InnerLayout>
+<script src="../scripts/contact.js"></script>

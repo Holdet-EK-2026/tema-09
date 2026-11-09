@@ -1,0 +1,9 @@
+---
+import InnerLayout from '../../components/InnerLayout.astro';
+import {events} from '../../data/events.js';
+export function getStaticPaths() {return events.map(event=>({params:{slug:event.slug},props:{event}}));}
+const {event} = Astro.props;
+---
+<InnerLayout title={`Kalenderdemo – ${event.title}`} version="legacy">
+  <section class="registration-demo"><p class="eyebrow">KALENDERDEMO · EKSEMPELEVENT</p><h1>{event.title}</h1><p>{event.day}. {event.month} 2026 · {event.time}<br /> København · sted bekræftes</p><p>Dette er en kalenderdemo i prototypen. Intet er tilføjet til din kalender.</p><a class="button" href={`/events/${event.slug}/`}>Tilbage til event ↗</a></section>
+</InnerLayout>

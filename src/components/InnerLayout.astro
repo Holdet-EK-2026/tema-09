@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+const {title, description, version = 'v2'} = Astro.props;
+---
+<BaseLayout inner title={`${title} – KindDesign`} description={description} version={version}>
+  <Header />
+  <main id="indhold" tabindex="-1"><slot /></main>
+  <Footer />
+</BaseLayout>

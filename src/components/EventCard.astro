@@ -1,0 +1,16 @@
+---
+const {event, index} = Astro.props;
+---
+<article class="event-card" data-event-type={event.type}>
+  <a class="event-photo-link" href={`/events/${event.slug}/`} tabindex="-1" aria-hidden="true"><img src={`/images/${event.image}.webp`} width="422" height="244" alt="" loading="lazy" /></a>
+  <time class="event-date" datetime={event.date}><strong>{event.day}</strong><span>NOV</span></time>
+  <div class="event-copy">
+    <p class="event-type">{event.type.toUpperCase()}<span class="mobile-label"> · {event.day} NOV</span></p>
+    <h3><a href={`/events/${event.slug}/`}>{event.title}</a></h3>
+    <p class="event-description">{event.description}</p>
+    <p class="event-meta"><span class="mobile-label">{event.day}. november 2026 · </span><span class="desktop-label">◷ &nbsp;</span>{event.time}<span class="desktop-label"> &nbsp; ◇ &nbsp; København</span><span class="mobile-label"> · København · Sted bekræftes</span></p>
+    {index === 0 && <p class="event-example"><span class="desktop-label">Næste event · Starter om 3 dage · 14 timer — DEMO</span><span class="mobile-label">Næste event · 3 dage og 14 timer — VISUEL DEMO</span></p>}
+    <a class="button mobile-event-link" href={`/events/${event.slug}/`}>Se event ↗</a>
+  </div>
+  <span class="event-arrow" aria-hidden="true">↗</span>
+</article>

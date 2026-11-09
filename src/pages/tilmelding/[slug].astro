@@ -1,0 +1,10 @@
+---
+import InnerLayout from '../../components/InnerLayout.astro';
+import {events} from '../../data/events.js';
+export function getStaticPaths() {return events.map(event=>({params:{slug:event.slug},props:{event}}));}
+const {event} = Astro.props;
+---
+<InnerLayout title={`Tilmelding – ${event.title}`} version="legacy">
+  <section class="registration-demo"><p class="eyebrow">{event.type.toUpperCase()} · EKSEMPELEVENT · DEMO</p><h1>{event.title}</h1><p>{event.day}. {event.month} 2026 · {event.time}<br /> København · sted bekræftes</p><div data-registration-intro><p>Afprøv tilmeldingen i prototypen. Der foretages ingen reservation eller rigtig tilmelding.</p><button type="button" class="button" data-registration-submit>Gennemfør tilmeldingsdemo ↗</button></div><div data-registration-confirmation tabindex="-1" hidden><p role="status">Du har afprøvet tilmeldingsflowet. Du er IKKE tilmeldt. Intet er reserveret, og ingen oplysninger er sendt.</p><a class="button" href={`/events/${event.slug}/`}>Tilbage til event ↗</a></div></section>
+</InnerLayout>
+<script>document.querySelector('[data-registration-submit]').addEventListener('click',()=>{document.querySelector('[data-registration-intro]').hidden=true;const confirmation=document.querySelector('[data-registration-confirmation]');confirmation.hidden=false;confirmation.focus();});</script>
