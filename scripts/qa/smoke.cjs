@@ -72,7 +72,7 @@ const assert = require("node:assert/strict");
       ),
     );
     await page.screenshot({
-      path: `docs/qa/fase-6/404-${width}.png`,
+      path: `docs/qa/final-implementation/404-${width}.png`,
       fullPage: true,
     });
     await page.goto("http://127.0.0.1:4321/events/design-og-nye-forbindelser/");
@@ -86,7 +86,7 @@ const assert = require("node:assert/strict");
       );
     });
     await page.screenshot({
-      path: `docs/qa/fase-6/_events_design-og-nye-forbindelser_-${width}.png`,
+      path: `docs/qa/final-implementation/_events_design-og-nye-forbindelser_-${width}.png`,
       fullPage: true,
     });
     await page.goto("http://127.0.0.1:4321/");
@@ -165,6 +165,24 @@ const assert = require("node:assert/strict");
       "carousel-ready",
     ),
   );
+  await page.locator(".gallery-window").scrollIntoViewIfNeeded();
+  await page.evaluate(async () => {
+    const photos = [...document.querySelectorAll(".gallery-card noscript img")];
+    photos.forEach((photo) => {
+      photo.loading = "eager";
+    });
+    await Promise.all(photos.map((photo) => photo.decode()));
+  });
+  assert.equal(await page.locator(".gallery-card noscript img").count(), 6);
+  await page.locator(".gallery-window").focus();
+  await page.keyboard.press("ArrowRight");
+  // Polling via requestAnimationFrame kører ikke med JavaScript deaktiveret.
+  await page.waitForTimeout(400);
+  assert(
+    await page
+      .locator(".gallery-window")
+      .evaluate((node) => node.scrollLeft > 0),
+  );
   await noJS.close();
   const retina = await browser.newContext({
     viewport: { width: 390, height: 844 },
@@ -183,9 +201,26 @@ const assert = require("node:assert/strict");
     staticCarouselFallback: true,
     retinaHero: source,
   });
+  await rp.locator(".gallery-window").scrollIntoViewIfNeeded();
+  await rp.waitForFunction(
+    () =>
+      document.querySelector("[data-carousel]").dataset.photosReady === "true",
+  );
+  const gallerySource = await rp
+    .locator(".gallery-card.is-active img")
+    .evaluate((img) => img.currentSrc);
+  assert(gallerySource.endsWith("-1600.webp"));
+  await rp.locator("[data-carousel]").screenshot({
+    path: "docs/qa/final-implementation/carousel-retina-390.png",
+  });
+  results.push({
+    noJavaScriptGalleryPhotos: 6,
+    noJavaScriptKeyboardScroll: true,
+    retinaGallery: gallerySource,
+  });
   await retina.close();
   fs.writeFileSync(
-    "docs/qa/fase-6/smoke.json",
+    "docs/qa/final-implementation/smoke.json",
     JSON.stringify(results, null, 2),
   );
   console.log(results);

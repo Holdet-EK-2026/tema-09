@@ -35,9 +35,20 @@ for (const [file, html] of documents) {
     !/figma\.com\/api\/mcp\/asset/.test(html),
     `Midlertidigt asset-link findes: ${file}`,
   );
-  for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
+  const references = [
+    ...html.matchAll(/(?:href|src|data-gallery-source)="([^"]+)"/g),
+  ].map((match) => match[1]);
+  for (const match of html.matchAll(
+    /(?:srcset|data-gallery-srcset)="([^"]+)"/g,
+  ))
+    references.push(
+      ...match[1]
+        .split(",")
+        .map((candidate) => candidate.trim().split(/\s+/)[0]),
+    );
+  for (const reference of references) {
     const url = new URL(
-      match[1].replaceAll("&amp;", "&"),
+      reference.replaceAll("&amp;", "&"),
       "http://local.test/" + path.relative(root, file),
     );
     if (url.origin !== "http://local.test") continue;
@@ -52,7 +63,7 @@ for (const [file, html] of documents) {
       if (stat.isDirectory()) target = path.join(target, "index.html");
       await fs.access(target);
     } catch {
-      broken.push({ from: path.relative(root, file), to: match[1] });
+      broken.push({ from: path.relative(root, file), to: reference });
       continue;
     }
     if (url.hash && target.endsWith(".html")) {
@@ -62,7 +73,7 @@ for (const [file, html] of documents) {
       if (!content.includes(`id="${id}"`))
         broken.push({
           from: path.relative(root, file),
-          to: match[1],
+          to: reference,
           reason: "Manglende anker",
         });
     }

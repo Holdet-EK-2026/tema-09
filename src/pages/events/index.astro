@@ -2,16 +2,18 @@
 import InnerLayout from '../../components/InnerLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import EventCard from '../../components/EventCard.astro';
-import {listedEvents} from '../../data/events.js';
+import {listedEvents,demoEvents} from '../../data/events.js';
 ---
-<InnerLayout title="Events" description="Udforsk KindDesigns eksempelprogram med meetups, workshops og talks.">
+<InnerLayout title="Events" description="Se KindDesigns officielle events og tidligere arrangementer. Find detaljer og tilmelding hos Luma.">
   <PageHero title="EVENTS" subtitle="Mød andre kreative. Find dit næste event." />
   <section class="events-section" aria-labelledby="events-title">
-    <div class="events-intro"><div><p class="eyebrow">KOMMENDE EVENTS</p><h2 id="events-title">Vi mødes om design.</h2></div><p>Talks, workshops og meetups for designere og andre kreative, der vil dele idéer, lære nyt og skabe relationer.</p></div>
-    <div class="event-toolbar"><div class="event-filters" role="group" aria-label="Filtrér events">{[['Alle events','Alle'],['Meetups','Meetup'],['Workshops','Workshop'],['Talks','Talk']].map(([label,value]) => <button type="button" data-filter={value} aria-pressed={value === 'Alle' ? 'true' : 'false'}>{label}</button>)}</div><a class="calendar-link" href="/events/kalender/">▦ &nbsp;Kalendervisning</a></div>
-    <p class="sr-only" role="status" data-filter-status></p>
-    <p class="event-program-note mobile-label">EKSEMPELPROGRAM · Ikke faktiske bookbare events</p>
-    <div class="event-list">{listedEvents.map((event,index)=><EventCard event={event} index={index} />)}</div>
+    <div class="events-intro"><div><p class="eyebrow">EVENTS HOS KINDDESIGN</p><h2 id="events-title">Vi mødes om design.</h2></div><p>Talks, workshops og meetups for designere og andre kreative, der vil dele idéer, lære nyt og skabe relationer.</p></div>
+    <div class="event-toolbar"><div class="event-filters" role="group" aria-label="Filtrér eventtype">{[['Alle events','Alle'],['Meetups','Meetup'],['Workshops','Workshop'],['Talks','Talk']].map(([label,value]) => <button type="button" data-filter={value} aria-pressed={value === 'Alle' ? 'true' : 'false'}>{label}</button>)}</div><a class="calendar-link" href="/events/kalender/">▦ &nbsp;Kalendervisning</a></div>
+    <div class="event-status-filters" role="group" aria-label="Filtrér eventstatus">{[['Alle datoer','all'],['Kommende','upcoming'],['Tidligere','past']].map(([label,value])=><button type="button" data-status-filter={value} aria-pressed={value==='all'?'true':'false'}>{label}</button>)}</div>
+    <p class="event-source-intro">Officielle events fra <a href="https://luma.com/user/kinddesign">KindDesign på Luma ↗</a>. Tider vises i eventets lokale tidszone.</p>
+    <p class="sr-only" role="status" data-filter-status></p><div class="event-list">{listedEvents.map((event,index)=><EventCard event={event} index={index} />)}</div>
+    <div class="event-empty" data-event-empty hidden><h3>Ingen events matcher dit filter.</h3><p>Prøv en anden type eller dato, eller se den officielle Luma-profil.</p><button type="button" class="button" data-reset-filters>Vis alle events</button></div>
+    <details class="demo-catalog"><summary>Figma-prototypens eksempel-events</summary><p>Disse fire events er demoindhold. De er ikke knyttet til officielle Luma-events og kan ikke bookes.</p><ul>{demoEvents.map(event=><li><a href={`/events/${event.slug}/`}>{event.title} · DEMO ↗</a></li>)}</ul></details>
     <aside class="new-banner"><img src="/images/d2848.webp" width="354" height="188" alt="Samtale omkring et bord hos KindDesign" loading="lazy" /><div><h2>Er det din første gang?</h2><p>Du er velkommen, også når du ikke kender nogen endnu.<br class="desktop-label" /> <span class="desktop-label">Læs mere om, hvordan det er at deltage.</span></p></div><a class="button" href="/ny-her/">Ny her? ↗</a></aside>
   </section>
 </InnerLayout>

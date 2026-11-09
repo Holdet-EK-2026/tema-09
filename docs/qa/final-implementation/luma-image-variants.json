@@ -1,0 +1,186 @@
+[
+  {
+    "id": "cmapoye1",
+    "sizes": [
+      {
+        "bound": 450,
+        "width": 450,
+        "height": 450,
+        "bytes": 75884
+      },
+      {
+        "bound": 600,
+        "width": 600,
+        "height": 600,
+        "bytes": 135078
+      },
+      {
+        "bound": 1200,
+        "width": 1080,
+        "height": 1080,
+        "bytes": 351914
+      }
+    ]
+  },
+  {
+    "id": "c3bj5f9d",
+    "sizes": [
+      {
+        "bound": 450,
+        "width": 450,
+        "height": 450,
+        "bytes": 73700
+      },
+      {
+        "bound": 600,
+        "width": 600,
+        "height": 600,
+        "bytes": 127740
+      },
+      {
+        "bound": 1200,
+        "width": 1080,
+        "height": 1080,
+        "bytes": 427296
+      }
+    ]
+  },
+  {
+    "id": "c3jcu29h",
+    "sizes": [
+      {
+        "bound": 450,
+        "width": 450,
+        "height": 424,
+        "bytes": 80186
+      },
+      {
+        "bound": 600,
+        "width": 600,
+        "height": 566,
+        "bytes": 147836
+      },
+      {
+        "bound": 1200,
+        "width": 1200,
+        "height": 1131,
+        "bytes": 465116
+      }
+    ]
+  },
+  {
+    "id": "n6nwx061",
+    "sizes": [
+      {
+        "bound": 450,
+        "width": 450,
+        "height": 450,
+        "bytes": 76392
+      },
+      {
+        "bound": 600,
+        "width": 600,
+        "height": 600,
+        "bytes": 136188
+      },
+      {
+        "bound": 1200,
+        "width": 1080,
+        "height": 1080,
+        "bytes": 443114
+      }
+    ]
+  },
+  {
+    "id": "84v57ubf",
+    "sizes": [
+      {
+        "bound": 450,
+        "width": 450,
+        "height": 450,
+        "bytes": 65586
+      },
+      {
+        "bound": 600,
+        "width": 600,
+        "height": 600,
+        "bytes": 105824
+      },
+      {
+        "bound": 1200,
+        "width": 1200,
+        "height": 1200,
+        "bytes": 288040
+      }
+    ]
+  },
+  {
+    "id": "iq2qpyk4",
+    "sizes": [
+      {
+        "bound": 450,
+        "width": 450,
+        "height": 450,
+        "bytes": 51368
+      },
+      {
+        "bound": 600,
+        "width": 600,
+        "height": 600,
+        "bytes": 77982
+      },
+      {
+        "bound": 1200,
+        "width": 1200,
+        "height": 1200,
+        "bytes": 184126
+      }
+    ]
+  },
+  {
+    "id": "jdv50gdz",
+    "sizes": [
+      {
+        "bound": 450,
+        "width": 450,
+        "height": 450,
+        "bytes": 51520
+      },
+      {
+        "bound": 600,
+        "width": 600,
+        "height": 600,
+        "bytes": 100800
+      },
+      {
+        "bound": 1200,
+        "width": 1200,
+        "height": 1200,
+        "bytes": 482134
+      }
+    ]
+  },
+  {
+    "id": "bszies4x",
+    "sizes": [
+      {
+        "bound": 450,
+        "width": 450,
+        "height": 450,
+        "bytes": 12330
+      },
+      {
+        "bound": 600,
+        "width": 600,
+        "height": 600,
+        "bytes": 16670
+      },
+      {
+        "bound": 1200,
+        "width": 1200,
+        "height": 1200,
+        "bytes": 32972
+      }
+    ]
+  }
+]

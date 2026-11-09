@@ -1,0 +1,153 @@
+
+> kinddesign@0.1.0 test:browser
+> node scripts/qa/pages.cjs && node scripts/qa/flows.cjs && node scripts/qa/official-flows.cjs && node scripts/qa/carousel.cjs && node scripts/qa/smoke.cjs
+
+[]
+[
+  {
+    width: 390,
+    filters: true,
+    filterReloadAndBack: true,
+    eventFlows: 4,
+    calendarDemos: 4,
+    contactValidationAndReset: true,
+    posts: [],
+    errors: []
+  },
+  {
+    width: 768,
+    filters: true,
+    filterReloadAndBack: true,
+    eventFlows: 4,
+    calendarDemos: 4,
+    contactValidationAndReset: true,
+    posts: [],
+    errors: []
+  },
+  {
+    width: 1440,
+    filters: true,
+    filterReloadAndBack: true,
+    eventFlows: 4,
+    calendarDemos: 4,
+    contactValidationAndReset: true,
+    posts: [],
+    errors: []
+  }
+]
+[
+  {
+    width: 390,
+    filtersAndEmptyState: true,
+    history: true,
+    officialJourneyAndInterceptedLumaDestination: true,
+    calendarMonthAndUTCDownload: true,
+    pastRegistrationRemoved: true,
+    conflictsVisible: true,
+    expiredClientGuard: true,
+    expiredHeroCountdown: true,
+    externalBookings: 0,
+    errors: []
+  },
+  {
+    width: 768,
+    filtersAndEmptyState: true,
+    history: true,
+    officialJourneyAndInterceptedLumaDestination: true,
+    calendarMonthAndUTCDownload: true,
+    pastRegistrationRemoved: true,
+    conflictsVisible: true,
+    expiredClientGuard: true,
+    expiredHeroCountdown: true,
+    externalBookings: 0,
+    errors: []
+  },
+  {
+    width: 1440,
+    filtersAndEmptyState: true,
+    history: true,
+    officialJourneyAndInterceptedLumaDestination: true,
+    calendarMonthAndUTCDownload: true,
+    pastRegistrationRemoved: true,
+    conflictsVisible: true,
+    expiredClientGuard: true,
+    expiredHeroCountdown: true,
+    externalBookings: 0,
+    errors: []
+  }
+]
+[
+  {
+    width: 390,
+    autoplay4500ms: true,
+    hoverPause: true,
+    focusPause: true,
+    manualResume8000ms: true,
+    pausePlay: true,
+    hiddenTabPause: true,
+    hiddenTabMethod: 'simulated visibilitychange',
+    offscreenPause: true,
+    reducedMotion: true,
+    keyboardAndIndicators: true,
+    infiniteLoopBothDirections: true,
+    errors: []
+  },
+  {
+    width: 768,
+    autoplay4500ms: true,
+    hoverPause: true,
+    focusPause: true,
+    manualResume8000ms: true,
+    pausePlay: true,
+    hiddenTabPause: true,
+    hiddenTabMethod: 'simulated visibilitychange',
+    offscreenPause: true,
+    reducedMotion: true,
+    keyboardAndIndicators: true,
+    infiniteLoopBothDirections: true,
+    errors: []
+  },
+  {
+    width: 1440,
+    autoplay4500ms: true,
+    hoverPause: true,
+    focusPause: true,
+    manualResume8000ms: true,
+    pausePlay: true,
+    hiddenTabPause: true,
+    hiddenTabMethod: 'simulated visibilitychange',
+    offscreenPause: true,
+    reducedMotion: true,
+    keyboardAndIndicators: true,
+    infiniteLoopBothDirections: true,
+    errors: []
+  },
+  { mobileTouchSwipe: true, noAccidentalNavigation: true }
+]
+[
+  {
+    keyboardSkipNavAndFilter: true,
+    membershipDialogKeyboard: 'desktop-only',
+    width: 390,
+    demoNavCurrent: true,
+    contactErrorAndConfirmationAxe: 0,
+    registrationConfirmationAxe: 0,
+    custom404: true,
+    errors: []
+  },
+  {
+    keyboardSkipNavAndFilter: true,
+    membershipDialogKeyboard: true,
+    width: 1440,
+    demoNavCurrent: true,
+    contactErrorAndConfirmationAxe: 0,
+    registrationConfirmationAxe: 0,
+    custom404: true,
+    errors: []
+  },
+  {
+    noJavaScriptContactSafe: true,
+    staticCarouselFallback: true,
+    retinaHero: 'http://127.0.0.1:4321/images/1207b-1200.webp'
+  }
+]

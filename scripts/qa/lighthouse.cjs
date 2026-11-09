@@ -13,10 +13,12 @@ const routes = [
   "/om-kinddesign/",
   "/ny-her/",
   "/kontakt/",
+  "/events/from-ballet-to-technology/",
+  "/events/ai-skillsharing/",
   "/events/design-og-nye-forbindelser/",
   "/tilmelding/design-og-nye-forbindelser/",
 ];
-const folder = "docs/qa/fase-6/lighthouse";
+const folder = "docs/qa/final-implementation/lighthouse";
 fs.mkdirSync(folder, { recursive: true });
 async function audit(route, desktop) {
   const name =

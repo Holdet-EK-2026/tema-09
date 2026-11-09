@@ -31,3 +31,7 @@ Siderne beholder `noindex, nofollow`. Dette beskytter en ufærdig prototype mod 
 ## Afsluttende regression i fase 6
 
 Efter optimeringerne er samme offline-build gentaget med succes på 19 sider inklusive 404. Log: [fase 6 Netlify-build](qa/fase-6/netlify-offline-build.log). De statiske checks består fortsat. Ingen ekstern hosting er aktiveret.
+
+## Ny slutopgave: Luma og kalenderfiler
+
+Den efterfølgende carousel-/Luma-version bygger 27 HTML-sider og en ICS-fil. Netlify-konfigurationen tilføjer `text/calendar` og attachment for kalenderfiler. Miljø-overrides til demo-events er fjernet til fordel for verificerede kildeposter. Den nye offline-log og øvrige resultater findes i [slutrapporten](final-implementation-rapport.md). Ingen ekstern hosting er aktiveret.

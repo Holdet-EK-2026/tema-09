@@ -25,3 +25,12 @@ En senere konkret databaseopgave kræver dokumentation af dataejerskab, redaktø
 Kodebasen bruger ingen Supabase-SDK, nøgler eller endpoints. Kontaktens flowtest bekræfter ingen POST og ingen localStorage-skrivning. Uden JavaScript er submit deaktiveret. Eventtilmeldinger følger Figma-demoflowet, indtil dokumenterede Luma-links er konfigureret.
 
 Dette er en bevidst afgrænsning ud fra den seneste instruktion, ikke en teknisk databaseimplementering.
+
+
+## Fornyet vurdering efter slutopgaven
+
+Den oprindelige kodningsprompt betegner Supabase, SQL, API-kald og CRUD som obligatoriske læringsmål. Den tidligere vurdering afveg fra dette efter den daværende instruktion om at undgå udokumenteret backend. Den nye slutopgave beder om en eksplicit afklaring: **CRUD-læringsmålet er obligatorisk i den oprindelige opgave og stadig ikke opfyldt.**
+
+En minimal relevant funktion er administration af det verificerede eventkatalog: en redaktør opretter en eventkilde, læser kataloget, retter dato/sted/link efter kildekontrol og sletter en fejlregistrering. Dataene er titel, officiel Luma-URL, UTC-start/-slut, IANA-tidszone, offentligt sted, coverkilde, verificeringsdato og publiceringsstatus. Det ville understøtte det reelle vedligeholdelsesbehov, som nu er dokumenteret. Bookinger skal fortsat ske hos Luma; kontakt og medlemsprofiler indgår ikke.
+
+En read-only kontrol af Supabase-connectorens projektliste identificerede intet KindDesign-projekt. Det tilgængelige generisk navngivne projekt var inaktivt og kunne ikke sikkert knyttes til opgaven; det er ikke gendannet, undersøgt i databasen eller ændret. Der er derfor ikke identificeret en KindDesign-testdatabase eller besluttet redaktørautorisation til integrationen. Ingen credentials er hentet. Den faktiske CRUD-integration er derfor blokeret af eksterne oplysninger/adgang. Ingen projektoprettelse eller databaseændring er udført, og der er ikke tilføjet spekulativ Auth eller en usikker offentlig skriveadgang. Et senere modul skal afprøve SQL/CRUD mod en testdatabase med RLS, offentlig læsning af publicerede felter og beskyttet redigering. Den lokale, manuelt verificerede datastruktur demonstrerer ikke database-CRUD og må ikke præsenteres som dette.

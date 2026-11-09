@@ -1,0 +1,277 @@
+/* KindDesign-farver og fotos; videoen styrer dybde og bevægelse. */
+.gallery-window {
+  perspective: 1200px;
+  touch-action: pan-y pinch-zoom;
+  overflow: hidden;
+}
+.gallery-track {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+.gallery-card {
+  margin: 0;
+  width: 360px;
+  height: 530px;
+  padding: 10px;
+  border: 1px solid rgb(255 255 255 / 65%);
+  border-radius: 22px;
+  background: rgb(232 220 198 / 58%);
+  box-shadow:
+    0 18px 38px rgb(40 14 17 / 16%),
+    inset 0 1px 0 rgb(255 255 255 / 70%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+.gallery-card img {
+  display: block;
+  width: 100%;
+  height: calc(100% - 36px);
+  object-fit: cover;
+  border-radius: 14px;
+  user-select: none;
+}
+.gallery-card figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  padding: 0 6px;
+  font-size: 12px;
+  color: var(--tekst);
+}
+/* Uden JavaScript: almindeligt vandret galleri og deaktiverede kontroller. */
+[data-carousel]:not(.carousel-ready) .gallery-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  align-items: center;
+}
+[data-carousel]:not(.carousel-ready) .gallery-card {
+  position: relative;
+  flex: 0 0 320px;
+  height: 480px;
+}
+[data-carousel].carousel-ready .gallery-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  --x: 0px;
+  --z: 60px;
+  --angle: 0deg;
+  --scale: 1;
+  opacity: 1;
+  transform: translate3d(calc(-50% + var(--x)), -50%, var(--z))
+    rotateY(var(--angle)) scale(var(--scale));
+  transition:
+    transform 800ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.carousel-visible .gallery-card {
+  will-change: transform, opacity;
+}
+[data-carousel].carousel-ready .gallery-card[data-slot="-1"] {
+  --x: -270px;
+  --z: -80px;
+  --angle: 18deg;
+  --scale: 0.84;
+  opacity: 0.72;
+}
+[data-carousel].carousel-ready .gallery-card[data-slot="1"] {
+  --x: 270px;
+  --z: -80px;
+  --angle: -18deg;
+  --scale: 0.84;
+  opacity: 0.72;
+}
+[data-carousel].carousel-ready .gallery-card[data-slot="-2"] {
+  --x: -500px;
+  --z: -180px;
+  --angle: 28deg;
+  --scale: 0.68;
+  opacity: 0.42;
+}
+[data-carousel].carousel-ready .gallery-card[data-slot="2"] {
+  --x: 500px;
+  --z: -180px;
+  --angle: -28deg;
+  --scale: 0.68;
+  opacity: 0.42;
+}
+[data-carousel].carousel-ready .gallery-card[data-slot="-3"] {
+  --x: -700px;
+  --z: -280px;
+  --scale: 0.5;
+  opacity: 0;
+}
+[data-carousel].carousel-ready .gallery-card.is-wrapping {
+  transition: none;
+  opacity: 0;
+}
+.gallery-controls {
+  right: 64px;
+  flex-wrap: wrap;
+}
+.gallery-arrows {
+  display: flex;
+  gap: 13px;
+}
+.carousel-indicators {
+  display: flex;
+  margin-left: auto;
+}
+.carousel-indicators button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 44px;
+  background: none;
+  padding: 0;
+}
+.carousel-indicators button span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--bordeaux);
+  opacity: 0.35;
+}
+.carousel-indicators button[aria-pressed="true"] span {
+  width: 20px;
+  border-radius: 4px;
+  opacity: 1;
+}
+.carousel-pause {
+  margin-left: 4px;
+  min-height: 44px;
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .gallery-card {
+    width: 300px;
+    height: 460px;
+  }
+  [data-carousel].carousel-ready .gallery-card[data-slot="-1"] {
+    --x: -220px;
+  }
+  [data-carousel].carousel-ready .gallery-card[data-slot="1"] {
+    --x: 220px;
+  }
+  [data-carousel].carousel-ready .gallery-card[data-slot="-2"] {
+    --x: -390px;
+  }
+  [data-carousel].carousel-ready .gallery-card[data-slot="2"] {
+    --x: 390px;
+  }
+  .gallery-controls {
+    right: 32px;
+    gap: 4px 12px;
+  }
+  .gallery-controls p {
+    margin-left: 0;
+    font-size: 11px;
+  }
+}
+@media (max-width: 600px) {
+  .gallery-section {
+    gap: 20px;
+  }
+  .gallery-window {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    height: 390px;
+    perspective: 900px;
+  }
+  .gallery-card {
+    width: min(68vw, 280px);
+    height: 330px;
+    padding: 8px;
+    border-radius: 18px;
+  }
+  .gallery-card img {
+    border-radius: 11px;
+    height: calc(100% - 30px);
+  }
+  .gallery-card figcaption {
+    height: 30px;
+    font-size: 11px;
+  }
+  [data-carousel].carousel-ready .gallery-card[data-slot="-1"] {
+    --x: -195px;
+    --scale: 0.78;
+  }
+  [data-carousel].carousel-ready .gallery-card[data-slot="1"] {
+    --x: 195px;
+    --scale: 0.78;
+  }
+  [data-carousel].carousel-ready .gallery-card[data-slot="-2"] {
+    --x: -340px;
+  }
+  [data-carousel].carousel-ready .gallery-card[data-slot="2"] {
+    --x: 340px;
+  }
+  .gallery-controls {
+    display: flex;
+    gap: 4px 8px;
+  }
+  .gallery-controls .gallery-arrows .static-arrow {
+    display: flex;
+    padding: 0;
+    width: 48px;
+    height: 44px;
+  }
+  .gallery-controls p {
+    order: -1;
+    flex: 0 0 100%;
+  }
+  .carousel-indicators {
+    margin-left: auto;
+  }
+  .carousel-indicators button {
+    width: 28px;
+  }
+  .carousel-pause {
+    margin: 0;
+    padding-left: 0;
+  }
+  [data-carousel]:not(.carousel-ready) .gallery-card {
+    flex-basis: 260px;
+    height: 330px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-carousel].carousel-ready .gallery-card {
+    transition: none;
+  }
+}
+.gallery-controls .static-arrow {
+  padding: 0;
+}
+.carousel-pause {
+  background: transparent;
+  color: var(--bordeaux);
+  padding: 12px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 13px;
+}
+/* Sekundære kort er visuel kontekst. Kun det aktive kort viser læsbar billedtekst. */
+.carousel-ready .gallery-card[aria-hidden="true"] figcaption {
+  visibility: hidden;
+}
+[data-carousel]:not(.carousel-ready) .gallery-window {
+  overflow-x: auto;
+  touch-action: auto;
+}
+[data-carousel]:not(.carousel-ready) .gallery-track {
+  width: max-content;
+  overflow: visible;
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .gallery-controls {
+    top: auto;
+    bottom: 20px;
+  }
+}

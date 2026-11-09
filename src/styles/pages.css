@@ -2263,3 +2263,324 @@
 .membership-concept img {
   object-fit: contain;
 }
+/* Verificerede Luma-data bruger de eksisterende kort og tokens; tekst må vokse. */
+.official-card {
+  min-height: 280px;
+}
+.official-card .event-photo-link img {
+  object-fit: contain;
+  height: 100%;
+  min-height: 280px;
+  background: rgb(255 255 255 / 20%);
+}
+.official-card .event-copy {
+  padding-block: 24px;
+}
+.official-card .event-copy h3 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.official-card .event-copy .event-meta {
+  margin-top: 16px;
+}
+.official-card .event-date {
+  align-self: start;
+  margin-top: 24px;
+}
+.official-card .event-date small {
+  font-size: 14px;
+}
+.official-card .event-status-label {
+  font-size: 13px;
+  margin: 0 0 8px;
+  color: var(--tekst);
+  font-weight: 700;
+}
+.event-timezone,
+.official-card .card-source-note {
+  font-size: 14px;
+  color: var(--tekst);
+}
+.event-status-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 20px;
+}
+.event-status-filters button {
+  background: none;
+  color: var(--tekst);
+  padding: 12px 20px;
+  border: 1px solid var(--bordeaux);
+  border-radius: 28px;
+  min-height: 44px;
+  font-size: 16px;
+}
+.event-status-filters button[aria-pressed="true"] {
+  background: var(--bordeaux);
+  color: var(--sand);
+}
+.event-source-intro {
+  margin-bottom: 28px;
+  color: var(--tekst);
+  font-size: 16px;
+}
+.event-source-intro a,
+.luma-source,
+.official-story a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.event-empty {
+  padding: 32px;
+  border: 1px solid var(--bordeaux);
+  border-radius: 20px;
+}
+.event-empty p {
+  margin: 16px 0;
+}
+.demo-catalog {
+  color: var(--tekst);
+  margin-top: 40px;
+  border-block: 1px solid rgb(114 47 55 / 35%);
+  padding-block: 20px;
+}
+.demo-catalog summary {
+  cursor: pointer;
+  padding-block: 12px;
+}
+.demo-catalog p {
+  margin: 16px 0;
+}
+.demo-catalog ul {
+  padding-left: 24px;
+}
+.demo-catalog li {
+  margin: 12px 0;
+}
+.official-detail {
+  padding: 28px 64px 64px;
+  color: var(--bordeaux);
+}
+.official-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 64px;
+  margin-top: 48px;
+  align-items: start;
+}
+.official-detail .eyebrow {
+  font-size: 16px;
+}
+.official-detail h1 {
+  font-size: clamp(40px, 4.2vw, 62px);
+  line-height: 1.12;
+  margin: 24px 0;
+  overflow-wrap: anywhere;
+}
+.inner-page .official-description {
+  font-size: 23px;
+  line-height: 1.4;
+  margin-bottom: 28px;
+}
+.official-facts {
+  color: var(--tekst);
+  display: grid;
+  gap: 20px;
+  margin: 0 0 32px;
+}
+.official-facts dt {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.official-facts dd {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.official-facts dd span {
+  font-size: 14px;
+}
+.official-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.official-actions .button {
+  font-size: 18px;
+}
+.official-cover {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: contain;
+  border-radius: 18px;
+}
+.inner-page .luma-explanation {
+  margin: 20px 0 12px;
+  color: var(--tekst);
+  font-size: 16px;
+  line-height: 1.4;
+}
+.event-ended-note {
+  padding: 16px 24px;
+  background: var(--salvie);
+  color: var(--tekst);
+  border-radius: 18px;
+}
+.official-story {
+  padding: 56px 64px;
+  background: var(--salvie);
+  color: var(--tekst);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 64px;
+}
+.official-story h2 {
+  font-size: 36px;
+  color: var(--bordeaux);
+  margin-bottom: 24px;
+}
+.inner-page .official-story p {
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.official-story ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.official-story li {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+  font-size: 19px;
+  line-height: 1.4;
+}
+.inner-page .official-story .source-verification,
+.inner-page .official-story .program-timezone {
+  font-size: 14px;
+}
+.official-story .source-note {
+  border-left: 3px solid var(--bordeaux);
+  padding-left: 16px;
+}
+@media (max-width: 1000px) {
+  .official-detail {
+    padding-inline: 32px;
+  }
+  .official-detail-grid {
+    gap: 32px;
+  }
+  .official-detail h1 {
+    font-size: 40px;
+  }
+  .official-story {
+    padding-inline: 32px;
+    gap: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .official-card {
+    min-height: 0;
+  }
+  .official-card .event-photo-link img {
+    height: 300px;
+    min-height: 0;
+  }
+  .official-card .event-copy {
+    padding: 16px;
+  }
+  .official-card .event-copy h3 {
+    font-size: 28px;
+  }
+  .official-card .event-copy .event-status-label {
+    font-size: 13px;
+  }
+  .official-card .event-copy .card-source-note {
+    font-size: 14px;
+  }
+  .event-status-filters {
+    gap: 8px;
+  }
+  .event-status-filters button {
+    font-size: 14px;
+    padding-inline: 16px;
+  }
+  .official-detail {
+    padding: 24px;
+  }
+  .official-detail-grid,
+  .official-story {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .official-detail-grid {
+    margin-top: 32px;
+  }
+  .official-detail h1 {
+    font-size: 38px;
+  }
+  .inner-page .official-description {
+    font-size: 20px;
+  }
+  .official-cover {
+    width: 100%;
+    max-height: none;
+  }
+  .official-actions {
+    flex-direction: column;
+  }
+  .official-actions .button {
+    width: 100%;
+    font-size: 17px;
+  }
+  .official-story {
+    padding: 32px 24px;
+  }
+  .official-story h2 {
+    font-size: 32px;
+  }
+  .inner-page .official-story p,
+  .official-story li {
+    font-size: 17px;
+  }
+}
+.official-calendar .calendar-feature img {
+  object-fit: contain;
+  background: rgb(255 255 255 / 20%);
+  border-radius: 16px;
+}
+.inner-page .calendar-feature-title {
+  font-size: 28px;
+  line-height: 1.25;
+  margin-top: 20px;
+}
+.calendar-month-control {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.calendar-month-control select {
+  min-height: 48px;
+  border: 1px solid var(--bordeaux);
+  border-radius: 10px;
+  background: var(--sand);
+  color: var(--tekst);
+  padding: 12px 20px;
+  font: inherit;
+}
+.calendar-source {
+  margin-top: 28px;
+  color: var(--tekst);
+  font-size: 16px;
+}
+.calendar-source a {
+  text-decoration: underline;
+}

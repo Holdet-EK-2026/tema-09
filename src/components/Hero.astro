@@ -1,3 +1,6 @@
+---
+import {nextEvent} from "../data/events.js";
+---
 <section class="hero" aria-labelledby="hero-title">
   <picture class="hero-photo">
     <source media="(max-width: 600px)" srcset="/images/1207b.webp 780w, /images/1207b-1200.webp 1200w" sizes="600px" />
@@ -9,14 +12,13 @@
     <h1 id="hero-title"><span>KIND</span> <span>DESIGN</span></h1>
     <p class="hero-tagline"><span>Mød andre kreative.</span> <span>Find dit fællesskab.</span></p>
     <a class="button hero-cta" href="/events/">Find dit næste event<span class="desktop-label">&nbsp;</span> ↗</a>
-    <!-- Figma viser eksempeldata. Der beregnes ingen reel nedtælling i fase 1. -->
-    <a class="countdown" href="/events/" aria-description="Nedtællingen viser et statisk eksempel.">
-      <span class="countdown-label">VI SES OM</span>
-      <strong>14 : 21 : 25</strong>
-      <span class="countdown-units"><span class="desktop-label">DAGE     TIMER     MIN.</span><span class="mobile-label">DAGE    TIMER    MIN. / EKSEMPEL</span></span>
-      <span class="countdown-link">Næste meetup<span class="desktop-label">&nbsp;</span> ↗</span>
-    </a>
+    {nextEvent ? <a class="countdown" href={`/events/${nextEvent.slug}/`} data-event-countdown data-start-at={nextEvent.startAt} data-end-at={nextEvent.endAt} aria-description={`Tid til eventet ${nextEvent.title}. Eventets lokale tidszone er ${nextEvent.timezone}.`}>
+      <span class="countdown-label">VI SES OM · {nextEvent.city.toUpperCase()}</span><strong data-countdown-value>— : — : —</strong><span class="countdown-units">DAGE &nbsp; TIMER &nbsp; MIN.</span><span class="countdown-link">Se næste event ↗</span>
+    </a> : <a class="countdown" href="/events/"><span class="countdown-label">MØD ANDRE KREATIVE</span><strong>Vi ses.</strong><span class="countdown-link">Se alle events ↗</span></a>}
+
   </div>
   <p class="hero-community">ET KREATIVT FÆLLESSKAB<br />FOR ALLE SLAGS DESIGNERE</p>
-  <a class="hero-event" href="/events/">NÆSTE EVENT / 12. NOVEMBER<br />Design &amp; nye forbindelser</a>
+  {nextEvent && <a class="hero-event" href={`/events/${nextEvent.slug}/`}>NÆSTE EVENT / {nextEvent.day}. {nextEvent.month.toUpperCase()} · {nextEvent.city.toUpperCase()}<br />{nextEvent.title}</a>}
 </section>
+
+<script src="../scripts/countdown.js"></script>

@@ -5,19 +5,18 @@ const sharp = require(
 const fs = require("fs");
 (async () => {
   let metrics = [];
+  fs.mkdirSync("docs/qa/final-implementation/overlays",{recursive:true});
   const maps = [
-    ["776-1747", "_events_", 1440],
     ["776-1817", "_om-kinddesign_", 1440],
     ["776-1873", "_kontakt_", 1440],
     ["753-1053", "_ny-her_", 1440],
     ["753-951", "_events_design-og-nye-forbindelser_", 1440],
-    ["776-1915", "_events_", 390],
     ["776-1988", "_om-kinddesign_", 390],
     ["776-2047", "_kontakt_", 390],
   ];
   for (const [id, route, width] of maps) {
     let ref = `docs/qa/fase-3/references/${id}.png`,
-      site = `docs/qa/fase-6/${route}-${width}.png`;
+      site = `docs/qa/final-implementation/${route}-${width}.png`;
     let rmeta = await sharp(ref).metadata(),
       smeta = await sharp(site).metadata(),
       height = Math.max(rmeta.height, smeta.height);
@@ -51,7 +50,7 @@ const fs = require("fs");
       .extend({ bottom: height - rmeta.height, background: "#a5b39b" })
       .composite([{ input: overlay }])
       .png()
-      .toFile(`docs/qa/fase-6/overlays/${id}.png`);
+      .toFile(`docs/qa/final-implementation/overlays/${id}.png`);
     metrics.push({
       id,
       width,
@@ -62,7 +61,7 @@ const fs = require("fs");
     });
   }
   fs.writeFileSync(
-    "docs/qa/fase-6/visual-comparison.json",
+    "docs/qa/final-implementation/visual-comparison.json",
     JSON.stringify(metrics, null, 2),
   );
   console.log(metrics);

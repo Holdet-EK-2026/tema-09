@@ -1,7 +1,7 @@
 ---
 import InnerLayout from '../../components/InnerLayout.astro';
-import {events} from '../../data/events.js';
-export function getStaticPaths() {return events.map(event=>({params:{slug:event.slug},props:{event}}));}
+import {demoEvents} from '../../data/events.js';
+export function getStaticPaths() {return demoEvents.map(event=>({params:{slug:event.slug},props:{event}}));}
 const {event} = Astro.props;
 ---
 <InnerLayout title={`Tilmelding – ${event.title}`} version="legacy">

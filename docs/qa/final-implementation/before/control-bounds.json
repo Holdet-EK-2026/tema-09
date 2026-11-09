@@ -1,0 +1,27 @@
+[
+  {
+    "width": 600,
+    "sectionHeight": 759,
+    "clipped": []
+  },
+  {
+    "width": 601,
+    "sectionHeight": 1045,
+    "clipped": [
+      {
+        "label": "Automatik slået fra",
+        "clippedBy": 23
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "sectionHeight": 1045,
+    "clipped": []
+  },
+  {
+    "width": 1024,
+    "sectionHeight": 1045,
+    "clipped": []
+  }
+]

@@ -18,13 +18,19 @@ const fs = require("fs");
       if (r.method() !== "GET") posts.push(r.url());
     });
     await p.goto("http://localhost:4321/events/");
-    assert.equal(await p.locator(".event-card:visible").count(), 3);
+    assert.equal(await p.locator(".event-card:visible").count(), 8);
     for (const type of ["Meetup", "Workshop", "Talk"]) {
       await p.locator(`[data-filter="${type}"]`).click();
-      assert.equal(await p.locator(".event-card:visible").count(), 1);
       assert.equal(
-        await p.locator(".event-card:visible").getAttribute("data-event-type"),
-        type,
+        await p.locator(".event-card:visible").count(),
+        type === "Meetup" ? 6 : 1,
+      );
+      assert(
+        (
+          await p
+            .locator(".event-card:visible")
+            .evaluateAll((nodes) => nodes.map((node) => node.dataset.eventType))
+        ).every((value) => value === type),
       );
     }
     await p.reload();
@@ -33,7 +39,7 @@ const fs = require("fs");
       "true",
     );
     await p.locator('[data-filter="Alle"]').click();
-    assert.equal(await p.locator(".event-card:visible").count(), 3);
+    assert.equal(await p.locator(".event-card:visible").count(), 8);
     await p.goBack();
     assert.equal(await p.locator(".event-card:visible").count(), 1);
     const slugs = [
@@ -82,7 +88,7 @@ const fs = require("fs");
       ),
     );
     await p.screenshot({
-      path: `docs/qa/fase-6/contact-confirmation-${width}.png`,
+      path: `docs/qa/final-implementation/contact-confirmation-${width}.png`,
       fullPage: true,
     });
     await p.locator("[data-contact-reset]").click();
@@ -105,35 +111,8 @@ const fs = require("fs");
     });
     await c.close();
   }
-  const c = await b.newContext({ viewport: { width: 1440, height: 900 } });
-  const p = await c.newPage();
-  await p.goto("http://localhost:4321");
-  await p.locator("[data-carousel]").scrollIntoViewIfNeeded();
-  await p.locator("[data-carousel]").dispatchEvent("mouseleave");
-  const before = await p
-    .locator(".desktop-gallery img")
-    .first()
-    .getAttribute("data-slot");
-  await p.waitForTimeout(6400);
-  const after = await p
-    .locator(".desktop-gallery img")
-    .first()
-    .getAttribute("data-slot");
-  assert.notEqual(before, after);
-  await p.locator("[data-carousel-pause]").click();
-  const paused = await p
-    .locator(".desktop-gallery img")
-    .first()
-    .getAttribute("data-slot");
-  await p.waitForTimeout(6400);
-  assert.equal(
-    await p.locator(".desktop-gallery img").first().getAttribute("data-slot"),
-    paused,
-  );
-  results.push({ autoplay: true, pause: true });
-  await c.close();
   fs.writeFileSync(
-    "docs/qa/fase-6/flows.json",
+    "docs/qa/final-implementation/flows.json",
     JSON.stringify(results, null, 2),
   );
   console.log(results);

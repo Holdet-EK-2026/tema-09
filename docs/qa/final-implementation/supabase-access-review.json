@@ -1,0 +1,10 @@
+{
+  "readOnlyProjectDiscovery": true,
+  "matchingKindDesignProjects": 0,
+  "identifiedActiveKindDesignTestProject": false,
+  "unrelatedProjectSelected": false,
+  "credentialsRetrieved": false,
+  "databasesQueried": false,
+  "externalWrites": false,
+  "conclusion": "Ingen sikkert identificeret KindDesign-testdatabase. Ingen eksisterende database er gendannet eller ændret."
+}

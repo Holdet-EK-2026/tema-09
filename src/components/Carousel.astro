@@ -1,14 +1,14 @@
 ---
-// Figma-assets genbruges i den animerede carousel.
-const desktopImages = ['04de3', '1124d', '60cf8', 'de95f', '039da', 'ae42c'];
-const mobileImages = ['45ced', 'adb04', '4c7ac', 'e2097'];
-const descriptions = [
-  'Deltagere samlet ved et KindDesign-arrangement',
-  'En deltager med kasket og et glas i hånden',
-  'To deltagere til et KindDesign-arrangement',
-  'En deltager i samtale ved et arrangement',
-  'Fællesskab omkring et bord',
-  'Deltagere og samtaler fra KindDesign'
+import '../styles/global.css';
+import '../styles/carousel.css';
+// Originale, uforvrængede KindDesign-fotos. CSS skaber perspektivet i stedet for billedet.
+const photos = [
+  ['3c8b7', 'Deltagere omkring et bord ved et KindDesign-arrangement'],
+  ['1207b', 'To deltagere ved et KindDesign-arrangement'],
+  ['0bb08', 'Deltagere i samtale hos KindDesign'],
+  ['c149a', 'En deltager fortæller ved et KindDesign-arrangement'],
+  ['d2848', 'En samtale omkring et bord'],
+  ['ca544', 'To deltagere i KindDesigns fællesskab'],
 ];
 ---
 <section class="gallery-section" aria-labelledby="gallery-title" data-carousel>
@@ -16,21 +16,22 @@ const descriptions = [
     <h2 id="gallery-title">FÆLLES NYSGERRIGHED.<br />NYE FORBINDELSER.</h2>
     <p>Design giver os noget at mødes om. Samtalerne giver os mulighed for at lære hinanden at kende. Her kan du dele din nysgerrighed, møde andre kreative og opdage nye perspektiver. Et event kan være dit første møde med KindDesign. Fællesskabet er det, vi bygger videre på sammen.</p>
   </div>
-  <div class="gallery-window" tabindex="0" role="region" aria-label="Billeder fra fællesskabet, rul vandret">
-    <div class="desktop-gallery">
-      {desktopImages.map((image, index) => <img draggable="false" class={`gallery-card card-${index + 1}`} src={`/images/${image}.webp`} alt={descriptions[index]} loading="lazy" />)}
-    </div>
-    <div class="mobile-gallery">
-      {mobileImages.map((image, index) => <img draggable="false" src={`/images/${image}.webp`} alt={descriptions[index]} width="260" height="260" loading="lazy" />)}
+  <div class="gallery-window" tabindex="0" role="region" aria-roledescription="billedkarrusel" aria-label="Billeder fra KindDesigns fællesskab" aria-describedby="carousel-instructions">
+    <div class="gallery-track">
+      {photos.map(([photo, description], index) => <figure class="gallery-card" role="group" aria-roledescription="slide" aria-label={`Billede ${index + 1} af ${photos.length}`}>
+        <img draggable="false" src={index===0?`/images/gallery-${photo}-600.webp`:undefined} data-gallery-source={`/images/gallery-${photo}-600.webp`} data-gallery-srcset={`/images/gallery-${photo}-600.webp 600w, /images/gallery-${photo}-1600.webp 1600w`} sizes={["3c8b7","0bb08","c149a"].includes(photo) ? "(max-width:600px) 480px, (max-width:900px) 660px, 780px" : "(max-width:600px) 280px, (max-width:900px) 300px, 360px"} alt={description} width="360" height="480" loading="lazy" fetchpriority="low" />
+        <noscript><img src={`/images/gallery-${photo}-600.webp`} srcset={`/images/gallery-${photo}-600.webp 600w, /images/gallery-${photo}-1600.webp 1600w`} sizes="(max-width:600px) 480px, 780px" alt={description} width="360" height="480" loading="lazy" /></noscript>
+        <figcaption><span>KindDesign</span><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span></figcaption>
+      </figure>)}
     </div>
   </div>
   <div class="gallery-controls">
-    <button class="static-arrow" type="button" disabled data-carousel-direction="-1" aria-label="Forrige billede">←</button>
-    <button class="static-arrow next" type="button" disabled data-carousel-direction="1" aria-label="Næste billede">→</button>
-    <p>TRÆK GENNEM FÆLLESSKABET</p>
+    <div class="gallery-arrows"><button class="static-arrow" type="button" disabled data-carousel-direction="-1" aria-label="Forrige billede">←</button><button class="static-arrow next" type="button" disabled data-carousel-direction="1" aria-label="Næste billede">→</button></div>
+    <p id="carousel-instructions">TRÆK GENNEM FÆLLESSKABET<span class="sr-only">. Brug venstre og højre piletast, eller swipe mellem billederne.</span></p>
+    <div class="carousel-indicators" role="group" aria-label="Vælg billede">{photos.map((_,index)=><button type="button" disabled data-carousel-slide={index} aria-label={`Vis billede ${index+1}`} aria-pressed={index===0?'true':'false'}><span></span></button>)}</div>
     <button type="button" class="carousel-pause" disabled data-carousel-pause aria-pressed="false">Pause billedskift</button>
-    <span class="sr-only" role="status" data-carousel-status></span>
+    <span class="sr-only" role="status" aria-atomic="true" data-carousel-status></span>
   </div>
 </section>
-
+<noscript><style is:inline>.gallery-card > img[data-gallery-source] { display: none; }</style></noscript>
 <script src="../scripts/carousel.js"></script>

@@ -5,10 +5,34 @@ const AxeBuilder = require(
 ).default;
 const fs = require("fs");
 const assert = require("assert");
+const folder = "docs/qa/final-implementation";
 (async () => {
-  fs.mkdirSync("docs/qa/fase-6", { recursive: true });
+  fs.mkdirSync(folder, { recursive: true });
   const b = await chromium.launch({ channel: "chrome" });
-  const report = [];
+  const selected = process.env.KINDDESIGN_QA_ROUTES?.split(",");
+  const reportPath = `${folder}/pages.json`;
+  const report =
+    selected && fs.existsSync(reportPath)
+      ? JSON.parse(fs.readFileSync(reportPath, "utf8")).filter(
+          (row) => !selected.includes(row.route),
+        )
+      : [];
+  const slugs = [
+    "design-og-nye-forbindelser",
+    "ideer-paa-papir",
+    "design-i-virkeligheden",
+    "et-bord-nye-ansigter",
+  ];
+  const official = [
+    "from-ballet-to-technology",
+    "ai-skillsharing",
+    "real-talk",
+    "meetup-barcelona",
+    "meetup-berlin",
+    "meetup-cph-jul",
+    "meetup-nordhavn-2025",
+    "meetup-koebenhavn-september-2025",
+  ];
   const routes = [
     "/",
     "/events/",
@@ -16,30 +40,55 @@ const assert = require("assert");
     "/om-kinddesign/",
     "/ny-her/",
     "/kontakt/",
+    ...official.map((slug) => `/events/${slug}/`),
+    ...slugs.flatMap((slug) => [
+      `/events/${slug}/`,
+      `/tilmelding/${slug}/`,
+      `/kalender/${slug}/`,
+    ]),
+    "/findes-ikke/",
+  ];
+  const intermediate = [
+    "/",
+    "/events/",
+    "/events/kalender/",
+    "/om-kinddesign/",
+    "/ny-her/",
+    "/kontakt/",
+    ...official.slice(0, 3).map((slug) => `/events/${slug}/`),
+    "/events/meetup-berlin/",
     "/events/design-og-nye-forbindelser/",
-    "/events/ideer-paa-papir/",
-    "/events/design-i-virkeligheden/",
-    "/events/et-bord-nye-ansigter/",
     "/tilmelding/design-og-nye-forbindelser/",
-    "/kalender/design-og-nye-forbindelser/",
   ];
   for (const width of [390, 600, 601, 768, 1024, 1440]) {
     const context = await b.newContext({
       viewport: { width, height: 900 },
       reducedMotion: "reduce",
     });
-    for (const route of routes) {
+    for (const route of [390, 768, 1440].includes(width)
+      ? routes
+      : intermediate) {
+      if (selected && !selected.includes(route)) continue;
       const p = await context.newPage();
       const errors = [];
       const failures = [];
       p.on("pageerror", (e) => errors.push(e.message));
       p.on("response", (r) => {
-        if (r.status() >= 400)
+        if (r.status() >= 400 && !r.url().includes("/findes-ikke/"))
           failures.push({ url: r.url(), status: r.status() });
       });
       const response = await p.goto("http://localhost:4321" + route, {
         waitUntil: "networkidle",
       });
+      if (route === "/") {
+        await p.locator(".gallery-window").scrollIntoViewIfNeeded();
+        await p.waitForFunction(
+          () =>
+            document.querySelector("[data-carousel]").dataset.photosReady ===
+            "true",
+        );
+        await p.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
+      }
       await p.evaluate(async () => {
         await document.fonts.ready;
         document.querySelectorAll("img").forEach((i) => (i.loading = "eager"));
@@ -51,6 +100,22 @@ const assert = require("assert");
         width: innerWidth,
         scrollWidth: document.documentElement.scrollWidth,
         height: document.documentElement.scrollHeight,
+        controlsClipped: (() => {
+          const gallery = document.querySelector("[data-carousel]");
+          if (!gallery) return false;
+          const rect = gallery.getBoundingClientRect();
+          return [...gallery.querySelectorAll(".gallery-controls button")].some(
+            (button) => {
+              const r = button.getBoundingClientRect();
+              return (
+                r.width > 0 &&
+                (r.bottom > rect.bottom + 0.5 ||
+                  r.left < rect.left - 0.5 ||
+                  r.right > rect.right + 0.5)
+              );
+            },
+          );
+        })(),
         h1: document.querySelectorAll("h1").length,
         images: [...document.images]
           .filter((i) => i.getBoundingClientRect().width > 0)
@@ -76,7 +141,7 @@ const assert = require("assert");
       }
       if ([390, 768, 1440].includes(width))
         await p.screenshot({
-          path: `docs/qa/fase-6/${route === "/" ? "forside" : route.replaceAll("/", "_")}-${width}.png`,
+          path: `${folder}/${route === "/" ? "forside" : route.replaceAll("/", "_")}-${width}.png`,
           fullPage: true,
         });
       report.push({
@@ -92,16 +157,14 @@ const assert = require("assert");
     }
     await context.close();
   }
-  fs.writeFileSync(
-    "docs/qa/fase-6/pages.json",
-    JSON.stringify(report, null, 2),
-  );
+  fs.writeFileSync(`${folder}/pages.json`, JSON.stringify(report, null, 2));
   const failed = report.filter(
     (r) =>
-      r.status !== 200 ||
+      r.status !== (r.route === "/findes-ikke/" ? 404 : 200) ||
       r.errors.length ||
       r.failures.length ||
       r.data.scrollWidth > r.width ||
+      r.data.controlsClipped ||
       r.violations.length ||
       r.data.h1 !== 1 ||
       !r.data.images,

@@ -1,0 +1,244 @@
+
+> kinddesign@0.1.0 test:lighthouse
+> node scripts/qa/lighthouse.cjs
+
+{
+  route: '/',
+  mode: 'mobile',
+  scores: {
+    performance: 89,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 3753.6844,
+  CLS: 0
+}
+{
+  route: '/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 244.211,
+  CLS: 0
+}
+{
+  route: '/events/',
+  mode: 'mobile',
+  scores: {
+    performance: 96,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 2778.0678,
+  CLS: 0
+}
+{
+  route: '/events/',
+  mode: 'desktop',
+  scores: {
+    performance: 98,
+    accessibility: 100,
+    'best-practices': 96,
+    seo: 63
+  },
+  LCP: 1184.5258999999999,
+  CLS: 0
+}
+{
+  route: '/events/kalender/',
+  mode: 'mobile',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 903.9016999999999,
+  CLS: 0.03590651749746878
+}
+{
+  route: '/events/kalender/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 766.7574999999999,
+  CLS: 0
+}
+{
+  route: '/om-kinddesign/',
+  mode: 'mobile',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 1878.9576,
+  CLS: 0
+}
+{
+  route: '/om-kinddesign/',
+  mode: 'desktop',
+  scores: {
+    performance: 99,
+    accessibility: 100,
+    'best-practices': 96,
+    seo: 63
+  },
+  LCP: 983.2093,
+  CLS: 0
+}
+{
+  route: '/ny-her/',
+  mode: 'mobile',
+  scores: {
+    performance: 91,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 3453.8171999999995,
+  CLS: 0
+}
+{
+  route: '/ny-her/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 703.7215,
+  CLS: 0
+}
+{
+  route: '/kontakt/',
+  mode: 'mobile',
+  scores: {
+    performance: 99,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 2102.8495,
+  CLS: 0
+}
+{
+  route: '/kontakt/',
+  mode: 'desktop',
+  scores: {
+    performance: 99,
+    accessibility: 100,
+    'best-practices': 96,
+    seo: 63
+  },
+  LCP: 903.2441999999999,
+  CLS: 0
+}
+{
+  route: '/events/from-ballet-to-technology/',
+  mode: 'mobile',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 902.7657999999999,
+  CLS: 0
+}
+{
+  route: '/events/from-ballet-to-technology/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 664.2783000000001,
+  CLS: 0
+}
+{
+  route: '/events/ai-skillsharing/',
+  mode: 'mobile',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 904.8519000000001,
+  CLS: 0
+}
+{
+  route: '/events/ai-skillsharing/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 664.87005,
+  CLS: 0
+}
+{
+  route: '/events/design-og-nye-forbindelser/',
+  mode: 'mobile',
+  scores: {
+    performance: 91,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 3529.4651999999996,
+  CLS: 0
+}
+{
+  route: '/events/design-og-nye-forbindelser/',
+  mode: 'desktop',
+  scores: {
+    performance: 98,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 1082.6313999999998,
+  CLS: 0
+}
+{
+  route: '/tilmelding/design-og-nye-forbindelser/',
+  mode: 'mobile',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 902.3589999999999,
+  CLS: 0.001162113643863829
+}
+{
+  route: '/tilmelding/design-og-nye-forbindelser/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 243.8897,
+  CLS: 0
+}

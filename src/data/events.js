@@ -1,3 +1,4 @@
+import { verifiedLumaEvents } from "./luma-events.js";
 // Eksempelindhold fra de aktive Figma-frames, ikke annoncerede, bookbare events.
 const eventData = [
   {
@@ -14,7 +15,6 @@ const eventData = [
     detailImage: "3c8b7",
     description: "Et uformelt meetup med plads til nye ansigter.",
     frame: "753:951",
-    lumaKey: "PUBLIC_LUMA_MEETUP_URL",
   },
   {
     slug: "ideer-paa-papir",
@@ -30,7 +30,6 @@ const eventData = [
     detailImage: "3c8b7",
     description: "Udforsk idéer sammen med andre kreative.",
     frame: "753:1492",
-    lumaKey: "PUBLIC_LUMA_WORKSHOP_URL",
   },
   {
     slug: "design-i-virkeligheden",
@@ -46,7 +45,6 @@ const eventData = [
     detailImage: "c149a",
     description: "Perspektiver fra det kreative arbejdsliv.",
     frame: "753:1540",
-    lumaKey: "PUBLIC_LUMA_TALK_URL",
   },
   {
     slug: "et-bord-nye-ansigter",
@@ -63,28 +61,76 @@ const eventData = [
     description:
       "Mød andre kreative, del det, du er optaget af, og vær nysgerrig på hinandens perspektiver.",
     frame: "753:1588",
-    lumaKey: "PUBLIC_LUMA_DECEMBER_URL",
   },
 ];
-function verifiedLumaUrl(value) {
-  if (!value) return null;
-  try {
-    const url = new URL(value);
-    if (
-      url.protocol === "https:" &&
-      ["lu.ma", "luma.com"].includes(url.hostname) &&
-      url.pathname.length > 1 &&
-      !url.username &&
-      !url.password
-    )
-      return url.href;
-  } catch {
-    /* En ugyldig konfiguration må ikke skabe et eksternt link. */
-  }
-  return null;
+export function getEventStatus(event, now = Date.now()) {
+  if (event.isDemo) return "demo";
+  return new Date(event.endAt).getTime() <= now ? "past" : "upcoming";
 }
-export const events = eventData.map((event) => ({
+export function eventDateParts(iso, timezone) {
+  return Object.fromEntries(
+    new Intl.DateTimeFormat("en-CA", {
+      timeZone: timezone,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    })
+      .formatToParts(new Date(iso))
+      .filter((p) => p.type !== "literal")
+      .map((p) => [p.type, p.value]),
+  );
+}
+export function formatEventDate(iso, timezone) {
+  return new Intl.DateTimeFormat("da-DK", {
+    timeZone: timezone,
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(new Date(iso));
+}
+const clock = (iso, timezone) =>
+  new Intl.DateTimeFormat("da-DK", {
+    timeZone: timezone,
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23",
+  }).format(new Date(iso));
+export const demoEvents = eventData.map((event) => ({
   ...event,
-  lumaUrl: verifiedLumaUrl(import.meta.env[event.lumaKey]),
+  isDemo: true,
+  status: "demo",
+  lumaUrl: null,
 }));
-export const listedEvents = events.slice(0, 3);
+export const officialEvents = verifiedLumaEvents
+  .map((event) => {
+    const parts = eventDateParts(event.startAt, event.timezone);
+    return {
+      ...event,
+      isDemo: false,
+      status: getEventStatus(event),
+      date: `${parts.year}-${parts.month}-${parts.day}`,
+      day: Number(parts.day),
+      year: parts.year,
+      month: new Intl.DateTimeFormat("da-DK", {
+        month: "long",
+        timeZone: event.timezone,
+      }).format(new Date(event.startAt)),
+      monthShort: new Intl.DateTimeFormat("da-DK", {
+        month: "short",
+        timeZone: event.timezone,
+      })
+        .format(new Date(event.startAt))
+        .replace(".", "")
+        .toUpperCase(),
+      dateLabel: formatEventDate(event.startAt, event.timezone),
+      time:
+        clock(event.startAt, event.timezone) +
+        (event.endTimeUnclear ? "" : "–" + clock(event.endAt, event.timezone)),
+    };
+  })
+  .sort((a, b) => new Date(b.startAt) - new Date(a.startAt));
+export const events = [...officialEvents, ...demoEvents];
+export const listedEvents = officialEvents;
+export const nextEvent = officialEvents
+  .filter((event) => event.status === "upcoming")
+  .sort((a, b) => new Date(a.startAt) - new Date(b.startAt))[0];

@@ -1,0 +1,51 @@
+[
+  {
+    "width": 390,
+    "autoplay4500ms": true,
+    "hoverPause": true,
+    "focusPause": true,
+    "manualResume8000ms": true,
+    "pausePlay": true,
+    "hiddenTabPause": true,
+    "hiddenTabMethod": "simulated visibilitychange",
+    "offscreenPause": true,
+    "reducedMotion": true,
+    "keyboardAndIndicators": true,
+    "infiniteLoopBothDirections": true,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "autoplay4500ms": true,
+    "hoverPause": true,
+    "focusPause": true,
+    "manualResume8000ms": true,
+    "pausePlay": true,
+    "hiddenTabPause": true,
+    "hiddenTabMethod": "simulated visibilitychange",
+    "offscreenPause": true,
+    "reducedMotion": true,
+    "keyboardAndIndicators": true,
+    "infiniteLoopBothDirections": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "autoplay4500ms": true,
+    "hoverPause": true,
+    "focusPause": true,
+    "manualResume8000ms": true,
+    "pausePlay": true,
+    "hiddenTabPause": true,
+    "hiddenTabMethod": "simulated visibilitychange",
+    "offscreenPause": true,
+    "reducedMotion": true,
+    "keyboardAndIndicators": true,
+    "infiniteLoopBothDirections": true,
+    "errors": []
+  },
+  {
+    "mobileTouchSwipe": true,
+    "noAccidentalNavigation": true
+  }
+]

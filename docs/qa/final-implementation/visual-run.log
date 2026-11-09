@@ -1,0 +1,50 @@
+[
+  {
+    id: '776-1817',
+    width: 1440,
+    referenceHeight: 2161,
+    siteHeight: 2161,
+    meanChannelDiff: 6.118943883147377,
+    pixelsAbove30Percent: 6.012937683171371
+  },
+  {
+    id: '776-1873',
+    width: 1440,
+    referenceHeight: 1961,
+    siteHeight: 1961,
+    meanChannelDiff: 6.415813809092111,
+    pixelsAbove30Percent: 5.427148846960168
+  },
+  {
+    id: '753-1053',
+    width: 1440,
+    referenceHeight: 2473,
+    siteHeight: 2471,
+    meanChannelDiff: 3.8926752444923696,
+    pixelsAbove30Percent: 4.555392685447275
+  },
+  {
+    id: '753-951',
+    width: 1440,
+    referenceHeight: 2531,
+    siteHeight: 2531,
+    meanChannelDiff: 3.828374270161113,
+    pixelsAbove30Percent: 3.7197912551033845
+  },
+  {
+    id: '776-1988',
+    width: 390,
+    referenceHeight: 3836,
+    siteHeight: 3835,
+    meanChannelDiff: 8.903720265946543,
+    pixelsAbove30Percent: 7.780807999786102
+  },
+  {
+    id: '776-2047',
+    width: 390,
+    referenceHeight: 2002,
+    siteHeight: 2000,
+    meanChannelDiff: 5.3595361903054215,
+    pixelsAbove30Percent: 5.19659827352135
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "verifiedSources": 8,
+  "upcomingAsOf2026_11_09": 1,
+  "pastAsOf2026_11_09": 7,
+  "demosWithoutLumaMapping": 4,
+  "tokyoLocalTime": true,
+  "statusBoundary": true,
+  "calendarUTCAndUTF8Folding": true,
+  "sourceConflictsExplicit": true,
+  "externalBookingsPerformed": 0
+}

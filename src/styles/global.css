@@ -897,31 +897,6 @@ dialog p {
   }
 }
 
-/* Carousel: kun kortenes placering og størrelse animeres. */
-[data-carousel].carousel-ready .gallery-card {
-  left: 0;
-  top: 0;
-  transition:
-    transform 0.7s ease,
-    width 0.7s ease,
-    height 0.7s ease,
-    opacity 0.3s;
-}
-[data-carousel].carousel-ready .gallery-card.is-wrapping {
-  transition: none;
-  opacity: 0;
-}
-[data-carousel] .mobile-gallery {
-  width: max-content;
-}
-.carousel-pause {
-  background: none;
-  color: var(--bordeaux);
-  text-decoration: underline;
-  padding: 12px;
-  margin-left: 20px;
-  font-size: 13px;
-}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -962,4 +937,11 @@ dialog p {
 .brand img,
 .footer-brand img {
   object-fit: contain;
+}
+.countdown [data-countdown-value] {
+  font-variant-numeric: tabular-nums;
+}
+.hero-event {
+  max-width: 430px;
+  line-height: 1.35;
 }

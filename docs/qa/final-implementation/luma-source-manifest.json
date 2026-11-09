@@ -1,0 +1,98 @@
+[
+  {
+    "id": "cmapoye1",
+    "slug": "from-ballet-to-technology",
+    "title": "From Ballet to Technology: On Reinvention and Creative Identity",
+    "lumaUrl": "https://luma.com/cmapoye1",
+    "startAt": "2026-11-13T09:30:00.000Z",
+    "endAt": "2026-11-13T11:00:00.000Z",
+    "timezone": "Asia/Tokyo",
+    "address": "Vague, 1-39 Nijikkimachi, Shinjuku City, Tokyo 162-0855, Japan",
+    "cover": "https://images.lumacdn.com/uploads/1v/8d7a748d-5f22-4c1a-8635-1d523915a88e.jpg",
+    "verifiedAt": "2026-11-09"
+  },
+  {
+    "id": "c3bj5f9d",
+    "slug": "ai-skillsharing",
+    "title": "AI skillsharing for designers & creatives",
+    "lumaUrl": "https://luma.com/c3bj5f9d",
+    "startAt": "2026-10-29T17:00:00.000Z",
+    "endAt": "2026-10-29T19:00:00.000Z",
+    "timezone": "Europe/Copenhagen",
+    "address": "DEPT®, Langebrogade 6E, 1st Floor, 1411 København, Denmark",
+    "cover": "https://images.lumacdn.com/uploads/jn/05a926d7-16d5-4d54-ab07-4ef149e5b702.jpg",
+    "verifiedAt": "2026-11-09"
+  },
+  {
+    "id": "c3jcu29h",
+    "slug": "real-talk",
+    "title": "Kinddesign / Real-talk",
+    "lumaUrl": "https://luma.com/c3jcu29h",
+    "startAt": "2026-07-01T16:00:00.000Z",
+    "endAt": "2026-07-01T18:00:00.000Z",
+    "timezone": "Europe/Copenhagen",
+    "address": "Bernies.Space, Bernhard Bangs Alle 27a, 2000 Frederiksberg, Denmark",
+    "cover": "https://images.lumacdn.com/uploads/m4/89403138-057e-4c2b-b30b-eafa5e491b46.png",
+    "verifiedAt": "2026-11-09"
+  },
+  {
+    "id": "n6nwx061",
+    "slug": "meetup-barcelona",
+    "title": "Designers & Creatives Meet-Up / Barcelona",
+    "lumaUrl": "https://luma.com/n6nwx061",
+    "startAt": "2026-05-14T16:00:00.000Z",
+    "endAt": "2026-05-14T18:00:00.000Z",
+    "timezone": "Europe/Madrid",
+    "address": "Theodora Extra, Carrer de Zamora, 85, Sant Martí, 08018 Barcelona, Spain",
+    "cover": "https://images.lumacdn.com/uploads/el/a3d0ab5f-6715-4c58-987e-1765a6b07233.jpg",
+    "verifiedAt": "2026-11-09"
+  },
+  {
+    "id": "84v57ubf",
+    "slug": "meetup-berlin",
+    "title": "Designers & Creatives Meet-Up / BERLIN",
+    "lumaUrl": "https://luma.com/84v57ubf",
+    "startAt": "2025-12-18T17:30:00.000Z",
+    "endAt": "2025-12-18T18:30:00.000Z",
+    "timezone": "Europe/Berlin",
+    "address": "Jane & the Jam, Brunnenstraße 27, 10119 Berlin, Germany",
+    "cover": "https://images.lumacdn.com/event-covers/x2/c67c1b7d-b48a-46a5-8903-27945a63eb81.png",
+    "verifiedAt": "2026-11-09"
+  },
+  {
+    "id": "iq2qpyk4",
+    "slug": "meetup-cph-jul",
+    "title": "Designers & Creatives Meet-Up / CPH xmas edition",
+    "lumaUrl": "https://luma.com/iq2qpyk4",
+    "startAt": "2025-12-17T17:00:00.000Z",
+    "endAt": "2025-12-17T19:00:00.000Z",
+    "timezone": "Europe/Copenhagen",
+    "address": "Rascal, H. C. Ørsteds Vej 38, 1879 Frederiksberg, Denmark",
+    "cover": "https://images.lumacdn.com/event-covers/v6/a53817eb-8233-4b0f-959e-c1e353d50b08.jpg",
+    "verifiedAt": "2026-11-09"
+  },
+  {
+    "id": "jdv50gdz",
+    "slug": "meetup-nordhavn-2025",
+    "title": "Designers & creatives meet-up",
+    "lumaUrl": "https://luma.com/jdv50gdz",
+    "startAt": "2025-10-29T17:00:00.000Z",
+    "endAt": "2025-10-29T19:00:00.000Z",
+    "timezone": "Europe/Copenhagen",
+    "address": "ÅBEN Nordhavn, Århusgade 122, 2150 København, Denmark",
+    "cover": "https://images.lumacdn.com/event-covers/zy/19ad996d-b406-4095-9033-1de775729216.png",
+    "verifiedAt": "2026-11-09"
+  },
+  {
+    "id": "bszies4x",
+    "slug": "meetup-koebenhavn-september-2025",
+    "title": "Designers & creatives meet-up",
+    "lumaUrl": "https://luma.com/bszies4x",
+    "startAt": "2025-09-17T16:00:00.000Z",
+    "endAt": "2025-09-17T18:00:00.000Z",
+    "timezone": "Europe/Copenhagen",
+    "address": "Dave's, Hejrevej 12, 2400 København NV, Denmark",
+    "cover": "https://images.lumacdn.com/event-covers/k0/4a460ad0-2c84-42e0-89fb-829a06d15772.jpg",
+    "verifiedAt": "2026-11-09"
+  }
+]

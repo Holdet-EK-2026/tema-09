@@ -1,0 +1,65 @@
+[
+  {
+    "route": "_om-kinddesign_",
+    "width": 390,
+    "beforeHeight": 3835,
+    "afterHeight": 3835,
+    "meanChannelDifference": 0
+  },
+  {
+    "route": "_om-kinddesign_",
+    "width": 768,
+    "beforeHeight": 3130,
+    "afterHeight": 3130,
+    "meanChannelDifference": 0
+  },
+  {
+    "route": "_om-kinddesign_",
+    "width": 1440,
+    "beforeHeight": 2161,
+    "afterHeight": 2161,
+    "meanChannelDifference": 0
+  },
+  {
+    "route": "_kontakt_",
+    "width": 390,
+    "beforeHeight": 2000,
+    "afterHeight": 2000,
+    "meanChannelDifference": 0
+  },
+  {
+    "route": "_kontakt_",
+    "width": 768,
+    "beforeHeight": 1961,
+    "afterHeight": 1961,
+    "meanChannelDifference": 0
+  },
+  {
+    "route": "_kontakt_",
+    "width": 1440,
+    "beforeHeight": 1961,
+    "afterHeight": 1961,
+    "meanChannelDifference": 0
+  },
+  {
+    "route": "_ny-her_",
+    "width": 390,
+    "beforeHeight": 2548,
+    "afterHeight": 2548,
+    "meanChannelDifference": 0
+  },
+  {
+    "route": "_ny-her_",
+    "width": 768,
+    "beforeHeight": 2605,
+    "afterHeight": 2605,
+    "meanChannelDifference": 0
+  },
+  {
+    "route": "_ny-her_",
+    "width": 1440,
+    "beforeHeight": 2471,
+    "afterHeight": 2471,
+    "meanChannelDifference": 0
+  }
+]

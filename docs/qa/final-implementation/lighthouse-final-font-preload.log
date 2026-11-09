@@ -1,0 +1,172 @@
+
+> kinddesign@0.1.0 test:lighthouse
+> node scripts/qa/lighthouse.cjs
+
+{
+  route: '/',
+  mode: 'mobile',
+  scores: {
+    performance: 89,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 3755.5991999999997,
+  CLS: 0
+}
+{
+  route: '/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 243.42340000000002,
+  CLS: 0
+}
+{
+  route: '/events/kalender/',
+  mode: 'mobile',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 903.0857000000001,
+  CLS: 0
+}
+{
+  route: '/events/kalender/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 784.9277999999999,
+  CLS: 0
+}
+{
+  route: '/ny-her/',
+  mode: 'mobile',
+  scores: {
+    performance: 92,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 3378.5645,
+  CLS: 0
+}
+{
+  route: '/ny-her/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 702.9968999999999,
+  CLS: 0
+}
+{
+  route: '/events/from-ballet-to-technology/',
+  mode: 'mobile',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 904.2907,
+  CLS: 0
+}
+{
+  route: '/events/from-ballet-to-technology/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 703.8516,
+  CLS: 0
+}
+{
+  route: '/events/ai-skillsharing/',
+  mode: 'mobile',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 903.6206,
+  CLS: 0
+}
+{
+  route: '/events/ai-skillsharing/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 662.7778,
+  CLS: 0
+}
+{
+  route: '/events/design-og-nye-forbindelser/',
+  mode: 'mobile',
+  scores: {
+    performance: 90,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 3603.4457,
+  CLS: 0
+}
+{
+  route: '/events/design-og-nye-forbindelser/',
+  mode: 'desktop',
+  scores: {
+    performance: 98,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 1082.4676,
+  CLS: 0
+}
+{
+  route: '/tilmelding/design-og-nye-forbindelser/',
+  mode: 'mobile',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 903.4581000000001,
+  CLS: 0
+}
+{
+  route: '/tilmelding/design-og-nye-forbindelser/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 243.3107,
+  CLS: 0
+}
