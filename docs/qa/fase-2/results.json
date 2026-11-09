@@ -1,0 +1,23 @@
+[
+  {
+    "width": 390,
+    "manual": true,
+    "loop": true,
+    "reducedMotion": true,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "manual": true,
+    "loop": true,
+    "reducedMotion": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "manual": true,
+    "loop": true,
+    "reducedMotion": true,
+    "errors": []
+  }
+]

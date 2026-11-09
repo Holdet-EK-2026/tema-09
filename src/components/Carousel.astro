@@ -1,5 +1,5 @@
 ---
-// Kun statisk komposition i fase 1. Billederne er eksporteret direkte fra Figma.
+// Figma-assets genbruges i den animerede carousel.
 const desktopImages = ['04de3', '1124d', '60cf8', 'de95f', '039da', 'ae42c'];
 const mobileImages = ['45ced', 'adb04', '4c7ac', 'e2097'];
 const descriptions = [
@@ -11,7 +11,7 @@ const descriptions = [
   'Deltagere og samtaler fra KindDesign'
 ];
 ---
-<section class="gallery-section" aria-labelledby="gallery-title">
+<section class="gallery-section" aria-labelledby="gallery-title" data-carousel>
   <div class="gallery-intro">
     <h2 id="gallery-title">FÆLLES NYSGERRIGHED.<br />NYE FORBINDELSER.</h2>
     <p>Design giver os noget at mødes om. Samtalerne giver os mulighed for at lære hinanden at kende. Her kan du dele din nysgerrighed, møde andre kreative og opdage nye perspektiver. Et event kan være dit første møde med KindDesign. Fællesskabet er det, vi bygger videre på sammen.</p>
@@ -25,8 +25,12 @@ const descriptions = [
     </div>
   </div>
   <div class="gallery-controls">
-    <span class="static-arrow" aria-hidden="true">←</span>
-    <span class="static-arrow next" aria-hidden="true">→</span>
+    <button class="static-arrow" type="button" data-carousel-direction="-1" aria-label="Forrige billede">←</button>
+    <button class="static-arrow next" type="button" data-carousel-direction="1" aria-label="Næste billede">→</button>
     <p>TRÆK GENNEM FÆLLESSKABET</p>
+    <button type="button" class="carousel-pause" data-carousel-pause aria-pressed="false">Pause billedskift</button>
+    <span class="sr-only" role="status" data-carousel-status></span>
   </div>
 </section>
+
+<script src="../scripts/carousel.js"></script>
