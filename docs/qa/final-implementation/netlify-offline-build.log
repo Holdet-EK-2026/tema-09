@@ -1,5 +1,5 @@
 ​
-Netlify Build                                                 
+Netlify Build
 ────────────────────────────────────────────────────────────────
 ​
 ❯ Version
@@ -18,7 +18,7 @@ Netlify Build
 ❯ Context
   deploy-preview
 ​
-build.command from netlify.toml                               
+build.command from netlify.toml
 ────────────────────────────────────────────────────────────────
 ​
 $ npm run build && npm test
@@ -26,51 +26,51 @@ $ npm run build && npm test
 > kinddesign@0.1.0 build
 > node ./node_modules/astro/bin/astro.mjs build
 
-00:02:11 [types] Generated 16ms
-00:02:11 [build] output: "static"
-00:02:11 [build] mode: "static"
-00:02:11 [build] directory: /Users/martingerlach/Desktop/Skole/EK/2 Semester/Temaer/T09 UX:UI II/kinddesign/dist/
-00:02:11 [build] Collecting build info...
-00:02:11 [build] ✓ Completed in 29ms.
-00:02:11 [build] Building static entrypoints...
-00:02:11 [vite] ✓ built in 82ms
-00:02:11 [vite] ✓ built in 29ms
-00:02:11 [build] Rearranging server assets...
+00:14:22 [types] Generated 21ms
+00:14:22 [build] output: "static"
+00:14:22 [build] mode: "static"
+00:14:22 [build] directory: /Users/martingerlach/Desktop/Skole/EK/2 Semester/Temaer/T09 UX:UI II/kinddesign/dist/
+00:14:22 [build] Collecting build info...
+00:14:22 [build] ✓ Completed in 35ms.
+00:14:22 [build] Building static entrypoints...
+00:14:22 [vite] ✓ built in 102ms
+00:14:22 [vite] ✓ built in 91ms
+00:14:22 [build] Rearranging server assets...
 
- generating static routes 
-00:02:11   ├─ /404.html (+7ms) 
-00:02:11   ├─ /events/kalender/index.html (+4ms) 
-00:02:11   ├─ /events/from-ballet-to-technology/index.html (+1ms) 
-00:02:11   ├─ /events/ai-skillsharing/index.html (+1ms) 
-00:02:11   ├─ /events/real-talk/index.html (+1ms) 
-00:02:11   ├─ /events/meetup-barcelona/index.html (+1ms) 
-00:02:11   ├─ /events/meetup-berlin/index.html (+1ms) 
-00:02:11   ├─ /events/meetup-cph-jul/index.html (+1ms) 
-00:02:11   ├─ /events/meetup-nordhavn-2025/index.html (+2ms) 
-00:02:11   ├─ /events/meetup-koebenhavn-september-2025/index.html (+1ms) 
-00:02:11   ├─ /events/design-og-nye-forbindelser/index.html (+1ms) 
-00:02:11   ├─ /events/ideer-paa-papir/index.html (+0ms) 
-00:02:11   ├─ /events/design-i-virkeligheden/index.html (+0ms) 
-00:02:11   ├─ /events/et-bord-nye-ansigter/index.html (+0ms) 
-00:02:11   ├─ /events/index.html (+1ms) 
-00:02:11   ├─ /kalender/from-ballet-to-technology.ics (+1ms) 
-00:02:11   ├─ /kalender/design-og-nye-forbindelser/index.html (+0ms) 
-00:02:11   ├─ /kalender/ideer-paa-papir/index.html (+0ms) 
-00:02:11   ├─ /kalender/design-i-virkeligheden/index.html (+0ms) 
-00:02:11   ├─ /kalender/et-bord-nye-ansigter/index.html (+0ms) 
-00:02:11   ├─ /kontakt/index.html (+1ms) 
-00:02:11   ├─ /ny-her/index.html (+1ms) 
-00:02:11   ├─ /om-kinddesign/index.html (+1ms) 
-00:02:11   ├─ /tilmelding/design-og-nye-forbindelser/index.html (+0ms) 
-00:02:11   ├─ /tilmelding/ideer-paa-papir/index.html (+0ms) 
-00:02:11   ├─ /tilmelding/design-i-virkeligheden/index.html (+0ms) 
-00:02:11   ├─ /tilmelding/et-bord-nye-ansigter/index.html (+0ms) 
-00:02:11   ├─ /index.html (+1ms) 
-00:02:11 ✓ Completed in 40ms.
+ generating static routes
+00:14:22   ├─ /404.html (+7ms)
+00:14:22   ├─ /events/kalender/index.html (+4ms)
+00:14:22   ├─ /events/from-ballet-to-technology/index.html (+1ms)
+00:14:22   ├─ /events/ai-skillsharing/index.html (+1ms)
+00:14:22   ├─ /events/real-talk/index.html (+1ms)
+00:14:22   ├─ /events/meetup-barcelona/index.html (+1ms)
+00:14:22   ├─ /events/meetup-berlin/index.html (+1ms)
+00:14:22   ├─ /events/meetup-cph-jul/index.html (+1ms)
+00:14:22   ├─ /events/meetup-nordhavn-2025/index.html (+1ms)
+00:14:22   ├─ /events/meetup-koebenhavn-september-2025/index.html (+1ms)
+00:14:22   ├─ /events/design-og-nye-forbindelser/index.html (+1ms)
+00:14:22   ├─ /events/ideer-paa-papir/index.html (+1ms)
+00:14:22   ├─ /events/design-i-virkeligheden/index.html (+1ms)
+00:14:22   ├─ /events/et-bord-nye-ansigter/index.html (+1ms)
+00:14:22   ├─ /events/index.html (+2ms)
+00:14:22   ├─ /kalender/from-ballet-to-technology.ics (+1ms)
+00:14:22   ├─ /kalender/design-og-nye-forbindelser/index.html (+0ms)
+00:14:22   ├─ /kalender/ideer-paa-papir/index.html (+0ms)
+00:14:22   ├─ /kalender/design-i-virkeligheden/index.html (+0ms)
+00:14:22   ├─ /kalender/et-bord-nye-ansigter/index.html (+0ms)
+00:14:22   ├─ /kontakt/index.html (+1ms)
+00:14:22   ├─ /ny-her/index.html (+1ms)
+00:14:22   ├─ /om-kinddesign/index.html (+1ms)
+00:14:22   ├─ /tilmelding/design-og-nye-forbindelser/index.html (+1ms)
+00:14:22   ├─ /tilmelding/ideer-paa-papir/index.html (+0ms)
+00:14:22   ├─ /tilmelding/design-i-virkeligheden/index.html (+0ms)
+00:14:22   ├─ /tilmelding/et-bord-nye-ansigter/index.html (+0ms)
+00:14:22   ├─ /index.html (+1ms)
+00:14:22 ✓ Completed in 42ms.
 
-00:02:11 [build] ✓ Completed in 180ms.
-00:02:11 [build] 27 page(s) built in 215ms
-00:02:11 [build] Complete!
+00:14:22 [build] ✓ Completed in 266ms.
+00:14:22 [build] 27 page(s) built in 319ms
+00:14:22 [build] Complete!
 
 > kinddesign@0.1.0 test
 > node scripts/check-build.js && node scripts/qa/luma-config.cjs
@@ -88,9 +88,9 @@ $ npm run build && npm test
   externalBookingsPerformed: 0
 }
 ​
-(build.command completed in 782ms)
+(build.command completed in 1.2s)
 ​
-Netlify Build Complete                                        
+Netlify Build Complete
 ────────────────────────────────────────────────────────────────
 ​
-(Netlify Build completed in 803ms)
+(Netlify Build completed in 1.2s)

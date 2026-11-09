@@ -247,6 +247,8 @@
 }
 .gallery-controls .static-arrow {
   padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 .carousel-pause {
   background: transparent;

@@ -107,6 +107,7 @@ Resultater: [117 browserkontroller](qa/final-implementation/pages.json), [carous
 
 ### Rettelser fundet under kontrollen
 
+- En arvet `justify-content: flex-start` venstrestillede pilesymbolerne. De er eksplicit centreret i deres knapper og screenshotkontrolleret igen.
 - For lav kontrast i nedtonede sidekorts billedtekster: kun aktiv billedtekst vises nu.
 - Unødvendig konkurrerende billedtrafik før galleriet blev synligt: fotoindlæsning styres nu tæt på viewporten, med native billedfallback uden JavaScript.
 - Unødvendig fontpreload på undersider: Bricolage preloads på forsiden og legacy-sider, der bruger fonten; V2-sider undgår den unødvendige preload. Ingen fontfamilie er erstattet.

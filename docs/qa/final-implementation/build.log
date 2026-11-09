@@ -2,48 +2,48 @@
 > kinddesign@0.1.0 build
 > node ./node_modules/astro/bin/astro.mjs build
 
-00:02:06 [types] Generated 32ms
-00:02:06 [build] output: "static"
-00:02:06 [build] mode: "static"
-00:02:06 [build] directory: /Users/martingerlach/Desktop/Skole/EK/2 Semester/Temaer/T09 UX:UI II/kinddesign/dist/
-00:02:06 [build] Collecting build info...
-00:02:06 [build] ✓ Completed in 48ms.
-00:02:06 [build] Building static entrypoints...
-00:02:07 [vite] ✓ built in 104ms
-00:02:07 [vite] ✓ built in 92ms
-00:02:07 [build] Rearranging server assets...
+00:11:32 [types] Generated 37ms
+00:11:32 [build] output: "static"
+00:11:32 [build] mode: "static"
+00:11:32 [build] directory: /Users/martingerlach/Desktop/Skole/EK/2 Semester/Temaer/T09 UX:UI II/kinddesign/dist/
+00:11:32 [build] Collecting build info...
+00:11:32 [build] ✓ Completed in 51ms.
+00:11:32 [build] Building static entrypoints...
+00:11:33 [vite] ✓ built in 150ms
+00:11:33 [vite] ✓ built in 93ms
+00:11:33 [build] Rearranging server assets...
 
- generating static routes 
-00:02:07   ├─ /404.html (+7ms) 
-00:02:07   ├─ /events/kalender/index.html (+4ms) 
-00:02:07   ├─ /events/from-ballet-to-technology/index.html (+1ms) 
-00:02:07   ├─ /events/ai-skillsharing/index.html (+1ms) 
-00:02:07   ├─ /events/real-talk/index.html (+1ms) 
-00:02:07   ├─ /events/meetup-barcelona/index.html (+1ms) 
-00:02:07   ├─ /events/meetup-berlin/index.html (+1ms) 
-00:02:07   ├─ /events/meetup-cph-jul/index.html (+1ms) 
-00:02:07   ├─ /events/meetup-nordhavn-2025/index.html (+2ms) 
-00:02:07   ├─ /events/meetup-koebenhavn-september-2025/index.html (+1ms) 
-00:02:07   ├─ /events/design-og-nye-forbindelser/index.html (+1ms) 
-00:02:07   ├─ /events/ideer-paa-papir/index.html (+1ms) 
-00:02:07   ├─ /events/design-i-virkeligheden/index.html (+1ms) 
-00:02:07   ├─ /events/et-bord-nye-ansigter/index.html (+1ms) 
-00:02:07   ├─ /events/index.html (+1ms) 
-00:02:07   ├─ /kalender/from-ballet-to-technology.ics (+1ms) 
-00:02:07   ├─ /kalender/design-og-nye-forbindelser/index.html (+0ms) 
-00:02:07   ├─ /kalender/ideer-paa-papir/index.html (+0ms) 
-00:02:07   ├─ /kalender/design-i-virkeligheden/index.html (+0ms) 
-00:02:07   ├─ /kalender/et-bord-nye-ansigter/index.html (+0ms) 
-00:02:07   ├─ /kontakt/index.html (+1ms) 
-00:02:07   ├─ /ny-her/index.html (+1ms) 
-00:02:07   ├─ /om-kinddesign/index.html (+1ms) 
-00:02:07   ├─ /tilmelding/design-og-nye-forbindelser/index.html (+0ms) 
-00:02:07   ├─ /tilmelding/ideer-paa-papir/index.html (+0ms) 
-00:02:07   ├─ /tilmelding/design-i-virkeligheden/index.html (+0ms) 
-00:02:07   ├─ /tilmelding/et-bord-nye-ansigter/index.html (+0ms) 
-00:02:07   ├─ /index.html (+1ms) 
-00:02:07 ✓ Completed in 45ms.
+ generating static routes
+00:11:33   ├─ /404.html (+7ms)
+00:11:33   ├─ /events/kalender/index.html (+3ms)
+00:11:33   ├─ /events/from-ballet-to-technology/index.html (+1ms)
+00:11:33   ├─ /events/ai-skillsharing/index.html (+1ms)
+00:11:33   ├─ /events/real-talk/index.html (+1ms)
+00:11:33   ├─ /events/meetup-barcelona/index.html (+1ms)
+00:11:33   ├─ /events/meetup-berlin/index.html (+1ms)
+00:11:33   ├─ /events/meetup-cph-jul/index.html (+1ms)
+00:11:33   ├─ /events/meetup-nordhavn-2025/index.html (+1ms)
+00:11:33   ├─ /events/meetup-koebenhavn-september-2025/index.html (+1ms)
+00:11:33   ├─ /events/design-og-nye-forbindelser/index.html (+1ms)
+00:11:33   ├─ /events/ideer-paa-papir/index.html (+0ms)
+00:11:33   ├─ /events/design-i-virkeligheden/index.html (+1ms)
+00:11:33   ├─ /events/et-bord-nye-ansigter/index.html (+0ms)
+00:11:33   ├─ /events/index.html (+2ms)
+00:11:33   ├─ /kalender/from-ballet-to-technology.ics (+1ms)
+00:11:33   ├─ /kalender/design-og-nye-forbindelser/index.html (+0ms)
+00:11:33   ├─ /kalender/ideer-paa-papir/index.html (+0ms)
+00:11:33   ├─ /kalender/design-i-virkeligheden/index.html (+0ms)
+00:11:33   ├─ /kalender/et-bord-nye-ansigter/index.html (+0ms)
+00:11:33   ├─ /kontakt/index.html (+1ms)
+00:11:33   ├─ /ny-her/index.html (+1ms)
+00:11:33   ├─ /om-kinddesign/index.html (+1ms)
+00:11:33   ├─ /tilmelding/design-og-nye-forbindelser/index.html (+1ms)
+00:11:33   ├─ /tilmelding/ideer-paa-papir/index.html (+0ms)
+00:11:33   ├─ /tilmelding/design-i-virkeligheden/index.html (+0ms)
+00:11:33   ├─ /tilmelding/et-bord-nye-ansigter/index.html (+0ms)
+00:11:33   ├─ /index.html (+1ms)
+00:11:33 ✓ Completed in 42ms.
 
-00:02:07 [build] ✓ Completed in 275ms.
-00:02:07 [build] 27 page(s) built in 341ms
-00:02:07 [build] Complete!
+00:11:33 [build] ✓ Completed in 317ms.
+00:11:33 [build] 27 page(s) built in 386ms
+00:11:33 [build] Complete!
