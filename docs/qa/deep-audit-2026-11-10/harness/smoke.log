@@ -1,0 +1,34 @@
+[
+  {
+    keyboardSkipNavAndFilter: true,
+    faqKeyboard: true,
+    membershipConceptRemoved: true,
+    width: 390,
+    demoNavCurrent: true,
+    contactErrorAndConfirmationAxe: 0,
+    registrationConfirmationAxe: 0,
+    custom404: true,
+    errors: []
+  },
+  {
+    keyboardSkipNavAndFilter: true,
+    faqKeyboard: true,
+    membershipConceptRemoved: true,
+    width: 1440,
+    demoNavCurrent: true,
+    contactErrorAndConfirmationAxe: 0,
+    registrationConfirmationAxe: 0,
+    custom404: true,
+    errors: []
+  },
+  {
+    noJavaScriptContactSafe: true,
+    staticCarouselFallback: true,
+    retinaHero: 'https://kinddesign-holdet-ek-2026.netlify.app/images/1207b-1200.webp'
+  },
+  {
+    noJavaScriptGalleryPhotos: 6,
+    noJavaScriptKeyboardScroll: true,
+    retinaGallery: 'https://kinddesign-holdet-ek-2026.netlify.app/images/gallery-3c8b7-1600.webp'
+  }
+]

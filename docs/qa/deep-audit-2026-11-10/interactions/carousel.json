@@ -1,0 +1,125 @@
+[
+  {
+    "width": 390,
+    "pausedAndReducedMotionAxeViolations": 0,
+    "realBrowserTime": true,
+    "automaticChangesWithoutCarouselInput": [
+      {
+        "index": 0,
+        "elapsedMs": 0
+      },
+      {
+        "index": 1,
+        "elapsedMs": 4481
+      },
+      {
+        "index": 2,
+        "elapsedMs": 8982
+      }
+    ],
+    "cls": 0,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "pausedAndReducedMotionAxeViolations": 0,
+    "realBrowserTime": true,
+    "automaticChangesWithoutCarouselInput": [
+      {
+        "index": 0,
+        "elapsedMs": 0
+      },
+      {
+        "index": 1,
+        "elapsedMs": 4399
+      },
+      {
+        "index": 2,
+        "elapsedMs": 8899
+      }
+    ],
+    "cls": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "pausedAndReducedMotionAxeViolations": 0,
+    "realBrowserTime": true,
+    "automaticChangesWithoutCarouselInput": [
+      {
+        "index": 0,
+        "elapsedMs": 0
+      },
+      {
+        "index": 1,
+        "elapsedMs": 4502
+      },
+      {
+        "index": 2,
+        "elapsedMs": 9001
+      }
+    ],
+    "cls": 0,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "controlledTime": true,
+    "interval4500ms": true,
+    "twoAutomaticChanges": true,
+    "automaticWrap": true,
+    "hoverPause": true,
+    "focusPause": true,
+    "manualResume8000ms": true,
+    "visiblePausePlay": true,
+    "hiddenTabPause": "simulated visibilitychange contract",
+    "offscreenPause": true,
+    "reducedMotion": true,
+    "keyboardLoopBothDirections": true,
+    "duplicateInitSafe": true,
+    "removalAndReinitCleanup": true,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "controlledTime": true,
+    "interval4500ms": true,
+    "twoAutomaticChanges": true,
+    "automaticWrap": true,
+    "hoverPause": true,
+    "focusPause": true,
+    "manualResume8000ms": true,
+    "visiblePausePlay": true,
+    "hiddenTabPause": "simulated visibilitychange contract",
+    "offscreenPause": true,
+    "reducedMotion": true,
+    "keyboardLoopBothDirections": true,
+    "duplicateInitSafe": true,
+    "removalAndReinitCleanup": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "controlledTime": true,
+    "interval4500ms": true,
+    "twoAutomaticChanges": true,
+    "automaticWrap": true,
+    "hoverPause": true,
+    "focusPause": true,
+    "manualResume8000ms": true,
+    "visiblePausePlay": true,
+    "hiddenTabPause": "simulated visibilitychange contract",
+    "offscreenPause": true,
+    "reducedMotion": true,
+    "keyboardLoopBothDirections": true,
+    "duplicateInitSafe": true,
+    "removalAndReinitCleanup": true,
+    "errors": []
+  },
+  {
+    "nativeMobileTouchSwipe": true,
+    "pointerHoldPause": true,
+    "touchAutoplayResume": true,
+    "noAccidentalNavigation": true
+  }
+]

@@ -1,0 +1,243 @@
+const root = process.env.KINDDESIGN_QA_TOOLS || "/tmp/kinddesign-tools";
+const { chromium } = require(root + "/node_modules/playwright");
+const AxeBuilder = require(root + "/node_modules/@axe-core/playwright").default;
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
+const base = "https://kinddesign-holdet-ek-2026.netlify.app";
+fs.mkdirSync(folder, { recursive: true });
+(async () => {
+  const browser = await chromium.launch({ channel: "chrome" });
+  const results = [];
+  try {
+    for (const width of [390, 768, 1440]) {
+      const context = await browser.newContext({
+        viewport: { width, height: 900 },
+        reducedMotion: "no-preference",
+      });
+      const page = await context.newPage();
+      const errors = [];
+      const mutations = [];
+      page.on("pageerror", (error) => errors.push(error.message));
+      page.on("request", (request) => {
+        if (request.method() !== "GET") mutations.push(request.url());
+      });
+      await page.goto(base + "/ny-her/");
+      const questions = page.locator("[data-faq] button");
+      const panels = page.locator(".faq-panel");
+      assert.equal(await questions.count(), 3);
+      assert.equal(await panels.locator("visible=true").count(), 0);
+      const answers = [
+        "Du behøver ikke en bestemt titel. Interesse for design og kreativitet er et godt udgangspunkt.",
+        "Ja. Du behøver ikke kende andre for at deltage.",
+        "Din nysgerrighed. Eventuelle materialer eller forberedelser står på det enkelte event.",
+      ];
+      assert.deepEqual(await panels.allTextContents(), answers);
+      for (let i = 0; i < 3; i++) {
+        const button = questions.nth(i);
+        const panel = panels.nth(i);
+        assert.equal(
+          await button.getAttribute("aria-controls"),
+          await panel.getAttribute("id"),
+        );
+        assert.equal(
+          await panel.getAttribute("aria-labelledby"),
+          await button.getAttribute("id"),
+        );
+        await button.focus();
+        await page.keyboard.press(i % 2 ? "Space" : "Enter");
+        await page.waitForFunction(() => document.getAnimations().length === 0);
+        assert.equal(await button.getAttribute("aria-expanded"), "true");
+        assert.equal(
+          await page.locator("[data-faq] button[aria-expanded=true]").count(),
+          1,
+        );
+        assert.equal(await page.locator(".faq-panel:visible").count(), 1);
+        assert(await panel.isVisible());
+        assert(
+          await button.evaluate((node) => node === document.activeElement),
+        );
+        assert.equal(
+          (
+            await new AxeBuilder({ page })
+              .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+              .analyze()
+          ).violations.length,
+          0,
+        );
+      }
+      await questions.last().click();
+      await page.waitForFunction(() => document.getAnimations().length === 0);
+      assert.equal(await page.locator(".faq-panel:visible").count(), 0);
+      // Afbrudte åbne-/lukkeanimationer må ikke efterlade to svar åbne eller fastlåse højde.
+      for (let i = 0; i < 6; i++) await questions.nth(i % 3).click();
+      await page.waitForFunction(() => document.getAnimations().length === 0);
+      assert.equal(
+        await page.locator("[data-faq] button[aria-expanded=true]").count(),
+        1,
+      );
+      assert.equal(await page.locator(".faq-panel:visible").count(), 1);
+      await questions.last().click();
+      await page.emulateMedia({ reducedMotion: "reduce" });
+      await questions.first().click();
+      await page.waitForFunction(() => document.getAnimations().length === 0);
+      assert(await panels.first().isVisible());
+      assert.equal(
+        await questions
+          .first()
+          .locator(".faq-icon")
+          .evaluate(
+            (node) => getComputedStyle(node, "::after").transitionDuration,
+          ),
+        "0s",
+      );
+      await page
+        .locator("[data-faq]")
+        .screenshot({ path: `${folder}/faq-open-${width}.png` });
+      await questions.first().click();
+      await page.waitForFunction(() => document.getAnimations().length === 0);
+      await page
+        .locator("[data-faq]")
+        .screenshot({ path: `${folder}/faq-closed-${width}.png` });
+      await page.emulateMedia({ reducedMotion: "no-preference" });
+      const nav = width === 390 ? ".mobile-navigation" : ".desktop-navigation";
+      for (const route of [
+        "/",
+        "/events/",
+        "/om-kinddesign/",
+        "/ny-her/",
+        "/kontakt/",
+      ]) {
+        await page.goto(base + route);
+        assert.equal(
+          await page.locator(".mobile-navigation").isVisible(),
+          width === 390,
+        );
+        assert.equal(
+          await page.locator(".desktop-navigation").isVisible(),
+          width !== 390,
+        );
+        const active = page.locator(`${nav} a[aria-current=page]`);
+        if (width === 390 && route === "/")
+          assert.equal(await active.count(), 0);
+        else {
+          assert.equal(await active.count(), 1);
+          assert.equal(await active.getAttribute("href"), route);
+          assert.equal(
+            await active
+              .locator(".nav-label")
+              .evaluate((node) => getComputedStyle(node).backgroundSize),
+            "100% 1px",
+          );
+        }
+        const link = page.locator(
+          `${nav} a[href="${route === "/events/" ? "/kontakt/" : "/events/"}"]`,
+        );
+        const before = await link.boundingBox();
+        await link.hover();
+        await page.waitForTimeout(280);
+        const after = await link.boundingBox();
+        assert.deepEqual(
+          after,
+          before,
+          "Hover må ikke ændre navigationens geometri",
+        );
+        assert.equal(
+          await link
+            .locator(".nav-label")
+            .evaluate((node) => getComputedStyle(node).backgroundSize),
+          "100% 1px",
+        );
+        await link.focus();
+        assert.notEqual(
+          await link.evaluate((node) => getComputedStyle(node).outlineStyle),
+          "none",
+        );
+        const href = await link.getAttribute("href");
+        await page.keyboard.press("Enter");
+        await page.waitForURL(base + href);
+        assert(
+          await page.evaluate(
+            () => document.documentElement.scrollWidth <= innerWidth,
+          ),
+        );
+      }
+      await page.goto(base + "/events/");
+      assert.equal(await page.locator(".demo-catalog").count(), 0);
+      assert.equal(
+        await page
+          .locator('.event-list a[href*="design-og-nye-forbindelser"]')
+          .count(),
+        0,
+      );
+      await page.goto(base + "/ny-her/");
+      assert.equal(
+        await page.locator(".membership-concept, #membership-dialog").count(),
+        0,
+      );
+      await page.goto(base + "/events/kalender/");
+      assert.equal(await page.locator('a[href*="medlemskort"]').count(), 0);
+      await page.goto(base + "/om-kinddesign/");
+      assert.equal(await page.locator(".portrait-placeholder").count(), 0);
+      const visibleText = await page.locator("main").innerText();
+      assert(!/Redaktionelt værdiforslag|PORTRÆT AFVENTER/.test(visibleText));
+      for (const name of ["Julia Kulbaczewska", "Jeremy Bohdan"])
+        assert(visibleText.includes(name));
+      assert.equal(
+        await page.locator(".founder p.desktop-label:visible").count(),
+        width === 390 ? 0 : 2,
+      );
+      assert.equal(
+        await page.locator(".founder p.mobile-label:visible").count(),
+        width === 390 ? 2 : 0,
+      );
+      await page.goto(base + "/kontakt/");
+      assert(
+        (await page.locator(".form-notice").innerText()).includes(
+          "Intet sendes",
+        ),
+      );
+      assert.equal(mutations.length, 0);
+      assert.equal(errors.length, 0, errors.join("\n"));
+      results.push({
+        width,
+        faqClosedInitially: true,
+        contentPreserved: true,
+        ariaLinks: true,
+        oneAnswerAtATime: true,
+        enterAndSpace: true,
+        rapidToggleAndReducedMotion: true,
+        openFAQAxeViolations: 0,
+        navRoutesAndKeyboard: 5,
+        stableHoverGeometry: true,
+        activeNavVisible: true,
+        inlineMobileNavigation: "4 visible links; no hidden menu or focus trap",
+        prototypePromotionsRemoved: true,
+        foundersPreserved: true,
+        contactDemoHonest: true,
+        mutations,
+        errors,
+      });
+      await context.close();
+    }
+    const context = await browser.newContext({
+      javaScriptEnabled: false,
+      viewport: { width: 390, height: 900 },
+    });
+    const page = await context.newPage();
+    await page.goto(base + "/ny-her/");
+    assert.equal(await page.locator(".faq-panel:visible").count(), 3);
+    results.push({ noJavaScriptFAQ: "All original answers visible" });
+    await context.close();
+    fs.writeFileSync(
+      `${folder}/ux-interactions.json`,
+      JSON.stringify(results, null, 2),
+    );
+    console.log("UX interactions:", results);
+  } finally {
+    await browser.close();
+  }
+})().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});

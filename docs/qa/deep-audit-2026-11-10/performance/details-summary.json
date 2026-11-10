@@ -1,0 +1,1266 @@
+[
+  {
+    "file": "_kontakt_-mobile.json",
+    "LCP": 1962.8035,
+    "TBT": 44,
+    "CLS": 0,
+    "totalTransferBytes": 265057,
+    "requests": 8,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 141.141
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 35.428
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 303.259
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 14.575
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-2-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,IMG",
+          "selector": "body.inner-page > main#indhold > section.page-hero > img",
+          "boundingRect": {
+            "top": 144,
+            "bottom": 434,
+            "left": 0,
+            "right": 390,
+            "width": 390,
+            "height": 290
+          },
+          "snippet": "<img src=\"https://kinddesign-holdet-ek-2026.netlify.app/images/0bb08-640.webp\" srcset=\"/images/0bb08-640.webp 640w, /images/0bb08-1600.webp 1600w, /images/0bb08.\u2026\" sizes=\"(max-width:600px) 600px, 100vw\" width=\"2880\" height=\"1909\" alt=\"Deltagere i samtale til et KindDesign-arrangement\" fetchpriority=\"high\">",
+          "nodeLabel": "Deltagere i samtale til et KindDesign-arrangement"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimizes main-thread work",
+        "display": "0.3\u00a0s",
+        "metricSavings": {
+          "TBT": 50
+        }
+      },
+      {
+        "id": "long-tasks",
+        "title": "Avoid long main-thread tasks",
+        "display": "1 long task found",
+        "metricSavings": {
+          "TBT": 50
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 109\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 450
+        }
+      }
+    ]
+  },
+  {
+    "file": "_events_-mobile.json",
+    "LCP": 1844.3870000000002,
+    "TBT": 0,
+    "CLS": 0,
+    "totalTransferBytes": 495500,
+    "requests": 13,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 191.079
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 11.819
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 487.485
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 7.782
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-5-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,IMG",
+          "selector": "body.inner-page > main#indhold > section.page-hero > img",
+          "boundingRect": {
+            "top": 144,
+            "bottom": 434,
+            "left": 0,
+            "right": 390,
+            "width": 390,
+            "height": 290
+          },
+          "snippet": "<img src=\"https://kinddesign-holdet-ek-2026.netlify.app/images/0bb08-640.webp\" srcset=\"/images/0bb08-640.webp 640w, /images/0bb08-1600.webp 1600w, /images/0bb08.\u2026\" sizes=\"(max-width:600px) 600px, 100vw\" width=\"2880\" height=\"1909\" alt=\"Deltagere i samtale til et KindDesign-arrangement\" fetchpriority=\"high\">",
+          "nodeLabel": "Deltagere i samtale til et KindDesign-arrangement"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 300\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 300
+        }
+      }
+    ]
+  },
+  {
+    "file": "_ny-her_-desktop.json",
+    "LCP": 742.7525,
+    "TBT": 0,
+    "CLS": 0,
+    "totalTransferBytes": 466723,
+    "requests": 8,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 143.544
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 22.719
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 404.946
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 50.478
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-0-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,1,IMG",
+          "selector": "main#indhold > section.welcome-section > div.welcome-card > img",
+          "boundingRect": {
+            "top": 189,
+            "bottom": 689,
+            "left": 845,
+            "right": 1345,
+            "width": 500,
+            "height": 500
+          },
+          "snippet": "<img src=\"/images/1207b.webp\" srcset=\"/images/1207b.webp 780w, /images/1207b-1200.webp 1200w\" sizes=\"(max-width:600px) calc(100vw - 48px), 500px\" width=\"500\" height=\"500\" alt=\"To deltagere ved et KindDesign-arrangement\" fetchpriority=\"high\">",
+          "nodeLabel": "To deltagere ved et KindDesign-arrangement"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 92\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 50
+        }
+      }
+    ]
+  },
+  {
+    "file": "_events_from-ballet-to-technology_-mobile.json",
+    "LCP": 868.8345,
+    "TBT": 0,
+    "CLS": 0,
+    "totalTransferBytes": 421040,
+    "requests": 10,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 131.349
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 327.717
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-0-H1",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,0,DIV,1,H1",
+          "selector": "section.official-detail > div.official-detail-grid > div > h1",
+          "boundingRect": {
+            "top": 263,
+            "bottom": 433,
+            "left": 24,
+            "right": 366,
+            "width": 342,
+            "height": 170
+          },
+          "snippet": "<h1>",
+          "nodeLabel": "From Ballet to Technology: On Reinvention and Creative Identity"
+        }
+      ]
+    },
+    "opportunities": []
+  },
+  {
+    "file": "forside-mobile.json",
+    "LCP": 3030,
+    "TBT": 11,
+    "CLS": 0,
+    "totalTransferBytes": 598514,
+    "requests": 11,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 462.566
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 16.549
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 337.555
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 36.777
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-0-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,PICTURE,2,IMG",
+          "selector": "main#indhold > section.hero > picture.hero-photo > img",
+          "boundingRect": {
+            "top": 144,
+            "bottom": 834,
+            "left": 0,
+            "right": 390,
+            "width": 390,
+            "height": 690
+          },
+          "snippet": "<img src=\"https://kinddesign-holdet-ek-2026.netlify.app/images/1207b.webp\" width=\"1440\" height=\"1000\" alt=\"Kreative deltagere i samtale ved et KindDesign-arrangement\" fetchpriority=\"high\">",
+          "nodeLabel": "Kreative deltagere i samtale ved et KindDesign-arrangement"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 185\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 450
+        }
+      }
+    ]
+  },
+  {
+    "file": "_events_ai-skillsharing_-desktop.json",
+    "LCP": 694.0995,
+    "TBT": 0,
+    "CLS": 0,
+    "totalTransferBytes": 472619,
+    "requests": 10,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 238.962
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 9.99
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 255.651
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 29.793
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-0-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,1,IMG",
+          "selector": "main#indhold > section.official-detail > div.official-detail-grid > img.official-cover",
+          "boundingRect": {
+            "top": 213,
+            "bottom": 780,
+            "left": 809,
+            "right": 1376,
+            "width": 567,
+            "height": 567
+          },
+          "snippet": "<img class=\"official-cover\" src=\"https://kinddesign-holdet-ek-2026.netlify.app/images/luma-c3bj5f9d-600.webp\" srcset=\"/images/luma-c3bj5f9d-450.webp 450w, /images/luma-c3bj5f9d-600.webp 600w, \u2026\" sizes=\"(max-width:600px) calc(100vw - 48px), (max-width:1000px) 45vw, 520px\" alt=\"Officielt eventcover: AI skillsharing for designers &amp; creatives\" fetchpriority=\"high\">",
+          "nodeLabel": "Officielt eventcover: AI skillsharing for designers & creatives"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "server-response-time",
+        "title": "Initial server response time was short",
+        "display": "Root document took 160\u00a0ms",
+        "metricSavings": {
+          "FCP": 50,
+          "LCP": 50
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 106\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 50
+        }
+      }
+    ]
+  },
+  {
+    "file": "forside-desktop.json",
+    "LCP": 336.868,
+    "TBT": 0,
+    "CLS": 0.01075616218975051,
+    "totalTransferBytes": 963914,
+    "requests": 11,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 144.264
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 408.508
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-0-H1",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,2,DIV,0,H1",
+          "selector": "main#indhold > section.hero > div.hero-intro > h1#hero-title",
+          "boundingRect": {
+            "top": 214,
+            "bottom": 388,
+            "left": -6,
+            "right": 1434,
+            "width": 1440,
+            "height": 174
+          },
+          "snippet": "<h1 id=\"hero-title\">",
+          "nodeLabel": "KIND DESIGN"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "layout-shifts",
+        "title": "Avoid large layout shifts",
+        "display": "1 layout shift found",
+        "metricSavings": {
+          "CLS": 0.011
+        }
+      }
+    ]
+  },
+  {
+    "file": "_ny-her_-mobile.json",
+    "LCP": 2960.574,
+    "TBT": 0,
+    "CLS": 0,
+    "totalTransferBytes": 466752,
+    "requests": 8,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 125.322
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 6.973
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 251.511
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 50.136
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-0-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,1,IMG",
+          "selector": "main#indhold > section.welcome-section > div.welcome-card > img",
+          "boundingRect": {
+            "top": 672,
+            "bottom": 932,
+            "left": 24,
+            "right": 366,
+            "width": 342,
+            "height": 260
+          },
+          "snippet": "<img src=\"/images/1207b.webp\" srcset=\"/images/1207b.webp 780w, /images/1207b-1200.webp 1200w\" sizes=\"(max-width:600px) calc(100vw - 48px), 500px\" width=\"500\" height=\"500\" alt=\"To deltagere ved et KindDesign-arrangement\" fetchpriority=\"high\">",
+          "nodeLabel": "To deltagere ved et KindDesign-arrangement"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 126\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 450
+        }
+      }
+    ]
+  },
+  {
+    "file": "_events_-desktop.json",
+    "LCP": 919.3905,
+    "TBT": 0,
+    "CLS": 0,
+    "totalTransferBytes": 1684492,
+    "requests": 18,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 129.01500006103515
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 17.719999938964843
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 396.013
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 27.577
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-1-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,IMG",
+          "selector": "body.inner-page > main#indhold > section.page-hero > img",
+          "boundingRect": {
+            "top": 73,
+            "bottom": 921,
+            "left": 0,
+            "right": 1440,
+            "width": 1440,
+            "height": 848
+          },
+          "snippet": "<img src=\"https://kinddesign-holdet-ek-2026.netlify.app/images/0bb08-1600.webp\" srcset=\"/images/0bb08-640.webp 640w, /images/0bb08-1600.webp 1600w, /images/0bb08.\u2026\" sizes=\"(max-width:600px) 600px, 100vw\" width=\"2880\" height=\"1909\" alt=\"Deltagere i samtale til et KindDesign-arrangement\" fetchpriority=\"high\">",
+          "nodeLabel": "Deltagere i samtale til et KindDesign-arrangement"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 1,068\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 250
+        }
+      }
+    ]
+  },
+  {
+    "file": "_om-kinddesign_-desktop.json",
+    "LCP": 736.0115000000001,
+    "TBT": 0,
+    "CLS": 0,
+    "totalTransferBytes": 1193626,
+    "requests": 8,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 201.148
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 8.804
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 284.28
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 39.538
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-1-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,IMG",
+          "selector": "body.inner-page > main#indhold > section.page-hero > img",
+          "boundingRect": {
+            "top": 71,
+            "bottom": 973,
+            "left": 0,
+            "right": 1440,
+            "width": 1440,
+            "height": 902
+          },
+          "snippet": "<img src=\"https://kinddesign-holdet-ek-2026.netlify.app/images/0bb08-1600.webp\" srcset=\"/images/0bb08-640.webp 640w, /images/0bb08-1600.webp 1600w, /images/0bb08.\u2026\" sizes=\"(max-width:600px) 600px, 100vw\" width=\"2880\" height=\"1909\" alt=\"Deltagere i samtale til et KindDesign-arrangement\" fetchpriority=\"high\">",
+          "nodeLabel": "Deltagere i samtale til et KindDesign-arrangement"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 741\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 250
+        }
+      }
+    ]
+  },
+  {
+    "file": "_events_kalender_-desktop.json",
+    "LCP": 734.45,
+    "TBT": 0,
+    "CLS": 0,
+    "totalTransferBytes": 602473,
+    "requests": 9,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 253.646
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 11.882
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 289.038
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 40.387
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-1-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,IMG",
+          "selector": "body.inner-page > main#indhold > section.calendar-editorial > img.calendar-portrait",
+          "boundingRect": {
+            "top": 136,
+            "bottom": 836,
+            "left": 958,
+            "right": 1373,
+            "width": 415,
+            "height": 700
+          },
+          "snippet": "<img class=\"calendar-portrait\" src=\"/images/1207b.webp\" width=\"415\" height=\"700\" alt=\"KindDesigns kreative f\u00e6llesskab\">",
+          "nodeLabel": "KindDesigns kreative f\u00e6llesskab"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "server-response-time",
+        "title": "Initial server response time was short",
+        "display": "Root document took 160\u00a0ms",
+        "metricSavings": {
+          "FCP": 50,
+          "LCP": 50
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 219\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 100
+        }
+      }
+    ]
+  },
+  {
+    "file": "_events_ai-skillsharing_-mobile.json",
+    "LCP": 883.8585,
+    "TBT": 0,
+    "CLS": 0,
+    "totalTransferBytes": 418535,
+    "requests": 10,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 353.37600006103514
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 307.57899993896484
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-0-H1",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,0,DIV,1,H1",
+          "selector": "section.official-detail > div.official-detail-grid > div > h1",
+          "boundingRect": {
+            "top": 263,
+            "bottom": 391,
+            "left": 24,
+            "right": 366,
+            "width": 342,
+            "height": 128
+          },
+          "snippet": "<h1>",
+          "nodeLabel": "AI skillsharing for designers & creatives"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "server-response-time",
+        "title": "Initial server response time was short",
+        "display": "Root document took 250\u00a0ms",
+        "metricSavings": {
+          "FCP": 150,
+          "LCP": 150
+        }
+      }
+    ]
+  },
+  {
+    "file": "_events_from-ballet-to-technology_-desktop.json",
+    "LCP": 888.6274999999999,
+    "TBT": 0,
+    "CLS": 0,
+    "totalTransferBytes": 480298,
+    "requests": 10,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 346.416
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 19.896
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 563.727
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 56.964
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-0-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,1,IMG",
+          "selector": "main#indhold > section.official-detail > div.official-detail-grid > img.official-cover",
+          "boundingRect": {
+            "top": 213,
+            "bottom": 780,
+            "left": 809,
+            "right": 1376,
+            "width": 567,
+            "height": 567
+          },
+          "snippet": "<img class=\"official-cover\" src=\"https://kinddesign-holdet-ek-2026.netlify.app/images/luma-cmapoye1-600.webp\" srcset=\"/images/luma-cmapoye1-450.webp 450w, /images/luma-cmapoye1-600.webp 600w, \u2026\" sizes=\"(max-width:600px) calc(100vw - 48px), (max-width:1000px) 45vw, 520px\" alt=\"Officielt eventcover: From Ballet to Technology: On Reinvention and Creati\u2026\" fetchpriority=\"high\">",
+          "nodeLabel": "Officielt eventcover: From Ballet to Technology: On Reinvention and Creative Id\u2026"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "server-response-time",
+        "title": "Initial server response time was short",
+        "display": "Root document took 260\u00a0ms",
+        "metricSavings": {
+          "FCP": 150,
+          "LCP": 150
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 113\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 50
+        }
+      }
+    ]
+  },
+  {
+    "file": "_events_kalender_-mobile.json",
+    "LCP": 968.569,
+    "TBT": 47,
+    "CLS": 0,
+    "totalTransferBytes": 543195,
+    "requests": 9,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 192.26699993896483
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 452.13200006103517
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-0-H2",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,3,H2",
+          "selector": "main#indhold > section.calendar-editorial > div > h2.calendar-feature-title",
+          "boundingRect": {
+            "top": 609,
+            "bottom": 749,
+            "left": 24,
+            "right": 366,
+            "width": 342,
+            "height": 140
+          },
+          "snippet": "<h2 class=\"calendar-feature-title\">",
+          "nodeLabel": "From Ballet to Technology: On Reinvention and Creative Identity \u2197"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimizes main-thread work",
+        "display": "0.4\u00a0s",
+        "metricSavings": {
+          "TBT": 50
+        }
+      },
+      {
+        "id": "long-tasks",
+        "title": "Avoid long main-thread tasks",
+        "display": "1 long task found",
+        "metricSavings": {
+          "TBT": 50
+        }
+      }
+    ]
+  },
+  {
+    "file": "_om-kinddesign_-mobile.json",
+    "LCP": 1740.666,
+    "TBT": 0,
+    "CLS": 0,
+    "totalTransferBytes": 186071,
+    "requests": 7,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 249.208
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 10.524
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 161.785
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 25.776
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-1-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,IMG",
+          "selector": "body.inner-page > main#indhold > section.page-hero > img",
+          "boundingRect": {
+            "top": 144,
+            "bottom": 434,
+            "left": 0,
+            "right": 390,
+            "width": 390,
+            "height": 290
+          },
+          "snippet": "<img src=\"https://kinddesign-holdet-ek-2026.netlify.app/images/0bb08-640.webp\" srcset=\"/images/0bb08-640.webp 640w, /images/0bb08-1600.webp 1600w, /images/0bb08.\u2026\" sizes=\"(max-width:600px) 600px, 100vw\" width=\"2880\" height=\"1909\" alt=\"Deltagere i samtale til et KindDesign-arrangement\" fetchpriority=\"high\">",
+          "nodeLabel": "Deltagere i samtale til et KindDesign-arrangement"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "server-response-time",
+        "title": "Initial server response time was short",
+        "display": "Root document took 150\u00a0ms",
+        "metricSavings": {
+          "FCP": 50,
+          "LCP": 50
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 61\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 300
+        }
+      }
+    ]
+  },
+  {
+    "file": "_kontakt_-desktop.json",
+    "LCP": 730.4945,
+    "TBT": 0,
+    "CLS": 0.004523266233174726,
+    "totalTransferBytes": 934239,
+    "requests": 8,
+    "thirdPartyURLs": [],
+    "lcpDetails": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "valueType": "text",
+              "label": "Subpart"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 130.934
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 8.119
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 441.369
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 45.528
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "lhId": "page-0-IMG",
+          "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,IMG",
+          "selector": "body.inner-page > main#indhold > section.page-hero > img",
+          "boundingRect": {
+            "top": 73,
+            "bottom": 921,
+            "left": 0,
+            "right": 1440,
+            "width": 1440,
+            "height": 848
+          },
+          "snippet": "<img src=\"https://kinddesign-holdet-ek-2026.netlify.app/images/0bb08-1600.webp\" srcset=\"/images/0bb08-640.webp 640w, /images/0bb08-1600.webp 1600w, /images/0bb08.\u2026\" sizes=\"(max-width:600px) 600px, 100vw\" width=\"2880\" height=\"1909\" alt=\"Deltagere i samtale til et KindDesign-arrangement\" fetchpriority=\"high\">",
+          "nodeLabel": "Deltagere i samtale til et KindDesign-arrangement"
+        }
+      ]
+    },
+    "opportunities": [
+      {
+        "id": "layout-shifts",
+        "title": "Avoid large layout shifts",
+        "display": "1 layout shift found",
+        "metricSavings": {
+          "CLS": 0.005
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 542\u00a0KiB",
+        "metricSavings": {
+          "FCP": 0,
+          "LCP": 250
+        }
+      }
+    ]
+  }
+]

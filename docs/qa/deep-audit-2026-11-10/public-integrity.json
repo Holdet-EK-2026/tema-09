@@ -1,0 +1,229 @@
+{
+  "url": "https://kinddesign-holdet-ek-2026.netlify.app/",
+  "sourceCommit": "3f2ce0b6366ff732bd76e961be8bf5f1fbdcd90e",
+  "verifiedFiles": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "404.html",
+      "status": 404,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "ny-her/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "kontakt/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "kalender/from-ballet-to-technology.ics",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/calendar; charset=utf-8"
+    },
+    {
+      "path": "om-kinddesign/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "_astro/event-status.dYt9AKbD.js",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "_astro/index.BGU8pURu.css",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/css; charset=UTF-8"
+    },
+    {
+      "path": "_astro/Carousel.astro_astro_type_script_index_0_lang.B_fbLJPS.js",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "_astro/index.astro_astro_type_script_index_0_lang.Dd1rAc7d.js",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "_astro/OfficialEventDetail.astro_astro_type_script_index_0_lang.DrKX3OQ3.js",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "_astro/Footer.C5jP3C_P.css",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/css; charset=UTF-8"
+    },
+    {
+      "path": "_astro/InnerLayout.CBQ4iXdd.css",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/css; charset=UTF-8"
+    },
+    {
+      "path": "events/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "fonts/dm-sans-variable.woff2",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/bricolage-variable.woff2",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "tilmelding/ideer-paa-papir/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "tilmelding/design-i-virkeligheden/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "tilmelding/et-bord-nye-ansigter/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "tilmelding/design-og-nye-forbindelser/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/real-talk/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/ideer-paa-papir/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/meetup-berlin/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/kalender/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/meetup-cph-jul/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/design-i-virkeligheden/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/meetup-nordhavn-2025/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/et-bord-nye-ansigter/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/meetup-koebenhavn-september-2025/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/ai-skillsharing/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/from-ballet-to-technology/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/meetup-barcelona/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "events/design-og-nye-forbindelser/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "kalender/ideer-paa-papir/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "kalender/design-i-virkeligheden/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "kalender/et-bord-nye-ansigter/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "kalender/design-og-nye-forbindelser/index.html",
+      "status": 200,
+      "sha256MatchesCleanArtifact": true,
+      "contentType": "text/html; charset=UTF-8"
+    }
+  ],
+  "generatedDuplicateRoutesAbsent": true
+}

@@ -1,0 +1,122 @@
+{
+  "method": "Native Chrome View > Zoom In / Make Text Larger through CUA; actual zoom UI confirmed 200% and 400%; read-only DOM measurements. User profile with extensions, not performance environment.",
+  "checks": [
+    {
+      "zoomPercent": 200,
+      "route": "/events/",
+      "innerWidth": 735,
+      "innerHeight": 389,
+      "scrollWidth": 735,
+      "devicePixelRatio": 4.0
+    },
+    {
+      "zoomPercent": 200,
+      "route": "/",
+      "innerWidth": 735,
+      "innerHeight": 390,
+      "scrollWidth": 735,
+      "devicePixelRatio": 4.0
+    },
+    {
+      "zoomPercent": 200,
+      "route": "/om-kinddesign/",
+      "innerWidth": 735,
+      "innerHeight": 389,
+      "scrollWidth": 735,
+      "devicePixelRatio": 4.0
+    },
+    {
+      "zoomPercent": 200,
+      "route": "/ny-her/",
+      "innerWidth": 735,
+      "innerHeight": 391,
+      "scrollWidth": 735,
+      "devicePixelRatio": 4.0
+    },
+    {
+      "zoomPercent": 200,
+      "route": "/kontakt/",
+      "innerWidth": 735,
+      "innerHeight": 390,
+      "scrollWidth": 735,
+      "devicePixelRatio": 4.0
+    },
+    {
+      "zoomPercent": 200,
+      "route": "/events/kalender/",
+      "innerWidth": 735,
+      "innerHeight": 392,
+      "scrollWidth": 735,
+      "devicePixelRatio": 4.0
+    },
+    {
+      "zoomPercent": 400,
+      "route": "/",
+      "innerWidth": 367,
+      "innerHeight": 196,
+      "scrollWidth": 367,
+      "devicePixelRatio": 8.0
+    },
+    {
+      "zoomPercent": 400,
+      "route": "/events/",
+      "innerWidth": 367,
+      "innerHeight": 194,
+      "scrollWidth": 367,
+      "devicePixelRatio": 8.0
+    },
+    {
+      "zoomPercent": 400,
+      "route": "/om-kinddesign/",
+      "innerWidth": 367,
+      "innerHeight": 196,
+      "scrollWidth": 367,
+      "devicePixelRatio": 8.0
+    },
+    {
+      "zoomPercent": 400,
+      "route": "/ny-her/",
+      "innerWidth": 367,
+      "innerHeight": 195,
+      "scrollWidth": 367,
+      "devicePixelRatio": 8.0
+    },
+    {
+      "zoomPercent": 400,
+      "route": "/kontakt/",
+      "innerWidth": 367,
+      "innerHeight": 194,
+      "scrollWidth": 367,
+      "devicePixelRatio": 8.0
+    },
+    {
+      "zoomPercent": 400,
+      "route": "/events/kalender/",
+      "innerWidth": 367,
+      "innerHeight": 195,
+      "scrollWidth": 367,
+      "devicePixelRatio": 8.0
+    },
+    {
+      "zoomPercent": 400,
+      "route": "/events/from-ballet-to-technology/",
+      "innerWidth": 367,
+      "innerHeight": 194,
+      "scrollWidth": 367,
+      "devicePixelRatio": 8.0
+    }
+  ],
+  "scrollAt400Percent": {
+    "route": "/events/from-ballet-to-technology/",
+    "scrollY": 146.125,
+    "scrollWidth": 367,
+    "innerWidth": 367
+  },
+  "restored": {
+    "zoomPercent": 100,
+    "innerWidth": 1470,
+    "scrollWidth": 1470,
+    "devicePixelRatio": 2
+  },
+  "auditTabClosed": true
+}

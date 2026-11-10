@@ -1,0 +1,133 @@
+[
+  {
+    "width": 320,
+    "route": "/",
+    "active": []
+  },
+  {
+    "width": 320,
+    "route": "/events/",
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(114, 47, 55)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "labelBackground": "linear-gradient(rgb(114, 47, 55), rgb(114, 47, 55))",
+        "headerBackground": "rgb(165, 179, 155)"
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "route": "/om-kinddesign/",
+    "active": [
+      {
+        "text": "Om os",
+        "color": "rgb(114, 47, 55)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "labelBackground": "linear-gradient(rgb(114, 47, 55), rgb(114, 47, 55))",
+        "headerBackground": "rgb(165, 179, 155)"
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "route": "/ny-her/",
+    "active": [
+      {
+        "text": "Ny her?",
+        "color": "rgb(114, 47, 55)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "labelBackground": "linear-gradient(rgb(114, 47, 55), rgb(114, 47, 55))",
+        "headerBackground": "rgb(165, 179, 155)"
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "route": "/kontakt/",
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(114, 47, 55)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "labelBackground": "linear-gradient(rgb(114, 47, 55), rgb(114, 47, 55))",
+        "headerBackground": "rgb(165, 179, 155)"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "active": [
+      {
+        "text": "Forside",
+        "color": "rgb(114, 47, 55)",
+        "fontSize": "18px",
+        "fontWeight": "700",
+        "labelBackground": "linear-gradient(rgb(114, 47, 55), rgb(114, 47, 55))",
+        "headerBackground": "rgb(165, 179, 155)"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/events/",
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(114, 47, 55)",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "labelBackground": "linear-gradient(rgb(114, 47, 55), rgb(114, 47, 55))",
+        "headerBackground": "rgb(165, 179, 155)"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/om-kinddesign/",
+    "active": [
+      {
+        "text": "Om Kind Design",
+        "color": "rgb(114, 47, 55)",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "labelBackground": "linear-gradient(rgb(114, 47, 55), rgb(114, 47, 55))",
+        "headerBackground": "rgb(165, 179, 155)"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/ny-her/",
+    "active": [
+      {
+        "text": "Ny her?  ↗",
+        "color": "rgb(114, 47, 55)",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "labelBackground": "linear-gradient(rgb(114, 47, 55), rgb(114, 47, 55))",
+        "headerBackground": "rgb(165, 179, 155)"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/kontakt/",
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(114, 47, 55)",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "labelBackground": "linear-gradient(rgb(114, 47, 55), rgb(114, 47, 55))",
+        "headerBackground": "rgb(165, 179, 155)"
+      }
+    ]
+  }
+]

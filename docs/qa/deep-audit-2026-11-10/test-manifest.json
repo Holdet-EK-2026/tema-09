@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-10",
+  "target": "https://kinddesign-holdet-ek-2026.netlify.app/",
+  "readOnly": true,
+  "allPages": {
+    "routes": 27,
+    "widths": [
+      320,
+      375,
+      390,
+      430,
+      768,
+      1024,
+      1440
+    ],
+    "cases": 189,
+    "completed": 189,
+    "normalOverflowCases": 0,
+    "pageErrors": 0,
+    "failedResources": 0,
+    "automatedAxeScans": 46,
+    "automatedViolations": 0
+  },
+  "existingRegressionSuites": {
+    "carousel": "pass within existing assertions; focus-preserving Play exception reproduced separately",
+    "ux-interactions": "pass",
+    "official-flows": "pass",
+    "flows": "pass",
+    "smoke": "pass"
+  },
+  "newNavigation": {
+    "journeyClicks": 63,
+    "widths": [
+      320,
+      375,
+      390,
+      430,
+      768,
+      1024,
+      1440
+    ],
+    "extraWidths": [
+      600,
+      601,
+      640,
+      720,
+      1441,
+      1536,
+      1600,
+      1920
+    ],
+    "extraRoutes": 3,
+    "extraObservations": 24,
+    "wideDesktopOverflow": "confirmed"
+  },
+  "axeWCAG22": {
+    "scans": 14,
+    "violations": 0,
+    "incompleteColorContrastScans": 14,
+    "manualContrastFailure": true,
+    "manualTextSpacingFailure": true
+  },
+  "filterCombinations": 12,
+  "lumaOfficialPages": 8,
+  "nativeZoom": {
+    "percentages": [
+      200,
+      400
+    ],
+    "checks": 13,
+    "normalReflowHorizontalOverflow": 0,
+    "restoredTo100Percent": true
+  },
+  "lighthouse": {
+    "runs": 16,
+    "mobileWidth": 390,
+    "desktopWidth": 1440,
+    "performanceRange": [
+      94,
+      100
+    ],
+    "accessibilityRange": [
+      100,
+      100
+    ],
+    "fieldINP": "not available",
+    "repeatedMedian": "not measured"
+  },
+  "notPerformed": [
+    "real registration/payment/contact delivery",
+    "VoiceOver/NVDA spoken screenreader walkthrough",
+    "Safari/Firefox",
+    "physical mobile device",
+    "representative usability research",
+    "full pixel-diff against every Figma frame",
+    "code changes/build/push/commit/merge/deploy"
+  ]
+}

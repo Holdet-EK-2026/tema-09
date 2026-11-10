@@ -1,0 +1,4158 @@
+[
+  {
+    "id": "type-and-media",
+    "width": 320,
+    "route": "/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "KIND\nDESIGN",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "66px",
+          "weight": "700",
+          "lineHeight": "69px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "FÆLLES NYSGERRIGHED.\nNYE FORBINDELSER.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "34px",
+          "weight": "700",
+          "lineHeight": "36px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Kom for design.\nBliv for\nmenneskene.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "38px",
+          "weight": "700",
+          "lineHeight": "40px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Måske savner du nogen at vende en idé med. Måske vil du høre, hvordan ",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "17px",
+          "weight": "400",
+          "lineHeight": "25px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Du kan dele en erfaring, stille et spørgsmål eller lytte til andres pe",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "17px",
+          "weight": "400",
+          "lineHeight": "25px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "31px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/1207b.webp",
+          "naturalWidth": 600,
+          "naturalHeight": 900,
+          "slotWidth": 320,
+          "slotHeight": 690,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/gallery-3c8b7-600.webp",
+          "naturalWidth": 600,
+          "naturalHeight": 397,
+          "slotWidth": 213.8504638671875,
+          "slotHeight": 302.142822265625,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 144.85513305664062,
+          "slotHeight": 207.087158203125,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 116.68194580078125,
+          "slotHeight": 164.6573486328125,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 76.11624145507812,
+          "slotHeight": 107.5423583984375,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 116.68192291259766,
+          "slotHeight": 164.6573486328125,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 144.85511779785156,
+          "slotHeight": 207.087158203125,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/ca544-500.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 408,
+          "slotWidth": 272,
+          "slotHeight": 270,
+          "fit": "cover"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 320,
+    "route": "/",
+    "data": {
+      "scrollWidth": 320,
+      "width": 320,
+      "clipped": [
+        {
+          "text": "VI SES OM · TOKYO\n02 : 14 : 46\nDAGE   TIMER   MIN.\nSe næste event ↗",
+          "container": "hero",
+          "elementBottom": 940.5,
+          "containerBottom": 834
+        }
+      ]
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 320,
+    "route": "/events/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "EVENTS",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "48px",
+          "weight": "700",
+          "lineHeight": "57.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Vi mødes om design.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "34px",
+          "weight": "700",
+          "lineHeight": "43px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "En samtale om karriereskift og kreativ identitet. Rina Takikawa fortæl",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 240
+        },
+        {
+          "text": "Designere delte konkrete eksempler på, hvordan de bruger AI i deres da",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 240
+        },
+        {
+          "text": "En åben samtale om AI og de forandringer, designere og kreative opleve",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 240
+        },
+        {
+          "text": "KindDesign samlede designere og kreative til samtaler og nye forbindel",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 240
+        },
+        {
+          "text": "KindDesigns meetup i Berlin med gruppesamtaler om design og kreative e",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 240
+        },
+        {
+          "text": "En juleudgave af KindDesigns meetup med kreativ aktivitet og samtaler.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 240
+        },
+        {
+          "text": "Et uformelt meetup for designere og kreative hos ÅBEN Nordhavn.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 240
+        },
+        {
+          "text": "KindDesigns tredje meetup for designere og kreative i København.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 240
+        },
+        {
+          "text": "Er det din første gang?",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "38px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 224
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "24px",
+          "weight": "700",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-640.webp",
+          "naturalWidth": 599,
+          "naturalHeight": 397,
+          "slotWidth": 320,
+          "slotHeight": 290,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/luma-cmapoye1-450.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 272,
+          "slotWidth": 272,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-c3bj5f9d-450.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 272,
+          "slotWidth": 272,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-c3jcu29h-450.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 256,
+          "slotWidth": 272,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-n6nwx061-450.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 272,
+          "slotWidth": 272,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-84v57ubf-450.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 272,
+          "slotWidth": 272,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-iq2qpyk4-450.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 272,
+          "slotWidth": 272,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-jdv50gdz-450.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 272,
+          "slotWidth": 272,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-bszies4x-450.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 272,
+          "slotWidth": 272,
+          "slotHeight": 300,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 320,
+    "route": "/events/",
+    "data": {
+      "scrollWidth": 320,
+      "width": 320,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 320,
+    "route": "/events/kalender/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "FIND DIT NÆSTE\n“VI SES”.",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "44px",
+          "weight": "700",
+          "lineHeight": "48.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "From Ballet to Technology: On Reinvention and Creative Identity ↗",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "28px",
+          "weight": "700",
+          "lineHeight": "35px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "november 2026",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Skal vi skabe noget sammen?",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "31.5px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-cmapoye1-450.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 272,
+          "slotWidth": 272,
+          "slotHeight": 200,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 320,
+    "route": "/events/kalender/",
+    "data": {
+      "scrollWidth": 320,
+      "width": 320,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 320,
+    "route": "/events/from-ballet-to-technology/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "From Ballet to Technology: On Reinvention and Creative Identity",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "38px",
+          "weight": "700",
+          "lineHeight": "42.56px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "En samtale om karriereskift og kreativ identitet. Rina Takikawa fortæl",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "20px",
+          "weight": "400",
+          "lineHeight": "28px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "En ny samtale.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Program",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "31.5px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-cmapoye1-450.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 272,
+          "slotWidth": 272,
+          "slotHeight": 272,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 320,
+    "route": "/events/from-ballet-to-technology/",
+    "data": {
+      "scrollWidth": 320,
+      "width": 320,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 320,
+    "route": "/om-kinddesign/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "OM KINDDESIGN",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "43.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "DESIGN OPSTÅR MELLEM MENNESKER.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "34px",
+          "weight": "700",
+          "lineHeight": "43px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Menneskene bag KindDesign.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "38px",
+          "weight": "700",
+          "lineHeight": "48px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Fra en idé til et kreativt fællesskab.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "45px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 224
+        },
+        {
+          "text": "Det, der samler os.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "40px",
+          "weight": "700",
+          "lineHeight": "50px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "24px",
+          "weight": "700",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-640.webp",
+          "naturalWidth": 599,
+          "naturalHeight": 397,
+          "slotWidth": 320,
+          "slotHeight": 290,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/0bb08-640.webp",
+          "naturalWidth": 640,
+          "naturalHeight": 424,
+          "slotWidth": 224,
+          "slotHeight": 210,
+          "fit": "cover"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 320,
+    "route": "/om-kinddesign/",
+    "data": {
+      "scrollWidth": 320,
+      "width": 320,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 320,
+    "route": "/ny-her/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "Dit første hej\nstarter her.",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "44px",
+          "weight": "700",
+          "lineHeight": "46.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Det kan føles som et stort skridt at træde ind i et rum med nye mennes",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "17px",
+          "weight": "400",
+          "lineHeight": "24.65px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Vælg et event, der interesserer dig. Så har du allerede noget til fæll",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "17px",
+          "weight": "400",
+          "lineHeight": "24.65px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Fra nysgerrig til med i samtalen.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "33.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Godt at vide.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "34px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "31.5px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/1207b.webp",
+          "naturalWidth": 271,
+          "naturalHeight": 407,
+          "slotWidth": 272,
+          "slotHeight": 260,
+          "fit": "cover"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 320,
+    "route": "/ny-her/",
+    "data": {
+      "scrollWidth": 320,
+      "width": 320,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 320,
+    "route": "/kontakt/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "KONTAKT",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "48px",
+          "weight": "700",
+          "lineHeight": "57.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Lad os tage en snak.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "48px",
+          "weight": "700",
+          "lineHeight": "60px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "24px",
+          "weight": "700",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 272
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-640.webp",
+          "naturalWidth": 599,
+          "naturalHeight": 397,
+          "slotWidth": 320,
+          "slotHeight": 290,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/ca544-500.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 408,
+          "slotWidth": 272,
+          "slotHeight": 240,
+          "fit": "cover"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 320,
+    "route": "/kontakt/",
+    "data": {
+      "scrollWidth": 320,
+      "width": 320,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 390,
+    "route": "/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "KIND\nDESIGN",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "66px",
+          "weight": "700",
+          "lineHeight": "69px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "FÆLLES NYSGERRIGHED.\nNYE FORBINDELSER.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "34px",
+          "weight": "700",
+          "lineHeight": "36px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Kom for design.\nBliv for\nmenneskene.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "38px",
+          "weight": "700",
+          "lineHeight": "40px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Måske savner du nogen at vende en idé med. Måske vil du høre, hvordan ",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "17px",
+          "weight": "400",
+          "lineHeight": "25px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Du kan dele en erfaring, stille et spørgsmål eller lytte til andres pe",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "17px",
+          "weight": "400",
+          "lineHeight": "25px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "31px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/1207b.webp",
+          "naturalWidth": 600,
+          "naturalHeight": 900,
+          "slotWidth": 390,
+          "slotHeight": 690,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/gallery-3c8b7-600.webp",
+          "naturalWidth": 600,
+          "naturalHeight": 397,
+          "slotWidth": 264.84375,
+          "slotHeight": 302.142822265625,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 179.45401000976562,
+          "slotHeight": 208.337158203125,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 144.57232666015625,
+          "slotHeight": 165.859375,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 94.26641845703125,
+          "slotHeight": 107.5423583984375,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 144.57229614257812,
+          "slotHeight": 165.859375,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 179.45401000976562,
+          "slotHeight": 208.337158203125,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/ca544-500.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 513,
+          "slotWidth": 342,
+          "slotHeight": 270,
+          "fit": "cover"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 390,
+    "route": "/",
+    "data": {
+      "scrollWidth": 390,
+      "width": 390,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 390,
+    "route": "/events/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "EVENTS",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "48px",
+          "weight": "700",
+          "lineHeight": "57.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Vi mødes om design.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "34px",
+          "weight": "700",
+          "lineHeight": "43px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "En samtale om karriereskift og kreativ identitet. Rina Takikawa fortæl",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 310
+        },
+        {
+          "text": "Designere delte konkrete eksempler på, hvordan de bruger AI i deres da",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 310
+        },
+        {
+          "text": "En åben samtale om AI og de forandringer, designere og kreative opleve",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 310
+        },
+        {
+          "text": "KindDesign samlede designere og kreative til samtaler og nye forbindel",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 310
+        },
+        {
+          "text": "KindDesigns meetup i Berlin med gruppesamtaler om design og kreative e",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 310
+        },
+        {
+          "text": "En juleudgave af KindDesigns meetup med kreativ aktivitet og samtaler.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 310
+        },
+        {
+          "text": "Et uformelt meetup for designere og kreative hos ÅBEN Nordhavn.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 310
+        },
+        {
+          "text": "KindDesigns tredje meetup for designere og kreative i København.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "23px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 310
+        },
+        {
+          "text": "Er det din første gang?",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "38px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 294
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "24px",
+          "weight": "700",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-640.webp",
+          "naturalWidth": 599,
+          "naturalHeight": 397,
+          "slotWidth": 390,
+          "slotHeight": 290,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/luma-cmapoye1-450.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 342,
+          "slotWidth": 342,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-c3bj5f9d-450.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 342,
+          "slotWidth": 342,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-c3jcu29h-450.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 322,
+          "slotWidth": 342,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-n6nwx061-450.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 342,
+          "slotWidth": 342,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-84v57ubf-450.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 342,
+          "slotWidth": 342,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-iq2qpyk4-450.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 342,
+          "slotWidth": 342,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-jdv50gdz-450.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 342,
+          "slotWidth": 342,
+          "slotHeight": 300,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-bszies4x-450.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 342,
+          "slotWidth": 342,
+          "slotHeight": 300,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 390,
+    "route": "/events/",
+    "data": {
+      "scrollWidth": 390,
+      "width": 390,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 390,
+    "route": "/events/kalender/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "FIND DIT NÆSTE\n“VI SES”.",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "44px",
+          "weight": "700",
+          "lineHeight": "48.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "From Ballet to Technology: On Reinvention and Creative Identity ↗",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "28px",
+          "weight": "700",
+          "lineHeight": "35px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "november 2026",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Skal vi skabe noget sammen?",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "31.5px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-cmapoye1-450.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 342,
+          "slotWidth": 342,
+          "slotHeight": 200,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 390,
+    "route": "/events/kalender/",
+    "data": {
+      "scrollWidth": 390,
+      "width": 390,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 390,
+    "route": "/events/from-ballet-to-technology/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "From Ballet to Technology: On Reinvention and Creative Identity",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "38px",
+          "weight": "700",
+          "lineHeight": "42.56px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "En samtale om karriereskift og kreativ identitet. Rina Takikawa fortæl",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "20px",
+          "weight": "400",
+          "lineHeight": "28px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "En ny samtale.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Program",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "31.5px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-cmapoye1-450.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 342,
+          "slotWidth": 342,
+          "slotHeight": 342,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 390,
+    "route": "/events/from-ballet-to-technology/",
+    "data": {
+      "scrollWidth": 390,
+      "width": 390,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 390,
+    "route": "/om-kinddesign/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "OM KINDDESIGN",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "43.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "DESIGN OPSTÅR MELLEM MENNESKER.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "34px",
+          "weight": "700",
+          "lineHeight": "43px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Menneskene bag KindDesign.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "38px",
+          "weight": "700",
+          "lineHeight": "48px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Fra en idé til et kreativt fællesskab.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "45px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 294
+        },
+        {
+          "text": "Det, der samler os.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "40px",
+          "weight": "700",
+          "lineHeight": "50px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "24px",
+          "weight": "700",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-640.webp",
+          "naturalWidth": 599,
+          "naturalHeight": 397,
+          "slotWidth": 390,
+          "slotHeight": 290,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/0bb08-640.webp",
+          "naturalWidth": 640,
+          "naturalHeight": 424,
+          "slotWidth": 294,
+          "slotHeight": 210,
+          "fit": "cover"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 390,
+    "route": "/om-kinddesign/",
+    "data": {
+      "scrollWidth": 390,
+      "width": 390,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 390,
+    "route": "/ny-her/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "Dit første hej\nstarter her.",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "44px",
+          "weight": "700",
+          "lineHeight": "46.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Det kan føles som et stort skridt at træde ind i et rum med nye mennes",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "17px",
+          "weight": "400",
+          "lineHeight": "24.65px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Vælg et event, der interesserer dig. Så har du allerede noget til fæll",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "17px",
+          "weight": "400",
+          "lineHeight": "24.65px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Fra nysgerrig til med i samtalen.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "33.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Godt at vide.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "34px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "31.5px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/1207b.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 513,
+          "slotWidth": 342,
+          "slotHeight": 260,
+          "fit": "cover"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 390,
+    "route": "/ny-her/",
+    "data": {
+      "scrollWidth": 390,
+      "width": 390,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 390,
+    "route": "/kontakt/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "KONTAKT",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "48px",
+          "weight": "700",
+          "lineHeight": "57.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Lad os tage en snak.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "48px",
+          "weight": "700",
+          "lineHeight": "60px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "24px",
+          "weight": "700",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 342
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 54,
+          "slotHeight": 54,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-640.webp",
+          "naturalWidth": 599,
+          "naturalHeight": 397,
+          "slotWidth": 390,
+          "slotHeight": 290,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/ca544-500.webp",
+          "naturalWidth": 342,
+          "naturalHeight": 513,
+          "slotWidth": 342,
+          "slotHeight": 240,
+          "fit": "cover"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 390,
+    "route": "/kontakt/",
+    "data": {
+      "scrollWidth": 390,
+      "width": 390,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 768,
+    "route": "/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "KIND DESIGN",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "84.2496px",
+          "weight": "700",
+          "lineHeight": "92.6746px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 768
+        },
+        {
+          "text": "FÆLLES NYSGERRIGHED.\nNYE FORBINDELSER.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "35.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 332
+        },
+        {
+          "text": "Kom for design.\nBliv for\nmenneskene.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "46px",
+          "weight": "700",
+          "lineHeight": "57.5px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 337.5625
+        },
+        {
+          "text": "Måske savner du nogen at vende en idé med. Måske vil du høre, hvordan ",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "19px",
+          "weight": "400",
+          "lineHeight": "23.75px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 340.53125
+        },
+        {
+          "text": "Du kan dele en erfaring, stille et spørgsmål eller lytte til andres pe",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "19px",
+          "weight": "400",
+          "lineHeight": "23.75px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 340.53125
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "26px",
+          "weight": "700",
+          "lineHeight": "32.5px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 374
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-1600.webp",
+          "naturalWidth": 768,
+          "naturalHeight": 509,
+          "slotWidth": 768,
+          "slotHeight": 1000,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/gallery-3c8b7-600.webp",
+          "naturalWidth": 600,
+          "naturalHeight": 397,
+          "slotWidth": 292.631591796875,
+          "slotHeight": 423.157958984375,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 220.01248168945312,
+          "slotHeight": 325.7574462890625,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 167.123779296875,
+          "slotHeight": 245.601806640625,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 112.70269775390625,
+          "slotHeight": 162.9730224609375,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 167.123779296875,
+          "slotHeight": 245.601806640625,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 220.01246643066406,
+          "slotHeight": 325.7574462890625,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/ca544-500.webp",
+          "naturalWidth": 307,
+          "naturalHeight": 461,
+          "slotWidth": 289.453125,
+          "slotHeight": 289.453125,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 100,
+          "slotHeight": 124,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 768,
+    "route": "/",
+    "data": {
+      "scrollWidth": 768,
+      "width": 768,
+      "clipped": [
+        {
+          "text": "NÆSTE EVENT / 13. NOVEMBER · TOKYO\nFrom Ballet to Technology: On Reinvention and Creative Identity",
+          "container": "hero",
+          "elementBottom": 1030,
+          "containerBottom": 1000
+        }
+      ]
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 768,
+    "route": "/events/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "EVENTS",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "72px",
+          "weight": "700",
+          "lineHeight": "86.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 691.1875
+        },
+        {
+          "text": "Vi mødes om design.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "42px",
+          "weight": "700",
+          "lineHeight": "50.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 398.890625
+        },
+        {
+          "text": "En samtale om karriereskift og kreativ identitet. Rina Takikawa fortæl",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "21.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 309.609375
+        },
+        {
+          "text": "Designere delte konkrete eksempler på, hvordan de bruger AI i deres da",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "21.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 309.609375
+        },
+        {
+          "text": "En åben samtale om AI og de forandringer, designere og kreative opleve",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "21.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 309.609375
+        },
+        {
+          "text": "KindDesign samlede designere og kreative til samtaler og nye forbindel",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "21.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 309.609375
+        },
+        {
+          "text": "KindDesigns meetup i Berlin med gruppesamtaler om design og kreative e",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "21.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 309.609375
+        },
+        {
+          "text": "En juleudgave af KindDesigns meetup med kreativ aktivitet og samtaler.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "21.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 309.609375
+        },
+        {
+          "text": "Et uformelt meetup for designere og kreative hos ÅBEN Nordhavn.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "21.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 309.609375
+        },
+        {
+          "text": "KindDesigns tredje meetup for designere og kreative i København.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "21.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 309.609375
+        },
+        {
+          "text": "Er det din første gang?",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 477.203125
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "26px",
+          "weight": "700",
+          "lineHeight": "31.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 374
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-1600.webp",
+          "naturalWidth": 768,
+          "naturalHeight": 509,
+          "slotWidth": 768,
+          "slotHeight": 847.8125,
+          "fit": "fill"
+        },
+        {
+          "src": "/images/luma-cmapoye1-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 246.390625,
+          "slotHeight": 430.75,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-c3bj5f9d-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 246.390625,
+          "slotHeight": 315.5625,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-c3jcu29h-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 397,
+          "slotWidth": 246.390625,
+          "slotHeight": 349.15625,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-n6nwx061-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 246.390625,
+          "slotHeight": 351.5625,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-84v57ubf-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 246.390625,
+          "slotHeight": 385.15625,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-iq2qpyk4-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 246.390625,
+          "slotHeight": 351.5625,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-jdv50gdz-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 246.390625,
+          "slotHeight": 293.96875,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-bszies4x-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 246.390625,
+          "slotHeight": 293.96875,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/d2848.webp",
+          "naturalWidth": 1400,
+          "naturalHeight": 2100,
+          "slotWidth": 214.796875,
+          "slotHeight": 322.1875,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 100,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 768,
+    "route": "/events/",
+    "data": {
+      "scrollWidth": 768,
+      "width": 768,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 768,
+    "route": "/events/kalender/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "FIND DIT NÆSTE\n“VI SES”.",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "52px",
+          "weight": "700",
+          "lineHeight": "57.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 396.65625
+        },
+        {
+          "text": "From Ballet to Technology: On Reinvention and Creative Identity ↗",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "28px",
+          "weight": "700",
+          "lineHeight": "35px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 396.65625
+        },
+        {
+          "text": "november 2026",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "38px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 704
+        },
+        {
+          "text": "Skal vi skabe noget sammen?",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "42px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 576
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "38.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 374
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-cmapoye1-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 396.65625,
+          "slotHeight": 330,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/1207b.webp",
+          "naturalWidth": 780,
+          "naturalHeight": 1170,
+          "slotWidth": 283.328125,
+          "slotHeight": 700,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 100,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 768,
+    "route": "/events/kalender/",
+    "data": {
+      "scrollWidth": 768,
+      "width": 768,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 768,
+    "route": "/events/from-ballet-to-technology/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "From Ballet to Technology: On Reinvention and Creative Identity",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "40px",
+          "weight": "700",
+          "lineHeight": "44.8px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 366.53125
+        },
+        {
+          "text": "En samtale om karriereskift og kreativ identitet. Rina Takikawa fortæl",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "23px",
+          "weight": "400",
+          "lineHeight": "32.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 366.53125
+        },
+        {
+          "text": "En ny samtale.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 336
+        },
+        {
+          "text": "Program",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 336
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "38.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 374
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-cmapoye1-450.webp",
+          "naturalWidth": 345,
+          "naturalHeight": 345,
+          "slotWidth": 305.453125,
+          "slotHeight": 305.453125,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 100,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 768,
+    "route": "/events/from-ballet-to-technology/",
+    "data": {
+      "scrollWidth": 768,
+      "width": 768,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 768,
+    "route": "/om-kinddesign/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "OM KINDDESIGN",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "72px",
+          "weight": "700",
+          "lineHeight": "86.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 691.1875
+        },
+        {
+          "text": "DESIGN OPSTÅR\nMELLEM MENNESKER.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "43.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 337
+        },
+        {
+          "text": "Menneskene\nbag KindDesign.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "43.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 704
+        },
+        {
+          "text": "Fra en idé til et\nkreativt fællesskab.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "43.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 656
+        },
+        {
+          "text": "Det, der samler os.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 652
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "26px",
+          "weight": "700",
+          "lineHeight": "31.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 374
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-1600.webp",
+          "naturalWidth": 768,
+          "naturalHeight": 509,
+          "slotWidth": 768,
+          "slotHeight": 902.15625,
+          "fit": "fill"
+        },
+        {
+          "src": "/images/d2848-680.webp",
+          "naturalWidth": 383,
+          "naturalHeight": 575,
+          "slotWidth": 704,
+          "slotHeight": 320,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 100,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 768,
+    "route": "/om-kinddesign/",
+    "data": {
+      "scrollWidth": 768,
+      "width": 768,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 768,
+    "route": "/ny-her/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "Dit første hej\nstarter her.",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "48px",
+          "weight": "700",
+          "lineHeight": "60px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 288.234375
+        },
+        {
+          "text": "Det kan føles som et stort skridt at træde ind i et rum med nye mennes",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "20px",
+          "weight": "400",
+          "lineHeight": "25px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 343.625
+        },
+        {
+          "text": "Vælg et event, der interesserer dig. Så har du allerede noget til fæll",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "20px",
+          "weight": "400",
+          "lineHeight": "25px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 343.625
+        },
+        {
+          "text": "Fra nysgerrig til med i samtalen.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "40px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 704
+        },
+        {
+          "text": "Godt at vide.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "50px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 704
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "38.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 374
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/1207b.webp",
+          "naturalWidth": 500,
+          "naturalHeight": 750,
+          "slotWidth": 286.359375,
+          "slotHeight": 440,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 100,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 768,
+    "route": "/ny-her/",
+    "data": {
+      "scrollWidth": 768,
+      "width": 768,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 768,
+    "route": "/kontakt/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "KONTAKT",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "72px",
+          "weight": "700",
+          "lineHeight": "86.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 691.1875
+        },
+        {
+          "text": "Lad os\ntage en snak.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "50px",
+          "weight": "700",
+          "lineHeight": "60px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 336
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "26px",
+          "weight": "700",
+          "lineHeight": "31.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 374
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-1600.webp",
+          "naturalWidth": 768,
+          "naturalHeight": 509,
+          "slotWidth": 768,
+          "slotHeight": 847.8125,
+          "fit": "fill"
+        },
+        {
+          "src": "/images/ca544-500.webp",
+          "naturalWidth": 307,
+          "naturalHeight": 461,
+          "slotWidth": 336,
+          "slotHeight": 350,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 100,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 768,
+    "route": "/kontakt/",
+    "data": {
+      "scrollWidth": 768,
+      "width": 768,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 1440,
+    "route": "/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "KIND DESIGN",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "158px",
+          "weight": "700",
+          "lineHeight": "174px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 1440
+        },
+        {
+          "text": "FÆLLES NYSGERRIGHED.\nNYE FORBINDELSER.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "35.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 620
+        },
+        {
+          "text": "Kom for design.\nBliv for\nmenneskene.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "58px",
+          "weight": "700",
+          "lineHeight": "73px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 419.078125
+        },
+        {
+          "text": "Måske savner du nogen at vende en idé med. Måske vil du høre, hvordan ",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "22px",
+          "weight": "400",
+          "lineHeight": "28px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 708
+        },
+        {
+          "text": "Du kan dele en erfaring, stille et spørgsmål eller lytte til andres pe",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "22px",
+          "weight": "400",
+          "lineHeight": "28px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 708
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "40px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 608
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-1600.webp",
+          "naturalWidth": 1440,
+          "naturalHeight": 954,
+          "slotWidth": 1440,
+          "slotHeight": 1000,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/gallery-3c8b7-600.webp",
+          "naturalWidth": 600,
+          "naturalHeight": 397,
+          "slotWidth": 355.7894287109375,
+          "slotHeight": 496.842041015625,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 270.81573486328125,
+          "slotHeight": 384.890869140625,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 210.784912109375,
+          "slotHeight": 290.450927734375,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 137.02703857421875,
+          "slotHeight": 191.351318359375,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 210.7848663330078,
+          "slotHeight": 290.450927734375,
+          "fit": "cover"
+        },
+        {
+          "src": "",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "slotWidth": 270.8157043457031,
+          "slotHeight": 384.890869140625,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/ca544-500.webp",
+          "naturalWidth": 500,
+          "naturalHeight": 751,
+          "slotWidth": 500,
+          "slotHeight": 500,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 124,
+          "slotHeight": 124,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 1440,
+    "route": "/",
+    "data": {
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clipped": [
+        {
+          "text": "NÆSTE EVENT / 13. NOVEMBER · TOKYO\nFrom Ballet to Technology: On Reinvention and Creative Identity",
+          "container": "hero",
+          "elementBottom": 1030,
+          "containerBottom": 1000
+        }
+      ]
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 1440,
+    "route": "/events/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "EVENTS",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "110px",
+          "weight": "700",
+          "lineHeight": "132px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 1296
+        },
+        {
+          "text": "Vi mødes om design.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "55px",
+          "weight": "700",
+          "lineHeight": "66px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 700.140625
+        },
+        {
+          "text": "En samtale om karriereskift og kreativ identitet. Rina Takikawa fortæl",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "21px",
+          "weight": "400",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 612
+        },
+        {
+          "text": "Designere delte konkrete eksempler på, hvordan de bruger AI i deres da",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "21px",
+          "weight": "400",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 612
+        },
+        {
+          "text": "En åben samtale om AI og de forandringer, designere og kreative opleve",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "21px",
+          "weight": "400",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 612
+        },
+        {
+          "text": "KindDesign samlede designere og kreative til samtaler og nye forbindel",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "21px",
+          "weight": "400",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 612
+        },
+        {
+          "text": "KindDesigns meetup i Berlin med gruppesamtaler om design og kreative e",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "21px",
+          "weight": "400",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 612
+        },
+        {
+          "text": "En juleudgave af KindDesigns meetup med kreativ aktivitet og samtaler.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "21px",
+          "weight": "400",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 612
+        },
+        {
+          "text": "Et uformelt meetup for designere og kreative hos ÅBEN Nordhavn.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "21px",
+          "weight": "400",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 612
+        },
+        {
+          "text": "KindDesigns tredje meetup for designere og kreative i København.",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "21px",
+          "weight": "400",
+          "lineHeight": "25.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 612
+        },
+        {
+          "text": "Er det din første gang?",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "34px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 675.359375
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "36px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 638
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-1600.webp",
+          "naturalWidth": 1440,
+          "naturalHeight": 954,
+          "slotWidth": 1440,
+          "slotHeight": 847.8125,
+          "fit": "fill"
+        },
+        {
+          "src": "/images/luma-cmapoye1-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 422,
+          "slotHeight": 422,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-c3bj5f9d-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 422,
+          "slotHeight": 422,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-c3jcu29h-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 397,
+          "slotWidth": 422,
+          "slotHeight": 397.609375,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-n6nwx061-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 422,
+          "slotHeight": 422,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-84v57ubf-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 422,
+          "slotHeight": 422,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-iq2qpyk4-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 422,
+          "slotHeight": 422,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-jdv50gdz-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 422,
+          "slotHeight": 422,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-bszies4x-450.webp",
+          "naturalWidth": 422,
+          "naturalHeight": 422,
+          "slotWidth": 422,
+          "slotHeight": 422,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/d2848.webp",
+          "naturalWidth": 1400,
+          "naturalHeight": 2100,
+          "slotWidth": 354,
+          "slotHeight": 188,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 116,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 1440,
+    "route": "/events/",
+    "data": {
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 1440,
+    "route": "/events/kalender/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "FIND DIT NÆSTE\n“VI SES”.",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "80px",
+          "weight": "700",
+          "lineHeight": "88px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 846
+        },
+        {
+          "text": "From Ballet to Technology: On Reinvention and Creative Identity ↗",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "28px",
+          "weight": "700",
+          "lineHeight": "35px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 846
+        },
+        {
+          "text": "november 2026",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "38px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 1312
+        },
+        {
+          "text": "Skal vi skabe noget sammen?",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "42px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 1248
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "38.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 608
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-cmapoye1-600.webp",
+          "naturalWidth": 792,
+          "naturalHeight": 792,
+          "slotWidth": 846,
+          "slotHeight": 330,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/1207b.webp",
+          "naturalWidth": 780,
+          "naturalHeight": 1170,
+          "slotWidth": 415,
+          "slotHeight": 700,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 116,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 1440,
+    "route": "/events/kalender/",
+    "data": {
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 1440,
+    "route": "/events/from-ballet-to-technology/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "From Ballet to Technology: On Reinvention and Creative Identity",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "60.48px",
+          "weight": "700",
+          "lineHeight": "67.7376px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 680.71875
+        },
+        {
+          "text": "En samtale om karriereskift og kreativ identitet. Rina Takikawa fortæl",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "23px",
+          "weight": "400",
+          "lineHeight": "32.2px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 680.71875
+        },
+        {
+          "text": "En ny samtale.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 624
+        },
+        {
+          "text": "Program",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "36px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 624
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "38.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 608
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/luma-cmapoye1-600.webp",
+          "naturalWidth": 520,
+          "naturalHeight": 520,
+          "slotWidth": 567.28125,
+          "slotHeight": 567.28125,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 116,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 1440,
+    "route": "/events/from-ballet-to-technology/",
+    "data": {
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 1440,
+    "route": "/om-kinddesign/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "OM KINDDESIGN",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "110px",
+          "weight": "700",
+          "lineHeight": "132px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 1296
+        },
+        {
+          "text": "DESIGN OPSTÅR\nMELLEM MENNESKER.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "43px",
+          "weight": "700",
+          "lineHeight": "51.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 600
+        },
+        {
+          "text": "Menneskene\nbag KindDesign.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "50px",
+          "weight": "700",
+          "lineHeight": "60px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 409.21875
+        },
+        {
+          "text": "Fra en idé til et\nkreativt fællesskab.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "50px",
+          "weight": "700",
+          "lineHeight": "60px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 554
+        },
+        {
+          "text": "Det, der samler os.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "47px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 409.28125
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "36px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 638
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-1600.webp",
+          "naturalWidth": 1440,
+          "naturalHeight": 954,
+          "slotWidth": 1440,
+          "slotHeight": 902.15625,
+          "fit": "fill"
+        },
+        {
+          "src": "/images/d2848.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 1080,
+          "slotWidth": 674,
+          "slotHeight": 360,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 116,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 1440,
+    "route": "/om-kinddesign/",
+    "data": {
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 1440,
+    "route": "/ny-her/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "Dit første hej\nstarter her.",
+          "tag": "H1",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "64px",
+          "weight": "700",
+          "lineHeight": "80px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 375.75
+        },
+        {
+          "text": "Det kan føles som et stort skridt at træde ind i et rum med nye mennes",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "24px",
+          "weight": "400",
+          "lineHeight": "30px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 708
+        },
+        {
+          "text": "Vælg et event, der interesserer dig. Så har du allerede noget til fæll",
+          "tag": "P",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "24px",
+          "weight": "400",
+          "lineHeight": "30px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 708
+        },
+        {
+          "text": "Fra nysgerrig til med i samtalen.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "48px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 1312
+        },
+        {
+          "text": "Godt at vide.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "50px",
+          "weight": "700",
+          "lineHeight": "normal",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 1312
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"Bricolage Grotesque\", sans-serif",
+          "size": "32px",
+          "weight": "700",
+          "lineHeight": "38.4px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 608
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/1207b.webp",
+          "naturalWidth": 500,
+          "naturalHeight": 750,
+          "slotWidth": 500,
+          "slotHeight": 500,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 116,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 1440,
+    "route": "/ny-her/",
+    "data": {
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clipped": []
+    }
+  },
+  {
+    "id": "type-and-media",
+    "width": 1440,
+    "route": "/kontakt/",
+    "data": {
+      "fonts": [
+        {
+          "family": "Bricolage Grotesque",
+          "weight": "200 800",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "100 1000",
+          "status": "loaded"
+        }
+      ],
+      "type": [
+        {
+          "text": "KONTAKT",
+          "tag": "H1",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "110px",
+          "weight": "700",
+          "lineHeight": "132px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 1296
+        },
+        {
+          "text": "Lad os\ntage en snak.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "68px",
+          "weight": "700",
+          "lineHeight": "81.6px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 530
+        },
+        {
+          "text": "Det begynder med et hej.\nDet vokser, når vi mødes.",
+          "tag": "H2",
+          "font": "\"DM Sans\", sans-serif",
+          "size": "30px",
+          "weight": "700",
+          "lineHeight": "36px",
+          "spacing": "normal",
+          "optical": "auto",
+          "axes": "normal",
+          "width": 638
+        }
+      ],
+      "media": [
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 90,
+          "slotHeight": 90,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/0bb08-1600.webp",
+          "naturalWidth": 1440,
+          "naturalHeight": 954,
+          "slotWidth": 1440,
+          "slotHeight": 847.8125,
+          "fit": "fill"
+        },
+        {
+          "src": "/images/ca544.webp",
+          "naturalWidth": 530,
+          "naturalHeight": 795,
+          "slotWidth": 530,
+          "slotHeight": 460,
+          "fit": "cover"
+        },
+        {
+          "src": "/images/af5ee.webp",
+          "naturalWidth": 248,
+          "naturalHeight": 244,
+          "slotWidth": 116,
+          "slotHeight": 116,
+          "fit": "contain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-spacing",
+    "width": 1440,
+    "route": "/kontakt/",
+    "data": {
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clipped": []
+    }
+  },
+  {
+    "id": "luma-ticket-handoff",
+    "checkedAt": "2026-11-10T18:43:41.999Z",
+    "url": "https://luma.com/cmapoye1",
+    "title": "From Ballet to Technology: On Reinvention and Creative Identity · Luma",
+    "yen1000": true,
+    "approvalRequired": true,
+    "requestToJoin": true,
+    "time": true,
+    "method": "Read-only visible text, no registration, attendee information not retained"
+  }
+]

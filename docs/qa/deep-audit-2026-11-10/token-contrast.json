@@ -1,0 +1,42 @@
+{
+  "method": "WCAG relative luminance of solid design tokens; does not verify image backgrounds",
+  "colors": {
+    "tekst": "280e11",
+    "sand": "e8dcc6",
+    "bordeaux": "722f37",
+    "salvie": "a5b39b",
+    "lyseblaa": "c0e7f6"
+  },
+  "pairs": [
+    {
+      "foreground": "tekst",
+      "background": "sand",
+      "ratio": 13.335155851037962
+    },
+    {
+      "foreground": "bordeaux",
+      "background": "sand",
+      "ratio": 7.111655080809202
+    },
+    {
+      "foreground": "tekst",
+      "background": "salvie",
+      "ratio": 8.199940231758106
+    },
+    {
+      "foreground": "bordeaux",
+      "background": "salvie",
+      "ratio": 4.373038250390997
+    },
+    {
+      "foreground": "tekst",
+      "background": "lyseblaa",
+      "ratio": 13.78173622644865
+    },
+    {
+      "foreground": "bordeaux",
+      "background": "lyseblaa",
+      "ratio": 7.349816946426385
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+[
+  {
+    "width": 390,
+    "method": "Fresh browser with event-cover requests gated until first-card viewport; fonts ready before baseline; then all covers decoded",
+    "before": {
+      "height": 7699,
+      "scrollY": 1030,
+      "rows": [
+        {
+          "height": 818.375,
+          "imageHeight": 300,
+          "loaded": false
+        },
+        {
+          "height": 705.1875,
+          "imageHeight": 300,
+          "loaded": false
+        },
+        {
+          "height": 727.59375,
+          "imageHeight": 300,
+          "loaded": false
+        },
+        {
+          "height": 705.1875,
+          "imageHeight": 300,
+          "loaded": false
+        },
+        {
+          "height": 761.1875,
+          "imageHeight": 300,
+          "loaded": false
+        },
+        {
+          "height": 738.78125,
+          "imageHeight": 300,
+          "loaded": false
+        },
+        {
+          "height": 682.1875,
+          "imageHeight": 300,
+          "loaded": false
+        },
+        {
+          "height": 682.1875,
+          "imageHeight": 300,
+          "loaded": false
+        }
+      ],
+      "shifts": []
+    },
+    "after": {
+      "height": 7699,
+      "scrollY": 1030,
+      "rows": [
+        {
+          "height": 818.375,
+          "imageHeight": 300,
+          "loaded": true
+        },
+        {
+          "height": 705.1875,
+          "imageHeight": 300,
+          "loaded": true
+        },
+        {
+          "height": 727.59375,
+          "imageHeight": 300,
+          "loaded": true
+        },
+        {
+          "height": 705.1875,
+          "imageHeight": 300,
+          "loaded": true
+        },
+        {
+          "height": 761.1875,
+          "imageHeight": 300,
+          "loaded": true
+        },
+        {
+          "height": 738.78125,
+          "imageHeight": 300,
+          "loaded": true
+        },
+        {
+          "height": 682.1875,
+          "imageHeight": 300,
+          "loaded": true
+        },
+        {
+          "height": 682.1875,
+          "imageHeight": 300,
+          "loaded": true
+        }
+      ],
+      "shifts": []
+    }
+  },
+  {
+    "width": 1440,
+    "method": "Fresh browser with event-cover requests gated until first-card viewport; fonts ready before baseline; then all covers decoded",
+    "before": {
+      "height": 3922,
+      "scrollY": 631,
+      "rows": [
+        {
+          "height": 327.53125,
+          "imageHeight": 327.53125,
+          "loaded": false
+        },
+        {
+          "height": 280,
+          "imageHeight": 280,
+          "loaded": false
+        },
+        {
+          "height": 283.140625,
+          "imageHeight": 283.140625,
+          "loaded": false
+        },
+        {
+          "height": 302.34375,
+          "imageHeight": 302.34375,
+          "loaded": false
+        },
+        {
+          "height": 283.140625,
+          "imageHeight": 283.140625,
+          "loaded": false
+        },
+        {
+          "height": 302.34375,
+          "imageHeight": 302.34375,
+          "loaded": false
+        },
+        {
+          "height": 280,
+          "imageHeight": 280,
+          "loaded": false
+        },
+        {
+          "height": 280,
+          "imageHeight": 280,
+          "loaded": false
+        }
+      ],
+      "shifts": []
+    },
+    "after": {
+      "height": 4935,
+      "scrollY": 631,
+      "rows": [
+        {
+          "height": 422,
+          "imageHeight": 422,
+          "loaded": true
+        },
+        {
+          "height": 422,
+          "imageHeight": 422,
+          "loaded": true
+        },
+        {
+          "height": 397.609375,
+          "imageHeight": 397.609375,
+          "loaded": true
+        },
+        {
+          "height": 422,
+          "imageHeight": 422,
+          "loaded": true
+        },
+        {
+          "height": 422,
+          "imageHeight": 422,
+          "loaded": true
+        },
+        {
+          "height": 422,
+          "imageHeight": 422,
+          "loaded": true
+        },
+        {
+          "height": 422,
+          "imageHeight": 422,
+          "loaded": true
+        },
+        {
+          "height": 422,
+          "imageHeight": 422,
+          "loaded": true
+        }
+      ],
+      "shifts": [
+        {
+          "value": 0.00009495884773662551,
+          "sources": [
+            {
+              "tag": "SPAN",
+              "className": "event-arrow",
+              "from": {
+                "x": 1301.625,
+                "y": 809.71875,
+                "width": 24.375,
+                "height": 52,
+                "top": 809.71875,
+                "right": 1326,
+                "bottom": 861.71875,
+                "left": 1301.625
+              },
+              "to": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "value": 0.016782295685442386,
+          "sources": [
+            {
+              "tag": "ARTICLE",
+              "className": "event-card official-card",
+              "from": {
+                "x": 96,
+                "y": 635.71875,
+                "width": 1248,
+                "height": 264.28125,
+                "top": 635.71875,
+                "right": 1344,
+                "bottom": 900,
+                "left": 96
+              },
+              "to": {
+                "x": 96,
+                "y": 730.1875,
+                "width": 1248,
+                "height": 169.8125,
+                "top": 730.1875,
+                "right": 1344,
+                "bottom": 900,
+                "left": 96
+              }
+            },
+            {
+              "tag": "SPAN",
+              "className": "event-arrow",
+              "from": {
+                "x": 1301.625,
+                "y": 507.71875,
+                "width": 24.375,
+                "height": 52,
+                "top": 507.71875,
+                "right": 1326,
+                "bottom": 559.71875,
+                "left": 1301.625
+              },
+              "to": {
+                "x": 1301.625,
+                "y": 602.1875,
+                "width": 24.375,
+                "height": 52,
+                "top": 602.1875,
+                "right": 1326,
+                "bottom": 654.1875,
+                "left": 1301.625
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

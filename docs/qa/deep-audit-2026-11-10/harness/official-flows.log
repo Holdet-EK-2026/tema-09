@@ -1,0 +1,41 @@
+[
+  {
+    width: 390,
+    filtersAndEmptyState: true,
+    history: true,
+    officialJourneyAndInterceptedLumaDestination: true,
+    calendarMonthAndUTCDownload: true,
+    pastRegistrationRemoved: true,
+    conflictsVisible: true,
+    expiredClientGuard: true,
+    expiredHeroCountdown: true,
+    externalBookings: 0,
+    errors: []
+  },
+  {
+    width: 768,
+    filtersAndEmptyState: true,
+    history: true,
+    officialJourneyAndInterceptedLumaDestination: true,
+    calendarMonthAndUTCDownload: true,
+    pastRegistrationRemoved: true,
+    conflictsVisible: true,
+    expiredClientGuard: true,
+    expiredHeroCountdown: true,
+    externalBookings: 0,
+    errors: []
+  },
+  {
+    width: 1440,
+    filtersAndEmptyState: true,
+    history: true,
+    officialJourneyAndInterceptedLumaDestination: true,
+    calendarMonthAndUTCDownload: true,
+    pastRegistrationRemoved: true,
+    conflictsVisible: true,
+    expiredClientGuard: true,
+    expiredHeroCountdown: true,
+    externalBookings: 0,
+    errors: []
+  }
+]

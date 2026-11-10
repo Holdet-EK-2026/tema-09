@@ -1,0 +1,423 @@
+const root = process.env.KINDDESIGN_QA_TOOLS || "/tmp/kinddesign-tools";
+const { chromium } = require(root + "/node_modules/playwright");
+const assert = require("node:assert/strict");
+const AxeBuilder = require(root + "/node_modules/@axe-core/playwright").default;
+const fs = require("node:fs");
+const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
+const base = "https://kinddesign-holdet-ek-2026.netlify.app";
+fs.mkdirSync(folder, { recursive: true });
+
+(async () => {
+  const browser = await chromium.launch({ channel: "chrome" });
+  const results = [];
+  try {
+    // Ægte browsertid: ingen fake timers, hover på slides eller manuel slide-navigation.
+    for (const width of [390, 768, 1440]) {
+      const context = await browser.newContext({
+        viewport: { width, height: 900 },
+        reducedMotion: "no-preference",
+      });
+      const page = await context.newPage();
+      const errors = [];
+      page.on("pageerror", (error) => errors.push(error.message));
+      await page.addInitScript(() => {
+        window.carouselShifts = [];
+        new PerformanceObserver((list) =>
+          list.getEntries().forEach((entry) => {
+            if (!entry.hadRecentInput) window.carouselShifts.push(entry.value);
+          }),
+        ).observe({ type: "layout-shift", buffered: true });
+      });
+      await page.goto(base);
+      // Samme normale scroll som reproducerede fejlen: markøren forbliver over introen.
+      await page.mouse.move(width / 2, 450);
+      await page.mouse.wheel(0, 700);
+      await page.waitForFunction(
+        () =>
+          document.querySelector("[data-carousel]").dataset.autoplay ===
+          "running",
+      );
+      const start = Date.now();
+      const samples = [
+        {
+          index: Number(
+            await page
+              .locator("[data-carousel]")
+              .getAttribute("data-active-index"),
+          ),
+          elapsedMs: 0,
+        },
+      ];
+      assert.equal(samples[0].index, 0);
+      for (const expected of [1, 2]) {
+        await page.waitForFunction(
+          (index) =>
+            Number(
+              document.querySelector("[data-carousel]").dataset.activeIndex,
+            ) === index,
+          expected,
+          { timeout: 6000 },
+        );
+        samples.push({ index: expected, elapsedMs: Date.now() - start });
+        if (width === 1440)
+          await page.screenshot({
+            path: `${folder}/autoplay-real-${expected}.png`,
+            fullPage: true,
+          });
+      }
+      assert(samples[1].elapsedMs >= 3800 && samples[1].elapsedMs < 6000);
+      assert(samples[2].elapsedMs >= 8000 && samples[2].elapsedMs < 11500);
+      const cls = await page.evaluate(() =>
+        window.carouselShifts.reduce((sum, value) => sum + value, 0),
+      );
+      assert(cls < 0.01, `Autoplay CLS ${cls}`);
+      assert(
+        await page.evaluate(
+          () => document.documentElement.scrollWidth <= innerWidth,
+        ),
+      );
+      assert.equal(errors.length, 0, errors.join("\n"));
+      await page.locator("[data-carousel-toggle]").click();
+      assert.equal(
+        await page
+          .getByRole("button", {
+            name: "Afspil automatiske billedskift",
+            exact: true,
+          })
+          .count(),
+        1,
+      );
+      const pausedAxe = await new AxeBuilder({ page })
+        .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+        .analyze();
+      assert.equal(
+        pausedAxe.violations.length,
+        0,
+        JSON.stringify(pausedAxe.violations.map((item) => item.id)),
+      );
+      await page.emulateMedia({ reducedMotion: "reduce" });
+      await page.waitForFunction(
+        () => document.querySelector("[data-carousel-toggle]").disabled,
+      );
+      assert.equal(
+        await page
+          .getByRole("button", {
+            name: "Automatik fra via systemets indstillinger",
+            exact: true,
+          })
+          .count(),
+        1,
+      );
+      const reducedAxe = await new AxeBuilder({ page })
+        .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+        .analyze();
+      assert.equal(reducedAxe.violations.length, 0);
+      results.push({
+        width,
+        pausedAndReducedMotionAxeViolations: 0,
+        realBrowserTime: true,
+        automaticChangesWithoutCarouselInput: samples,
+        cls,
+        errors,
+      });
+      console.log("Real autoplay:", width, samples);
+      await context.close();
+    }
+
+    for (const width of [390, 768, 1440]) {
+      const context = await browser.newContext({
+        viewport: { width, height: 900 },
+        reducedMotion: "no-preference",
+      });
+      const page = await context.newPage();
+      const errors = [];
+      page.on("pageerror", (error) => errors.push(error.message));
+      await page.clock.install({ time: new Date("2026-11-10T00:00:00Z") });
+      await page.goto(base);
+      const gallery = page.locator("[data-carousel]");
+      const viewport = page.locator(".gallery-window");
+      const index = async () =>
+        Number(await gallery.getAttribute("data-active-index"));
+      const out = async () => {
+        await page.evaluate(() => document.activeElement?.blur());
+        await page.mouse.move(-10, -10);
+      };
+      await viewport.scrollIntoViewIfNeeded();
+      await out();
+      await page.clock.runFor(250);
+      assert.equal(await gallery.getAttribute("data-autoplay"), "running");
+      await page.evaluate(() => {
+        for (let i = 0; i < 3; i++)
+          document.dispatchEvent(new Event("astro:page-load"));
+      });
+      let before = await index();
+      await page.clock.runFor(4500);
+      assert.equal(
+        await index(),
+        (before + 1) % 6,
+        "Geninitialisering må ikke skabe dobbelte timere",
+      );
+      await page.clock.runFor(4500);
+      assert.equal(await index(), (before + 2) % 6);
+      await viewport.hover();
+      before = await index();
+      await page.clock.runFor(10000);
+      assert.equal(await index(), before);
+      assert.equal(await gallery.getAttribute("data-pause-reason"), "hover");
+      await out();
+      await page.clock.runFor(4500);
+      assert.equal(await index(), (before + 1) % 6);
+      await viewport.focus();
+      await out();
+      await viewport.focus();
+      before = await index();
+      await page.clock.runFor(10000);
+      assert.equal(await index(), before);
+      assert.equal(await gallery.getAttribute("data-pause-reason"), "focus");
+      await page.keyboard.press("ArrowRight");
+      before = await index();
+      await out();
+      await page.clock.runFor(7900);
+      assert.equal(await index(), before);
+      await page.clock.runFor(200);
+      assert.equal(await index(), (before + 1) % 6);
+      await page.locator("[data-carousel-next]").click();
+      assert.equal(await index(), (before + 2) % 6);
+      await page.locator("[data-carousel-previous]").click();
+      assert.equal(await index(), (before + 1) % 6);
+      await page.locator("[data-carousel-toggle]").focus();
+      await page.keyboard.press("Space");
+      await out();
+      before = await index();
+      await page.clock.runFor(15000);
+      assert.equal(await index(), before);
+      assert.equal(await gallery.getAttribute("data-user-paused"), "true");
+      assert.equal(
+        await page.locator("[data-carousel-toggle]").getAttribute("aria-label"),
+        "Afspil automatiske billedskift",
+      );
+      await page.locator("[data-carousel-toggle]").click();
+      await out();
+      await page.clock.runFor(8100);
+      assert.equal(await index(), (before + 1) % 6);
+      await viewport.focus();
+      await page.keyboard.press("End");
+      assert.equal(await index(), 5);
+      await out();
+      await page.clock.runFor(8100);
+      assert.equal(
+        await index(),
+        0,
+        "Sidste til første skal også skifte automatisk",
+      );
+      await page.clock.runFor(900);
+      assert.equal(
+        await page.locator(".gallery-card.is-active").getAttribute("data-slot"),
+        "0",
+      );
+      assert.equal(await page.locator(".gallery-card.is-wrapping").count(), 0);
+      await page.evaluate(() =>
+        Object.defineProperty(document, "hidden", {
+          configurable: true,
+          get: () => true,
+        }),
+      );
+      await page.evaluate(() =>
+        document.dispatchEvent(new Event("visibilitychange")),
+      );
+      before = await index();
+      await page.clock.runFor(10000);
+      assert.equal(await index(), before);
+      await page.evaluate(() => {
+        delete document.hidden;
+        document.dispatchEvent(new Event("visibilitychange"));
+      });
+      await page.clock.runFor(4500);
+      assert.equal(await index(), (before + 1) % 6);
+      before = await index();
+      await page.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
+      await page.waitForFunction(
+        () =>
+          document.querySelector("[data-carousel]").dataset.pauseReason ===
+          "offscreen",
+      );
+      await page.clock.runFor(10000);
+      assert.equal(await index(), before);
+      await viewport.scrollIntoViewIfNeeded();
+      await out();
+      await page.clock.runFor(250);
+      await page.emulateMedia({ reducedMotion: "reduce" });
+      await page.waitForFunction(
+        () =>
+          document.querySelector("[data-carousel]").dataset.reducedMotion ===
+          "true",
+      );
+      before = await index();
+      await page.clock.runFor(10000);
+      assert.equal(await index(), before);
+      assert(await page.locator("[data-carousel-toggle]").isDisabled());
+      assert.equal(
+        await page
+          .locator(".gallery-card")
+          .first()
+          .evaluate((node) => getComputedStyle(node).transitionDuration),
+        "0s",
+      );
+      await viewport.focus();
+      await page.keyboard.press("ArrowRight");
+      assert.equal(await index(), (before + 1) % 6);
+      await page.keyboard.press("Home");
+      for (let i = 0; i < 6; i++) await page.keyboard.press("ArrowRight");
+      assert.equal(await index(), 0);
+      for (let i = 0; i < 6; i++) await page.keyboard.press("ArrowLeft");
+      assert.equal(await index(), 0);
+      await out();
+      await gallery.screenshot({ path: `${folder}/carousel-${width}.png` });
+      await page.emulateMedia({ reducedMotion: "no-preference" });
+      await page.waitForFunction(
+        () =>
+          document.querySelector("[data-carousel]").dataset.reducedMotion ===
+          "false",
+      );
+      await page.evaluate(() =>
+        document.dispatchEvent(new Event("astro:before-swap")),
+      );
+      assert.equal(await gallery.getAttribute("data-autoplay"), "stopped");
+      before = await index();
+      await page.clock.runFor(10000);
+      assert.equal(await index(), before);
+      await page.evaluate(() =>
+        document.dispatchEvent(new Event("astro:page-load")),
+      );
+      await out();
+      await page.clock.runFor(250);
+      await page.clock.runFor(4500);
+      assert.equal(await index(), (before + 1) % 6);
+      await page.evaluate(() => {
+        window.detachedCarousel = document.querySelector("[data-carousel]");
+        window.detachedCarouselParent = window.detachedCarousel.parentElement;
+        window.detachedCarousel.remove();
+      });
+      await page.waitForFunction(
+        () => window.detachedCarousel.dataset.autoplay === "stopped",
+      );
+      const removedIndex = await page.evaluate(
+        () => window.detachedCarousel.dataset.activeIndex,
+      );
+      await page.clock.runFor(10000);
+      assert.equal(
+        await page.evaluate(() => window.detachedCarousel.dataset.activeIndex),
+        removedIndex,
+      );
+      await page.evaluate(() => {
+        window.detachedCarouselParent.append(window.detachedCarousel);
+        document.dispatchEvent(new Event("astro:page-load"));
+      });
+      await viewport.scrollIntoViewIfNeeded();
+      await page.locator("[data-carousel-next]").click();
+      assert.equal(
+        await index(),
+        (Number(removedIndex) + 1) % 6,
+        "Kun ét sæt kliklisteners efter geninitialisering",
+      );
+      await page.evaluate(() => window.detachedCarousel.parentElement.remove());
+      await page.waitForFunction(
+        () => window.detachedCarousel.dataset.autoplay === "stopped",
+      );
+      assert.equal(errors.length, 0, errors.join("\n"));
+      assert(
+        await page.evaluate(
+          () => document.documentElement.scrollWidth <= innerWidth,
+        ),
+      );
+      results.push({
+        width,
+        controlledTime: true,
+        interval4500ms: true,
+        twoAutomaticChanges: true,
+        automaticWrap: true,
+        hoverPause: true,
+        focusPause: true,
+        manualResume8000ms: true,
+        visiblePausePlay: true,
+        hiddenTabPause: "simulated visibilitychange contract",
+        offscreenPause: true,
+        reducedMotion: true,
+        keyboardLoopBothDirections: true,
+        duplicateInitSafe: true,
+        removalAndReinitCleanup: true,
+        errors,
+      });
+      await context.close();
+    }
+
+    const touch = await browser.newContext({
+      viewport: { width: 390, height: 844 },
+      isMobile: true,
+      hasTouch: true,
+      reducedMotion: "no-preference",
+    });
+    const page = await touch.newPage();
+    await page.clock.install();
+    await page.goto(base);
+    await page.locator(".gallery-window").scrollIntoViewIfNeeded();
+    await page.clock.runFor(250);
+    const rect = await page.locator(".gallery-window").boundingBox();
+    const y = Math.max(40, Math.min(760, rect.y + rect.height / 2));
+    const cdp = await touch.newCDPSession(page);
+    await cdp.send("Input.dispatchTouchEvent", {
+      type: "touchStart",
+      touchPoints: [{ x: 270, y, id: 1 }],
+    });
+    const held = await page
+      .locator("[data-carousel]")
+      .getAttribute("data-active-index");
+    await page.clock.runFor(5000);
+    assert.equal(
+      await page.locator("[data-carousel]").getAttribute("data-active-index"),
+      held,
+    );
+    for (let i = 1; i <= 6; i++)
+      await cdp.send("Input.dispatchTouchEvent", {
+        type: "touchMove",
+        touchPoints: [{ x: 270 - i * 22, y, id: 1 }],
+      });
+    await cdp.send("Input.dispatchTouchEvent", {
+      type: "touchEnd",
+      touchPoints: [],
+    });
+    assert.equal(
+      await page.locator("[data-carousel]").getAttribute("data-active-index"),
+      String((Number(held) + 1) % 6),
+    );
+    assert.equal(page.url(), base + "/");
+    await page.evaluate(() => document.activeElement?.blur());
+    const manual = Number(
+      await page.locator("[data-carousel]").getAttribute("data-active-index"),
+    );
+    await page.clock.runFor(8100);
+    assert.equal(
+      Number(
+        await page.locator("[data-carousel]").getAttribute("data-active-index"),
+      ),
+      (manual + 1) % 6,
+    );
+    results.push({
+      nativeMobileTouchSwipe: true,
+      pointerHoldPause: true,
+      touchAutoplayResume: true,
+      noAccidentalNavigation: true,
+    });
+    await touch.close();
+    fs.writeFileSync(
+      `${folder}/carousel.json`,
+      JSON.stringify(results, null, 2),
+    );
+    console.log("Carousel: all checks passed");
+  } finally {
+    await browser.close();
+  }
+})().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});

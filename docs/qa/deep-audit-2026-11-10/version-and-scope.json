@@ -1,0 +1,19 @@
+{
+  "checkedAtUTC": "2026-11-10T18:54:43.582698+00:00",
+  "branch": "feature/ux-ui-final-qa",
+  "head": "db42f51da83028fffec9e2df8d2f597ac77154b3",
+  "trackedBaselineFiles": 118,
+  "baselineHashChanges": [],
+  "trackedDiff": [],
+  "gitStatus": [
+    "?? docs/kinddesign-ux-ui-deep-audit-2026-11-10.md",
+    "?? docs/qa/deep-audit-2026-11-10/"
+  ],
+  "liveSite": "https://kinddesign-holdet-ek-2026.netlify.app/",
+  "sourceCommit": "3f2ce0b6366ff732bd76e961be8bf5f1fbdcd90e",
+  "siteId": "8cae5019-b5f0-4a43-b9d3-3d33e9363d5e",
+  "publishedDeploy": "6af34a2e5ac8ad72cd7e9c25",
+  "deployState": "ready",
+  "netlifyCurrentDeployRead": "Fresh read-only get-project response confirmed current deployment; deployed source established by byte identity, not Git commit_ref",
+  "externalMutations": false
+}

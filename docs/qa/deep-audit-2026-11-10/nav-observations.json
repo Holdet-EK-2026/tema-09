@@ -1,0 +1,1216 @@
+[
+  {
+    "id": "nav-journey",
+    "width": 320,
+    "from": "header",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 320,
+    "from": "footer",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 320,
+    "from": "header",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 320,
+    "from": "footer",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 320,
+    "from": "header",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 320,
+    "from": "footer",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 320,
+    "from": "header",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 320,
+    "from": "footer",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "logo-home",
+    "width": 320,
+    "status": "pass"
+  },
+  {
+    "id": "keyboard-order",
+    "width": 320,
+    "keys": [
+      {
+        "text": "Spring til indhold",
+        "href": "#indhold",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "KindDesign – forside",
+        "href": "/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Events",
+        "href": "/events/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Om os",
+        "href": "/om-kinddesign/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Ny her?",
+        "href": "/ny-her/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Kontakt",
+        "href": "/kontakt/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      }
+    ]
+  },
+  {
+    "id": "nav-hover",
+    "width": 320,
+    "geometryStable": true,
+    "style": {
+      "duration": "0.24s",
+      "underline": "100% 1px",
+      "color": "rgb(40, 14, 17)"
+    }
+  },
+  {
+    "id": "nav-journey",
+    "width": 375,
+    "from": "header",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 375,
+    "from": "footer",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 375,
+    "from": "header",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 375,
+    "from": "footer",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 375,
+    "from": "header",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 375,
+    "from": "footer",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 375,
+    "from": "header",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 375,
+    "from": "footer",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "logo-home",
+    "width": 375,
+    "status": "pass"
+  },
+  {
+    "id": "keyboard-order",
+    "width": 375,
+    "keys": [
+      {
+        "text": "Spring til indhold",
+        "href": "#indhold",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "KindDesign – forside",
+        "href": "/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Events",
+        "href": "/events/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Om os",
+        "href": "/om-kinddesign/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Ny her?",
+        "href": "/ny-her/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Kontakt",
+        "href": "/kontakt/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      }
+    ]
+  },
+  {
+    "id": "nav-hover",
+    "width": 375,
+    "geometryStable": true,
+    "style": {
+      "duration": "0.24s",
+      "underline": "100% 1px",
+      "color": "rgb(40, 14, 17)"
+    }
+  },
+  {
+    "id": "nav-journey",
+    "width": 390,
+    "from": "header",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 390,
+    "from": "footer",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 390,
+    "from": "header",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 390,
+    "from": "footer",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 390,
+    "from": "header",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 390,
+    "from": "footer",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 390,
+    "from": "header",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 390,
+    "from": "footer",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "logo-home",
+    "width": 390,
+    "status": "pass"
+  },
+  {
+    "id": "keyboard-order",
+    "width": 390,
+    "keys": [
+      {
+        "text": "Spring til indhold",
+        "href": "#indhold",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "KindDesign – forside",
+        "href": "/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Events",
+        "href": "/events/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Om os",
+        "href": "/om-kinddesign/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Ny her?",
+        "href": "/ny-her/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Kontakt",
+        "href": "/kontakt/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      }
+    ]
+  },
+  {
+    "id": "nav-hover",
+    "width": 390,
+    "geometryStable": true,
+    "style": {
+      "duration": "0.24s",
+      "underline": "100% 1px",
+      "color": "rgb(40, 14, 17)"
+    }
+  },
+  {
+    "id": "nav-journey",
+    "width": 430,
+    "from": "header",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 430,
+    "from": "footer",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 430,
+    "from": "header",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 430,
+    "from": "footer",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 430,
+    "from": "header",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 430,
+    "from": "footer",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 430,
+    "from": "header",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 430,
+    "from": "footer",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "logo-home",
+    "width": 430,
+    "status": "pass"
+  },
+  {
+    "id": "keyboard-order",
+    "width": 430,
+    "keys": [
+      {
+        "text": "Spring til indhold",
+        "href": "#indhold",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "KindDesign – forside",
+        "href": "/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Events",
+        "href": "/events/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Om os",
+        "href": "/om-kinddesign/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Ny her?",
+        "href": "/ny-her/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Kontakt",
+        "href": "/kontakt/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      }
+    ]
+  },
+  {
+    "id": "nav-hover",
+    "width": 430,
+    "geometryStable": true,
+    "style": {
+      "duration": "0.24s",
+      "underline": "100% 1px",
+      "color": "rgb(40, 14, 17)"
+    }
+  },
+  {
+    "id": "nav-journey",
+    "width": 768,
+    "from": "header",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 768,
+    "from": "footer",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 768,
+    "from": "header",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 768,
+    "from": "footer",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 768,
+    "from": "header",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 768,
+    "from": "footer",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 768,
+    "from": "header",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 768,
+    "from": "footer",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "logo-home",
+    "width": 768,
+    "status": "pass"
+  },
+  {
+    "id": "keyboard-order",
+    "width": 768,
+    "keys": [
+      {
+        "text": "Spring til indhold",
+        "href": "#indhold",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "KindDesign – forside",
+        "href": "/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Forside",
+        "href": "/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Events",
+        "href": "/events/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Om Kind Design",
+        "href": "/om-kinddesign/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Kontakt",
+        "href": "/kontakt/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Ny her?  ↗",
+        "href": "/ny-her/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      }
+    ]
+  },
+  {
+    "id": "nav-hover",
+    "width": 768,
+    "geometryStable": true,
+    "style": {
+      "duration": "0.24s",
+      "underline": "100% 1px",
+      "color": "rgb(40, 14, 17)"
+    }
+  },
+  {
+    "id": "nav-journey",
+    "width": 1024,
+    "from": "header",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1024,
+    "from": "footer",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1024,
+    "from": "header",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1024,
+    "from": "footer",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1024,
+    "from": "header",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1024,
+    "from": "footer",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1024,
+    "from": "header",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1024,
+    "from": "footer",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "logo-home",
+    "width": 1024,
+    "status": "pass"
+  },
+  {
+    "id": "keyboard-order",
+    "width": 1024,
+    "keys": [
+      {
+        "text": "Spring til indhold",
+        "href": "#indhold",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "KindDesign – forside",
+        "href": "/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Forside",
+        "href": "/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Events",
+        "href": "/events/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Om Kind Design",
+        "href": "/om-kinddesign/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Kontakt",
+        "href": "/kontakt/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Ny her?  ↗",
+        "href": "/ny-her/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      }
+    ]
+  },
+  {
+    "id": "nav-hover",
+    "width": 1024,
+    "geometryStable": true,
+    "style": {
+      "duration": "0.24s",
+      "underline": "100% 1px",
+      "color": "rgb(40, 14, 17)"
+    }
+  },
+  {
+    "id": "nav-journey",
+    "width": 1440,
+    "from": "header",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1440,
+    "from": "footer",
+    "to": "/events/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1440,
+    "from": "header",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1440,
+    "from": "footer",
+    "to": "/om-kinddesign/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1440,
+    "from": "header",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1440,
+    "from": "footer",
+    "to": "/ny-her/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1440,
+    "from": "header",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "nav-journey",
+    "width": 1440,
+    "from": "footer",
+    "to": "/kontakt/",
+    "status": "pass"
+  },
+  {
+    "id": "logo-home",
+    "width": 1440,
+    "status": "pass"
+  },
+  {
+    "id": "keyboard-order",
+    "width": 1440,
+    "keys": [
+      {
+        "text": "Spring til indhold",
+        "href": "#indhold",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "KindDesign – forside",
+        "href": "/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Forside",
+        "href": "/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Events",
+        "href": "/events/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Om Kind Design",
+        "href": "/om-kinddesign/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Kontakt",
+        "href": "/kontakt/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      },
+      {
+        "text": "Ny her?  ↗",
+        "href": "/ny-her/",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "focusVisible": true
+      }
+    ]
+  },
+  {
+    "id": "nav-hover",
+    "width": 1440,
+    "geometryStable": true,
+    "style": {
+      "duration": "0.24s",
+      "underline": "100% 1px",
+      "color": "rgb(40, 14, 17)"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/",
+    "width": 600,
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "logoRight": 334,
+      "firstLinkLeft": 18,
+      "ctaRight": 440,
+      "ctaWidth": 138,
+      "navWidth": 564,
+      "gap": "4px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/events/",
+    "width": 600,
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "logoRight": 72,
+      "firstLinkLeft": 18,
+      "ctaRight": 440,
+      "ctaWidth": 138,
+      "navWidth": 564,
+      "gap": "4px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/ny-her/",
+    "width": 600,
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "logoRight": 72,
+      "firstLinkLeft": 18,
+      "ctaRight": 440,
+      "ctaWidth": 138,
+      "navWidth": 564,
+      "gap": "4px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/",
+    "width": 601,
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "logoRight": 122,
+      "firstLinkLeft": 122,
+      "ctaRight": 569,
+      "ctaWidth": 106.953125,
+      "navWidth": 447,
+      "gap": "24px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/events/",
+    "width": 601,
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "logoRight": 122,
+      "firstLinkLeft": 122,
+      "ctaRight": 569,
+      "ctaWidth": 113.8125,
+      "navWidth": 447,
+      "gap": "24px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/ny-her/",
+    "width": 601,
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "logoRight": 122,
+      "firstLinkLeft": 122,
+      "ctaRight": 569,
+      "ctaWidth": 113.8125,
+      "navWidth": 447,
+      "gap": "24px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/",
+    "width": 640,
+    "data": {
+      "width": 640,
+      "scrollWidth": 640,
+      "logoRight": 122,
+      "firstLinkLeft": 122,
+      "ctaRight": 608,
+      "ctaWidth": 119.96875,
+      "navWidth": 486,
+      "gap": "24px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/events/",
+    "width": 640,
+    "data": {
+      "width": 640,
+      "scrollWidth": 640,
+      "logoRight": 122,
+      "firstLinkLeft": 130.78125,
+      "ctaRight": 608,
+      "ctaWidth": 119.96875,
+      "navWidth": 477.21875,
+      "gap": "24px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/ny-her/",
+    "width": 640,
+    "data": {
+      "width": 640,
+      "scrollWidth": 640,
+      "logoRight": 122,
+      "firstLinkLeft": 130.78125,
+      "ctaRight": 608,
+      "ctaWidth": 119.96875,
+      "navWidth": 477.21875,
+      "gap": "24px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/",
+    "width": 720,
+    "data": {
+      "width": 720,
+      "scrollWidth": 720,
+      "logoRight": 122,
+      "firstLinkLeft": 194.515625,
+      "ctaRight": 688,
+      "ctaWidth": 119.96875,
+      "navWidth": 493.484375,
+      "gap": "24px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/events/",
+    "width": 720,
+    "data": {
+      "width": 720,
+      "scrollWidth": 720,
+      "logoRight": 122,
+      "firstLinkLeft": 210.78125,
+      "ctaRight": 688,
+      "ctaWidth": 119.96875,
+      "navWidth": 477.21875,
+      "gap": "24px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/ny-her/",
+    "width": 720,
+    "data": {
+      "width": 720,
+      "scrollWidth": 720,
+      "logoRight": 122,
+      "firstLinkLeft": 210.78125,
+      "ctaRight": 688,
+      "ctaWidth": 119.96875,
+      "navWidth": 477.21875,
+      "gap": "24px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/",
+    "width": 1441,
+    "data": {
+      "width": 1441,
+      "scrollWidth": 1442,
+      "logoRight": 154,
+      "firstLinkLeft": 481,
+      "ctaRight": 1442.25,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "28.82px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/events/",
+    "width": 1441,
+    "data": {
+      "width": 1441,
+      "scrollWidth": 1441,
+      "logoRight": 154,
+      "firstLinkLeft": 462,
+      "ctaRight": 1404.25,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "28.82px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/ny-her/",
+    "width": 1441,
+    "data": {
+      "width": 1441,
+      "scrollWidth": 1441,
+      "logoRight": 154,
+      "firstLinkLeft": 462,
+      "ctaRight": 1404.25,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "28.82px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/",
+    "width": 1536,
+    "data": {
+      "width": 1536,
+      "scrollWidth": 1545,
+      "logoRight": 154,
+      "firstLinkLeft": 576,
+      "ctaRight": 1544.875,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "30.72px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/events/",
+    "width": 1536,
+    "data": {
+      "width": 1536,
+      "scrollWidth": 1536,
+      "logoRight": 154,
+      "firstLinkLeft": 557,
+      "ctaRight": 1506.875,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "30.72px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/ny-her/",
+    "width": 1536,
+    "data": {
+      "width": 1536,
+      "scrollWidth": 1536,
+      "logoRight": 154,
+      "firstLinkLeft": 557,
+      "ctaRight": 1506.875,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "30.72px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/",
+    "width": 1600,
+    "data": {
+      "width": 1600,
+      "scrollWidth": 1614,
+      "logoRight": 154,
+      "firstLinkLeft": 640,
+      "ctaRight": 1614,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "32px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/events/",
+    "width": 1600,
+    "data": {
+      "width": 1600,
+      "scrollWidth": 1600,
+      "logoRight": 154,
+      "firstLinkLeft": 621,
+      "ctaRight": 1576,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "32px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/ny-her/",
+    "width": 1600,
+    "data": {
+      "width": 1600,
+      "scrollWidth": 1600,
+      "logoRight": 154,
+      "firstLinkLeft": 621,
+      "ctaRight": 1576,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "32px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/",
+    "width": 1920,
+    "data": {
+      "width": 1920,
+      "scrollWidth": 1960,
+      "logoRight": 154,
+      "firstLinkLeft": 960,
+      "ctaRight": 1959.5625,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "38.4px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/events/",
+    "width": 1920,
+    "data": {
+      "width": 1920,
+      "scrollWidth": 1922,
+      "logoRight": 154,
+      "firstLinkLeft": 941,
+      "ctaRight": 1921.5625,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "38.4px"
+    }
+  },
+  {
+    "id": "extra-header-width",
+    "route": "/ny-her/",
+    "width": 1920,
+    "data": {
+      "width": 1920,
+      "scrollWidth": 1922,
+      "logoRight": 154,
+      "firstLinkLeft": 941,
+      "ctaRight": 1921.5625,
+      "ctaWidth": 165,
+      "navWidth": 914,
+      "gap": "38.4px"
+    }
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "route": "/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 3030,
+    "CLS": 0
+  },
+  {
+    "route": "/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 336.868,
+    "CLS": 0.01075616218975051
+  },
+  {
+    "route": "/events/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 1844.3870000000002,
+    "CLS": 0
+  },
+  {
+    "route": "/events/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 63
+    },
+    "LCP": 919.3905,
+    "CLS": 0
+  },
+  {
+    "route": "/events/kalender/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 968.569,
+    "CLS": 0
+  },
+  {
+    "route": "/events/kalender/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 734.45,
+    "CLS": 0
+  },
+  {
+    "route": "/om-kinddesign/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 1740.666,
+    "CLS": 0
+  },
+  {
+    "route": "/om-kinddesign/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 63
+    },
+    "LCP": 736.0115000000001,
+    "CLS": 0
+  },
+  {
+    "route": "/ny-her/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 2960.574,
+    "CLS": 0
+  },
+  {
+    "route": "/ny-her/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 742.7525,
+    "CLS": 0
+  },
+  {
+    "route": "/kontakt/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 1962.8035,
+    "CLS": 0
+  },
+  {
+    "route": "/kontakt/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 63
+    },
+    "LCP": 730.4945,
+    "CLS": 0.004523266233174726
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 868.8345,
+    "CLS": 0
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 888.6274999999999,
+    "CLS": 0
+  },
+  {
+    "route": "/events/ai-skillsharing/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 883.8585,
+    "CLS": 0
+  },
+  {
+    "route": "/events/ai-skillsharing/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "LCP": 694.0995,
+    "CLS": 0
+  }
+]
