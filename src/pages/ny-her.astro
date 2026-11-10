@@ -6,8 +6,13 @@ const questions = [['Skal jeg være designer?','Du behøver ikke en bestemt tite
 <InnerLayout description="Dit første hej starter her. Læs, hvordan du kan deltage, og få svar før dit første besøg." title="Ny her?" version="legacy">
   <section class="welcome-section"><div class="welcome-card"><div><p class="eyebrow">DIN FØRSTE GANG</p><h1>Dit første hej<br /> starter her.</h1><div class="welcome-body"><p>Det kan føles som et stort skridt at træde ind i et rum med nye mennesker. Du behøver ikke kende nogen på forhånd eller have en færdig præsentation af dig selv.</p><p>Vælg et event, der interesserer dig. Så har du allerede noget til fælles med de andre. Start med at lytte, stille et spørgsmål eller fortælle, hvad du er nysgerrig på. Du finder din egen måde at være med på.</p></div><a class="button" href="/events/">Find et event, der passer dig</a></div><img src="/images/1207b.webp" srcset="/images/1207b.webp 780w, /images/1207b-1200.webp 1200w" sizes="(max-width:600px) calc(100vw - 48px), 500px" width="500" height="500" alt="To deltagere ved et KindDesign-arrangement" fetchpriority="high" /></div></section>
   <section class="welcome-steps"><h2>Fra nysgerrig til med i samtalen.</h2><div>{steps.map(([title,text],index)=><article><p class="eyebrow desktop-label">0{index+1}</p><h3>{title}</h3><p>{text}</p></article>)}</div></section>
-  <section class="welcome-faq"><h2>Godt at vide.</h2><dl>{questions.map(([question,answer])=><div><dt>{question}</dt><dd>{answer}</dd></div>)}</dl></section>
-  <section class="membership-concept" id="medlemskort"><div><div><p class="eyebrow">IDÉ TIL FÆLLESSKABET / PROTOTYPE</p><h2>Dit digitale<br /> Kind Design-kort.</h2><p>Et koncept til din profil og dit medlemskort.</p><p class="mobile-label">Medlemskort er et koncept i prototypen.</p><button class="button desktop-label" type="button" data-membership-open>Se eksempel på medlemskort</button></div><img class="desktop-label" src="/images/af5ee-530.webp" width="265" height="265" alt="KindDesign" loading="lazy" /></div></section>
-  <dialog id="membership-dialog" aria-labelledby="membership-heading"><h2 id="membership-heading">Dit digitale Kind Design-kort.</h2><p>Medlemskort er et koncept i prototypen.</p><form method="dialog"><button class="button">Luk eksempel</button></form></dialog>
+  <section class="welcome-faq" aria-labelledby="faq-heading" data-faq>
+    <h2 id="faq-heading">Godt at vide.</h2>
+    <div class="faq-list">{questions.map(([question,answer],index)=><article class="faq-item">
+      <h3><button type="button" id={`faq-question-${index}`} aria-expanded="false" aria-controls={`faq-answer-${index}`} disabled>{question}<span class="faq-icon" aria-hidden="true"></span></button><noscript>{question}</noscript></h3>
+      <div class="faq-panel" id={`faq-answer-${index}`} role="region" aria-labelledby={`faq-question-${index}`} hidden><p>{answer}</p></div>
+    </article>)}</div>
+    <noscript><style is:inline>.faq-panel[hidden] { display: block !important; } .faq-item button { display: none; }</style></noscript>
+  </section>
 </InnerLayout>
-<script>const dialog = document.querySelector('#membership-dialog'); document.querySelector('[data-membership-open]').addEventListener('click', () => dialog.showModal());</script>
+<script src="../scripts/faq.js"></script>

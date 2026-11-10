@@ -2,6 +2,8 @@ const toolsRoot = process.env.KINDDESIGN_QA_TOOLS || "/tmp/kinddesign-tools";
 const { chromium } = require(toolsRoot + "/node_modules/playwright");
 const assert = require("assert");
 const fs = require("fs");
+const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
+fs.mkdirSync(folder, { recursive: true });
 (async () => {
   const b = await chromium.launch({ channel: "chrome" });
   let results = [];
@@ -88,7 +90,7 @@ const fs = require("fs");
       ),
     );
     await p.screenshot({
-      path: `docs/qa/final-implementation/contact-confirmation-${width}.png`,
+      path: `${folder}/contact-confirmation-${width}.png`,
       fullPage: true,
     });
     await p.locator("[data-contact-reset]").click();
@@ -111,10 +113,7 @@ const fs = require("fs");
     });
     await c.close();
   }
-  fs.writeFileSync(
-    "docs/qa/final-implementation/flows.json",
-    JSON.stringify(results, null, 2),
-  );
+  fs.writeFileSync(`${folder}/flows.json`, JSON.stringify(results, null, 2));
   console.log(results);
   await b.close();
 })().catch((e) => {

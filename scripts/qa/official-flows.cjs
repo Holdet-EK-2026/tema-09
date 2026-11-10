@@ -2,6 +2,8 @@ const root = process.env.KINDDESIGN_QA_TOOLS || "/tmp/kinddesign-tools";
 const { chromium } = require(root + "/node_modules/playwright");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
+const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
+fs.mkdirSync(folder, { recursive: true });
 (async () => {
   const browser = await chromium.launch({ channel: "chrome" });
   const results = [];
@@ -151,7 +153,7 @@ const fs = require("node:fs");
     await context.close();
   }
   fs.writeFileSync(
-    "docs/qa/final-implementation/official-flows.json",
+    `${folder}/official-flows.json`,
     JSON.stringify(results, null, 2),
   );
   console.log(results);

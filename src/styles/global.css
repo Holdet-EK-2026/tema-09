@@ -272,82 +272,9 @@ button:focus-visible,
 .gallery-window::-webkit-scrollbar {
   display: none;
 }
-.desktop-gallery {
-  position: relative;
-  width: 2040px;
-  height: 720px;
-}
 .gallery-card {
   position: absolute;
   max-width: none;
-}
-.card-1 {
-  left: -185px;
-  top: 76px;
-  width: 320px;
-  height: 555px;
-}
-.card-2 {
-  left: 175px;
-  top: 12px;
-  width: 315px;
-  height: 650px;
-}
-.card-3 {
-  left: 530px;
-  top: 48px;
-  width: 390px;
-  height: 610px;
-}
-.card-4 {
-  left: 960px;
-  top: 110px;
-  width: 295px;
-  height: 520px;
-}
-.card-5 {
-  left: 1295px;
-  top: 12px;
-  width: 315px;
-  height: 580px;
-}
-.card-6 {
-  left: 1650px;
-  top: 65px;
-  width: 330px;
-  height: 590px;
-}
-.mobile-gallery {
-  display: none;
-}
-.gallery-controls {
-  position: absolute;
-  left: 64px;
-  top: 962px;
-  display: flex;
-  align-items: center;
-  gap: 13px;
-}
-.static-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 74px;
-  height: 58px;
-  border-radius: 29px;
-  background: var(--salvie);
-  color: var(--tekst);
-  font-size: 18px;
-  line-height: 1.1;
-}
-.static-arrow.next {
-  background: var(--bordeaux);
-  color: var(--sand);
-}
-.gallery-controls p {
-  margin-left: 27px;
-  font-size: 13px;
-  line-height: 1.1;
 }
 .community-section {
   background: var(--lyseblaa);
@@ -504,9 +431,6 @@ dialog p {
     font-size: 26px;
   }
   .site-footer > p {
-    left: 32px;
-  }
-  .gallery-controls {
     left: 32px;
   }
 }
@@ -706,34 +630,6 @@ dialog p {
     width: 100%;
     flex-shrink: 0;
   }
-  .desktop-gallery {
-    display: none;
-  }
-  .mobile-gallery {
-    display: flex;
-    gap: 14px;
-    width: 1100px;
-    height: 260px;
-  }
-  .mobile-gallery img {
-    width: 260px;
-    height: 260px;
-    max-width: none;
-    object-fit: contain;
-    flex-shrink: 0;
-  }
-  .gallery-controls {
-    position: static;
-    display: block;
-  }
-  .static-arrow {
-    display: none;
-  }
-  .gallery-controls p {
-    margin: 0;
-    font-size: 11px;
-    line-height: 1.45;
-  }
   .community-section {
     background: var(--salvie);
     min-height: 0;
@@ -842,7 +738,6 @@ dialog p {
   .community-body {
     line-height: 25px;
   }
-  .gallery-controls p,
   .site-footer > p {
     line-height: 16px;
   }
@@ -884,10 +779,6 @@ dialog p {
 .site-header nav.mobile-navigation {
   display: none;
 }
-.static-arrow {
-  justify-content: flex-start;
-  padding-left: 23px;
-}
 @media (max-width: 600px) {
   .site-header nav.desktop-navigation {
     display: none;
@@ -908,21 +799,6 @@ dialog p {
   white-space: nowrap;
 }
 @media (max-width: 600px) {
-  .gallery-controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .gallery-controls .static-arrow {
-    display: flex;
-    width: 48px;
-    height: 44px;
-    padding-left: 14px;
-  }
-  .gallery-controls p {
-    width: 100%;
-    order: -1;
-  }
   .carousel-pause {
     margin: 0;
     font-size: 12px;
@@ -944,4 +820,123 @@ dialog p {
 .hero-event {
   max-width: 430px;
   line-height: 1.35;
+}
+
+/* Fælles interaktioner ændrer hverken tekstbredde eller layout. */
+:root {
+  --interaction-duration: 240ms;
+}
+.site-header nav a {
+  text-decoration: none;
+}
+.site-header .nav-label {
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: -4px;
+  background: linear-gradient(currentColor, currentColor) left bottom / 0% 1px
+    no-repeat;
+  transition: background-size var(--interaction-duration) ease;
+}
+.site-header nav a[aria-current="page"] .nav-label,
+.site-header nav a:focus-visible .nav-label {
+  background-size: 100% 1px;
+}
+.site-header nav a[aria-current="page"] {
+  color: var(--bordeaux);
+}
+.button,
+.site-header .new-link,
+.carousel-tools button,
+.event-filters button,
+.event-status-filters button,
+.faq-item button,
+.calendar-grid a {
+  transition:
+    background-color var(--interaction-duration) ease,
+    box-shadow var(--interaction-duration) ease;
+}
+.site-footer nav a,
+.back-link,
+.calendar-link,
+.calendar-tabs a,
+.event-source-intro a,
+.luma-source,
+.official-story a,
+.calendar-source a {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.25em;
+  transition: text-decoration-color var(--interaction-duration) ease;
+}
+.site-footer nav a:focus-visible,
+.back-link:focus-visible,
+.calendar-link:focus-visible,
+.calendar-tabs a:focus-visible,
+.event-source-intro a:focus-visible,
+.luma-source:focus-visible,
+.official-story a:focus-visible,
+.calendar-source a:focus-visible {
+  text-decoration-color: currentColor;
+}
+@media (hover: hover) {
+  .site-header nav a:hover .nav-label {
+    background-size: 100% 1px;
+  }
+  .site-footer nav a:hover,
+  .back-link:hover,
+  .calendar-link:hover,
+  .calendar-tabs a:hover,
+  .event-source-intro a:hover,
+  .luma-source:hover,
+  .official-story a:hover,
+  .calendar-source a:hover {
+    text-decoration-color: currentColor;
+  }
+  .button:hover,
+  .site-header .new-link:hover {
+    box-shadow: inset 0 0 0 2px currentColor;
+  }
+  .carousel-tools button:not(:disabled):hover,
+  .faq-item button:not(:disabled):hover,
+  .event-filters button[aria-pressed="false"]:hover,
+  .event-status-filters button[aria-pressed="false"]:hover {
+    background-color: rgb(114 47 55 / 8%);
+  }
+  .event-card:has(a:hover) h3 a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+}
+.event-card h3 a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.button:active,
+.carousel-tools button:not(:disabled):active,
+.faq-item button:not(:disabled):active {
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header .nav-label,
+  .button,
+  .site-header .new-link,
+  .site-footer nav a,
+  .back-link,
+  .calendar-link,
+  .calendar-tabs a,
+  .event-source-intro a,
+  .luma-source,
+  .official-story a,
+  .calendar-source a,
+  .carousel-tools button,
+  .event-filters button,
+  .event-status-filters button,
+  .faq-item button,
+  .faq-icon::after,
+  .calendar-grid a {
+    transition: none;
+  }
 }

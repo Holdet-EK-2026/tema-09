@@ -13,10 +13,6 @@
 .inner-page .site-header .new-link {
   margin-left: 22px;
 }
-.inner-page .site-header a[aria-current="page"]:not(.new-link) {
-  text-decoration: underline;
-  text-underline-offset: 6px;
-}
 .inner-page h1,
 .inner-page h2,
 .inner-page h3 {
@@ -300,16 +296,6 @@
 .founders-intro > p:last-child {
   font-size: 23px;
 }
-.portrait-placeholder {
-  min-height: 252px;
-  border-radius: 16px;
-  background: var(--salvie);
-  color: var(--tekst);
-  padding: 90px 24px 40px;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1.2;
-}
 .founder h3 {
   margin-top: 17px;
 }
@@ -590,53 +576,6 @@
 .welcome-faq h2 {
   font-size: 50px;
   margin-bottom: 40px;
-}
-.welcome-faq dl {
-  margin: 0;
-  display: grid;
-  gap: 16px;
-}
-.welcome-faq dl > div {
-  display: grid;
-  grid-template-columns: 405px 1fr;
-  gap: 32px;
-  padding: 24px;
-  border: 1px solid rgb(114 47 55 / 24%);
-  border-radius: 28px;
-}
-.welcome-faq dt {
-  font-size: 15px;
-}
-.welcome-faq dd {
-  margin: 0;
-  font-size: 21px;
-  line-height: 1.25;
-}
-.membership-concept {
-  background: var(--bordeaux);
-  color: var(--sand);
-  padding: 28px 64px;
-}
-.membership-concept > div {
-  border: 1px solid rgb(232 220 198 / 40%);
-  border-radius: 28px;
-  padding: 32px;
-  display: grid;
-  grid-template-columns: 850px 265px;
-  gap: 64px;
-}
-.membership-concept h2 {
-  font-size: 52px;
-  line-height: 1.25;
-  margin: 22px 0;
-}
-.membership-concept p {
-  font-size: 21px;
-}
-.membership-concept .button {
-  margin-top: 22px;
-  color: var(--tekst);
-  background: var(--salvie);
 }
 .event-detail-hero {
   min-height: 720px;
@@ -1026,11 +965,6 @@
   .founders-intro > p:last-child {
     font-size: 19px;
   }
-  .portrait-placeholder {
-    font-size: 16px;
-    padding: 70px 18px;
-    min-height: 220px;
-  }
   .story-banner > div {
     padding: 24px;
   }
@@ -1103,16 +1037,6 @@
   }
   .welcome-steps article > p:last-child {
     font-size: 19px;
-  }
-  .welcome-faq dl > div {
-    grid-template-columns: 30% 1fr;
-  }
-  .membership-concept {
-    padding-inline: 32px;
-  }
-  .membership-concept > div {
-    grid-template-columns: 1fr 190px;
-    gap: 30px;
   }
   .event-detail-hero {
     padding-inline: 32px;
@@ -1414,12 +1338,6 @@
     font-size: 36px;
     margin: 24px 0 0;
   }
-  .portrait-placeholder {
-    min-height: 230px;
-    padding: 78px 24px 30px;
-    border-radius: 0;
-    font-size: 21px;
-  }
   .founder h3 {
     font-size: 27px;
     margin-top: 24px;
@@ -1613,43 +1531,6 @@
   .welcome-faq h2 {
     font-size: 34px;
     margin-bottom: 24px;
-  }
-  .welcome-faq dl {
-    gap: 24px;
-  }
-  .welcome-faq dl > div {
-    display: block;
-    border: 0;
-    padding: 0;
-  }
-  .welcome-faq dt {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 24px;
-  }
-  .welcome-faq dd {
-    font-size: 17px;
-    line-height: 1.45;
-  }
-  .membership-concept {
-    padding: 24px;
-  }
-  .membership-concept > div {
-    display: block;
-    padding: 0;
-    border: 0;
-  }
-  .membership-concept h2 {
-    font-size: 34px;
-  }
-  .membership-concept p {
-    font-size: 17px;
-    line-height: 1.45;
-  }
-  .membership-concept p.mobile-label {
-    display: block;
-    margin-top: 24px;
   }
   .event-detail-hero {
     min-height: 0;
@@ -1947,10 +1828,6 @@
   .founder-role {
     font-size: 14px;
     color: var(--tekst);
-  }
-  .portrait-placeholder {
-    min-height: 228px;
-    font-size: 22px;
   }
   .story-banner {
     padding: 24px;
@@ -2260,9 +2137,6 @@
     width: 170px;
   }
 }
-.membership-concept img {
-  object-fit: contain;
-}
 /* Verificerede Luma-data bruger de eksisterende kort og tokens; tekst må vokse. */
 .official-card {
   min-height: 280px;
@@ -2338,25 +2212,6 @@
 }
 .event-empty p {
   margin: 16px 0;
-}
-.demo-catalog {
-  color: var(--tekst);
-  margin-top: 40px;
-  border-block: 1px solid rgb(114 47 55 / 35%);
-  padding-block: 20px;
-}
-.demo-catalog summary {
-  cursor: pointer;
-  padding-block: 12px;
-}
-.demo-catalog p {
-  margin: 16px 0;
-}
-.demo-catalog ul {
-  padding-left: 24px;
-}
-.demo-catalog li {
-  margin: 12px 0;
 }
 .official-detail {
   padding: 28px 64px 64px;
@@ -2583,4 +2438,102 @@
 }
 .calendar-source a {
   text-decoration: underline;
+}
+
+/* FAQ: samme sand/bordeaux-kort, nu med en tydelig, tastaturbetjent udløser. */
+.welcome-faq {
+  background: var(--sand);
+  color: var(--bordeaux);
+}
+.faq-list {
+  display: grid;
+  gap: 16px;
+}
+.faq-item {
+  border: 1px solid rgb(114 47 55 / 24%);
+  border-radius: 28px;
+}
+.faq-item h3 {
+  margin: 0;
+}
+.faq-item button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  min-height: 72px;
+  padding: 24px;
+  border-radius: 28px;
+  text-align: left;
+  font-family: "DM Sans", sans-serif;
+  font-size: 21px;
+  line-height: 1.25;
+  font-weight: 400;
+  background: transparent;
+  color: inherit;
+}
+.faq-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.faq-icon::before,
+.faq-icon::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  top: 9px;
+  left: 2px;
+  background: currentColor;
+}
+.faq-icon::after {
+  transform: rotate(90deg);
+  transition: transform var(--interaction-duration) ease;
+}
+[aria-expanded="true"] .faq-icon::after {
+  transform: rotate(0deg);
+}
+.faq-panel {
+  overflow: hidden;
+}
+.faq-panel p {
+  padding: 0 24px 24px;
+  max-width: 65ch;
+  font-size: 21px;
+  line-height: 1.45;
+}
+/* Afventende portrættilladelser forklares i rapporten; founderfakta vises uden fotoplaceholders. */
+.founder {
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--salvie);
+  color: var(--tekst);
+}
+.founder h3 {
+  margin-top: 0;
+  color: var(--bordeaux);
+}
+@media (max-width: 600px) {
+  .welcome-faq {
+    padding: 24px;
+  }
+  .faq-item button {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px;
+    gap: 16px;
+  }
+  .faq-panel p {
+    font-size: 17px;
+    padding: 0 20px 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-icon::after {
+    transition: none;
+  }
 }

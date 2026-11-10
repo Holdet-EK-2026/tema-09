@@ -1,0 +1,28 @@
+[
+  {
+    route: '/om-kinddesign/',
+    width: 1440,
+    status: 200,
+    errors: [],
+    failures: [],
+    data: {
+      width: 1440,
+      scrollWidth: 1440,
+      height: 2070,
+      controlsClipped: false,
+      h1: 1,
+      images: true,
+      sections: [Array]
+    },
+    violations: [ [Object] ]
+  }
+]
+AssertionError [ERR_ASSERTION]: Browserkontrollen fandt fejl; se pages.json.
+    at /Users/martingerlach/Desktop/Skole/EK/2 Semester/Temaer/T09 UX:UI II/kinddesign/scripts/qa/pages.cjs:173:10 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: '==',
+  diff: 'simple'
+}

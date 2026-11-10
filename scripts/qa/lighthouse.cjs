@@ -18,7 +18,9 @@ const routes = [
   "/events/design-og-nye-forbindelser/",
   "/tilmelding/design-og-nye-forbindelser/",
 ];
-const folder = "docs/qa/final-implementation/lighthouse";
+const folder =
+  (process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after") +
+  "/lighthouse";
 fs.mkdirSync(folder, { recursive: true });
 async function audit(route, desktop) {
   const name =

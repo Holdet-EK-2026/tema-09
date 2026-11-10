@@ -1,0 +1,28 @@
+
+> kinddesign@0.1.0 test:lighthouse
+> node scripts/qa/lighthouse.cjs
+
+{
+  route: '/',
+  mode: 'mobile',
+  scores: {
+    performance: 89,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 3829.2518999999993,
+  CLS: 0
+}
+{
+  route: '/',
+  mode: 'desktop',
+  scores: {
+    performance: 100,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 244.3639,
+  CLS: 0
+}

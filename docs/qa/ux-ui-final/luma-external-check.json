@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-11-10T11:53:06.125Z",
+  "method": "Read-only Chrome navigation; no ticket or registration actions; no participant data retained",
+  "checks": [
+    {
+      "url": "https://luma.com/cmapoye1",
+      "status": 200,
+      "title": "From Ballet to Technology: On Reinvention and Creative Identity · Luma",
+      "storedTitle": "From Ballet to Technology: On Reinvention and Creative Identity",
+      "structuredEventDates": [
+        {
+          "start": "2026-11-13T18:30:00.000+09:00",
+          "end": "2026-11-13T20:00:00.000+09:00",
+          "location": "Vague"
+        }
+      ],
+      "tokyoTimeConfirmed": true
+    },
+    {
+      "url": "https://luma.com/c3bj5f9d",
+      "status": 200,
+      "title": "AI skillsharing for designers & creatives · Luma",
+      "storedTitle": "AI skillsharing for designers & creatives",
+      "structuredEventDates": [
+        {
+          "start": "2026-10-29T18:00:00.000+01:00",
+          "end": "2026-10-29T20:00:00.000+01:00",
+          "location": "DEPT®"
+        }
+      ]
+    },
+    {
+      "url": "https://luma.com/c3jcu29h",
+      "status": 200,
+      "title": "Kinddesign / Real-talk · Luma",
+      "storedTitle": "Kinddesign / Real-talk",
+      "structuredEventDates": [
+        {
+          "start": "2026-07-01T18:00:00.000+02:00",
+          "end": "2026-07-01T20:00:00.000+02:00",
+          "location": "Bernies.Space"
+        }
+      ]
+    },
+    {
+      "url": "https://luma.com/n6nwx061",
+      "status": 200,
+      "title": "Designers & Creatives Meet-Up / Barcelona · Luma",
+      "storedTitle": "Designers & Creatives Meet-Up / Barcelona",
+      "structuredEventDates": [
+        {
+          "start": "2026-05-14T18:00:00.000+02:00",
+          "end": "2026-05-14T20:00:00.000+02:00",
+          "location": "Theodora Extra"
+        }
+      ]
+    },
+    {
+      "url": "https://luma.com/84v57ubf",
+      "status": 200,
+      "title": "Designers & Creatives Meet-Up / BERLIN · Luma",
+      "storedTitle": "Designers & Creatives Meet-Up / BERLIN",
+      "structuredEventDates": [
+        {
+          "start": "2025-12-18T18:30:00.000+01:00",
+          "end": "2025-12-18T19:30:00.000+01:00",
+          "location": "Jane & the Jam"
+        }
+      ]
+    },
+    {
+      "url": "https://luma.com/iq2qpyk4",
+      "status": 200,
+      "title": "Designers & Creatives Meet-Up / CPH xmas edition · Luma",
+      "storedTitle": "Designers & Creatives Meet-Up / CPH xmas edition",
+      "structuredEventDates": [
+        {
+          "start": "2025-12-17T18:00:00.000+01:00",
+          "end": "2025-12-17T20:00:00.000+01:00",
+          "location": "Rascal"
+        }
+      ]
+    },
+    {
+      "url": "https://luma.com/jdv50gdz",
+      "status": 200,
+      "title": "Designers & creatives meet-up · Luma",
+      "storedTitle": "Designers & creatives meet-up",
+      "structuredEventDates": [
+        {
+          "start": "2025-10-29T18:00:00.000+01:00",
+          "end": "2025-10-29T20:00:00.000+01:00",
+          "location": "ÅBEN Nordhavn"
+        }
+      ]
+    },
+    {
+      "url": "https://luma.com/bszies4x",
+      "status": 200,
+      "title": "Designers & creatives meet-up · Luma",
+      "storedTitle": "Designers & creatives meet-up",
+      "structuredEventDates": [
+        {
+          "start": "2025-09-17T18:00:00.000+02:00",
+          "end": "2025-09-17T20:00:00.000+02:00",
+          "location": "Dave's"
+        }
+      ]
+    }
+  ]
+}

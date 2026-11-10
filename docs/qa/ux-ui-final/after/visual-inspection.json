@@ -1,0 +1,824 @@
+[
+  {
+    "route": "/",
+    "width": 390,
+    "fonts": [
+      {
+        "text": "KIND\nDESIGN",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "66px",
+        "lineHeight": "69px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 390,
+        "height": 690,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/gallery-3c8b7-600.webp",
+        "width": 264.84375,
+        "height": 302.142822265625,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/ca544.webp",
+        "width": 342,
+        "height": 270,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Find dit næste event ↗",
+        "width": 342,
+        "height": 51
+      },
+      {
+        "text": "Lær Kind Design at kende",
+        "width": 342,
+        "height": 51
+      }
+    ]
+  },
+  {
+    "route": "/ny-her/",
+    "width": 390,
+    "fonts": [
+      {
+        "text": "Dit første hej\nstarter her.",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "44px",
+        "lineHeight": "46.2px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      },
+      {
+        "text": "Fra nysgerrig til med i samtalen.",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "32px",
+        "lineHeight": "33.6px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      },
+      {
+        "text": "Godt at vide.",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "34px",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/1207b.webp",
+        "width": 342,
+        "height": 260,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Find et event, der passer dig",
+        "width": 342,
+        "height": 51
+      }
+    ]
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 390,
+    "fonts": [
+      {
+        "text": "OM KINDDESIGN",
+        "family": "\"DM Sans\", sans-serif",
+        "weight": "700",
+        "size": "36px",
+        "lineHeight": "43.2px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 390,
+        "height": 290,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/d2848.webp",
+        "width": 294,
+        "height": 210,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Find et event ↗",
+        "width": 200,
+        "height": 56
+      },
+      {
+        "text": "Ny her? ↗",
+        "width": 170,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "route": "/kontakt/",
+    "width": 390,
+    "fonts": [
+      {
+        "text": "KONTAKT",
+        "family": "\"DM Sans\", sans-serif",
+        "weight": "700",
+        "size": "48px",
+        "lineHeight": "57.6px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 390,
+        "height": 290,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/ca544.webp",
+        "width": 342,
+        "height": 240,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Afprøv besked ↗",
+        "width": 294,
+        "height": 51
+      }
+    ]
+  },
+  {
+    "route": "/events/",
+    "width": 390,
+    "fonts": [
+      {
+        "text": "EVENTS",
+        "family": "\"DM Sans\", sans-serif",
+        "weight": "700",
+        "size": "48px",
+        "lineHeight": "57.6px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 390,
+        "height": 290,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/luma-cmapoye1-600.webp",
+        "width": 342,
+        "height": 300,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-c3bj5f9d-600.webp",
+        "width": 342,
+        "height": 300,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-c3jcu29h-600.webp",
+        "width": 342,
+        "height": 300,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-n6nwx061-600.webp",
+        "width": 342,
+        "height": 300,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-84v57ubf-600.webp",
+        "width": 342,
+        "height": 300,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-iq2qpyk4-600.webp",
+        "width": 342,
+        "height": 300,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-jdv50gdz-600.webp",
+        "width": 342,
+        "height": 300,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-bszies4x-600.webp",
+        "width": 342,
+        "height": 300,
+        "objectFit": "contain"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Se event ↗",
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Se event ↗",
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Se event ↗",
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Se event ↗",
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Se event ↗",
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Se event ↗",
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Se event ↗",
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Se event ↗",
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Ny her? ↗",
+        "width": 170,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "fonts": [
+      {
+        "text": "KIND DESIGN",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "84.2496px",
+        "lineHeight": "92.6746px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 768,
+        "height": 1000,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/gallery-3c8b7-600.webp",
+        "width": 292.631591796875,
+        "height": 423.157958984375,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/ca544.webp",
+        "width": 289.453125,
+        "height": 289.453125,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Find dit næste event\n \n ↗",
+        "width": 247,
+        "height": 58
+      },
+      {
+        "text": "Lær Kind Design at kende",
+        "width": 240,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "route": "/ny-her/",
+    "width": 768,
+    "fonts": [
+      {
+        "text": "Dit første hej\nstarter her.",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "48px",
+        "lineHeight": "60px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      },
+      {
+        "text": "Fra nysgerrig til med i samtalen.",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "40px",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      },
+      {
+        "text": "Godt at vide.",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "50px",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/1207b.webp",
+        "width": 286.359375,
+        "height": 440,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Find et event, der passer dig",
+        "width": 263.640625,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 768,
+    "fonts": [
+      {
+        "text": "OM KINDDESIGN",
+        "family": "\"DM Sans\", sans-serif",
+        "weight": "700",
+        "size": "72px",
+        "lineHeight": "86.4px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 768,
+        "height": 902.15625,
+        "objectFit": "fill"
+      },
+      {
+        "src": "/images/d2848.webp",
+        "width": 704,
+        "height": 320,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 768,
+    "fonts": [
+      {
+        "text": "KONTAKT",
+        "family": "\"DM Sans\", sans-serif",
+        "weight": "700",
+        "size": "72px",
+        "lineHeight": "86.4px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 768,
+        "height": 847.8125,
+        "objectFit": "fill"
+      },
+      {
+        "src": "/images/ca544.webp",
+        "width": 336,
+        "height": 350,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Afprøv besked ↗",
+        "width": 199.53125,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "route": "/events/",
+    "width": 768,
+    "fonts": [
+      {
+        "text": "EVENTS",
+        "family": "\"DM Sans\", sans-serif",
+        "weight": "700",
+        "size": "72px",
+        "lineHeight": "86.4px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 768,
+        "height": 847.8125,
+        "objectFit": "fill"
+      },
+      {
+        "src": "/images/luma-cmapoye1-600.webp",
+        "width": 246.390625,
+        "height": 430.75,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-c3bj5f9d-600.webp",
+        "width": 246.390625,
+        "height": 315.5625,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-c3jcu29h-600.webp",
+        "width": 246.390625,
+        "height": 349.15625,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-n6nwx061-600.webp",
+        "width": 246.390625,
+        "height": 351.5625,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-84v57ubf-600.webp",
+        "width": 246.390625,
+        "height": 385.15625,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-iq2qpyk4-600.webp",
+        "width": 246.390625,
+        "height": 351.5625,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-jdv50gdz-600.webp",
+        "width": 246.390625,
+        "height": 293.96875,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-bszies4x-600.webp",
+        "width": 246.390625,
+        "height": 293.96875,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/d2848.webp",
+        "width": 214.796875,
+        "height": 230.5625,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Ny her? ↗",
+        "width": 136.640625,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "fonts": [
+      {
+        "text": "KIND DESIGN",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "158px",
+        "lineHeight": "174px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 1440,
+        "height": 1000,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/gallery-3c8b7-600.webp",
+        "width": 355.7894287109375,
+        "height": 496.842041015625,
+        "objectFit": "cover"
+      },
+      {
+        "src": "/images/ca544.webp",
+        "width": 500,
+        "height": 500,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Find dit næste event\n \n ↗",
+        "width": 247,
+        "height": 58
+      },
+      {
+        "text": "Lær Kind Design at kende",
+        "width": 240,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "route": "/ny-her/",
+    "width": 1440,
+    "fonts": [
+      {
+        "text": "Dit første hej\nstarter her.",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "64px",
+        "lineHeight": "80px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      },
+      {
+        "text": "Fra nysgerrig til med i samtalen.",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "48px",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      },
+      {
+        "text": "Godt at vide.",
+        "family": "\"Bricolage Grotesque\", sans-serif",
+        "weight": "700",
+        "size": "50px",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/1207b.webp",
+        "width": 500,
+        "height": 500,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Find et event, der passer dig",
+        "width": 263.640625,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 1440,
+    "fonts": [
+      {
+        "text": "OM KINDDESIGN",
+        "family": "\"DM Sans\", sans-serif",
+        "weight": "700",
+        "size": "110px",
+        "lineHeight": "132px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 1440,
+        "height": 902.15625,
+        "objectFit": "fill"
+      },
+      {
+        "src": "/images/d2848.webp",
+        "width": 674,
+        "height": 360,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 1440,
+    "fonts": [
+      {
+        "text": "KONTAKT",
+        "family": "\"DM Sans\", sans-serif",
+        "weight": "700",
+        "size": "110px",
+        "lineHeight": "132px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 1440,
+        "height": 847.8125,
+        "objectFit": "fill"
+      },
+      {
+        "src": "/images/ca544.webp",
+        "width": 530,
+        "height": 460,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Afprøv besked ↗",
+        "width": 199.53125,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "route": "/events/",
+    "width": 1440,
+    "fonts": [
+      {
+        "text": "EVENTS",
+        "family": "\"DM Sans\", sans-serif",
+        "weight": "700",
+        "size": "110px",
+        "lineHeight": "132px",
+        "letterSpacing": "normal",
+        "opticalSizing": "auto",
+        "variationSettings": "normal",
+        "synthesis": "none"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/0bb08.webp",
+        "width": 1440,
+        "height": 847.8125,
+        "objectFit": "fill"
+      },
+      {
+        "src": "/images/luma-cmapoye1-600.webp",
+        "width": 422,
+        "height": 422,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-c3bj5f9d-600.webp",
+        "width": 422,
+        "height": 422,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-c3jcu29h-600.webp",
+        "width": 422,
+        "height": 397.609375,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-n6nwx061-600.webp",
+        "width": 422,
+        "height": 422,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-84v57ubf-600.webp",
+        "width": 422,
+        "height": 283.140625,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-iq2qpyk4-600.webp",
+        "width": 422,
+        "height": 302.34375,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-jdv50gdz-600.webp",
+        "width": 422,
+        "height": 280,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/luma-bszies4x-600.webp",
+        "width": 422,
+        "height": 280,
+        "objectFit": "contain"
+      },
+      {
+        "src": "/images/d2848.webp",
+        "width": 354,
+        "height": 188,
+        "objectFit": "cover"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Ny her? ↗",
+        "width": 136.640625,
+        "height": 58
+      }
+    ]
+  }
+]

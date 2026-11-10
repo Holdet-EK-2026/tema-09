@@ -5,8 +5,7 @@ const AxeBuilder = require(
 ).default;
 const fs = require("fs");
 const assert = require("assert");
-const folder =
-  process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/final-implementation";
+const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
 (async () => {
   fs.mkdirSync(folder, { recursive: true });
   const b = await chromium.launch({ channel: "chrome" });
@@ -61,7 +60,7 @@ const folder =
     "/events/design-og-nye-forbindelser/",
     "/tilmelding/design-og-nye-forbindelser/",
   ];
-  for (const width of [390, 600, 601, 768, 1024, 1440]) {
+  for (const width of [320, 390, 480, 600, 601, 768, 900, 1024, 1440]) {
     const context = await b.newContext({
       viewport: { width, height: 900 },
       reducedMotion: "reduce",
@@ -78,7 +77,7 @@ const folder =
         if (r.status() >= 400 && !r.url().includes("/findes-ikke/"))
           failures.push({ url: r.url(), status: r.status() });
       });
-      const response = await p.goto("http://localhost:4321" + route, {
+      const response = await p.goto("http://127.0.0.1:4321" + route, {
         waitUntil: "networkidle",
       });
       if (route === "/") {
@@ -105,7 +104,7 @@ const folder =
           const gallery = document.querySelector("[data-carousel]");
           if (!gallery) return false;
           const rect = gallery.getBoundingClientRect();
-          return [...gallery.querySelectorAll(".gallery-controls button")].some(
+          return [...gallery.querySelectorAll(".carousel-tools button")].some(
             (button) => {
               const r = button.getBoundingClientRect();
               return (

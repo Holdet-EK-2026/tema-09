@@ -1,0 +1,16 @@
+Real autoplay: 390 [
+  { index: 0, elapsedMs: 0 },
+  { index: 1, elapsedMs: 4500 },
+  { index: 2, elapsedMs: 9001 }
+]
+Real autoplay: 768 [
+  { index: 0, elapsedMs: 0 },
+  { index: 1, elapsedMs: 4501 },
+  { index: 2, elapsedMs: 8999 }
+]
+Real autoplay: 1440 [
+  { index: 0, elapsedMs: 0 },
+  { index: 1, elapsedMs: 4503 },
+  { index: 2, elapsedMs: 9002 }
+]
+Carousel: all checks passed

@@ -5,6 +5,8 @@ const AxeBuilder = require(
 ).default;
 const fs = require("node:fs");
 const assert = require("node:assert/strict");
+const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
+fs.mkdirSync(folder, { recursive: true });
 (async () => {
   const browser = await chromium.launch({ channel: "chrome" });
   const results = [];
@@ -72,7 +74,7 @@ const assert = require("node:assert/strict");
       ),
     );
     await page.screenshot({
-      path: `docs/qa/final-implementation/404-${width}.png`,
+      path: `${folder}/404-${width}.png`,
       fullPage: true,
     });
     await page.goto("http://127.0.0.1:4321/events/design-og-nye-forbindelser/");
@@ -86,7 +88,7 @@ const assert = require("node:assert/strict");
       );
     });
     await page.screenshot({
-      path: `docs/qa/final-implementation/_events_design-og-nye-forbindelser_-${width}.png`,
+      path: `${folder}/_events_design-og-nye-forbindelser_-${width}.png`,
       fullPage: true,
     });
     await page.goto("http://127.0.0.1:4321/");
@@ -118,27 +120,21 @@ const assert = require("node:assert/strict");
     await page.locator(nav + ' a[href="/ny-her/"]').focus();
     await page.keyboard.press("Enter");
     await page.waitForURL("**/ny-her/");
-    if (width === 1440) {
-      const trigger = page.locator("[data-membership-open]");
-      await trigger.focus();
-      await page.keyboard.press("Enter");
-      assert(await page.locator("#membership-dialog").isVisible());
-      assert.equal(
-        (
-          await new AxeBuilder({ page })
-            .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-            .analyze()
-        ).violations.length,
-        0,
-      );
-      await page.keyboard.press("Escape");
-      assert(await page.locator("#membership-dialog").isHidden());
-      assert(await trigger.evaluate((node) => node === document.activeElement));
-    }
+    assert.equal(
+      await page.locator("#membership-dialog, .membership-concept").count(),
+      0,
+    );
+    const question = page.locator("[data-faq] button").first();
+    await question.focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await question.getAttribute("aria-expanded"), "true");
+    await page.keyboard.press("Space");
+    assert.equal(await question.getAttribute("aria-expanded"), "false");
     assert.equal(errors.length, 0);
     results.push({
       keyboardSkipNavAndFilter: true,
-      membershipDialogKeyboard: width === 1440 ? true : "desktop-only",
+      faqKeyboard: true,
+      membershipConceptRemoved: true,
       width,
       demoNavCurrent: true,
       contactErrorAndConfirmationAxe: 0,
@@ -211,7 +207,7 @@ const assert = require("node:assert/strict");
     .evaluate((img) => img.currentSrc);
   assert(gallerySource.endsWith("-1600.webp"));
   await rp.locator("[data-carousel]").screenshot({
-    path: "docs/qa/final-implementation/carousel-retina-390.png",
+    path: `${folder}/carousel-retina-390.png`,
   });
   results.push({
     noJavaScriptGalleryPhotos: 6,
@@ -219,10 +215,7 @@ const assert = require("node:assert/strict");
     retinaGallery: gallerySource,
   });
   await retina.close();
-  fs.writeFileSync(
-    "docs/qa/final-implementation/smoke.json",
-    JSON.stringify(results, null, 2),
-  );
+  fs.writeFileSync(`${folder}/smoke.json`, JSON.stringify(results, null, 2));
   console.log(results);
   await browser.close();
 })().catch((error) => {

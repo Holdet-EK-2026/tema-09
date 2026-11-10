@@ -2,7 +2,7 @@
 import InnerLayout from '../../components/InnerLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import EventCard from '../../components/EventCard.astro';
-import {listedEvents,demoEvents} from '../../data/events.js';
+import {listedEvents} from '../../data/events.js';
 ---
 <InnerLayout title="Events" description="Se KindDesigns officielle events og tidligere arrangementer. Find detaljer og tilmelding hos Luma.">
   <PageHero title="EVENTS" subtitle="Mød andre kreative. Find dit næste event." />
@@ -13,7 +13,7 @@ import {listedEvents,demoEvents} from '../../data/events.js';
     <p class="event-source-intro">Officielle events fra <a href="https://luma.com/user/kinddesign">KindDesign på Luma ↗</a>. Tider vises i eventets lokale tidszone.</p>
     <p class="sr-only" role="status" data-filter-status></p><div class="event-list">{listedEvents.map((event,index)=><EventCard event={event} index={index} />)}</div>
     <div class="event-empty" data-event-empty hidden><h3>Ingen events matcher dit filter.</h3><p>Prøv en anden type eller dato, eller se den officielle Luma-profil.</p><button type="button" class="button" data-reset-filters>Vis alle events</button></div>
-    <details class="demo-catalog"><summary>Figma-prototypens eksempel-events</summary><p>Disse fire events er demoindhold. De er ikke knyttet til officielle Luma-events og kan ikke bookes.</p><ul>{demoEvents.map(event=><li><a href={`/events/${event.slug}/`}>{event.title} · DEMO ↗</a></li>)}</ul></details>
+
     <aside class="new-banner"><img src="/images/d2848.webp" width="354" height="188" alt="Samtale omkring et bord hos KindDesign" loading="lazy" /><div><h2>Er det din første gang?</h2><p>Du er velkommen, også når du ikke kender nogen endnu.<br class="desktop-label" /> <span class="desktop-label">Læs mere om, hvordan det er at deltage.</span></p></div><a class="button" href="/ny-her/">Ny her? ↗</a></aside>
   </section>
 </InnerLayout>

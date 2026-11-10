@@ -24,6 +24,12 @@ const photos = [
         <figcaption><span>KindDesign</span><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span></figcaption>
       </figure>)}
     </div>
+    <div class="carousel-tools" role="group" aria-label="Styr billedkarrusellen" hidden>
+      <button type="button" data-carousel-previous aria-label="Forrige billede"><span aria-hidden="true">←</span></button>
+      <span class="carousel-position" aria-hidden="true" data-carousel-position>1 / {photos.length}</span>
+      <button type="button" data-carousel-next aria-label="Næste billede"><span aria-hidden="true">→</span></button>
+      <button class="carousel-toggle" type="button" data-carousel-toggle aria-label="Sæt automatiske billedskift på pause"><span data-carousel-toggle-label>Pause</span></button>
+    </div>
   </div>
   <p id="carousel-instructions" class="sr-only">Brug venstre og højre piletast, eller swipe mellem billederne. Tryk mellemrum for at sætte automatiske billedskift på pause eller genoptage dem.</p>
   <span class="sr-only" role="status" aria-atomic="true" data-carousel-status></span>

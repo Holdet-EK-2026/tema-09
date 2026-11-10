@@ -1,0 +1,294 @@
+[
+  {
+    "url": "http://127.0.0.1:4321/",
+    "before": {
+      "index": "0",
+      "autoplay": "paused",
+      "hover": true,
+      "focus": false,
+      "reducedMotion": false,
+      "rect": {
+        "x": 0,
+        "y": 300,
+        "width": 1440,
+        "height": 960,
+        "top": 300,
+        "right": 1440,
+        "bottom": 1260,
+        "left": 0
+      },
+      "window": {
+        "x": 0,
+        "y": 540,
+        "width": 1440,
+        "height": 720,
+        "top": 540,
+        "right": 1440,
+        "bottom": 1260,
+        "left": 0
+      },
+      "pointer": "gallery-intro"
+    },
+    "after": {
+      "index": "0",
+      "autoplay": "paused",
+      "hover": true,
+      "focus": false,
+      "reducedMotion": false,
+      "rect": {
+        "x": 0,
+        "y": 300,
+        "width": 1440,
+        "height": 960,
+        "top": 300,
+        "right": 1440,
+        "bottom": 1260,
+        "left": 0
+      },
+      "window": {
+        "x": 0,
+        "y": 540,
+        "width": 1440,
+        "height": 720,
+        "top": 540,
+        "right": 1440,
+        "bottom": 1260,
+        "left": 0
+      },
+      "pointer": "gallery-intro"
+    },
+    "clean": [
+      {
+        "index": "0",
+        "autoplay": "running",
+        "hover": false,
+        "focus": false,
+        "reducedMotion": false,
+        "rect": {
+          "x": 0,
+          "y": -60,
+          "width": 1440,
+          "height": 960,
+          "top": -60,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "window": {
+          "x": 0,
+          "y": 180,
+          "width": 1440,
+          "height": 720,
+          "top": 180,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "pointer": ""
+      },
+      {
+        "index": "0",
+        "autoplay": "paused",
+        "hover": true,
+        "focus": false,
+        "reducedMotion": false,
+        "rect": {
+          "x": 0,
+          "y": -60,
+          "width": 1440,
+          "height": 960,
+          "top": -60,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "window": {
+          "x": 0,
+          "y": 180,
+          "width": 1440,
+          "height": 720,
+          "top": 180,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "pointer": ""
+      },
+      {
+        "index": "0",
+        "autoplay": "paused",
+        "hover": true,
+        "focus": false,
+        "reducedMotion": false,
+        "rect": {
+          "x": 0,
+          "y": -60,
+          "width": 1440,
+          "height": 960,
+          "top": -60,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "window": {
+          "x": 0,
+          "y": 180,
+          "width": 1440,
+          "height": 720,
+          "top": 180,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "pointer": ""
+      }
+    ],
+    "errors": []
+  },
+  {
+    "url": "https://kinddesign-holdet-ek-2026.netlify.app/",
+    "before": {
+      "index": "0",
+      "autoplay": "paused",
+      "hover": true,
+      "focus": false,
+      "reducedMotion": false,
+      "rect": {
+        "x": 0,
+        "y": 300,
+        "width": 1440,
+        "height": 960,
+        "top": 300,
+        "right": 1440,
+        "bottom": 1260,
+        "left": 0
+      },
+      "window": {
+        "x": 0,
+        "y": 540,
+        "width": 1440,
+        "height": 720,
+        "top": 540,
+        "right": 1440,
+        "bottom": 1260,
+        "left": 0
+      },
+      "pointer": "gallery-intro"
+    },
+    "after": {
+      "index": "0",
+      "autoplay": "paused",
+      "hover": true,
+      "focus": false,
+      "reducedMotion": false,
+      "rect": {
+        "x": 0,
+        "y": 300,
+        "width": 1440,
+        "height": 960,
+        "top": 300,
+        "right": 1440,
+        "bottom": 1260,
+        "left": 0
+      },
+      "window": {
+        "x": 0,
+        "y": 540,
+        "width": 1440,
+        "height": 720,
+        "top": 540,
+        "right": 1440,
+        "bottom": 1260,
+        "left": 0
+      },
+      "pointer": "gallery-intro"
+    },
+    "clean": [
+      {
+        "index": "0",
+        "autoplay": "running",
+        "hover": false,
+        "focus": false,
+        "reducedMotion": false,
+        "rect": {
+          "x": 0,
+          "y": -60,
+          "width": 1440,
+          "height": 960,
+          "top": -60,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "window": {
+          "x": 0,
+          "y": 180,
+          "width": 1440,
+          "height": 720,
+          "top": 180,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "pointer": ""
+      },
+      {
+        "index": "0",
+        "autoplay": "paused",
+        "hover": true,
+        "focus": false,
+        "reducedMotion": false,
+        "rect": {
+          "x": 0,
+          "y": -60,
+          "width": 1440,
+          "height": 960,
+          "top": -60,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "window": {
+          "x": 0,
+          "y": 180,
+          "width": 1440,
+          "height": 720,
+          "top": 180,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "pointer": ""
+      },
+      {
+        "index": "0",
+        "autoplay": "paused",
+        "hover": true,
+        "focus": false,
+        "reducedMotion": false,
+        "rect": {
+          "x": 0,
+          "y": -60,
+          "width": 1440,
+          "height": 960,
+          "top": -60,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "window": {
+          "x": 0,
+          "y": 180,
+          "width": 1440,
+          "height": 720,
+          "top": 180,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "pointer": ""
+      }
+    ],
+    "errors": []
+  }
+]

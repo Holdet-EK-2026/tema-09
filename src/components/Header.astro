@@ -9,16 +9,16 @@ function current(href) {
   <a href="/" class="brand" aria-label="KindDesign – forside"><img src="/images/af5ee.webp" width="90" height="90" alt="KindDesign" /></a>
   {path.startsWith('/ny-her') && <span class="mobile-brand-name mobile-label">KindDesign</span>}
   <nav class="desktop-navigation" aria-label="Hovednavigation">
-    <a class="home-link" href="/" aria-current={current('/') ? 'page' : undefined}>Forside</a>
-    <a href="/events/" aria-current={current('/events/') ? 'page' : undefined}>Events</a>
-    <a href="/om-kinddesign/" aria-current={current('/om-kinddesign/') ? 'page' : undefined}><span class="desktop-label">Om Kind Design</span><span class="mobile-label">Om os</span></a>
-    <a class="contact-link" href="/kontakt/" aria-current={current('/kontakt/') ? 'page' : undefined}>Kontakt</a>
-    <a class="new-link" href="/ny-her/" aria-current={current('/ny-her/') ? 'page' : undefined}>Ny her?<span class="desktop-label">&nbsp; ↗</span></a>
+    <a class="home-link" href="/" aria-current={current('/') ? 'page' : undefined}><span class="nav-label">Forside</span></a>
+    <a href="/events/" aria-current={current('/events/') ? 'page' : undefined}><span class="nav-label">Events</span></a>
+    <a href="/om-kinddesign/" aria-current={current('/om-kinddesign/') ? 'page' : undefined}><span class="nav-label"><span class="desktop-label">Om Kind Design</span><span class="mobile-label">Om os</span></span></a>
+    <a class="contact-link" href="/kontakt/" aria-current={current('/kontakt/') ? 'page' : undefined}><span class="nav-label">Kontakt</span></a>
+    <a class="new-link" href="/ny-her/" aria-current={current('/ny-her/') ? 'page' : undefined}><span class="nav-label">Ny her?</span><span class="desktop-label" aria-hidden="true">&nbsp; ↗</span></a>
   </nav>
   <nav class="mobile-navigation" aria-label="Hovednavigation">
-    <a href="/events/" aria-current={current('/events/') ? 'page' : undefined}>Events</a>
-    <a href="/om-kinddesign/" aria-current={current('/om-kinddesign/') ? 'page' : undefined}>Om os</a>
-    <a class="new-link" href="/ny-her/" aria-current={current('/ny-her/') ? 'page' : undefined}>Ny her?</a>
-    <a class="contact-link" href="/kontakt/" aria-current={current('/kontakt/') ? 'page' : undefined}>Kontakt</a>
+    <a href="/events/" aria-current={current('/events/') ? 'page' : undefined}><span class="nav-label">Events</span></a>
+    <a href="/om-kinddesign/" aria-current={current('/om-kinddesign/') ? 'page' : undefined}><span class="nav-label">Om os</span></a>
+    <a class="new-link" href="/ny-her/" aria-current={current('/ny-her/') ? 'page' : undefined}><span class="nav-label">Ny her?</span></a>
+    <a class="contact-link" href="/kontakt/" aria-current={current('/kontakt/') ? 'page' : undefined}><span class="nav-label">Kontakt</span></a>
   </nav>
 </header>

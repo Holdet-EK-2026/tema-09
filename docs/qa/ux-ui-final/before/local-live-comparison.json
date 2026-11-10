@@ -1,0 +1,37 @@
+[
+  {
+    "path": "index.html",
+    "byteIdentical": true,
+    "sameWithoutNetlifyInjectedScript": true,
+    "localBytes": 18525,
+    "liveBytes": 18525
+  },
+  {
+    "path": "events/index.html",
+    "byteIdentical": true,
+    "sameWithoutNetlifyInjectedScript": true,
+    "localBytes": 16640,
+    "liveBytes": 16640
+  },
+  {
+    "path": "ny-her/index.html",
+    "byteIdentical": true,
+    "sameWithoutNetlifyInjectedScript": true,
+    "localBytes": 5453,
+    "liveBytes": 5453
+  },
+  {
+    "path": "om-kinddesign/index.html",
+    "byteIdentical": true,
+    "sameWithoutNetlifyInjectedScript": true,
+    "localBytes": 6973,
+    "liveBytes": 6973
+  },
+  {
+    "path": "kontakt/index.html",
+    "byteIdentical": true,
+    "sameWithoutNetlifyInjectedScript": true,
+    "localBytes": 6722,
+    "liveBytes": 6722
+  }
+]

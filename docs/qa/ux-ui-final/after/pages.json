@@ -1,0 +1,5066 @@
+[
+  {
+    "route": "/events/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 8301,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "events-section",
+          "top": 434,
+          "height": 7499.40625
+        },
+        {
+          "name": "site-footer",
+          "top": 7933.40625,
+          "height": 367.90625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2422,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 144,
+          "height": 737.171875
+        },
+        {
+          "name": "calendar-section",
+          "top": 881.171875,
+          "height": 930.5625
+        },
+        {
+          "name": "site-footer",
+          "top": 2028.734375,
+          "height": 393.15625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 3858,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "about-section",
+          "top": 434,
+          "height": 3055.59375
+        },
+        {
+          "name": "site-footer",
+          "top": 3489.59375,
+          "height": 367.90625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2350,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 144,
+          "height": 885.703125
+        },
+        {
+          "name": "welcome-steps",
+          "top": 1029.703125,
+          "height": 491.03125
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1520.734375,
+          "height": 436
+        },
+        {
+          "name": "site-footer",
+          "top": 1956.734375,
+          "height": 393.15625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2096,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "contact-section",
+          "top": 434,
+          "height": 1293.75
+        },
+        {
+          "name": "site-footer",
+          "top": 1727.75,
+          "height": 367.90625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2967,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1483.375
+        },
+        {
+          "name": "official-story",
+          "top": 1627.375,
+          "height": 946.875
+        },
+        {
+          "name": "site-footer",
+          "top": 2574.25,
+          "height": 393.15625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ai-skillsharing/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2154,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1198.921875
+        },
+        {
+          "name": "official-story",
+          "top": 1342.921875,
+          "height": 417.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1760.421875,
+          "height": 393.15625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/real-talk/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2243,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1165.84375
+        },
+        {
+          "name": "official-story",
+          "top": 1309.84375,
+          "height": 539.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1849.34375,
+          "height": 393.15625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-berlin/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2290,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1213.46875
+        },
+        {
+          "name": "official-story",
+          "top": 1357.46875,
+          "height": 539.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1896.96875,
+          "height": 393.15625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-og-nye-forbindelser/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 3442,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 144,
+          "height": 973.984375
+        },
+        {
+          "name": "event-program first-event-program",
+          "top": 1117.984375,
+          "height": 849.5
+        },
+        {
+          "name": "event-practical",
+          "top": 1967.484375,
+          "height": 1081.1875
+        },
+        {
+          "name": "site-footer",
+          "top": 3048.671875,
+          "height": 393.15625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-og-nye-forbindelser/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 1137,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 393.15625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 7699,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "events-section",
+          "top": 434,
+          "height": 6965.0625
+        },
+        {
+          "name": "site-footer",
+          "top": 7399.0625,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2248,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 144,
+          "height": 688.78125
+        },
+        {
+          "name": "calendar-section",
+          "top": 832.78125,
+          "height": 822.375
+        },
+        {
+          "name": "site-footer",
+          "top": 1872.15625,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 3397,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "about-section",
+          "top": 434,
+          "height": 2662.59375
+        },
+        {
+          "name": "site-footer",
+          "top": 3096.59375,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2163,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 144,
+          "height": 811.78125
+        },
+        {
+          "name": "welcome-steps",
+          "top": 955.78125,
+          "height": 464.03125
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1419.8125,
+          "height": 367
+        },
+        {
+          "name": "site-footer",
+          "top": 1786.8125,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2000,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "contact-section",
+          "top": 434,
+          "height": 1266.25
+        },
+        {
+          "name": "site-footer",
+          "top": 1700.25,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2734,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1387.09375
+        },
+        {
+          "name": "official-story",
+          "top": 1531.09375,
+          "height": 827.28125
+        },
+        {
+          "name": "site-footer",
+          "top": 2358.375,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ai-skillsharing/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2093,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1240.921875
+        },
+        {
+          "name": "official-story",
+          "top": 1384.921875,
+          "height": 332
+        },
+        {
+          "name": "site-footer",
+          "top": 1716.921875,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/real-talk/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2127,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1178.609375
+        },
+        {
+          "name": "official-story",
+          "top": 1322.609375,
+          "height": 428.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1751.109375,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-barcelona/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2118,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1240.921875
+        },
+        {
+          "name": "official-story",
+          "top": 1384.921875,
+          "height": 357.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1742.421875,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-berlin/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2189,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1240.921875
+        },
+        {
+          "name": "official-story",
+          "top": 1384.921875,
+          "height": 428.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1813.421875,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-cph-jul/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2093,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1240.921875
+        },
+        {
+          "name": "official-story",
+          "top": 1384.921875,
+          "height": 332
+        },
+        {
+          "name": "site-footer",
+          "top": 1716.921875,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-nordhavn-2025/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2022,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1170.375
+        },
+        {
+          "name": "official-story",
+          "top": 1314.375,
+          "height": 332
+        },
+        {
+          "name": "site-footer",
+          "top": 1646.375,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-koebenhavn-september-2025/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2022,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1170.375
+        },
+        {
+          "name": "official-story",
+          "top": 1314.375,
+          "height": 332
+        },
+        {
+          "name": "site-footer",
+          "top": 1646.375,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-og-nye-forbindelser/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 3265,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 144,
+          "height": 944.984375
+        },
+        {
+          "name": "event-program first-event-program",
+          "top": 1088.984375,
+          "height": 809.5
+        },
+        {
+          "name": "event-practical",
+          "top": 1898.484375,
+          "height": 990.90625
+        },
+        {
+          "name": "site-footer",
+          "top": 2889.390625,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-og-nye-forbindelser/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1120,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/design-og-nye-forbindelser/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1120,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ideer-paa-papir/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 3003,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 144,
+          "height": 902.984375
+        },
+        {
+          "name": "event-program",
+          "top": 1046.984375,
+          "height": 589.5
+        },
+        {
+          "name": "event-practical",
+          "top": 1636.484375,
+          "height": 990.90625
+        },
+        {
+          "name": "site-footer",
+          "top": 2627.390625,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/ideer-paa-papir/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1120,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/ideer-paa-papir/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1120,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-i-virkeligheden/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 3045,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 144,
+          "height": 944.984375
+        },
+        {
+          "name": "event-program",
+          "top": 1088.984375,
+          "height": 589.5
+        },
+        {
+          "name": "event-practical",
+          "top": 1678.484375,
+          "height": 990.90625
+        },
+        {
+          "name": "site-footer",
+          "top": 2669.390625,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-i-virkeligheden/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1120,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/design-i-virkeligheden/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1120,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/et-bord-nye-ansigter/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 3045,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 144,
+          "height": 944.984375
+        },
+        {
+          "name": "event-program",
+          "top": 1088.984375,
+          "height": 589.5
+        },
+        {
+          "name": "event-practical",
+          "top": 1678.484375,
+          "height": 990.90625
+        },
+        {
+          "name": "site-footer",
+          "top": 2669.390625,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/et-bord-nye-ansigter/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1120,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/et-bord-nye-ansigter/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1120,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/findes-ikke/",
+    "width": 390,
+    "status": 404,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1044,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 7408,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "events-section",
+          "top": 434,
+          "height": 6673.875
+        },
+        {
+          "name": "site-footer",
+          "top": 7107.875,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 2096,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 144,
+          "height": 635.78125
+        },
+        {
+          "name": "calendar-section",
+          "top": 779.78125,
+          "height": 822.375
+        },
+        {
+          "name": "site-footer",
+          "top": 1783.15625,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 3161,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "about-section",
+          "top": 434,
+          "height": 2426.59375
+        },
+        {
+          "name": "site-footer",
+          "top": 2860.59375,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 2026,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 144,
+          "height": 762.5
+        },
+        {
+          "name": "welcome-steps",
+          "top": 906.5,
+          "height": 439.390625
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1345.890625,
+          "height": 367
+        },
+        {
+          "name": "site-footer",
+          "top": 1712.890625,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 2000,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "contact-section",
+          "top": 434,
+          "height": 1266.25
+        },
+        {
+          "name": "site-footer",
+          "top": 1700.25,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 2685,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1426.703125
+        },
+        {
+          "name": "official-story",
+          "top": 1570.703125,
+          "height": 801.78125
+        },
+        {
+          "name": "site-footer",
+          "top": 2372.484375,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ai-skillsharing/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 1982,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1218.796875
+        },
+        {
+          "name": "official-story",
+          "top": 1362.796875,
+          "height": 306.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1669.296875,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/real-talk/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 2011,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1151.28125
+        },
+        {
+          "name": "official-story",
+          "top": 1295.28125,
+          "height": 403
+        },
+        {
+          "name": "site-footer",
+          "top": 1698.28125,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-berlin/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 2107,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1246.796875
+        },
+        {
+          "name": "official-story",
+          "top": 1390.796875,
+          "height": 403
+        },
+        {
+          "name": "site-footer",
+          "top": 1793.796875,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-og-nye-forbindelser/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 3008,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 144,
+          "height": 915.984375
+        },
+        {
+          "name": "event-program first-event-program",
+          "top": 1059.984375,
+          "height": 770.5
+        },
+        {
+          "name": "event-practical",
+          "top": 1830.484375,
+          "height": 865.234375
+        },
+        {
+          "name": "site-footer",
+          "top": 2695.71875,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-og-nye-forbindelser/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 1057,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 7212,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "events-section",
+          "top": 434,
+          "height": 6478.09375
+        },
+        {
+          "name": "site-footer",
+          "top": 6912.09375,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 1990,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 144,
+          "height": 600.78125
+        },
+        {
+          "name": "calendar-section",
+          "top": 744.78125,
+          "height": 751.1875
+        },
+        {
+          "name": "site-footer",
+          "top": 1676.96875,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 2991,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "about-section",
+          "top": 434,
+          "height": 2256.59375
+        },
+        {
+          "name": "site-footer",
+          "top": 2690.59375,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 1918,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 144,
+          "height": 737.859375
+        },
+        {
+          "name": "welcome-steps",
+          "top": 881.859375,
+          "height": 356.515625
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1238.375,
+          "height": 367
+        },
+        {
+          "name": "site-footer",
+          "top": 1605.375,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 1913,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "contact-section",
+          "top": 434,
+          "height": 1178.75
+        },
+        {
+          "name": "site-footer",
+          "top": 1612.75,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 2639,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1450.96875
+        },
+        {
+          "name": "official-story",
+          "top": 1594.96875,
+          "height": 731.484375
+        },
+        {
+          "name": "site-footer",
+          "top": 2326.453125,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ai-skillsharing/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 2056,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1313.609375
+        },
+        {
+          "name": "official-story",
+          "top": 1457.609375,
+          "height": 285.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1743.109375,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/real-talk/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 2078,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1264.96875
+        },
+        {
+          "name": "official-story",
+          "top": 1408.96875,
+          "height": 356.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1765.46875,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-berlin/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 2127,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1313.609375
+        },
+        {
+          "name": "official-story",
+          "top": 1457.609375,
+          "height": 356.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1814.109375,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-og-nye-forbindelser/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 2966,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 144,
+          "height": 873.984375
+        },
+        {
+          "name": "event-program first-event-program",
+          "top": 1017.984375,
+          "height": 770.5
+        },
+        {
+          "name": "event-practical",
+          "top": 1788.484375,
+          "height": 865.234375
+        },
+        {
+          "name": "site-footer",
+          "top": 2653.71875,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-og-nye-forbindelser/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 1057,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 144,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 744,
+          "height": 312.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 5199,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "events-section",
+          "top": 497,
+          "height": 4448.3125
+        },
+        {
+          "name": "site-footer",
+          "top": 4945.3125,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 2717,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 116,
+          "height": 935.15625
+        },
+        {
+          "name": "calendar-section",
+          "top": 1051.15625,
+          "height": 1093.1875
+        },
+        {
+          "name": "site-footer",
+          "top": 2432.34375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 3119,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 107,
+          "height": 415
+        },
+        {
+          "name": "about-section",
+          "top": 522,
+          "height": 2342.71875
+        },
+        {
+          "name": "site-footer",
+          "top": 2864.71875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 2444,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 116,
+          "height": 898.5
+        },
+        {
+          "name": "welcome-steps",
+          "top": 1014.5,
+          "height": 711.78125
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1726.28125,
+          "height": 432.75
+        },
+        {
+          "name": "site-footer",
+          "top": 2159.03125,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 1961,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "contact-section",
+          "top": 497,
+          "height": 1210
+        },
+        {
+          "name": "site-footer",
+          "top": 1707,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 2383,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 1324.375
+        },
+        {
+          "name": "official-story",
+          "top": 1440.375,
+          "height": 657.5
+        },
+        {
+          "name": "site-footer",
+          "top": 2097.875,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ai-skillsharing/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 1917,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 978.421875
+        },
+        {
+          "name": "official-story",
+          "top": 1094.421875,
+          "height": 538
+        },
+        {
+          "name": "site-footer",
+          "top": 1632.421875,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/real-talk/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 2089,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 958.8125
+        },
+        {
+          "name": "official-story",
+          "top": 1074.8125,
+          "height": 729
+        },
+        {
+          "name": "site-footer",
+          "top": 1803.8125,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-berlin/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 2157,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 1055.40625
+        },
+        {
+          "name": "official-story",
+          "top": 1171.40625,
+          "height": 700.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1871.90625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-og-nye-forbindelser/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 2825,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 116,
+          "height": 720
+        },
+        {
+          "name": "event-program first-event-program",
+          "top": 836,
+          "height": 789.75
+        },
+        {
+          "name": "event-practical",
+          "top": 1625.75,
+          "height": 914.5
+        },
+        {
+          "name": "site-footer",
+          "top": 2540.25,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-og-nye-forbindelser/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 1178,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 777
+        },
+        {
+          "name": "site-footer",
+          "top": 893,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 4557,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "events-section",
+          "top": 497,
+          "height": 3806.0625
+        },
+        {
+          "name": "site-footer",
+          "top": 4303.0625,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2604,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 116,
+          "height": 842.96875
+        },
+        {
+          "name": "calendar-section",
+          "top": 958.96875,
+          "height": 1072.1875
+        },
+        {
+          "name": "site-footer",
+          "top": 2319.15625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2989,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 107,
+          "height": 415
+        },
+        {
+          "name": "about-section",
+          "top": 522,
+          "height": 2212.921875
+        },
+        {
+          "name": "site-footer",
+          "top": 2734.921875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2083,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 116,
+          "height": 695
+        },
+        {
+          "name": "welcome-steps",
+          "top": 811,
+          "height": 554.1875
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1365.1875,
+          "height": 432.75
+        },
+        {
+          "name": "site-footer",
+          "top": 1797.9375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1961,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "contact-section",
+          "top": 497,
+          "height": 1210
+        },
+        {
+          "name": "site-footer",
+          "top": 1707,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2076,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 1145.21875
+        },
+        {
+          "name": "official-story",
+          "top": 1261.21875,
+          "height": 530
+        },
+        {
+          "name": "site-footer",
+          "top": 1791.21875,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ai-skillsharing/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1730,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 904.65625
+        },
+        {
+          "name": "official-story",
+          "top": 1020.65625,
+          "height": 424.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1445.15625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/real-talk/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1819,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 859.859375
+        },
+        {
+          "name": "official-story",
+          "top": 975.859375,
+          "height": 558.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1534.359375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-barcelona/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1759,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 904.65625
+        },
+        {
+          "name": "official-story",
+          "top": 1020.65625,
+          "height": 453
+        },
+        {
+          "name": "site-footer",
+          "top": 1473.65625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-berlin/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1836,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 904.65625
+        },
+        {
+          "name": "official-story",
+          "top": 1020.65625,
+          "height": 530
+        },
+        {
+          "name": "site-footer",
+          "top": 1550.65625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-cph-jul/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1730,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 904.65625
+        },
+        {
+          "name": "official-story",
+          "top": 1020.65625,
+          "height": 424.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1445.15625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-nordhavn-2025/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1625,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 827.671875
+        },
+        {
+          "name": "official-story",
+          "top": 943.671875,
+          "height": 396
+        },
+        {
+          "name": "site-footer",
+          "top": 1339.671875,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-koebenhavn-september-2025/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1685,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 859.859375
+        },
+        {
+          "name": "official-story",
+          "top": 975.859375,
+          "height": 424.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1400.359375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-og-nye-forbindelser/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2618,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 116,
+          "height": 720
+        },
+        {
+          "name": "event-program first-event-program",
+          "top": 836,
+          "height": 740
+        },
+        {
+          "name": "event-practical",
+          "top": 1576,
+          "height": 757
+        },
+        {
+          "name": "site-footer",
+          "top": 2333,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-og-nye-forbindelser/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1108,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 707
+        },
+        {
+          "name": "site-footer",
+          "top": 823,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/design-og-nye-forbindelser/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1073,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 672
+        },
+        {
+          "name": "site-footer",
+          "top": 788,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ideer-paa-papir/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2478,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 116,
+          "height": 720
+        },
+        {
+          "name": "event-program",
+          "top": 836,
+          "height": 600
+        },
+        {
+          "name": "event-practical",
+          "top": 1436,
+          "height": 757
+        },
+        {
+          "name": "site-footer",
+          "top": 2193,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/ideer-paa-papir/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1031,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 630
+        },
+        {
+          "name": "site-footer",
+          "top": 746,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/ideer-paa-papir/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1001,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 716,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-i-virkeligheden/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2478,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 116,
+          "height": 720
+        },
+        {
+          "name": "event-program",
+          "top": 836,
+          "height": 600
+        },
+        {
+          "name": "event-practical",
+          "top": 1436,
+          "height": 757
+        },
+        {
+          "name": "site-footer",
+          "top": 2193,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-i-virkeligheden/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1108,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 707
+        },
+        {
+          "name": "site-footer",
+          "top": 823,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/design-i-virkeligheden/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1073,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 672
+        },
+        {
+          "name": "site-footer",
+          "top": 788,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/et-bord-nye-ansigter/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2478,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 116,
+          "height": 720
+        },
+        {
+          "name": "event-program",
+          "top": 836,
+          "height": 600
+        },
+        {
+          "name": "event-practical",
+          "top": 1436,
+          "height": 757
+        },
+        {
+          "name": "site-footer",
+          "top": 2193,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/et-bord-nye-ansigter/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1108,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 707
+        },
+        {
+          "name": "site-footer",
+          "top": 823,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/et-bord-nye-ansigter/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1073,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 672
+        },
+        {
+          "name": "site-footer",
+          "top": 788,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/findes-ikke/",
+    "width": 768,
+    "status": 404,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 961,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 107,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 707,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 4288,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "events-section",
+          "top": 497,
+          "height": 3537.125
+        },
+        {
+          "name": "site-footer",
+          "top": 4034.125,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 2536,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 116,
+          "height": 824.96875
+        },
+        {
+          "name": "calendar-section",
+          "top": 940.96875,
+          "height": 1072.1875
+        },
+        {
+          "name": "site-footer",
+          "top": 2251.15625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 2893,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 107,
+          "height": 415
+        },
+        {
+          "name": "about-section",
+          "top": 522,
+          "height": 2116.921875
+        },
+        {
+          "name": "site-footer",
+          "top": 2638.921875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 1978,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 116,
+          "height": 645
+        },
+        {
+          "name": "welcome-steps",
+          "top": 761,
+          "height": 499.390625
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1260.390625,
+          "height": 432.75
+        },
+        {
+          "name": "site-footer",
+          "top": 1693.140625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 1961,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "contact-section",
+          "top": 497,
+          "height": 1210
+        },
+        {
+          "name": "site-footer",
+          "top": 1707,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 1921,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 1018.640625
+        },
+        {
+          "name": "official-story",
+          "top": 1134.640625,
+          "height": 501.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1636.140625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ai-skillsharing/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 1657,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 859.859375
+        },
+        {
+          "name": "official-story",
+          "top": 975.859375,
+          "height": 396
+        },
+        {
+          "name": "site-footer",
+          "top": 1371.859375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/real-talk/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 1718,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 815.0625
+        },
+        {
+          "name": "official-story",
+          "top": 931.0625,
+          "height": 501.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1432.5625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-berlin/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 1762,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 859.859375
+        },
+        {
+          "name": "official-story",
+          "top": 975.859375,
+          "height": 501.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1477.359375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-og-nye-forbindelser/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 2576,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 116,
+          "height": 720
+        },
+        {
+          "name": "event-program first-event-program",
+          "top": 836,
+          "height": 740
+        },
+        {
+          "name": "event-practical",
+          "top": 1576,
+          "height": 715
+        },
+        {
+          "name": "site-footer",
+          "top": 2291,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-og-nye-forbindelser/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 1073,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 672
+        },
+        {
+          "name": "site-footer",
+          "top": 788,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 4522,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "events-section",
+          "top": 497,
+          "height": 3771.3125
+        },
+        {
+          "name": "site-footer",
+          "top": 4268.3125,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 2501,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 116,
+          "height": 789.96875
+        },
+        {
+          "name": "calendar-section",
+          "top": 905.96875,
+          "height": 1072.1875
+        },
+        {
+          "name": "site-footer",
+          "top": 2216.15625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 2214,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 107,
+          "height": 415
+        },
+        {
+          "name": "about-section",
+          "top": 522,
+          "height": 1437.578125
+        },
+        {
+          "name": "site-footer",
+          "top": 1959.578125,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1978,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 116,
+          "height": 645
+        },
+        {
+          "name": "welcome-steps",
+          "top": 761,
+          "height": 499.390625
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1260.390625,
+          "height": 432.75
+        },
+        {
+          "name": "site-footer",
+          "top": 1693.140625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1961,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "contact-section",
+          "top": 497,
+          "height": 1210
+        },
+        {
+          "name": "site-footer",
+          "top": 1707,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1935,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 1032.140625
+        },
+        {
+          "name": "official-story",
+          "top": 1148.140625,
+          "height": 501.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1649.640625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ai-skillsharing/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1664,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 866.609375
+        },
+        {
+          "name": "official-story",
+          "top": 982.609375,
+          "height": 396
+        },
+        {
+          "name": "site-footer",
+          "top": 1378.609375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/real-talk/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1721,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 818.4375
+        },
+        {
+          "name": "official-story",
+          "top": 934.4375,
+          "height": 501.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1435.9375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-berlin/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1769,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 866.609375
+        },
+        {
+          "name": "official-story",
+          "top": 982.609375,
+          "height": 501.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1484.109375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-og-nye-forbindelser/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 2531,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 116,
+          "height": 720
+        },
+        {
+          "name": "event-program first-event-program",
+          "top": 836,
+          "height": 740
+        },
+        {
+          "name": "event-practical",
+          "top": 1576,
+          "height": 670
+        },
+        {
+          "name": "site-footer",
+          "top": 2246,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-og-nye-forbindelser/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1001,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 716,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 4935,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "events-section",
+          "top": 497,
+          "height": 4183.796875
+        },
+        {
+          "name": "site-footer",
+          "top": 4680.796875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2563,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 116,
+          "height": 851.59375
+        },
+        {
+          "name": "calendar-section",
+          "top": 967.59375,
+          "height": 1072.1875
+        },
+        {
+          "name": "site-footer",
+          "top": 2277.78125,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2070,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 107,
+          "height": 415
+        },
+        {
+          "name": "about-section",
+          "top": 522,
+          "height": 1293.96875
+        },
+        {
+          "name": "site-footer",
+          "top": 1815.96875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2028,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 116,
+          "height": 686
+        },
+        {
+          "name": "welcome-steps",
+          "top": 802,
+          "height": 508
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1310,
+          "height": 432.75
+        },
+        {
+          "name": "site-footer",
+          "top": 1742.75,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1961,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "contact-section",
+          "top": 497,
+          "height": 1210
+        },
+        {
+          "name": "site-footer",
+          "top": 1707,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1895,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 1020.828125
+        },
+        {
+          "name": "official-story",
+          "top": 1136.828125,
+          "height": 472.96875
+        },
+        {
+          "name": "site-footer",
+          "top": 1609.796875,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ai-skillsharing/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1596,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 848.359375
+        },
+        {
+          "name": "official-story",
+          "top": 964.359375,
+          "height": 346.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1310.859375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/real-talk/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1605,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 780.625
+        },
+        {
+          "name": "official-story",
+          "top": 896.625,
+          "height": 423.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1320.125,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-barcelona/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1596,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 848.359375
+        },
+        {
+          "name": "official-story",
+          "top": 964.359375,
+          "height": 346.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1310.859375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-berlin/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1673,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 848.359375
+        },
+        {
+          "name": "official-story",
+          "top": 964.359375,
+          "height": 423.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1387.859375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-cph-jul/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1664,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 916.09375
+        },
+        {
+          "name": "official-story",
+          "top": 1032.09375,
+          "height": 346.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1378.59375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-nordhavn-2025/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1567,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 848.359375
+        },
+        {
+          "name": "official-story",
+          "top": 964.359375,
+          "height": 318
+        },
+        {
+          "name": "site-footer",
+          "top": 1282.359375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/meetup-koebenhavn-september-2025/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1596,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 848.359375
+        },
+        {
+          "name": "official-story",
+          "top": 964.359375,
+          "height": 346.5
+        },
+        {
+          "name": "site-footer",
+          "top": 1310.859375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-og-nye-forbindelser/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2531,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 116,
+          "height": 720
+        },
+        {
+          "name": "event-program first-event-program",
+          "top": 836,
+          "height": 740
+        },
+        {
+          "name": "event-practical",
+          "top": 1576,
+          "height": 670
+        },
+        {
+          "name": "site-footer",
+          "top": 2246,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-og-nye-forbindelser/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1001,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 716,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/design-og-nye-forbindelser/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1001,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 716,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/ideer-paa-papir/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2391,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 116,
+          "height": 720
+        },
+        {
+          "name": "event-program",
+          "top": 836,
+          "height": 600
+        },
+        {
+          "name": "event-practical",
+          "top": 1436,
+          "height": 670
+        },
+        {
+          "name": "site-footer",
+          "top": 2106,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/ideer-paa-papir/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1001,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 716,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/ideer-paa-papir/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1001,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 716,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/design-i-virkeligheden/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2391,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 116,
+          "height": 720
+        },
+        {
+          "name": "event-program",
+          "top": 836,
+          "height": 600
+        },
+        {
+          "name": "event-practical",
+          "top": 1436,
+          "height": 670
+        },
+        {
+          "name": "site-footer",
+          "top": 2106,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/design-i-virkeligheden/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1001,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 716,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/design-i-virkeligheden/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1001,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 716,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/et-bord-nye-ansigter/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2391,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "event-detail-hero",
+          "top": 116,
+          "height": 720
+        },
+        {
+          "name": "event-program",
+          "top": 836,
+          "height": 600
+        },
+        {
+          "name": "event-practical",
+          "top": 1436,
+          "height": 670
+        },
+        {
+          "name": "site-footer",
+          "top": 2106,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/tilmelding/et-bord-nye-ansigter/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1001,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 716,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kalender/et-bord-nye-ansigter/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1001,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 116,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 716,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/findes-ikke/",
+    "width": 1440,
+    "status": 404,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 961,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "registration-demo",
+          "top": 107,
+          "height": 600
+        },
+        {
+          "name": "site-footer",
+          "top": 707,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 3128,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 144,
+          "height": 690
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-visible",
+          "top": 834,
+          "height": 897
+        },
+        {
+          "name": "community-section",
+          "top": 1731,
+          "height": 989
+        },
+        {
+          "name": "site-footer",
+          "top": 2720,
+          "height": 408
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2936,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 144,
+          "height": 690
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-visible",
+          "top": 834,
+          "height": 836
+        },
+        {
+          "name": "community-section",
+          "top": 1670,
+          "height": 874
+        },
+        {
+          "name": "site-footer",
+          "top": 2544,
+          "height": 392
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 480,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 480,
+      "scrollWidth": 480,
+      "height": 2713,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 144,
+          "height": 690
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-visible",
+          "top": 834,
+          "height": 750
+        },
+        {
+          "name": "community-section",
+          "top": 1584,
+          "height": 799
+        },
+        {
+          "name": "site-footer",
+          "top": 2383,
+          "height": 330
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 600,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 600,
+      "scrollWidth": 600,
+      "height": 2663,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 144,
+          "height": 690
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-visible",
+          "top": 834,
+          "height": 725
+        },
+        {
+          "name": "community-section",
+          "top": 1559,
+          "height": 774
+        },
+        {
+          "name": "site-footer",
+          "top": 2333,
+          "height": 330
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 601,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 601,
+      "scrollWidth": 601,
+      "height": 3196,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-visible",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 950.75
+        },
+        {
+          "name": "site-footer",
+          "top": 2910.75,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 3025,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-visible",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 779.5
+        },
+        {
+          "name": "site-footer",
+          "top": 2739.5,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 900,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 900,
+      "scrollWidth": 900,
+      "height": 3003,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-visible",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 758
+        },
+        {
+          "name": "site-footer",
+          "top": 2718,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 1024,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 3003,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-visible",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 758
+        },
+        {
+          "name": "site-footer",
+          "top": 2718,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 3003,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-visible",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 758
+        },
+        {
+          "name": "site-footer",
+          "top": 2718,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  }
+]
