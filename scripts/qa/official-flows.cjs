@@ -64,6 +64,21 @@ fs.mkdirSync(folder, { recursive: true });
         "18.30–20.00",
       ),
     );
+    assert(
+      (await page.locator("[data-registration-terms]").innerText()).includes(
+        "JP¥1.000",
+      ),
+    );
+    assert(
+      (await page.locator("[data-registration-terms]").innerText()).includes(
+        "godkendelse",
+      ),
+    );
+    assert(
+      (await page.locator("[data-luma-register]").innerText()).includes(
+        "Anmod om plads",
+      ),
+    );
     const download = page.locator("[data-calendar-download]");
     const response = await context.request.get(
       new URL(await download.getAttribute("href"), page.url()).href,
@@ -129,6 +144,7 @@ fs.mkdirSync(folder, { recursive: true });
     await page.reload();
     assert.equal(await page.locator("[data-luma-register]").count(), 0);
     assert(await page.locator("[data-calendar-download]").isHidden());
+    assert(await page.locator("[data-registration-terms]").isHidden());
     await page.goto(base + "/");
     assert.equal(
       await page.locator("[data-countdown-value]").textContent(),

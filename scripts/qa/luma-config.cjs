@@ -63,9 +63,11 @@ const path = require("node:path");
     sourceConflictsExplicit: true,
     externalBookingsPerformed: 0,
   };
-  fs.mkdirSync("docs/qa/final-implementation", { recursive: true });
+  const folder =
+    process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/final-implementation";
+  fs.mkdirSync(folder, { recursive: true });
   fs.writeFileSync(
-    "docs/qa/final-implementation/luma-config.json",
+    `${folder}/luma-config.json`,
     JSON.stringify(results, null, 2),
   );
   console.log(results);

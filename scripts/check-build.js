@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import assert from "node:assert/strict";
-const root = path.resolve("dist");
+const root = path.resolve(process.env.KINDDESIGN_BUILD_DIR || "dist");
 async function htmlFiles(folder) {
   const files = [];
   for (const entry of await fs.readdir(folder, { withFileTypes: true })) {

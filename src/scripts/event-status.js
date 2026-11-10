@@ -18,6 +18,9 @@ export function syncEventStatus() {
     node.querySelectorAll("[data-calendar-download]").forEach((link) => {
       link.hidden = true;
     });
+    node.querySelectorAll("[data-registration-terms]").forEach((terms) => {
+      terms.hidden = true;
+    });
     const explanation = node.querySelector(".luma-explanation");
     if (explanation)
       explanation.textContent = "Eventet er afsluttet. Tilmelding er lukket.";

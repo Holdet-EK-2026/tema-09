@@ -2613,3 +2613,14 @@
     font-size: 26px;
   }
 }
+
+.registration-terms {
+  margin-top: 24px;
+  max-width: 60ch;
+  font-size: 18px;
+}
+.registration-terms span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}

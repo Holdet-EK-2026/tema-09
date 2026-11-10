@@ -22,6 +22,11 @@ export const verifiedLumaEvents = [
     ],
     lumaUrl: "https://luma.com/cmapoye1",
     verifiedAt: "2026-11-09",
+    registration: {
+      priceLabel: "JP¥1.000",
+      approvalRequired: true,
+      verifiedAt: "2026-11-10",
+    },
     program: [
       ["18.30", "Velkomst"],
       ["18.45", "Interview med Rina Takikawa"],
