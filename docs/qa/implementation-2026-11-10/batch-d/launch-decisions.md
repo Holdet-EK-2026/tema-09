@@ -2,7 +2,7 @@
 
 ## Kontakt (KD-04)
 
-Søgning i eksisterende README/projektets Markdown-dokumentation, inkl. arkiv, fandt ingen verificeret officiel mail eller telefon. Rapporterne beskriver fortsat behovet for modtager og afsendelsesløsning. Kontaktformularens ærlige demomærkning er derfor bevaret. Ingen adresse eller integration er opfundet. Status: **Blokeret af ekstern afhængighed** – ejerens bekræftede kontaktkanal.
+Søgning i eksisterende README/projektets Markdown-dokumentation, inkl. arkiv, fandt ingen verificeret officiel mail eller telefon. Rapporterne beskriver fortsat behovet for modtager og afsendelsesløsning. Casebeskrivelsens indledning identificerer dog den officielle Instagram-profil. Den er tilføjet som et almindeligt “Find KindDesign på Instagram”-link; se `contact-source.json`. Profilen er ikke præsenteret som en verificeret fungerende indbakke. Kontaktformularens ærlige demomærkning er bevaret. Ingen adresse eller integration er opfundet. Status: **Blokeret af ekstern afhængighed** – ejerens bekræftede kontaktkanal.
 
 ## Luma (KD-11)
 

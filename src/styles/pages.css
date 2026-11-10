@@ -2625,3 +2625,13 @@
   margin-top: 8px;
   font-size: 14px;
 }
+
+.contact-profile {
+  display: block;
+  width: fit-content;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}

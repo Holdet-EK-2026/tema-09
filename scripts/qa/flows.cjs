@@ -70,6 +70,22 @@ fs.mkdirSync(folder, { recursive: true });
       );
     }
     await p.goto(base + "/kontakt/?emne=Samarbejde");
+    const officialProfile = "https://www.instagram.com/kinddesign.cph/";
+    assert.equal(
+      await p.locator(".contact-profile").getAttribute("href"),
+      officialProfile,
+    );
+    // Verificér destination uden at kontakte eller sende en besked på Instagram.
+    await p.route("https://www.instagram.com/**", (route) =>
+      route.fulfill({
+        status: 200,
+        contentType: "text/html",
+        body: "<!doctype html><title>Lokal profiltest</title><p>Ingen ekstern kontakt.</p>",
+      }),
+    );
+    await p.locator(".contact-profile").click();
+    await p.waitForURL(officialProfile);
+    await p.goto(base + "/kontakt/?emne=Samarbejde");
     assert.equal(await p.locator("#subject").inputValue(), "Samarbejde");
     await p.locator("button[type=submit]").click();
     assert(await p.locator(".form-error-summary").isVisible());
@@ -109,6 +125,7 @@ fs.mkdirSync(folder, { recursive: true });
       eventFlows: 4,
       calendarDemos: 4,
       contactValidationAndReset: true,
+      officialProfileHandoff: true,
       posts,
       errors,
     });
