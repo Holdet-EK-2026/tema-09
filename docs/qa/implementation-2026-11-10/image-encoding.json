@@ -1,0 +1,73 @@
+[
+  {
+    "source": "1207b.webp",
+    "output": "1207b-600.webp",
+    "width": 600,
+    "height": 900,
+    "sourceBytes": 122202,
+    "outputBytes": 50816,
+    "encoding": "webp quality90",
+    "used": true
+  },
+  {
+    "source": "0bb08-1600.webp",
+    "output": "0bb08-1600-optimized.webp",
+    "width": 1600,
+    "height": 1061,
+    "sourceBytes": 487302,
+    "outputBytes": 446622,
+    "encoding": "webp quality90",
+    "used": true
+  },
+  {
+    "source": "0bb08.webp",
+    "output": "0bb08-2880-optimized.webp",
+    "width": 2880,
+    "height": 1909,
+    "sourceBytes": 1829582,
+    "outputBytes": 1639948,
+    "encoding": "webp quality90",
+    "used": true
+  },
+  {
+    "source": "d2848.webp",
+    "output": "d2848-banner-354.webp",
+    "width": 354,
+    "height": 531,
+    "sourceBytes": 566928,
+    "outputBytes": 38304,
+    "encoding": "webp quality90",
+    "used": true
+  },
+  {
+    "source": "d2848.webp",
+    "output": "d2848-banner-708.webp",
+    "width": 708,
+    "height": 1062,
+    "sourceBytes": 566928,
+    "outputBytes": 115540,
+    "encoding": "webp quality90",
+    "used": true
+  },
+  {
+    "source": "af5ee.webp",
+    "output": "af5ee-124.webp",
+    "width": 124,
+    "height": 122,
+    "sourceBytes": 36528,
+    "outputBytes": 20888,
+    "encoding": "lossless",
+    "used": true
+  },
+  {
+    "source": "af5ee.webp",
+    "output": "af5ee-248.webp",
+    "width": 248,
+    "height": 244,
+    "sourceBytes": 36528,
+    "outputBytes": 66126,
+    "encoding": "lossless",
+    "used": false,
+    "reason": "Rejected: lossless version is larger; original 248px asset retained"
+  }
+]

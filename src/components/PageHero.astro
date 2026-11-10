@@ -2,7 +2,7 @@
 const {title, subtitle, about = false} = Astro.props;
 ---
 <section class:list={['page-hero', about && 'about-hero']} aria-labelledby="page-title">
-  <img src="/images/0bb08.webp" srcset="/images/0bb08-640.webp 640w, /images/0bb08-1600.webp 1600w, /images/0bb08.webp 2880w" sizes="(max-width:600px) 600px, 100vw" width="2880" height="1909" alt="Deltagere i samtale til et KindDesign-arrangement" fetchpriority="high" />
+  <img src="/images/0bb08-2880-optimized.webp" srcset="/images/0bb08-640.webp 640w, /images/0bb08-1600-optimized.webp 1600w, /images/0bb08-2880-optimized.webp 2880w" sizes="(max-width:600px) 600px, 100vw" width="2880" height="1909" alt="Deltagere i samtale til et KindDesign-arrangement" fetchpriority="high" />
   <div class="page-hero-shade"></div>
   <h1 id="page-title">{title}</h1><p>{subtitle}</p>
 </section>

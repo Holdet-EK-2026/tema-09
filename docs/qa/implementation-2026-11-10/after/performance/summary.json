@@ -1,0 +1,239 @@
+[
+  {
+    "route": "/",
+    "mode": "mobile",
+    "run": 1,
+    "performance": 90,
+    "accessibility": 100,
+    "LCP": 3676.7238000000007,
+    "CLS": 0,
+    "bytes": 575537,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4323/images/af5ee-124.webp",
+        "bytes": 21083
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/1207b-600.webp",
+        "bytes": 51011
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/gallery-3c8b7-600.webp",
+        "bytes": 55565
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/ca544-500.webp",
+        "bytes": 78830
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/after/performance/forside-mobile-1.json"
+  },
+  {
+    "route": "/ny-her/",
+    "mode": "mobile",
+    "run": 1,
+    "performance": 91,
+    "accessibility": 100,
+    "LCP": 3526.4248,
+    "CLS": 0,
+    "bytes": 460643,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4323/images/af5ee-124.webp",
+        "bytes": 21083
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/1207b-600.webp",
+        "bytes": 51011
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/after/performance/_ny-her_-mobile-1.json"
+  },
+  {
+    "route": "/events/",
+    "mode": "desktop",
+    "run": 1,
+    "performance": 99,
+    "accessibility": 100,
+    "LCP": 941.6510000000001,
+    "CLS": 0,
+    "bytes": 780372,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4323/images/af5ee-124.webp",
+        "bytes": 21083
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/0bb08-1600-optimized.webp",
+        "bytes": 446871
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/luma-cmapoye1-450.webp",
+        "bytes": 76088
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/d2848-banner-354.webp",
+        "bytes": 38499
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/after/performance/_events_-desktop-1.json"
+  },
+  {
+    "route": "/",
+    "mode": "mobile",
+    "run": 2,
+    "performance": 90,
+    "accessibility": 100,
+    "LCP": 3676.4669999999996,
+    "CLS": 0,
+    "bytes": 575537,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4323/images/af5ee-124.webp",
+        "bytes": 21083
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/1207b-600.webp",
+        "bytes": 51011
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/gallery-3c8b7-600.webp",
+        "bytes": 55565
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/ca544-500.webp",
+        "bytes": 78830
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/after/performance/forside-mobile-2.json"
+  },
+  {
+    "route": "/ny-her/",
+    "mode": "mobile",
+    "run": 2,
+    "performance": 91,
+    "accessibility": 100,
+    "LCP": 3526.9945,
+    "CLS": 0,
+    "bytes": 460643,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4323/images/af5ee-124.webp",
+        "bytes": 21083
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/1207b-600.webp",
+        "bytes": 51011
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/after/performance/_ny-her_-mobile-2.json"
+  },
+  {
+    "route": "/events/",
+    "mode": "desktop",
+    "run": 2,
+    "performance": 99,
+    "accessibility": 100,
+    "LCP": 941.4341,
+    "CLS": 0,
+    "bytes": 780372,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4323/images/af5ee-124.webp",
+        "bytes": 21083
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/0bb08-1600-optimized.webp",
+        "bytes": 446871
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/luma-cmapoye1-450.webp",
+        "bytes": 76088
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/d2848-banner-354.webp",
+        "bytes": 38499
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/after/performance/_events_-desktop-2.json"
+  },
+  {
+    "route": "/",
+    "mode": "mobile",
+    "run": 3,
+    "performance": 90,
+    "accessibility": 100,
+    "LCP": 3677.0360999999994,
+    "CLS": 0,
+    "bytes": 575537,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4323/images/af5ee-124.webp",
+        "bytes": 21083
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/1207b-600.webp",
+        "bytes": 51011
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/gallery-3c8b7-600.webp",
+        "bytes": 55565
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/ca544-500.webp",
+        "bytes": 78830
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/after/performance/forside-mobile-3.json"
+  },
+  {
+    "route": "/ny-her/",
+    "mode": "mobile",
+    "run": 3,
+    "performance": 91,
+    "accessibility": 100,
+    "LCP": 3526.7817999999997,
+    "CLS": 0,
+    "bytes": 460643,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4323/images/af5ee-124.webp",
+        "bytes": 21083
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/1207b-600.webp",
+        "bytes": 51011
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/after/performance/_ny-her_-mobile-3.json"
+  },
+  {
+    "route": "/events/",
+    "mode": "desktop",
+    "run": 3,
+    "performance": 99,
+    "accessibility": 100,
+    "LCP": 942.1473000000001,
+    "CLS": 0,
+    "bytes": 780372,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4323/images/af5ee-124.webp",
+        "bytes": 21083
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/0bb08-1600-optimized.webp",
+        "bytes": 446871
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/luma-cmapoye1-450.webp",
+        "bytes": 76088
+      },
+      {
+        "url": "http://127.0.0.1:4323/images/d2848-banner-354.webp",
+        "bytes": 38499
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/after/performance/_events_-desktop-3.json"
+  }
+]

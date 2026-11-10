@@ -1,0 +1,50 @@
+[
+  {
+    "route": "/",
+    "mode": "mobile",
+    "before": {
+      "performance": 87,
+      "LCP": 4127.4168,
+      "bytes": 661325,
+      "CLS": 0
+    },
+    "after": {
+      "performance": 90,
+      "LCP": 3676.7238000000007,
+      "bytes": 575537,
+      "CLS": 0
+    }
+  },
+  {
+    "route": "/ny-her/",
+    "mode": "mobile",
+    "before": {
+      "performance": 88,
+      "LCP": 3903.1948999999995,
+      "bytes": 546017,
+      "CLS": 0
+    },
+    "after": {
+      "performance": 91,
+      "LCP": 3526.7817999999997,
+      "bytes": 460643,
+      "CLS": 0
+    }
+  },
+  {
+    "route": "/events/",
+    "mode": "desktop",
+    "before": {
+      "performance": 97,
+      "LCP": 1284.4239,
+      "bytes": 1773595,
+      "CLS": 0
+    },
+    "after": {
+      "performance": 99,
+      "LCP": 941.6510000000001,
+      "bytes": 780372,
+      "CLS": 0
+    }
+  }
+]

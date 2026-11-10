@@ -6,7 +6,7 @@ function current(href) {
 }
 ---
 <header class="site-header">
-  <a href="/" class="brand" aria-label="KindDesign – forside"><img src="/images/af5ee.webp" width="90" height="90" alt="KindDesign" /></a>
+  <a href="/" class="brand" aria-label="KindDesign – forside"><img src="/images/af5ee.webp" srcset="/images/af5ee-124.webp 124w, /images/af5ee.webp 248w" sizes="(max-width:600px) 54px, 90px" width="90" height="90" alt="KindDesign" /></a>
   {path.startsWith('/ny-her') && <span class="mobile-brand-name mobile-label">KindDesign</span>}
   <nav class="desktop-navigation" aria-label="Hovednavigation">
     <a class="home-link" href="/" aria-current={current('/') ? 'page' : undefined}><span class="nav-label">Forside</span></a>

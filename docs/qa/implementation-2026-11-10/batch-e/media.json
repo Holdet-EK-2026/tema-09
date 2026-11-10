@@ -1,0 +1,788 @@
+[
+  {
+    "route": "/",
+    "width": 390,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 54,
+        "height": 54,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/1207b-600.webp",
+        "width": 390,
+        "height": 690,
+        "fit": "cover",
+        "sourceWidth": 600,
+        "sourceHeight": 900,
+        "bytes": 50816
+      }
+    ]
+  },
+  {
+    "route": "/events/",
+    "width": 390,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 54,
+        "height": 54,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-640.webp",
+        "width": 390,
+        "height": 290,
+        "fit": "cover",
+        "sourceWidth": 640,
+        "sourceHeight": 424,
+        "bytes": 47382
+      }
+    ]
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 390,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 54,
+        "height": 54,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-640.webp",
+        "width": 390,
+        "height": 290,
+        "fit": "cover",
+        "sourceWidth": 640,
+        "sourceHeight": 424,
+        "bytes": 47382
+      }
+    ]
+  },
+  {
+    "route": "/kontakt/",
+    "width": 390,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 54,
+        "height": 54,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-640.webp",
+        "width": 390,
+        "height": 290,
+        "fit": "cover",
+        "sourceWidth": 640,
+        "sourceHeight": 424,
+        "bytes": 47382
+      }
+    ]
+  },
+  {
+    "route": "/ny-her/",
+    "width": 390,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 54,
+        "height": 54,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/1207b-600.webp",
+        "width": 342,
+        "height": 260,
+        "fit": "cover",
+        "sourceWidth": 600,
+        "sourceHeight": 900,
+        "bytes": 50816
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 768,
+        "height": 1000,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/events/",
+    "width": 768,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 768,
+        "height": 847.8125,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      },
+      {
+        "src": "/images/d2848-banner-354.webp",
+        "width": 214.796875,
+        "height": 322.1875,
+        "fit": "cover",
+        "sourceWidth": 354,
+        "sourceHeight": 531,
+        "bytes": 38304
+      }
+    ]
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 768,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 768,
+        "height": 902.15625,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/kontakt/",
+    "width": 768,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 768,
+        "height": 847.8125,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/ny-her/",
+    "width": 768,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/1207b-600.webp",
+        "width": 286.359375,
+        "height": 440,
+        "fit": "cover",
+        "sourceWidth": 600,
+        "sourceHeight": 900,
+        "bytes": 50816
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 1440,
+        "height": 1000,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/events/",
+    "width": 1440,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 1440,
+        "height": 847.8125,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      },
+      {
+        "src": "/images/d2848-banner-354.webp",
+        "width": 354,
+        "height": 188,
+        "fit": "cover",
+        "sourceWidth": 354,
+        "sourceHeight": 531,
+        "bytes": 38304
+      }
+    ]
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 1440,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 1440,
+        "height": 902.15625,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/kontakt/",
+    "width": 1440,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 1440,
+        "height": 847.8125,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/ny-her/",
+    "width": 1440,
+    "dpr": 1,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/1207b-600.webp",
+        "width": 500,
+        "height": 500,
+        "fit": "cover",
+        "sourceWidth": 600,
+        "sourceHeight": 900,
+        "bytes": 50816
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 54,
+        "height": 54,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/1207b-1200.webp",
+        "width": 390,
+        "height": 690,
+        "fit": "cover",
+        "sourceWidth": 1200,
+        "sourceHeight": 1800,
+        "bytes": 308642
+      }
+    ]
+  },
+  {
+    "route": "/events/",
+    "width": 390,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 54,
+        "height": 54,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 390,
+        "height": 290,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 390,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 54,
+        "height": 54,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 390,
+        "height": 290,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/kontakt/",
+    "width": 390,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 54,
+        "height": 54,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 390,
+        "height": 290,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/ny-her/",
+    "width": 390,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee-124.webp",
+        "width": 54,
+        "height": 54,
+        "fit": "contain",
+        "sourceWidth": 124,
+        "sourceHeight": 122,
+        "bytes": 20888
+      },
+      {
+        "src": "/images/1207b.webp",
+        "width": 342,
+        "height": 260,
+        "fit": "cover",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "bytes": 122202
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 248,
+        "sourceHeight": 244,
+        "bytes": 36528
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 768,
+        "height": 1000,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/events/",
+    "width": 768,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 248,
+        "sourceHeight": 244,
+        "bytes": 36528
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 768,
+        "height": 847.8125,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      },
+      {
+        "src": "/images/d2848-banner-708.webp",
+        "width": 214.796875,
+        "height": 322.1875,
+        "fit": "cover",
+        "sourceWidth": 708,
+        "sourceHeight": 1062,
+        "bytes": 115540
+      }
+    ]
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 768,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 248,
+        "sourceHeight": 244,
+        "bytes": 36528
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 768,
+        "height": 902.15625,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/kontakt/",
+    "width": 768,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 248,
+        "sourceHeight": 244,
+        "bytes": 36528
+      },
+      {
+        "src": "/images/0bb08-1600-optimized.webp",
+        "width": 768,
+        "height": 847.8125,
+        "fit": "cover",
+        "sourceWidth": 1600,
+        "sourceHeight": 1061,
+        "bytes": 446622
+      }
+    ]
+  },
+  {
+    "route": "/ny-her/",
+    "width": 768,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 248,
+        "sourceHeight": 244,
+        "bytes": 36528
+      },
+      {
+        "src": "/images/1207b-1200.webp",
+        "width": 286.359375,
+        "height": 440,
+        "fit": "cover",
+        "sourceWidth": 1200,
+        "sourceHeight": 1800,
+        "bytes": 308642
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 248,
+        "sourceHeight": 244,
+        "bytes": 36528
+      },
+      {
+        "src": "/images/0bb08-2880-optimized.webp",
+        "width": 1440,
+        "height": 1000,
+        "fit": "cover",
+        "sourceWidth": 2880,
+        "sourceHeight": 1909,
+        "bytes": 1639948
+      }
+    ]
+  },
+  {
+    "route": "/events/",
+    "width": 1440,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 248,
+        "sourceHeight": 244,
+        "bytes": 36528
+      },
+      {
+        "src": "/images/0bb08-2880-optimized.webp",
+        "width": 1440,
+        "height": 847.8125,
+        "fit": "cover",
+        "sourceWidth": 2880,
+        "sourceHeight": 1909,
+        "bytes": 1639948
+      },
+      {
+        "src": "/images/d2848-banner-708.webp",
+        "width": 354,
+        "height": 188,
+        "fit": "cover",
+        "sourceWidth": 708,
+        "sourceHeight": 1062,
+        "bytes": 115540
+      }
+    ]
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 1440,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 248,
+        "sourceHeight": 244,
+        "bytes": 36528
+      },
+      {
+        "src": "/images/0bb08-2880-optimized.webp",
+        "width": 1440,
+        "height": 902.15625,
+        "fit": "cover",
+        "sourceWidth": 2880,
+        "sourceHeight": 1909,
+        "bytes": 1639948
+      }
+    ]
+  },
+  {
+    "route": "/kontakt/",
+    "width": 1440,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 248,
+        "sourceHeight": 244,
+        "bytes": 36528
+      },
+      {
+        "src": "/images/0bb08-2880-optimized.webp",
+        "width": 1440,
+        "height": 847.8125,
+        "fit": "cover",
+        "sourceWidth": 2880,
+        "sourceHeight": 1909,
+        "bytes": 1639948
+      }
+    ]
+  },
+  {
+    "route": "/ny-her/",
+    "width": 1440,
+    "dpr": 2,
+    "media": [
+      {
+        "src": "/images/af5ee.webp",
+        "width": 90,
+        "height": 90,
+        "fit": "contain",
+        "sourceWidth": 248,
+        "sourceHeight": 244,
+        "bytes": 36528
+      },
+      {
+        "src": "/images/1207b-1200.webp",
+        "width": 500,
+        "height": 500,
+        "fit": "cover",
+        "sourceWidth": 1200,
+        "sourceHeight": 1800,
+        "bytes": 308642
+      }
+    ]
+  }
+]
