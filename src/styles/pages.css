@@ -2141,10 +2141,16 @@
 .official-card {
   min-height: 280px;
 }
+.official-card .event-photo-link {
+  aspect-ratio: 1;
+  align-self: start;
+  min-width: 0;
+}
 .official-card .event-photo-link img {
+  width: 100%;
   object-fit: contain;
   height: 100%;
-  min-height: 280px;
+  min-height: 0;
   background: rgb(255 255 255 / 20%);
 }
 .official-card .event-copy {
@@ -2342,6 +2348,11 @@
   .official-card {
     min-height: 0;
   }
+  .official-card .event-photo-link {
+    height: 300px;
+    aspect-ratio: auto;
+    width: 100%;
+  }
   .official-card .event-photo-link img {
     height: 300px;
     min-height: 0;
@@ -2535,5 +2546,12 @@
 @media (prefers-reduced-motion: reduce) {
   .faq-icon::after {
     transition: none;
+  }
+}
+
+/* V2-headeren bevarer sin højde; links følger samme optiske linje som legacy. */
+@media (min-width: 1251px) {
+  .inner-page:not(.version-legacy) .desktop-navigation {
+    transform: translateY(4.5px);
   }
 }

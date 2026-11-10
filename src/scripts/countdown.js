@@ -22,13 +22,21 @@ if (countdown) {
       return;
     }
     const minutes = Math.floor(remaining / 60000);
-    value.textContent = [
+    const parts = [
       Math.floor(minutes / 1440),
       Math.floor(minutes / 60) % 24,
       minutes % 60,
-    ]
-      .map((number) => String(number).padStart(2, "0"))
-      .join(" : ");
+    ].map((number) => String(number).padStart(2, "0"));
+    const values = parts.flatMap((part, index) => {
+      const number = document.createElement("span");
+      number.textContent = part;
+      if (index === 2) return [number];
+      const separator = document.createElement("span");
+      separator.textContent = ":";
+      separator.setAttribute("aria-hidden", "true");
+      return [number, separator];
+    });
+    value.replaceChildren(...values);
   }
   update();
   setInterval(update, 30000);

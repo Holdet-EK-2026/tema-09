@@ -116,13 +116,131 @@ fs.mkdirSync(folder, { recursive: true });
           ...data,
         });
         if ([390, 1440, 1920, 2560].includes(width))
-          await page
-            .locator("header")
-            .screenshot({
-              path: `${folder}/header-${route === "/" ? "home" : route.replaceAll("/", "_")}-${width}.png`,
-            });
+          await page.locator("header").screenshot({
+            path: `${folder}/header-${route === "/" ? "home" : route.replaceAll("/", "_")}-${width}.png`,
+          });
       }
       await page.close();
+    }
+    if (stage !== "A") {
+      for (const width of [320, 390, 768, 1440]) {
+        const page = await browser.newPage({
+          viewport: { width, height: 900 },
+          reducedMotion: "reduce",
+        });
+        await page.goto(base + "/");
+        await page.evaluate(() => document.fonts.ready);
+        await page.addStyleTag({
+          content:
+            "* { line-height:1.5 !important;letter-spacing:.12em !important;word-spacing:.16em !important; } p {margin-bottom:2em !important;}",
+        });
+        const text = await page.evaluate(() => {
+          const hero = document.querySelector(".hero").getBoundingClientRect();
+          const countdown = document
+            .querySelector(".countdown")
+            .getBoundingClientRect();
+          const elements = [
+            ...document.querySelectorAll(
+              ".hero-intro > *, .hero-event-summary > *, .countdown, .countdown > *",
+            ),
+          ].filter((n) => n.getBoundingClientRect().width);
+          return {
+            heroBottom: hero.bottom,
+            countdownBottom: countdown.bottom,
+            scrollWidth: document.documentElement.scrollWidth,
+            elements: elements.map((n) => {
+              let r = n.getBoundingClientRect();
+              if (n.matches("h1")) {
+                const range = document.createRange();
+                range.selectNodeContents(n);
+                r = range.getBoundingClientRect();
+              }
+              return {
+                text: n.innerText,
+                bottom: r.bottom,
+                right: r.right,
+                left: r.left,
+                insideHero:
+                  r.bottom <= hero.bottom + 0.5 &&
+                  r.left >= -0.5 &&
+                  r.right <= innerWidth + 0.5,
+                insideCountdown:
+                  !n.parentElement.matches(".countdown") ||
+                  (r.bottom <= countdown.bottom + 0.5 &&
+                    r.right <= countdown.right + 0.5),
+              };
+            }),
+          };
+        });
+        assert(text.scrollWidth <= width, "Text spacing overflow " + width);
+        text.elements.forEach((n) =>
+          assert(
+            n.insideHero && n.insideCountdown,
+            `Text spacing clipped ${width}: ${n.text}`,
+          ),
+        );
+        results.push({ test: "text-spacing", width, ...text });
+        await page.screenshot({
+          path: `${folder}/text-spacing-${width}.png`,
+          fullPage: true,
+        });
+        await page.close();
+      }
+      for (const width of [390, 768, 1440]) {
+        const page = await browser.newPage({
+          viewport: { width, height: 900 },
+          reducedMotion: "reduce",
+        });
+        let release;
+        const gate = new Promise((resolve) => (release = resolve));
+        await page.route("**/images/luma-*.webp", async (route) => {
+          await gate;
+          await route.continue();
+        });
+        await page.goto(base + "/events/?status=all", {
+          waitUntil: "domcontentloaded",
+        });
+        await page.evaluate(() => document.fonts.ready);
+        await page
+          .locator(".event-card:visible")
+          .first()
+          .scrollIntoViewIfNeeded();
+        const sizes = async () =>
+          page
+            .locator(".event-card")
+            .evaluateAll((nodes) =>
+              nodes.map((n) => ({
+                height: n.getBoundingClientRect().height,
+                y: n.getBoundingClientRect().y,
+                imageHeight: n.querySelector("img").getBoundingClientRect()
+                  .height,
+              })),
+            );
+        const before = await sizes();
+        await page.screenshot({
+          path: `${folder}/covers-pending-${width}.png`,
+        });
+        release();
+        await page.evaluate(async () => {
+          document
+            .querySelectorAll("img")
+            .forEach((n) => (n.loading = "eager"));
+          await Promise.all(
+            [...document.images].map((n) => n.decode().catch(() => {})),
+          );
+        });
+        const after = await sizes();
+        assert.deepEqual(
+          after,
+          before,
+          "Cover load changes card geometry " + width,
+        );
+        results.push({ test: "delayed-cover-stability", width, before, after });
+        await page.screenshot({
+          path: `${folder}/covers-decoded-${width}.png`,
+        });
+        await page.close();
+      }
     }
     fs.writeFileSync(
       `${folder}/refinement-${stage}.json`,

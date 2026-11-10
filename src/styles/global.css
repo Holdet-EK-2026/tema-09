@@ -133,7 +133,7 @@ button:focus-visible,
 }
 .hero {
   position: relative;
-  height: 1000px;
+  min-height: 1000px;
   color: var(--sand);
   overflow: hidden;
 }
@@ -155,6 +155,7 @@ button:focus-visible,
 .hero-intro {
   position: relative;
   padding-top: 214px;
+  min-height: 566px;
 }
 .hero h1 {
   font-size: 158px;
@@ -184,59 +185,59 @@ button:focus-visible,
   color: var(--tekst);
   white-space: pre;
 }
+.hero-details {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 238px;
+  gap: 40px;
+  margin: 142px var(--gutter) 0;
+  padding-bottom: 7px;
+}
+.hero-event-summary {
+  min-width: 0;
+  padding-top: 140px;
+}
 .hero-community {
-  position: absolute;
-  left: var(--gutter);
-  top: 848px;
   font-size: 20px;
   line-height: 1.1;
 }
 .hero-event {
-  position: absolute;
-  left: var(--gutter);
-  top: 916px;
+  display: block;
+  margin-top: 24px;
   font-size: 19px;
-  line-height: 1.1;
+  line-height: 1.35;
 }
 .countdown {
-  position: absolute;
-  top: 708px;
-  right: var(--gutter);
-  width: 238px;
-  height: 202px;
+  align-self: start;
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  min-height: 202px;
+  padding: 20px 15px 25px;
   border-radius: 24px;
   background: #1e1e1e;
   line-height: 1.1;
 }
 .countdown-label {
-  position: absolute;
-  top: 20px;
-  left: 23px;
+  margin-left: 8px;
   font-size: 14px;
 }
 .countdown strong {
-  position: absolute;
-  top: 63px;
-  left: 17px;
-  width: 208px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  margin-top: 18px;
   text-align: center;
   font-size: 35px;
   line-height: 1.1;
+  overflow-wrap: anywhere;
 }
 .countdown-units {
-  position: absolute;
-  top: 111px;
-  left: 17px;
-  width: 208px;
   text-align: center;
   font-size: 12px;
-  white-space: pre;
 }
-
 .countdown-link {
-  position: absolute;
-  top: 158px;
-  left: 25px;
+  margin: 24px 0 0 10px;
   font-size: 16px;
 }
 .gallery-section {
@@ -515,14 +516,15 @@ dialog p {
     grid-row: 1;
   }
   .hero {
-    height: 690px;
+    min-height: 690px;
   }
   .hero-shade {
     background: rgb(40 14 17 / 30%);
     opacity: 1;
   }
   .hero-intro {
-    padding: 48px 24px 24px;
+    padding: 48px 24px 0;
+    min-height: 0;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -558,9 +560,13 @@ dialog p {
     background: var(--bordeaux);
     color: var(--sand);
   }
-  .hero-community,
-  .hero-event {
+  .hero-event-summary {
     display: none;
+  }
+  .hero-details {
+    display: block;
+    margin: 22px 24px 0;
+    padding-bottom: 24px;
   }
   .countdown {
     position: static;
@@ -569,6 +575,7 @@ dialog p {
     gap: 8px;
     width: 100%;
     height: auto;
+    min-height: 0;
     padding: 18px;
     background: var(--bordeaux);
     border-radius: 20px;
@@ -579,6 +586,7 @@ dialog p {
   .countdown-link {
     position: static;
     width: auto;
+    margin: 0;
     text-align: left;
   }
   .countdown-label {

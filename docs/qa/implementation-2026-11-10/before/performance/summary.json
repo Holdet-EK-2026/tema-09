@@ -1,0 +1,327 @@
+[
+  {
+    "route": "/",
+    "mode": "mobile",
+    "run": 1,
+    "performance": 87,
+    "accessibility": 100,
+    "LCP": 4128.8017,
+    "CLS": 0,
+    "bytes": 661325,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4324/images/af5ee.webp",
+        "bytes": 36723
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/1207b.webp",
+        "bytes": 122406
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/gallery-3c8b7-600.webp",
+        "bytes": 55565
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/ca544-500.webp",
+        "bytes": 78830
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/before/performance/forside-mobile-1.json"
+  },
+  {
+    "route": "/ny-her/",
+    "mode": "mobile",
+    "run": 1,
+    "performance": 88,
+    "accessibility": 100,
+    "LCP": 3903.1948999999995,
+    "CLS": 0,
+    "bytes": 546017,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4324/images/af5ee.webp",
+        "bytes": 36723
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/1207b.webp",
+        "bytes": 122406
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/before/performance/_ny-her_-mobile-1.json"
+  },
+  {
+    "route": "/events/",
+    "mode": "desktop",
+    "run": 1,
+    "performance": 97,
+    "accessibility": 100,
+    "LCP": 1263.5355,
+    "CLS": 0,
+    "bytes": 1773595,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4324/images/af5ee.webp",
+        "bytes": 36723
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/0bb08-1600.webp",
+        "bytes": 487560
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-cmapoye1-450.webp",
+        "bytes": 76088
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-c3bj5f9d-450.webp",
+        "bytes": 73904
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-c3jcu29h-450.webp",
+        "bytes": 80390
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-n6nwx061-450.webp",
+        "bytes": 76596
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-84v57ubf-450.webp",
+        "bytes": 65788
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-iq2qpyk4-450.webp",
+        "bytes": 51563
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-jdv50gdz-450.webp",
+        "bytes": 51715
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-bszies4x-450.webp",
+        "bytes": 12525
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/d2848.webp",
+        "bytes": 567195
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/before/performance/_events_-desktop-1.json"
+  },
+  {
+    "route": "/",
+    "mode": "mobile",
+    "run": 2,
+    "performance": 87,
+    "accessibility": 100,
+    "LCP": 4127.1722,
+    "CLS": 0,
+    "bytes": 661325,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4324/images/af5ee.webp",
+        "bytes": 36723
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/1207b.webp",
+        "bytes": 122406
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/gallery-3c8b7-600.webp",
+        "bytes": 55565
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/ca544-500.webp",
+        "bytes": 78830
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/before/performance/forside-mobile-2.json"
+  },
+  {
+    "route": "/ny-her/",
+    "mode": "mobile",
+    "run": 2,
+    "performance": 88,
+    "accessibility": 100,
+    "LCP": 3903.2811999999994,
+    "CLS": 0,
+    "bytes": 546017,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4324/images/af5ee.webp",
+        "bytes": 36723
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/1207b.webp",
+        "bytes": 122406
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/before/performance/_ny-her_-mobile-2.json"
+  },
+  {
+    "route": "/events/",
+    "mode": "desktop",
+    "run": 2,
+    "performance": 97,
+    "accessibility": 100,
+    "LCP": 1303.216,
+    "CLS": 0,
+    "bytes": 1810318,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4324/images/af5ee.webp",
+        "bytes": 36723
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/0bb08-1600.webp",
+        "bytes": 487560
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/af5ee.webp",
+        "bytes": 36723
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-cmapoye1-450.webp",
+        "bytes": 76088
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-c3bj5f9d-450.webp",
+        "bytes": 73904
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-c3jcu29h-450.webp",
+        "bytes": 80390
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-n6nwx061-450.webp",
+        "bytes": 76596
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-84v57ubf-450.webp",
+        "bytes": 65788
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-iq2qpyk4-450.webp",
+        "bytes": 51563
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-jdv50gdz-450.webp",
+        "bytes": 51715
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-bszies4x-450.webp",
+        "bytes": 12525
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/d2848.webp",
+        "bytes": 567195
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/before/performance/_events_-desktop-2.json"
+  },
+  {
+    "route": "/",
+    "mode": "mobile",
+    "run": 3,
+    "performance": 87,
+    "accessibility": 100,
+    "LCP": 4127.4168,
+    "CLS": 0,
+    "bytes": 661325,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4324/images/af5ee.webp",
+        "bytes": 36723
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/1207b.webp",
+        "bytes": 122406
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/gallery-3c8b7-600.webp",
+        "bytes": 55565
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/ca544-500.webp",
+        "bytes": 78830
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/before/performance/forside-mobile-3.json"
+  },
+  {
+    "route": "/ny-her/",
+    "mode": "mobile",
+    "run": 3,
+    "performance": 88,
+    "accessibility": 100,
+    "LCP": 3901.4939000000004,
+    "CLS": 0,
+    "bytes": 546017,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4324/images/af5ee.webp",
+        "bytes": 36723
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/1207b.webp",
+        "bytes": 122406
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/before/performance/_ny-her_-mobile-3.json"
+  },
+  {
+    "route": "/events/",
+    "mode": "desktop",
+    "run": 3,
+    "performance": 97,
+    "accessibility": 100,
+    "LCP": 1284.4239,
+    "CLS": 0,
+    "bytes": 1773595,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4324/images/af5ee.webp",
+        "bytes": 36723
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/0bb08-1600.webp",
+        "bytes": 487560
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-cmapoye1-450.webp",
+        "bytes": 76088
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-c3bj5f9d-450.webp",
+        "bytes": 73904
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-c3jcu29h-450.webp",
+        "bytes": 80390
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-n6nwx061-450.webp",
+        "bytes": 76596
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-84v57ubf-450.webp",
+        "bytes": 65788
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-iq2qpyk4-450.webp",
+        "bytes": 51563
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-jdv50gdz-450.webp",
+        "bytes": 51715
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/luma-bszies4x-450.webp",
+        "bytes": 12525
+      },
+      {
+        "url": "http://127.0.0.1:4324/images/d2848.webp",
+        "bytes": 567195
+      }
+    ],
+    "file": "docs/qa/implementation-2026-11-10/before/performance/_events_-desktop-3.json"
+  }
+]
