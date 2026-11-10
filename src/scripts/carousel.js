@@ -23,6 +23,9 @@ function initCarousel(carousel) {
     matchMedia("(hover: hover)").matches && viewport.matches(":hover");
   let focused = carousel.contains(document.activeElement);
   let userPaused = carousel.dataset.userPaused === "true";
+  // Afspil overstyrer kun fokuspausen i den aktuelle fokusindgang.
+  let playThroughFocus = false;
+  let pointerToggleStarts = null;
   let resumeAt = 0;
   let pointer = null;
   let suppressClickUntil = 0;
@@ -52,6 +55,9 @@ function initCarousel(carousel) {
     if (announce)
       status.textContent = `Billede ${activeIndex + 1} af ${cards.length}.`;
   }
+  function offersPlay() {
+    return userPaused || (focused && !playThroughFocus);
+  }
   function schedule() {
     clearTimeout(timer);
     if (disposed) return;
@@ -62,13 +68,13 @@ function initCarousel(carousel) {
       "aria-label",
       reducedMotion.matches
         ? "Automatik fra via systemets indstillinger"
-        : userPaused
+        : offersPlay()
           ? "Afspil automatiske billedskift"
           : "Sæt automatiske billedskift på pause",
     );
     toggleLabel.textContent = reducedMotion.matches
       ? "Automatik fra"
-      : userPaused
+      : offersPlay()
         ? "Afspil"
         : "Pause";
     const reason = !visible
@@ -81,12 +87,20 @@ function initCarousel(carousel) {
             ? "user"
             : hovered
               ? "hover"
-              : focused
+              : focused && !playThroughFocus
                 ? "focus"
                 : pointer
                   ? "pointer"
                   : "none";
     const blocked = reason !== "none";
+    toggle.setAttribute(
+      "aria-description",
+      reason === "focus"
+        ? "Billedskift er stoppet, mens fokus er i galleriet. Vælg Afspil for at starte."
+        : reason === "hover"
+          ? "Midlertidigt stoppet, mens markøren er over billederne."
+          : "",
+    );
     carousel.dataset.pauseReason = reason;
     carousel.dataset.autoplay = blocked ? "paused" : "running";
     if (!blocked)
@@ -100,23 +114,34 @@ function initCarousel(carousel) {
   }
   function select(index, manual = true) {
     activeIndex = (index + cards.length) % cards.length;
-    if (manual) resumeAt = performance.now() + interactionDelay;
+    if (manual) {
+      playThroughFocus = false;
+      resumeAt = performance.now() + interactionDelay;
+    }
     render(manual);
     schedule();
   }
   function move(direction, manual = true) {
     select(activeIndex + direction, manual);
   }
-  function toggleAutoplay() {
+  function toggleAutoplay(event) {
     if (reducedMotion.matches) {
       status.textContent =
         "Automatiske billedskift er slået fra via systemets indstillinger.";
       return;
     }
-    userPaused = !userPaused;
+    // Pointerdown husker knappens handling før klikket selv flytter fokus.
+    const start =
+      event?.detail > 0 && pointerToggleStarts !== null
+        ? pointerToggleStarts
+        : offersPlay();
+    pointerToggleStarts = null;
+    userPaused = !start;
+    playThroughFocus = start && focused;
+    if (!userPaused) resumeAt = 0;
     status.textContent = userPaused
       ? "Automatiske billedskift er sat på pause."
-      : "Automatiske billedskift genoptages, når du forlader galleriet.";
+      : "Automatiske billedskift er aktiveret. Flyt markøren væk fra billederne for at afspille.";
     schedule();
   }
   carousel
@@ -125,6 +150,20 @@ function initCarousel(carousel) {
   carousel
     .querySelector("[data-carousel-next]")
     .addEventListener("click", () => move(1), options);
+  toggle.addEventListener(
+    "pointerdown",
+    () => {
+      pointerToggleStarts = offersPlay();
+    },
+    options,
+  );
+  toggle.addEventListener(
+    "pointercancel",
+    () => {
+      pointerToggleStarts = null;
+    },
+    options,
+  );
   toggle.addEventListener("click", toggleAutoplay, options);
   viewport.addEventListener(
     "keydown",
@@ -166,7 +205,8 @@ function initCarousel(carousel) {
   );
   carousel.addEventListener(
     "focusin",
-    () => {
+    (event) => {
+      if (!carousel.contains(event.relatedTarget)) playThroughFocus = false;
       focused = true;
       schedule();
     },

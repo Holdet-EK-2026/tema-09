@@ -1,3 +1,4 @@
+const base = process.env.KINDDESIGN_QA_BASE || "http://127.0.0.1:4321";
 const toolsRoot = process.env.KINDDESIGN_QA_TOOLS || "/tmp/kinddesign-tools";
 const { chromium } = require(toolsRoot + "/node_modules/playwright");
 const AxeBuilder = require(
@@ -22,7 +23,7 @@ fs.mkdirSync(folder, { recursive: true });
       "/tilmelding/design-og-nye-forbindelser/",
       "/kalender/design-og-nye-forbindelser/",
     ]) {
-      await page.goto("http://127.0.0.1:4321" + route);
+      await page.goto(base + route);
       assert.equal(
         (
           await page
@@ -43,7 +44,7 @@ fs.mkdirSync(folder, { recursive: true });
         );
       }
     }
-    await page.goto("http://127.0.0.1:4321/kontakt/");
+    await page.goto(base + "/kontakt/");
     await page.locator("button[type=submit]").click();
     assert.equal(
       (
@@ -65,7 +66,7 @@ fs.mkdirSync(folder, { recursive: true });
       ).violations.length,
       0,
     );
-    const response = await page.goto("http://127.0.0.1:4321/findes-ikke/");
+    const response = await page.goto(base + "/findes-ikke/");
     assert.equal(response.status(), 404);
     assert((await page.locator("h1").innerText()).includes("ikke fundet"));
     assert(
@@ -77,7 +78,7 @@ fs.mkdirSync(folder, { recursive: true });
       path: `${folder}/404-${width}.png`,
       fullPage: true,
     });
-    await page.goto("http://127.0.0.1:4321/events/design-og-nye-forbindelser/");
+    await page.goto(base + "/events/design-og-nye-forbindelser/");
     await page.evaluate(async () => {
       await document.fonts.ready;
       document.querySelectorAll("img").forEach((image) => {
@@ -91,7 +92,7 @@ fs.mkdirSync(folder, { recursive: true });
       path: `${folder}/_events_design-og-nye-forbindelser_-${width}.png`,
       fullPage: true,
     });
-    await page.goto("http://127.0.0.1:4321/");
+    await page.goto(base + "/");
     await page.keyboard.press("Tab");
     assert(
       await page
@@ -149,12 +150,12 @@ fs.mkdirSync(folder, { recursive: true });
     viewport: { width: 390, height: 900 },
   });
   const page = await noJS.newPage();
-  await page.goto("http://127.0.0.1:4321/kontakt/");
+  await page.goto(base + "/kontakt/");
   assert(await page.locator("[type=submit]").isDisabled());
   await page.locator("#name").fill("Lokal test");
   await page.locator("#name").press("Enter");
   assert(!page.url().includes("?"));
-  await page.goto("http://127.0.0.1:4321/");
+  await page.goto(base + "/");
   assert.equal(await page.locator(".gallery-controls").count(), 0);
   assert(
     !(await page.locator("[data-carousel]").getAttribute("class")).includes(
@@ -186,7 +187,7 @@ fs.mkdirSync(folder, { recursive: true });
     reducedMotion: "reduce",
   });
   const rp = await retina.newPage();
-  await rp.goto("http://127.0.0.1:4321/");
+  await rp.goto(base + "/");
   await rp.evaluate(() => document.fonts.ready);
   const source = await rp
     .locator(".hero-photo img")

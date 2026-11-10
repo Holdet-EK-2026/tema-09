@@ -4,7 +4,7 @@ const AxeBuilder = require(root + "/node_modules/@axe-core/playwright").default;
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
-const base = "http://127.0.0.1:4321";
+const base = process.env.KINDDESIGN_QA_BASE || "http://127.0.0.1:4321";
 fs.mkdirSync(folder, { recursive: true });
 (async () => {
   const browser = await chromium.launch({ channel: "chrome" });

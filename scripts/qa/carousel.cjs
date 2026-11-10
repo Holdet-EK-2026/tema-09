@@ -4,8 +4,17 @@ const assert = require("node:assert/strict");
 const AxeBuilder = require(root + "/node_modules/@axe-core/playwright").default;
 const fs = require("node:fs");
 const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
-const base = "http://127.0.0.1:4321";
+const base = process.env.KINDDESIGN_QA_BASE || "http://127.0.0.1:4321";
 fs.mkdirSync(folder, { recursive: true });
+async function movePointerOutsideGallery(page) {
+  const rect=await page.locator('.gallery-window').boundingBox();
+  const {width,height}=page.viewportSize();
+  const point=[{x:1,y:1},{x:width-1,y:height-1}].find(p=>p.x<rect.x||p.x>=rect.x+rect.width||p.y<rect.y||p.y>=rect.y+rect.height);
+  assert(point,'Viewport must have room outside the gallery');
+  await page.mouse.move(point.x,point.y);
+  await page.waitForFunction(()=>!document.querySelector('.gallery-window').matches(':hover'));
+}
+
 
 (async () => {
   const browser = await chromium.launch({ channel: "chrome" });
@@ -87,6 +96,54 @@ fs.mkdirSync(folder, { recursive: true });
           .count(),
         1,
       );
+      // KD-02: Et eksplicit Play må ikke kræve blur fra kontrolknappen.
+      await page.locator("[data-carousel-toggle]").click();
+      await movePointerOutsideGallery(page);
+      await page.waitForTimeout(100);
+      assert(
+        await page
+          .locator("[data-carousel-toggle]")
+          .evaluate((n) => n === document.activeElement),
+      );
+      await page.waitForFunction(
+        () =>
+          document.querySelector("[data-carousel]").dataset.autoplay ===
+          "running",
+      );
+      const resumedIndex = Number(
+        await page.locator("[data-carousel]").getAttribute("data-active-index"),
+      );
+      const playStart = Date.now();
+      const focusedPlaySamples = [];
+      for (const step of [1, 2]) {
+        await page.waitForFunction(
+          (index) =>
+            Number(
+              document.querySelector("[data-carousel]").dataset.activeIndex,
+            ) === index,
+          (resumedIndex + step) % 6,
+          { timeout: 6000 },
+        );
+        focusedPlaySamples.push({
+          index: (resumedIndex + step) % 6,
+          elapsedMs: Date.now() - playStart,
+        });
+      }
+      assert(
+        focusedPlaySamples[0].elapsedMs >= 3800 &&
+          focusedPlaySamples[1].elapsedMs >= 8000,
+      );
+      assert(
+        await page
+          .locator("[data-carousel-toggle]")
+          .evaluate((n) => n === document.activeElement),
+      );
+      results.push({
+        width,
+        focusPreservingExplicitPlay: true,
+        automaticChanges: focusedPlaySamples,
+      });
+      await page.locator("[data-carousel-toggle]").click();
       const pausedAxe = await new AxeBuilder({ page })
         .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
         .analyze();
@@ -140,7 +197,7 @@ fs.mkdirSync(folder, { recursive: true });
         Number(await gallery.getAttribute("data-active-index"));
       const out = async () => {
         await page.evaluate(() => document.activeElement?.blur());
-        await page.mouse.move(-10, -10);
+        await movePointerOutsideGallery(page);
       };
       await viewport.scrollIntoViewIfNeeded();
       await out();
@@ -186,6 +243,15 @@ fs.mkdirSync(folder, { recursive: true });
       await page.locator("[data-carousel-previous]").click();
       assert.equal(await index(), (before + 1) % 6);
       await page.locator("[data-carousel-toggle]").focus();
+      assert.equal(
+        await page.locator("[data-carousel-toggle]").getAttribute("aria-label"),
+        "Afspil automatiske billedskift",
+      );
+      await page.keyboard.press("Space");
+      await movePointerOutsideGallery(page);
+      const keyboardPlayIndex = await index();
+      await page.clock.runFor(4500);
+      assert.equal(await index(), (keyboardPlayIndex + 1) % 6);
       await page.keyboard.press("Space");
       await out();
       before = await index();

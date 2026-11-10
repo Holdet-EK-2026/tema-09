@@ -29,7 +29,7 @@ async function audit(route, desktop) {
   const output = path.join(folder, name + ".json");
   const args = [
     lighthouseCLI,
-    "http://127.0.0.1:4321" + route,
+    (process.env.KINDDESIGN_QA_BASE || "http://127.0.0.1:4321") + route,
     "--chrome-path=/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
     "--chrome-flags=--headless --no-sandbox",
     "--only-categories=performance,accessibility,best-practices,seo",

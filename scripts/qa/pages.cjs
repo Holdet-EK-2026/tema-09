@@ -1,3 +1,4 @@
+const base = process.env.KINDDESIGN_QA_BASE || "http://127.0.0.1:4321";
 const toolsRoot = process.env.KINDDESIGN_QA_TOOLS || "/tmp/kinddesign-tools";
 const { chromium } = require(toolsRoot + "/node_modules/playwright");
 const AxeBuilder = require(
@@ -77,7 +78,7 @@ const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
         if (r.status() >= 400 && !r.url().includes("/findes-ikke/"))
           failures.push({ url: r.url(), status: r.status() });
       });
-      const response = await p.goto("http://127.0.0.1:4321" + route, {
+      const response = await p.goto(base + route, {
         waitUntil: "networkidle",
       });
       if (route === "/") {

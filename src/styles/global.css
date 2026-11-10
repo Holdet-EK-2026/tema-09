@@ -100,7 +100,7 @@ button:focus-visible,
   z-index: 2;
   display: flex;
   align-items: center;
-  padding: 0 46px 0 var(--gutter);
+  padding: 0 65px 0 var(--gutter);
 }
 .brand {
   flex-shrink: 0;
@@ -110,10 +110,10 @@ button:focus-visible,
   margin-top: 12px;
 }
 .site-header nav {
-  width: 914px;
+  width: 895px;
   margin-left: auto;
   display: grid;
-  grid-template-columns: repeat(4, 160px) 165px;
+  grid-template-columns: repeat(4, 160px) 187px;
   gap: 17px;
   align-items: center;
   font-size: 18px;
@@ -128,7 +128,7 @@ button:focus-visible,
   padding: 15px 19px;
   font-size: 17px;
   font-weight: 400;
-  margin-left: 41px;
+  margin-left: 22px;
   width: 165px;
 }
 .hero {
@@ -437,9 +437,6 @@ dialog p {
 @media (min-width: 1441px) {
   .hero h1 {
     font-size: clamp(158px, 10.97vw, 210px);
-  }
-  .site-header nav {
-    gap: clamp(17px, 2vw, 40px);
   }
   .gallery-intro {
     grid-template-columns: minmax(620px, 1fr) 445px;
@@ -842,7 +839,7 @@ dialog p {
   background-size: 100% 1px;
 }
 .site-header nav a[aria-current="page"] {
-  color: var(--bordeaux);
+  color: var(--tekst);
 }
 .button,
 .site-header .new-link,

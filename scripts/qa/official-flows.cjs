@@ -1,3 +1,4 @@
+const base = process.env.KINDDESIGN_QA_BASE || "http://127.0.0.1:4321";
 const root = process.env.KINDDESIGN_QA_TOOLS || "/tmp/kinddesign-tools";
 const { chromium } = require(root + "/node_modules/playwright");
 const assert = require("node:assert/strict");
@@ -20,7 +21,7 @@ fs.mkdirSync(folder, { recursive: true });
       bookings++;
       return route.abort();
     });
-    await page.goto("http://127.0.0.1:4321/");
+    await page.goto(base + "/");
     await page.locator(".hero-cta").click();
     await page.waitForURL("**/events/");
     assert.equal(await page.locator(".event-card:visible").count(), 8);
@@ -81,7 +82,7 @@ fs.mkdirSync(folder, { recursive: true });
     await page.locator("[data-luma-register]").click();
     await page.waitForURL("https://luma.com/cmapoye1");
     assert.equal(destination, "https://luma.com/cmapoye1");
-    await page.goto("http://127.0.0.1:4321/events/ai-skillsharing/");
+    await page.goto(base + "/events/ai-skillsharing/");
     assert.equal(await page.locator("[data-luma-register]").count(), 0);
     assert.equal(await page.locator("[data-calendar-download]").count(), 0);
     assert(
@@ -89,16 +90,16 @@ fs.mkdirSync(folder, { recursive: true });
         "afsluttet",
       ),
     );
-    await page.goto("http://127.0.0.1:4321/events/real-talk/");
+    await page.goto(base + "/events/real-talk/");
     assert((await page.locator(".source-note").innerText()).includes("2025"));
-    await page.goto("http://127.0.0.1:4321/events/meetup-berlin/");
+    await page.goto(base + "/events/meetup-berlin/");
     assert((await page.locator(".source-note").innerText()).includes("19.30"));
     assert(
       !(await page.locator(".official-facts").innerText()).includes(
         "18.30–19.30",
       ),
     );
-    await page.goto("http://127.0.0.1:4321/events/kalender/");
+    await page.goto(base + "/events/kalender/");
     assert.equal(
       await page
         .locator("[data-calendar-month]:visible")
@@ -120,12 +121,12 @@ fs.mkdirSync(folder, { recursive: true });
     assert.equal(await page.locator("#calendar-month").inputValue(), "2026-10");
     await page.goBack();
     assert.equal(await page.locator("#calendar-month").inputValue(), "2026-11");
-    await page.goto("http://127.0.0.1:4321/events/from-ballet-to-technology/"); // Klientens minutkontrol testes med browserens clock på en frisk navigation.
+    await page.goto(base + "/events/from-ballet-to-technology/"); // Klientens minutkontrol testes med browserens clock på en frisk navigation.
     await page.clock.install({ time: new Date("2026-11-14T12:00:00Z") });
     await page.reload();
     assert.equal(await page.locator("[data-luma-register]").count(), 0);
     assert(await page.locator("[data-calendar-download]").isHidden());
-    await page.goto("http://127.0.0.1:4321/");
+    await page.goto(base + "/");
     assert.equal(
       await page.locator("[data-countdown-value]").textContent(),
       "Afsluttet",
