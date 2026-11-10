@@ -20,7 +20,7 @@ fs.mkdirSync(folder, { recursive: true });
     p.on("request", (r) => {
       if (r.method() !== "GET") posts.push(r.url());
     });
-    await p.goto("http://localhost:4321/events/");
+    await p.goto(base + "/events/?status=all");
     assert.equal(await p.locator(".event-card:visible").count(), 8);
     for (const type of ["Meetup", "Workshop", "Talk"]) {
       await p.locator(`[data-filter="${type}"]`).click();
@@ -52,7 +52,7 @@ fs.mkdirSync(folder, { recursive: true });
       "et-bord-nye-ansigter",
     ];
     for (const slug of slugs) {
-      await p.goto(`http://localhost:4321/events/${slug}/`);
+      await p.goto(`${base}/events/${slug}/`);
       await p.locator(".detail-actions a").first().click();
       assert(new URL(p.url()).pathname.startsWith("/tilmelding/"));
       await p.locator("[data-registration-submit]").focus();
@@ -69,7 +69,7 @@ fs.mkdirSync(folder, { recursive: true });
         (await p.locator("main").textContent()).includes("Intet er tilføjet"),
       );
     }
-    await p.goto("http://localhost:4321/kontakt/?emne=Samarbejde");
+    await p.goto(base + "/kontakt/?emne=Samarbejde");
     assert.equal(await p.locator("#subject").inputValue(), "Samarbejde");
     await p.locator("button[type=submit]").click();
     assert(await p.locator(".form-error-summary").isVisible());

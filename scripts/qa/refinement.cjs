@@ -206,16 +206,14 @@ fs.mkdirSync(folder, { recursive: true });
           .first()
           .scrollIntoViewIfNeeded();
         const sizes = async () =>
-          page
-            .locator(".event-card")
-            .evaluateAll((nodes) =>
-              nodes.map((n) => ({
-                height: n.getBoundingClientRect().height,
-                y: n.getBoundingClientRect().y,
-                imageHeight: n.querySelector("img").getBoundingClientRect()
-                  .height,
-              })),
-            );
+          page.locator(".event-card").evaluateAll((nodes) =>
+            nodes.map((n) => ({
+              height: n.getBoundingClientRect().height,
+              y: n.getBoundingClientRect().y,
+              imageHeight: n.querySelector("img").getBoundingClientRect()
+                .height,
+            })),
+          );
         const before = await sizes();
         await page.screenshot({
           path: `${folder}/covers-pending-${width}.png`,
@@ -241,6 +239,179 @@ fs.mkdirSync(folder, { recursive: true });
         });
         await page.close();
       }
+    }
+    if (["C", "all"].includes(stage)) {
+      for (const width of [390, 768, 1440]) {
+        const context = await browser.newContext({
+          viewport: { width, height: width === 390 ? 844 : 900 },
+          reducedMotion: "reduce",
+        });
+        const page = await context.newPage();
+        await page.goto(base + "/events/");
+        assert.equal(await page.locator(".event-card:visible").count(), 1);
+        assert.equal(
+          await page.locator("[data-events-heading]").innerText(),
+          "Kommende events",
+        );
+        const counts = {
+          Alle: { all: 8, upcoming: 1, past: 7 },
+          Meetup: { all: 6, upcoming: 0, past: 6 },
+          Workshop: { all: 1, upcoming: 0, past: 1 },
+          Talk: { all: 1, upcoming: 1, past: 0 },
+        };
+        for (const type of Object.keys(counts))
+          for (const date of ["all", "upcoming", "past"]) {
+            await page.locator(`[data-filter="${type}"]`).click();
+            await page.locator(`[data-status-filter="${date}"]`).click();
+            assert.equal(
+              await page.locator(".event-card:visible").count(),
+              counts[type][date],
+              `${type}/${date}`,
+            );
+            assert.equal(
+              await page.locator("[data-event-empty]").isVisible(),
+              counts[type][date] === 0,
+            );
+            assert.equal(
+              await page
+                .locator(`[data-status-filter="${date}"]`)
+                .getAttribute("aria-pressed"),
+              "true",
+            );
+            assert(
+              (
+                await page.locator("[data-filter-status]").innerText()
+              ).startsWith(String(counts[type][date])),
+            );
+          }
+        const filtered = "/events/?type=Talk&status=upcoming";
+        await page.goto(base + filtered);
+        await page.locator(".event-card:visible .event-card-link").click();
+        await page.waitForLoadState("load");
+        assert.equal(
+          new URL(page.url()).searchParams.get("returnTo"),
+          filtered,
+        );
+        assert.equal(
+          await page.locator(".back-link").getAttribute("href"),
+          filtered,
+        );
+        await page.reload();
+        assert.equal(
+          await page.locator(".back-link").getAttribute("href"),
+          filtered,
+        );
+        await page.locator(".back-link").click();
+        assert.equal(page.url(), base + filtered);
+        assert.equal(await page.locator(".event-card:visible").count(), 1);
+        await page.locator(".event-card:visible .event-card-link").click();
+        await page.goBack();
+        assert.equal(page.url(), base + filtered);
+        await page.goto(base + "/events/kalender/?month=2025-12");
+        assert.equal(
+          await page.locator("#calendar-month").inputValue(),
+          "2025-12",
+        );
+        await page
+          .locator("[data-calendar-month]:visible .has-event a")
+          .first()
+          .click();
+        await page.waitForLoadState("load");
+        assert.equal(
+          await page.locator(".back-link").getAttribute("href"),
+          "/events/kalender/?month=2025-12",
+        );
+        await page.locator(".back-link").click();
+        await page.waitForLoadState("load");
+        assert.equal(
+          await page.locator("#calendar-month").inputValue(),
+          "2025-12",
+        );
+        await page.goto(base + "/events/kalender/");
+        const month = await page
+            .locator(".calendar-month-control")
+            .boundingBox(),
+          grid = await page
+            .locator("[data-calendar-month]:visible .calendar-grid")
+            .boundingBox();
+        assert(
+          month.y + month.height < page.viewportSize().height,
+          "Month selector below fold",
+        );
+        assert(grid.y < page.viewportSize().height - 30, "Grid below fold");
+        results.push({ test: "calendar-first-viewport", width, month, grid });
+        await page.screenshot({
+          path: `${folder}/calendar-first-${width}.png`,
+        });
+        await page.goto(base + "/events/?status=all");
+        assert.equal(await page.locator(".event-list a").count(), 8);
+        assert.equal(await page.locator(".event-list a a").count(), 0);
+        await page.locator(".event-card-link").first().focus();
+        await page.keyboard.press("Tab");
+        assert.equal(
+          await page
+            .locator(".event-card-link")
+            .nth(1)
+            .evaluate((n) => n === document.activeElement),
+          true,
+        );
+        const name = await page
+          .locator(".event-card-link")
+          .first()
+          .getAttribute("aria-labelledby");
+        assert(await page.locator("#" + name).innerText());
+        await page.goto(base + "/events/from-ballet-to-technology/");
+        assert.equal(
+          await page.locator(".back-link").getAttribute("href"),
+          "/events/",
+        );
+        for (const invalid of [
+          "https://example.com",
+          "//example.com",
+          "/contact/",
+          "/\\example.com",
+        ]) {
+          await page.goto(
+            base +
+              "/events/from-ballet-to-technology/?returnTo=" +
+              encodeURIComponent(invalid),
+          );
+          assert.equal(
+            await page.locator(".back-link").getAttribute("href"),
+            "/events/",
+          );
+        }
+        await page.clock.install({ time: new Date("2026-11-14T12:00:00Z") });
+        await page.goto(base + "/events/");
+        assert.equal(await page.locator(".event-card:visible").count(), 0);
+        assert(
+          (await page.locator("[data-event-empty] h3").innerText()).includes(
+            "ingen verificerede kommende",
+          ),
+        );
+        await page.locator("[data-show-past]").click();
+        assert.equal(await page.locator(".event-card:visible").count(), 8);
+        results.push({
+          test: "events-filters-context-and-keyboard",
+          width,
+          filterCombinations: 12,
+          defaultUpcoming: true,
+          contextBackAndReload: true,
+          calendarContext: true,
+          singleLinks: 8,
+          externalReturnRejected: true,
+          expiredArchiveFallback: true,
+        });
+        await context.close();
+      }
+      const noJS = await browser.newPage({
+        javaScriptEnabled: false,
+        viewport: { width: 390, height: 844 },
+      });
+      await noJS.goto(base + "/events/");
+      assert.equal(await noJS.locator(".event-card:visible").count(), 8);
+      results.push({ test: "events-no-JS", allEightEventsVisible: true });
+      await noJS.close();
     }
     fs.writeFileSync(
       `${folder}/refinement-${stage}.json`,

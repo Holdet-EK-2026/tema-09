@@ -1,0 +1,5527 @@
+[
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 320,
+    "scrollWidth": 320,
+    "logo": {
+      "x": 140,
+      "y": 18,
+      "right": 194,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 302,
+      "bottom": 126,
+      "width": 284,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 86,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 90,
+        "y": 82,
+        "right": 158,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 162,
+        "y": 82,
+        "right": 230,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 234,
+        "y": 82,
+        "right": 302,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      }
+    ],
+    "active": []
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 320,
+    "scrollWidth": 320,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 302,
+      "bottom": 126,
+      "width": 284,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 86,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 90,
+        "y": 82,
+        "right": 158,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 162,
+        "y": 82,
+        "right": 230,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 234,
+        "y": 82,
+        "right": 302,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 320,
+    "scrollWidth": 320,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 302,
+      "bottom": 126,
+      "width": 284,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 86,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 90,
+        "y": 82,
+        "right": 158,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 162,
+        "y": 82,
+        "right": 230,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 234,
+        "y": 82,
+        "right": 302,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Om os",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 320,
+    "scrollWidth": 320,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 302,
+      "bottom": 126,
+      "width": 284,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 86,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 90,
+        "y": 82,
+        "right": 158,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 162,
+        "y": 82,
+        "right": 230,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 234,
+        "y": 82,
+        "right": 302,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 320,
+    "scrollWidth": 320,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 302,
+      "bottom": 126,
+      "width": 284,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 86,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 90,
+        "y": 82,
+        "right": 158,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 162,
+        "y": 82,
+        "right": 230,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      },
+      {
+        "x": 234,
+        "y": 82,
+        "right": 302,
+        "bottom": 126.296875,
+        "width": 68,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 375,
+    "scrollWidth": 375,
+    "logo": {
+      "x": 167.5,
+      "y": 18,
+      "right": 221.5,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 357,
+      "bottom": 126,
+      "width": 339,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 99.75,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 103.75,
+        "y": 82,
+        "right": 185.5,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 189.5,
+        "y": 82,
+        "right": 271.25,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 275.25,
+        "y": 82,
+        "right": 357,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      }
+    ],
+    "active": []
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 375,
+    "scrollWidth": 375,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 357,
+      "bottom": 126,
+      "width": 339,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 99.75,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 103.75,
+        "y": 82,
+        "right": 185.5,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 189.5,
+        "y": 82,
+        "right": 271.25,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 275.25,
+        "y": 82,
+        "right": 357,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 375,
+    "scrollWidth": 375,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 357,
+      "bottom": 126,
+      "width": 339,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 99.75,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 103.75,
+        "y": 82,
+        "right": 185.5,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 189.5,
+        "y": 82,
+        "right": 271.25,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 275.25,
+        "y": 82,
+        "right": 357,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Om os",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 375,
+    "scrollWidth": 375,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 357,
+      "bottom": 126,
+      "width": 339,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 99.75,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 103.75,
+        "y": 82,
+        "right": 185.5,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 189.5,
+        "y": 82,
+        "right": 271.25,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 275.25,
+        "y": 82,
+        "right": 357,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 375,
+    "scrollWidth": 375,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 357,
+      "bottom": 126,
+      "width": 339,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 99.75,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 103.75,
+        "y": 82,
+        "right": 185.5,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 189.5,
+        "y": 82,
+        "right": 271.25,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      },
+      {
+        "x": 275.25,
+        "y": 82,
+        "right": 357,
+        "bottom": 126.296875,
+        "width": 81.75,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 390,
+    "scrollWidth": 390,
+    "logo": {
+      "x": 175,
+      "y": 18,
+      "right": 229,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 372,
+      "bottom": 126,
+      "width": 354,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 103.5,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 107.5,
+        "y": 82,
+        "right": 193,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 197,
+        "y": 82,
+        "right": 282.5,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 286.5,
+        "y": 82,
+        "right": 372,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      }
+    ],
+    "active": []
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 390,
+    "scrollWidth": 390,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 372,
+      "bottom": 126,
+      "width": 354,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 103.5,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 107.5,
+        "y": 82,
+        "right": 193,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 197,
+        "y": 82,
+        "right": 282.5,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 286.5,
+        "y": 82,
+        "right": 372,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 390,
+    "scrollWidth": 390,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 372,
+      "bottom": 126,
+      "width": 354,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 103.5,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 107.5,
+        "y": 82,
+        "right": 193,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 197,
+        "y": 82,
+        "right": 282.5,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 286.5,
+        "y": 82,
+        "right": 372,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Om os",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 390,
+    "scrollWidth": 390,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 372,
+      "bottom": 126,
+      "width": 354,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 103.5,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 107.5,
+        "y": 82,
+        "right": 193,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 197,
+        "y": 82,
+        "right": 282.5,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 286.5,
+        "y": 82,
+        "right": 372,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 390,
+    "scrollWidth": 390,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 372,
+      "bottom": 126,
+      "width": 354,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 103.5,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 107.5,
+        "y": 82,
+        "right": 193,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 197,
+        "y": 82,
+        "right": 282.5,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      },
+      {
+        "x": 286.5,
+        "y": 82,
+        "right": 372,
+        "bottom": 126.296875,
+        "width": 85.5,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 430,
+    "scrollWidth": 430,
+    "logo": {
+      "x": 195,
+      "y": 18,
+      "right": 249,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 412,
+      "bottom": 126,
+      "width": 394,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 113.5,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 117.5,
+        "y": 82,
+        "right": 213,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 217,
+        "y": 82,
+        "right": 312.5,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 316.5,
+        "y": 82,
+        "right": 412,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      }
+    ],
+    "active": []
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 430,
+    "scrollWidth": 430,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 412,
+      "bottom": 126,
+      "width": 394,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 113.5,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 117.5,
+        "y": 82,
+        "right": 213,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 217,
+        "y": 82,
+        "right": 312.5,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 316.5,
+        "y": 82,
+        "right": 412,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 430,
+    "scrollWidth": 430,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 412,
+      "bottom": 126,
+      "width": 394,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 113.5,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 117.5,
+        "y": 82,
+        "right": 213,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 217,
+        "y": 82,
+        "right": 312.5,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 316.5,
+        "y": 82,
+        "right": 412,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Om os",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 430,
+    "scrollWidth": 430,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 412,
+      "bottom": 126,
+      "width": 394,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 113.5,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 117.5,
+        "y": 82,
+        "right": 213,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 217,
+        "y": 82,
+        "right": 312.5,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 316.5,
+        "y": 82,
+        "right": 412,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 430,
+    "scrollWidth": 430,
+    "logo": {
+      "x": 18,
+      "y": 18,
+      "right": 72,
+      "bottom": 72,
+      "width": 54,
+      "height": 54
+    },
+    "nav": {
+      "x": 18,
+      "y": 82,
+      "right": 412,
+      "bottom": 126,
+      "width": 394,
+      "height": 44
+    },
+    "links": [
+      {
+        "x": 18,
+        "y": 82,
+        "right": 113.5,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 117.5,
+        "y": 82,
+        "right": 213,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 217,
+        "y": 82,
+        "right": 312.5,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      },
+      {
+        "x": 316.5,
+        "y": 82,
+        "right": 412,
+        "bottom": 126.296875,
+        "width": 95.5,
+        "height": 44.296875
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 601,
+    "scrollWidth": 601,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 122,
+      "y": 20.75,
+      "right": 569,
+      "bottom": 95.25,
+      "width": 447,
+      "height": 74.5
+    },
+    "links": [
+      {
+        "x": 122,
+        "y": 48.625,
+        "right": 176.140625,
+        "bottom": 67.375,
+        "width": 54.140625,
+        "height": 18.75
+      },
+      {
+        "x": 200.140625,
+        "y": 48.625,
+        "right": 249.734375,
+        "bottom": 67.375,
+        "width": 49.59375,
+        "height": 18.75
+      },
+      {
+        "x": 273.734375,
+        "y": 39.25,
+        "right": 356.078125,
+        "bottom": 76.75,
+        "width": 82.34375,
+        "height": 37.5
+      },
+      {
+        "x": 380.078125,
+        "y": 48.625,
+        "right": 438.046875,
+        "bottom": 67.375,
+        "width": 57.96875,
+        "height": 18.75
+      },
+      {
+        "x": 462.046875,
+        "y": 20.75,
+        "right": 569,
+        "bottom": 95.25,
+        "width": 106.953125,
+        "height": 74.5
+      }
+    ],
+    "active": [
+      {
+        "text": "Forside",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 601,
+    "scrollWidth": 601,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 122,
+      "y": 16.25,
+      "right": 569,
+      "bottom": 90.75,
+      "width": 447,
+      "height": 74.5
+    },
+    "links": [
+      {
+        "x": 122,
+        "y": 44.125,
+        "right": 173.203125,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 197.203125,
+        "y": 44.125,
+        "right": 243.734375,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 267.734375,
+        "y": 34.75,
+        "right": 353.953125,
+        "bottom": 72.25,
+        "width": 86.21875,
+        "height": 37.5
+      },
+      {
+        "x": 377.953125,
+        "y": 44.125,
+        "right": 431.1875,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 455.1875,
+        "y": 16.25,
+        "right": 569,
+        "bottom": 90.75,
+        "width": 113.8125,
+        "height": 74.5
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 601,
+    "scrollWidth": 601,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 122,
+      "y": 16.25,
+      "right": 569,
+      "bottom": 90.75,
+      "width": 447,
+      "height": 74.5
+    },
+    "links": [
+      {
+        "x": 122,
+        "y": 44.125,
+        "right": 173.203125,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 197.203125,
+        "y": 44.125,
+        "right": 243.734375,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 267.734375,
+        "y": 34.75,
+        "right": 353.953125,
+        "bottom": 72.25,
+        "width": 86.21875,
+        "height": 37.5
+      },
+      {
+        "x": 377.953125,
+        "y": 44.125,
+        "right": 431.1875,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 455.1875,
+        "y": 16.25,
+        "right": 569,
+        "bottom": 90.75,
+        "width": 113.8125,
+        "height": 74.5
+      }
+    ],
+    "active": [
+      {
+        "text": "Om Kind Design",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 601,
+    "scrollWidth": 601,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 122,
+      "y": 20.75,
+      "right": 569,
+      "bottom": 95.25,
+      "width": 447,
+      "height": 74.5
+    },
+    "links": [
+      {
+        "x": 122,
+        "y": 48.625,
+        "right": 173.203125,
+        "bottom": 67.375,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 197.203125,
+        "y": 48.625,
+        "right": 243.734375,
+        "bottom": 67.375,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 267.734375,
+        "y": 39.25,
+        "right": 353.953125,
+        "bottom": 76.75,
+        "width": 86.21875,
+        "height": 37.5
+      },
+      {
+        "x": 377.953125,
+        "y": 48.625,
+        "right": 431.1875,
+        "bottom": 67.375,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 455.1875,
+        "y": 20.75,
+        "right": 569,
+        "bottom": 95.25,
+        "width": 113.8125,
+        "height": 74.5
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?  ↗",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(192, 231, 246)",
+        "ratio": 13.78173622644865
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 601,
+    "scrollWidth": 601,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 122,
+      "y": 16.25,
+      "right": 569,
+      "bottom": 90.75,
+      "width": 447,
+      "height": 74.5
+    },
+    "links": [
+      {
+        "x": 122,
+        "y": 44.125,
+        "right": 173.203125,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 197.203125,
+        "y": 44.125,
+        "right": 243.734375,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 267.734375,
+        "y": 34.75,
+        "right": 353.953125,
+        "bottom": 72.25,
+        "width": 86.21875,
+        "height": 37.5
+      },
+      {
+        "x": 377.953125,
+        "y": 44.125,
+        "right": 431.1875,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 455.1875,
+        "y": 16.25,
+        "right": 569,
+        "bottom": 90.75,
+        "width": 113.8125,
+        "height": 74.5
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 640,
+    "scrollWidth": 640,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 122,
+      "y": 30,
+      "right": 608,
+      "bottom": 86,
+      "width": 486,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 122,
+        "y": 48.625,
+        "right": 176.140625,
+        "bottom": 67.375,
+        "width": 54.140625,
+        "height": 18.75
+      },
+      {
+        "x": 200.140625,
+        "y": 48.625,
+        "right": 249.734375,
+        "bottom": 67.375,
+        "width": 49.59375,
+        "height": 18.75
+      },
+      {
+        "x": 273.734375,
+        "y": 39.25,
+        "right": 382.0625,
+        "bottom": 76.75,
+        "width": 108.328125,
+        "height": 37.5
+      },
+      {
+        "x": 406.0625,
+        "y": 48.625,
+        "right": 464.03125,
+        "bottom": 67.375,
+        "width": 57.96875,
+        "height": 18.75
+      },
+      {
+        "x": 488.03125,
+        "y": 30,
+        "right": 608,
+        "bottom": 86,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Forside",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 640,
+    "scrollWidth": 640,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 130.78125,
+      "y": 25.5,
+      "right": 608,
+      "bottom": 81.5,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 130.78125,
+        "y": 44.125,
+        "right": 181.984375,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 205.984375,
+        "y": 44.125,
+        "right": 252.515625,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 276.515625,
+        "y": 44.125,
+        "right": 386.796875,
+        "bottom": 62.875,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 410.796875,
+        "y": 44.125,
+        "right": 464.03125,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 488.03125,
+        "y": 25.5,
+        "right": 608,
+        "bottom": 81.5,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 640,
+    "scrollWidth": 640,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 130.78125,
+      "y": 25.5,
+      "right": 608,
+      "bottom": 81.5,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 130.78125,
+        "y": 44.125,
+        "right": 181.984375,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 205.984375,
+        "y": 44.125,
+        "right": 252.515625,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 276.515625,
+        "y": 44.125,
+        "right": 386.796875,
+        "bottom": 62.875,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 410.796875,
+        "y": 44.125,
+        "right": 464.03125,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 488.03125,
+        "y": 25.5,
+        "right": 608,
+        "bottom": 81.5,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Om Kind Design",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 640,
+    "scrollWidth": 640,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 130.78125,
+      "y": 30,
+      "right": 608,
+      "bottom": 86,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 130.78125,
+        "y": 48.625,
+        "right": 181.984375,
+        "bottom": 67.375,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 205.984375,
+        "y": 48.625,
+        "right": 252.515625,
+        "bottom": 67.375,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 276.515625,
+        "y": 48.625,
+        "right": 386.796875,
+        "bottom": 67.375,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 410.796875,
+        "y": 48.625,
+        "right": 464.03125,
+        "bottom": 67.375,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 488.03125,
+        "y": 30,
+        "right": 608,
+        "bottom": 86,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?  ↗",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(192, 231, 246)",
+        "ratio": 13.78173622644865
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 640,
+    "scrollWidth": 640,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 130.78125,
+      "y": 25.5,
+      "right": 608,
+      "bottom": 81.5,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 130.78125,
+        "y": 44.125,
+        "right": 181.984375,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 205.984375,
+        "y": 44.125,
+        "right": 252.515625,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 276.515625,
+        "y": 44.125,
+        "right": 386.796875,
+        "bottom": 62.875,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 410.796875,
+        "y": 44.125,
+        "right": 464.03125,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 488.03125,
+        "y": 25.5,
+        "right": 608,
+        "bottom": 81.5,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 768,
+    "scrollWidth": 768,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 242.515625,
+      "y": 30,
+      "right": 736,
+      "bottom": 86,
+      "width": 493.484375,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 242.515625,
+        "y": 48.625,
+        "right": 296.65625,
+        "bottom": 67.375,
+        "width": 54.140625,
+        "height": 18.75
+      },
+      {
+        "x": 320.65625,
+        "y": 48.625,
+        "right": 370.25,
+        "bottom": 67.375,
+        "width": 49.59375,
+        "height": 18.75
+      },
+      {
+        "x": 394.25,
+        "y": 48.625,
+        "right": 510.0625,
+        "bottom": 67.375,
+        "width": 115.8125,
+        "height": 18.75
+      },
+      {
+        "x": 534.0625,
+        "y": 48.625,
+        "right": 592.03125,
+        "bottom": 67.375,
+        "width": 57.96875,
+        "height": 18.75
+      },
+      {
+        "x": 616.03125,
+        "y": 30,
+        "right": 736,
+        "bottom": 86,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Forside",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 768,
+    "scrollWidth": 768,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 258.78125,
+      "y": 25.5,
+      "right": 736,
+      "bottom": 81.5,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 258.78125,
+        "y": 44.125,
+        "right": 309.984375,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 333.984375,
+        "y": 44.125,
+        "right": 380.515625,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 404.515625,
+        "y": 44.125,
+        "right": 514.796875,
+        "bottom": 62.875,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 538.796875,
+        "y": 44.125,
+        "right": 592.03125,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 616.03125,
+        "y": 25.5,
+        "right": 736,
+        "bottom": 81.5,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 768,
+    "scrollWidth": 768,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 258.78125,
+      "y": 25.5,
+      "right": 736,
+      "bottom": 81.5,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 258.78125,
+        "y": 44.125,
+        "right": 309.984375,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 333.984375,
+        "y": 44.125,
+        "right": 380.515625,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 404.515625,
+        "y": 44.125,
+        "right": 514.796875,
+        "bottom": 62.875,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 538.796875,
+        "y": 44.125,
+        "right": 592.03125,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 616.03125,
+        "y": 25.5,
+        "right": 736,
+        "bottom": 81.5,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Om Kind Design",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 768,
+    "scrollWidth": 768,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 258.78125,
+      "y": 30,
+      "right": 736,
+      "bottom": 86,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 258.78125,
+        "y": 48.625,
+        "right": 309.984375,
+        "bottom": 67.375,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 333.984375,
+        "y": 48.625,
+        "right": 380.515625,
+        "bottom": 67.375,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 404.515625,
+        "y": 48.625,
+        "right": 514.796875,
+        "bottom": 67.375,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 538.796875,
+        "y": 48.625,
+        "right": 592.03125,
+        "bottom": 67.375,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 616.03125,
+        "y": 30,
+        "right": 736,
+        "bottom": 86,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?  ↗",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(192, 231, 246)",
+        "ratio": 13.78173622644865
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 768,
+    "scrollWidth": 768,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 258.78125,
+      "y": 25.5,
+      "right": 736,
+      "bottom": 81.5,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 258.78125,
+        "y": 44.125,
+        "right": 309.984375,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 333.984375,
+        "y": 44.125,
+        "right": 380.515625,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 404.515625,
+        "y": 44.125,
+        "right": 514.796875,
+        "bottom": 62.875,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 538.796875,
+        "y": 44.125,
+        "right": 592.03125,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 616.03125,
+        "y": 25.5,
+        "right": 736,
+        "bottom": 81.5,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 498.515625,
+      "y": 30,
+      "right": 992,
+      "bottom": 86,
+      "width": 493.484375,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 498.515625,
+        "y": 48.625,
+        "right": 552.65625,
+        "bottom": 67.375,
+        "width": 54.140625,
+        "height": 18.75
+      },
+      {
+        "x": 576.65625,
+        "y": 48.625,
+        "right": 626.25,
+        "bottom": 67.375,
+        "width": 49.59375,
+        "height": 18.75
+      },
+      {
+        "x": 650.25,
+        "y": 48.625,
+        "right": 766.0625,
+        "bottom": 67.375,
+        "width": 115.8125,
+        "height": 18.75
+      },
+      {
+        "x": 790.0625,
+        "y": 48.625,
+        "right": 848.03125,
+        "bottom": 67.375,
+        "width": 57.96875,
+        "height": 18.75
+      },
+      {
+        "x": 872.03125,
+        "y": 30,
+        "right": 992,
+        "bottom": 86,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Forside",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 514.78125,
+      "y": 25.5,
+      "right": 992,
+      "bottom": 81.5,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 514.78125,
+        "y": 44.125,
+        "right": 565.984375,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 589.984375,
+        "y": 44.125,
+        "right": 636.515625,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 660.515625,
+        "y": 44.125,
+        "right": 770.796875,
+        "bottom": 62.875,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 794.796875,
+        "y": 44.125,
+        "right": 848.03125,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 872.03125,
+        "y": 25.5,
+        "right": 992,
+        "bottom": 81.5,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 514.78125,
+      "y": 25.5,
+      "right": 992,
+      "bottom": 81.5,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 514.78125,
+        "y": 44.125,
+        "right": 565.984375,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 589.984375,
+        "y": 44.125,
+        "right": 636.515625,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 660.515625,
+        "y": 44.125,
+        "right": 770.796875,
+        "bottom": 62.875,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 794.796875,
+        "y": 44.125,
+        "right": 848.03125,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 872.03125,
+        "y": 25.5,
+        "right": 992,
+        "bottom": 81.5,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Om Kind Design",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 514.78125,
+      "y": 30,
+      "right": 992,
+      "bottom": 86,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 514.78125,
+        "y": 48.625,
+        "right": 565.984375,
+        "bottom": 67.375,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 589.984375,
+        "y": 48.625,
+        "right": 636.515625,
+        "bottom": 67.375,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 660.515625,
+        "y": 48.625,
+        "right": 770.796875,
+        "bottom": 67.375,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 794.796875,
+        "y": 48.625,
+        "right": 848.03125,
+        "bottom": 67.375,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 872.03125,
+        "y": 30,
+        "right": 992,
+        "bottom": 86,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?  ↗",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(192, 231, 246)",
+        "ratio": 13.78173622644865
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "logo": {
+      "x": 32,
+      "y": 12,
+      "right": 122,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 514.78125,
+      "y": 25.5,
+      "right": 992,
+      "bottom": 81.5,
+      "width": 477.21875,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 514.78125,
+        "y": 44.125,
+        "right": 565.984375,
+        "bottom": 62.875,
+        "width": 51.203125,
+        "height": 18.75
+      },
+      {
+        "x": 589.984375,
+        "y": 44.125,
+        "right": 636.515625,
+        "bottom": 62.875,
+        "width": 46.53125,
+        "height": 18.75
+      },
+      {
+        "x": 660.515625,
+        "y": 44.125,
+        "right": 770.796875,
+        "bottom": 62.875,
+        "width": 110.28125,
+        "height": 18.75
+      },
+      {
+        "x": 794.796875,
+        "y": 44.125,
+        "right": 848.03125,
+        "bottom": 62.875,
+        "width": 53.234375,
+        "height": 18.75
+      },
+      {
+        "x": 872.03125,
+        "y": 25.5,
+        "right": 992,
+        "bottom": 81.5,
+        "width": 119.96875,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 480,
+      "y": 30,
+      "right": 1375,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 480,
+        "y": 46.75,
+        "right": 640,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 657,
+        "y": 46.75,
+        "right": 817,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 834,
+        "y": 46.75,
+        "right": 994,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1011,
+        "y": 46.75,
+        "right": 1171,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1210,
+        "y": 30,
+        "right": 1375,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Forside",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 480,
+      "y": 30,
+      "right": 1375,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 480,
+        "y": 46.75,
+        "right": 640,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 657,
+        "y": 46.75,
+        "right": 817,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 834,
+        "y": 46.75,
+        "right": 994,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1011,
+        "y": 46.75,
+        "right": 1171,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1210,
+        "y": 30,
+        "right": 1375,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 480,
+      "y": 30,
+      "right": 1375,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 480,
+        "y": 46.75,
+        "right": 640,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 657,
+        "y": 46.75,
+        "right": 817,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 834,
+        "y": 46.75,
+        "right": 994,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1011,
+        "y": 46.75,
+        "right": 1171,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1210,
+        "y": 30,
+        "right": 1375,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Om Kind Design",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 480,
+      "y": 30,
+      "right": 1375,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 480,
+        "y": 46.75,
+        "right": 640,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 657,
+        "y": 46.75,
+        "right": 817,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 834,
+        "y": 46.75,
+        "right": 994,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1011,
+        "y": 46.75,
+        "right": 1171,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1210,
+        "y": 30,
+        "right": 1375,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?  ↗",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(192, 231, 246)",
+        "ratio": 13.78173622644865
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 480,
+      "y": 30,
+      "right": 1375,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 480,
+        "y": 46.75,
+        "right": 640,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 657,
+        "y": 46.75,
+        "right": 817,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 834,
+        "y": 46.75,
+        "right": 994,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1011,
+        "y": 46.75,
+        "right": 1171,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1210,
+        "y": 30,
+        "right": 1375,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 1441,
+    "scrollWidth": 1441,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 481,
+      "y": 30,
+      "right": 1376,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 481,
+        "y": 46.75,
+        "right": 641,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 658,
+        "y": 46.75,
+        "right": 818,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 835,
+        "y": 46.75,
+        "right": 995,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1012,
+        "y": 46.75,
+        "right": 1172,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1211,
+        "y": 30,
+        "right": 1376,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Forside",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 1441,
+    "scrollWidth": 1441,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 481,
+      "y": 30,
+      "right": 1376,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 481,
+        "y": 46.75,
+        "right": 641,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 658,
+        "y": 46.75,
+        "right": 818,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 835,
+        "y": 46.75,
+        "right": 995,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1012,
+        "y": 46.75,
+        "right": 1172,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1211,
+        "y": 30,
+        "right": 1376,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 1441,
+    "scrollWidth": 1441,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 481,
+      "y": 30,
+      "right": 1376,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 481,
+        "y": 46.75,
+        "right": 641,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 658,
+        "y": 46.75,
+        "right": 818,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 835,
+        "y": 46.75,
+        "right": 995,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1012,
+        "y": 46.75,
+        "right": 1172,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1211,
+        "y": 30,
+        "right": 1376,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Om Kind Design",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 1441,
+    "scrollWidth": 1441,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 481,
+      "y": 30,
+      "right": 1376,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 481,
+        "y": 46.75,
+        "right": 641,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 658,
+        "y": 46.75,
+        "right": 818,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 835,
+        "y": 46.75,
+        "right": 995,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1012,
+        "y": 46.75,
+        "right": 1172,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1211,
+        "y": 30,
+        "right": 1376,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?  ↗",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(192, 231, 246)",
+        "ratio": 13.78173622644865
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 1441,
+    "scrollWidth": 1441,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 481,
+      "y": 30,
+      "right": 1376,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 481,
+        "y": 46.75,
+        "right": 641,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 658,
+        "y": 46.75,
+        "right": 818,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 835,
+        "y": 46.75,
+        "right": 995,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1012,
+        "y": 46.75,
+        "right": 1172,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1211,
+        "y": 30,
+        "right": 1376,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 1536,
+    "scrollWidth": 1536,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 576,
+      "y": 30,
+      "right": 1471,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 576,
+        "y": 46.75,
+        "right": 736,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 753,
+        "y": 46.75,
+        "right": 913,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 930,
+        "y": 46.75,
+        "right": 1090,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1107,
+        "y": 46.75,
+        "right": 1267,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1306,
+        "y": 30,
+        "right": 1471,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Forside",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 1536,
+    "scrollWidth": 1536,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 576,
+      "y": 30,
+      "right": 1471,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 576,
+        "y": 46.75,
+        "right": 736,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 753,
+        "y": 46.75,
+        "right": 913,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 930,
+        "y": 46.75,
+        "right": 1090,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1107,
+        "y": 46.75,
+        "right": 1267,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1306,
+        "y": 30,
+        "right": 1471,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 1536,
+    "scrollWidth": 1536,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 576,
+      "y": 30,
+      "right": 1471,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 576,
+        "y": 46.75,
+        "right": 736,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 753,
+        "y": 46.75,
+        "right": 913,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 930,
+        "y": 46.75,
+        "right": 1090,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1107,
+        "y": 46.75,
+        "right": 1267,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1306,
+        "y": 30,
+        "right": 1471,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Om Kind Design",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 1536,
+    "scrollWidth": 1536,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 576,
+      "y": 30,
+      "right": 1471,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 576,
+        "y": 46.75,
+        "right": 736,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 753,
+        "y": 46.75,
+        "right": 913,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 930,
+        "y": 46.75,
+        "right": 1090,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1107,
+        "y": 46.75,
+        "right": 1267,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1306,
+        "y": 30,
+        "right": 1471,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?  ↗",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(192, 231, 246)",
+        "ratio": 13.78173622644865
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 1536,
+    "scrollWidth": 1536,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 576,
+      "y": 30,
+      "right": 1471,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 576,
+        "y": 46.75,
+        "right": 736,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 753,
+        "y": 46.75,
+        "right": 913,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 930,
+        "y": 46.75,
+        "right": 1090,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1107,
+        "y": 46.75,
+        "right": 1267,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1306,
+        "y": 30,
+        "right": 1471,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 1600,
+    "scrollWidth": 1600,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 640,
+      "y": 30,
+      "right": 1535,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 640,
+        "y": 46.75,
+        "right": 800,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 817,
+        "y": 46.75,
+        "right": 977,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 994,
+        "y": 46.75,
+        "right": 1154,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1171,
+        "y": 46.75,
+        "right": 1331,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1370,
+        "y": 30,
+        "right": 1535,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Forside",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 1600,
+    "scrollWidth": 1600,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 640,
+      "y": 30,
+      "right": 1535,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 640,
+        "y": 46.75,
+        "right": 800,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 817,
+        "y": 46.75,
+        "right": 977,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 994,
+        "y": 46.75,
+        "right": 1154,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1171,
+        "y": 46.75,
+        "right": 1331,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1370,
+        "y": 30,
+        "right": 1535,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 1600,
+    "scrollWidth": 1600,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 640,
+      "y": 30,
+      "right": 1535,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 640,
+        "y": 46.75,
+        "right": 800,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 817,
+        "y": 46.75,
+        "right": 977,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 994,
+        "y": 46.75,
+        "right": 1154,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1171,
+        "y": 46.75,
+        "right": 1331,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1370,
+        "y": 30,
+        "right": 1535,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Om Kind Design",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 1600,
+    "scrollWidth": 1600,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 640,
+      "y": 30,
+      "right": 1535,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 640,
+        "y": 46.75,
+        "right": 800,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 817,
+        "y": 46.75,
+        "right": 977,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 994,
+        "y": 46.75,
+        "right": 1154,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1171,
+        "y": 46.75,
+        "right": 1331,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1370,
+        "y": 30,
+        "right": 1535,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?  ↗",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(192, 231, 246)",
+        "ratio": 13.78173622644865
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 1600,
+    "scrollWidth": 1600,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 640,
+      "y": 30,
+      "right": 1535,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 640,
+        "y": 46.75,
+        "right": 800,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 817,
+        "y": 46.75,
+        "right": 977,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 994,
+        "y": 46.75,
+        "right": 1154,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1171,
+        "y": 46.75,
+        "right": 1331,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1370,
+        "y": 30,
+        "right": 1535,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 960,
+      "y": 30,
+      "right": 1855,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 960,
+        "y": 46.75,
+        "right": 1120,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1137,
+        "y": 46.75,
+        "right": 1297,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1314,
+        "y": 46.75,
+        "right": 1474,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1491,
+        "y": 46.75,
+        "right": 1651,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1690,
+        "y": 30,
+        "right": 1855,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Forside",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 960,
+      "y": 30,
+      "right": 1855,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 960,
+        "y": 46.75,
+        "right": 1120,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1137,
+        "y": 46.75,
+        "right": 1297,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1314,
+        "y": 46.75,
+        "right": 1474,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1491,
+        "y": 46.75,
+        "right": 1651,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1690,
+        "y": 30,
+        "right": 1855,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 960,
+      "y": 30,
+      "right": 1855,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 960,
+        "y": 46.75,
+        "right": 1120,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1137,
+        "y": 46.75,
+        "right": 1297,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1314,
+        "y": 46.75,
+        "right": 1474,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1491,
+        "y": 46.75,
+        "right": 1651,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1690,
+        "y": 30,
+        "right": 1855,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Om Kind Design",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 960,
+      "y": 30,
+      "right": 1855,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 960,
+        "y": 46.75,
+        "right": 1120,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1137,
+        "y": 46.75,
+        "right": 1297,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1314,
+        "y": 46.75,
+        "right": 1474,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1491,
+        "y": 46.75,
+        "right": 1651,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1690,
+        "y": 30,
+        "right": 1855,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?  ↗",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(192, 231, 246)",
+        "ratio": 13.78173622644865
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 1920,
+    "scrollWidth": 1920,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 960,
+      "y": 30,
+      "right": 1855,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 960,
+        "y": 46.75,
+        "right": 1120,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1137,
+        "y": 46.75,
+        "right": 1297,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1314,
+        "y": 46.75,
+        "right": 1474,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1491,
+        "y": 46.75,
+        "right": 1651,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1690,
+        "y": 30,
+        "right": 1855,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/",
+    "width": 2560,
+    "scrollWidth": 2560,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 1600,
+      "y": 30,
+      "right": 2495,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 1600,
+        "y": 46.75,
+        "right": 1760,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1777,
+        "y": 46.75,
+        "right": 1937,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1954,
+        "y": 46.75,
+        "right": 2114,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 2131,
+        "y": 46.75,
+        "right": 2291,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 2330,
+        "y": 30,
+        "right": 2495,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Forside",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/events/",
+    "width": 2560,
+    "scrollWidth": 2560,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 1600,
+      "y": 30,
+      "right": 2495,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 1600,
+        "y": 46.75,
+        "right": 1760,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1777,
+        "y": 46.75,
+        "right": 1937,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1954,
+        "y": 46.75,
+        "right": 2114,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 2131,
+        "y": 46.75,
+        "right": 2291,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 2330,
+        "y": 30,
+        "right": 2495,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Events",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/om-kinddesign/",
+    "width": 2560,
+    "scrollWidth": 2560,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 1600,
+      "y": 30,
+      "right": 2495,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 1600,
+        "y": 46.75,
+        "right": 1760,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1777,
+        "y": 46.75,
+        "right": 1937,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1954,
+        "y": 46.75,
+        "right": 2114,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 2131,
+        "y": 46.75,
+        "right": 2291,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 2330,
+        "y": 30,
+        "right": 2495,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Om Kind Design",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/ny-her/",
+    "width": 2560,
+    "scrollWidth": 2560,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 1600,
+      "y": 30,
+      "right": 2495,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 1600,
+        "y": 46.75,
+        "right": 1760,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1777,
+        "y": 46.75,
+        "right": 1937,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1954,
+        "y": 46.75,
+        "right": 2114,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 2131,
+        "y": 46.75,
+        "right": 2291,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 2330,
+        "y": 30,
+        "right": 2495,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Ny her?  ↗",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(192, 231, 246)",
+        "ratio": 13.78173622644865
+      }
+    ]
+  },
+  {
+    "test": "header-and-active-contrast",
+    "route": "/kontakt/",
+    "width": 2560,
+    "scrollWidth": 2560,
+    "logo": {
+      "x": 64,
+      "y": 12,
+      "right": 154,
+      "bottom": 102,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 1600,
+      "y": 30,
+      "right": 2495,
+      "bottom": 86,
+      "width": 895,
+      "height": 56
+    },
+    "links": [
+      {
+        "x": 1600,
+        "y": 46.75,
+        "right": 1760,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1777,
+        "y": 46.75,
+        "right": 1937,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 1954,
+        "y": 46.75,
+        "right": 2114,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 2131,
+        "y": 46.75,
+        "right": 2291,
+        "bottom": 69.25,
+        "width": 160,
+        "height": 22.5
+      },
+      {
+        "x": 2330,
+        "y": 30,
+        "right": 2495,
+        "bottom": 86,
+        "width": 165,
+        "height": 56
+      }
+    ],
+    "active": [
+      {
+        "text": "Kontakt",
+        "color": "rgb(40, 14, 17)",
+        "background": "rgb(165, 179, 155)",
+        "ratio": 8.199940231758106
+      }
+    ]
+  },
+  {
+    "test": "text-spacing",
+    "width": 320,
+    "heroBottom": 907.5,
+    "countdownBottom": 883.5,
+    "scrollWidth": 320,
+    "elements": [
+      {
+        "text": "KIND\nDESIGN",
+        "bottom": 390,
+        "right": 300.015625,
+        "left": 24,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Mød andre kreative.\nFind dit fællesskab.",
+        "bottom": 562,
+        "right": 296,
+        "left": 24,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Find dit næste event ↗",
+        "bottom": 686,
+        "right": 296,
+        "left": 24,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "VI SES OM · TOKYO\n02\n:\n13\n:\n14\nDAGE   TIMER   MIN.\nSe næste event ↗",
+        "bottom": 883.5,
+        "right": 296,
+        "left": 24,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "VI SES OM · TOKYO",
+        "bottom": 744,
+        "right": 278,
+        "left": 42,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "02\n:\n13\n:\n14",
+        "bottom": 809,
+        "right": 278,
+        "left": 42,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "DAGE   TIMER   MIN.",
+        "bottom": 833.5,
+        "right": 278,
+        "left": 42,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Se næste event ↗",
+        "bottom": 865.5,
+        "right": 278,
+        "left": 42,
+        "insideHero": true,
+        "insideCountdown": true
+      }
+    ]
+  },
+  {
+    "test": "text-spacing",
+    "width": 390,
+    "heroBottom": 834,
+    "countdownBottom": 808.5,
+    "scrollWidth": 390,
+    "elements": [
+      {
+        "text": "KIND\nDESIGN",
+        "bottom": 390,
+        "right": 366,
+        "left": 24,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Mød andre kreative.\nFind dit fællesskab.",
+        "bottom": 487,
+        "right": 366,
+        "left": 24,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Find dit næste event ↗",
+        "bottom": 611,
+        "right": 366,
+        "left": 24,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "VI SES OM · TOKYO\n02\n:\n13\n:\n14\nDAGE   TIMER   MIN.\nSe næste event ↗",
+        "bottom": 808.5,
+        "right": 366,
+        "left": 24,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "VI SES OM · TOKYO",
+        "bottom": 669,
+        "right": 348,
+        "left": 42,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "02\n:\n13\n:\n14",
+        "bottom": 734,
+        "right": 348,
+        "left": 42,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "DAGE   TIMER   MIN.",
+        "bottom": 758.5,
+        "right": 348,
+        "left": 42,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Se næste event ↗",
+        "bottom": 790.5,
+        "right": 348,
+        "left": 42,
+        "insideHero": true,
+        "insideCountdown": true
+      }
+    ]
+  },
+  {
+    "test": "text-spacing",
+    "width": 768,
+    "heroBottom": 1083.375,
+    "countdownBottom": 954.875,
+    "scrollWidth": 768,
+    "elements": [
+      {
+        "text": "KIND DESIGN",
+        "bottom": 327,
+        "right": 682.875,
+        "left": 73.109375,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Mød andre kreative. Find dit fællesskab.",
+        "bottom": 406.375,
+        "right": 768,
+        "left": 0,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Find dit næste event\n \n ↗",
+        "bottom": 580.375,
+        "right": 456,
+        "left": 209,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "ET KREATIVT FÆLLESSKAB\nFOR ALLE SLAGS DESIGNERE",
+        "bottom": 922.375,
+        "right": 458,
+        "left": 32,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "NÆSTE EVENT / 13. NOVEMBER · TOKYO\nFrom Ballet to Technology: On Reinvention and Creative Identity",
+        "bottom": 1076.375,
+        "right": 458,
+        "left": 32,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "VI SES OM · TOKYO\n02\n:\n13\n:\n14\nDAGE   TIMER   MIN.\nSe næste event ↗",
+        "bottom": 954.875,
+        "right": 736,
+        "left": 498,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "VI SES OM · TOKYO",
+        "bottom": 763.375,
+        "right": 721,
+        "left": 521,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "02\n:\n13\n:\n14",
+        "bottom": 843.875,
+        "right": 721,
+        "left": 513,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "DAGE   TIMER   MIN.",
+        "bottom": 871.875,
+        "right": 721,
+        "left": 513,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Se næste event ↗",
+        "bottom": 929.875,
+        "right": 721,
+        "left": 523,
+        "insideHero": true,
+        "insideCountdown": true
+      }
+    ]
+  },
+  {
+    "test": "text-spacing",
+    "width": 1440,
+    "heroBottom": 1211.5,
+    "countdownBottom": 1083,
+    "scrollWidth": 1440,
+    "elements": [
+      {
+        "text": "KIND DESIGN",
+        "bottom": 427,
+        "right": 1276.71875,
+        "left": 151.28125,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Mød andre kreative. Find dit fællesskab.",
+        "bottom": 524.5,
+        "right": 1440,
+        "left": 0,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Find dit næste event\n \n ↗",
+        "bottom": 708.5,
+        "right": 792,
+        "left": 545,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "ET KREATIVT FÆLLESSKAB\nFOR ALLE SLAGS DESIGNERE",
+        "bottom": 1050.5,
+        "right": 1098,
+        "left": 64,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "NÆSTE EVENT / 13. NOVEMBER · TOKYO\nFrom Ballet to Technology: On Reinvention and Creative Identity",
+        "bottom": 1204.5,
+        "right": 494,
+        "left": 64,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "VI SES OM · TOKYO\n02\n:\n13\n:\n14\nDAGE   TIMER   MIN.\nSe næste event ↗",
+        "bottom": 1083,
+        "right": 1376,
+        "left": 1138,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "VI SES OM · TOKYO",
+        "bottom": 891.5,
+        "right": 1361,
+        "left": 1161,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "02\n:\n13\n:\n14",
+        "bottom": 972,
+        "right": 1361,
+        "left": 1153,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "DAGE   TIMER   MIN.",
+        "bottom": 1000,
+        "right": 1361,
+        "left": 1153,
+        "insideHero": true,
+        "insideCountdown": true
+      },
+      {
+        "text": "Se næste event ↗",
+        "bottom": 1058,
+        "right": 1361,
+        "left": 1163,
+        "insideHero": true,
+        "insideCountdown": true
+      }
+    ]
+  },
+  {
+    "test": "delayed-cover-stability",
+    "width": 390,
+    "before": [
+      {
+        "height": 818.375,
+        "y": 40.375,
+        "imageHeight": 300
+      },
+      {
+        "height": 705.1875,
+        "y": 886.75,
+        "imageHeight": 300
+      },
+      {
+        "height": 727.59375,
+        "y": 1619.9375,
+        "imageHeight": 300
+      },
+      {
+        "height": 705.1875,
+        "y": 2375.53125,
+        "imageHeight": 300
+      },
+      {
+        "height": 761.1875,
+        "y": 3108.71875,
+        "imageHeight": 300
+      },
+      {
+        "height": 738.78125,
+        "y": 3897.90625,
+        "imageHeight": 300
+      },
+      {
+        "height": 682.1875,
+        "y": 4664.6875,
+        "imageHeight": 300
+      },
+      {
+        "height": 682.1875,
+        "y": 5374.875,
+        "imageHeight": 300
+      }
+    ],
+    "after": [
+      {
+        "height": 818.375,
+        "y": 40.375,
+        "imageHeight": 300
+      },
+      {
+        "height": 705.1875,
+        "y": 886.75,
+        "imageHeight": 300
+      },
+      {
+        "height": 727.59375,
+        "y": 1619.9375,
+        "imageHeight": 300
+      },
+      {
+        "height": 705.1875,
+        "y": 2375.53125,
+        "imageHeight": 300
+      },
+      {
+        "height": 761.1875,
+        "y": 3108.71875,
+        "imageHeight": 300
+      },
+      {
+        "height": 738.78125,
+        "y": 3897.90625,
+        "imageHeight": 300
+      },
+      {
+        "height": 682.1875,
+        "y": 4664.6875,
+        "imageHeight": 300
+      },
+      {
+        "height": 682.1875,
+        "y": 5374.875,
+        "imageHeight": 300
+      }
+    ]
+  },
+  {
+    "test": "delayed-cover-stability",
+    "width": 768,
+    "before": [
+      {
+        "height": 430.75,
+        "y": 234.1875,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 315.5625,
+        "y": 686.9375,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 349.15625,
+        "y": 1024.5,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 351.5625,
+        "y": 1395.65625,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 385.15625,
+        "y": 1769.21875,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 351.5625,
+        "y": 2176.375,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 293.96875,
+        "y": 2549.9375,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 293.96875,
+        "y": 2865.90625,
+        "imageHeight": 246.390625
+      }
+    ],
+    "after": [
+      {
+        "height": 430.75,
+        "y": 234.1875,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 315.5625,
+        "y": 686.9375,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 349.15625,
+        "y": 1024.5,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 351.5625,
+        "y": 1395.65625,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 385.15625,
+        "y": 1769.21875,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 351.5625,
+        "y": 2176.375,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 293.96875,
+        "y": 2549.9375,
+        "imageHeight": 246.390625
+      },
+      {
+        "height": 293.96875,
+        "y": 2865.90625,
+        "imageHeight": 246.390625
+      }
+    ]
+  },
+  {
+    "test": "delayed-cover-stability",
+    "width": 1440,
+    "before": [
+      {
+        "height": 422,
+        "y": 239.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 683.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 1127.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 1571.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 2015.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 2459.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 2903.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 3347.1875,
+        "imageHeight": 422
+      }
+    ],
+    "after": [
+      {
+        "height": 422,
+        "y": 239.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 683.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 1127.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 1571.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 2015.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 2459.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 2903.1875,
+        "imageHeight": 422
+      },
+      {
+        "height": 422,
+        "y": 3347.1875,
+        "imageHeight": 422
+      }
+    ]
+  },
+  {
+    "test": "calendar-first-viewport",
+    "width": 390,
+    "month": {
+      "x": 24,
+      "y": 445.96875,
+      "width": 342,
+      "height": 49
+    },
+    "grid": {
+      "x": 24,
+      "y": 594.96875,
+      "width": 342,
+      "height": 441
+    }
+  },
+  {
+    "test": "events-filters-context-and-keyboard",
+    "width": 390,
+    "filterCombinations": 12,
+    "defaultUpcoming": true,
+    "contextBackAndReload": true,
+    "calendarContext": true,
+    "singleLinks": 8,
+    "externalReturnRejected": true,
+    "expiredArchiveFallback": true
+  },
+  {
+    "test": "calendar-first-viewport",
+    "width": 768,
+    "month": {
+      "x": 32,
+      "y": 440.578125,
+      "width": 704,
+      "height": 49
+    },
+    "grid": {
+      "x": 32,
+      "y": 598.578125,
+      "width": 704,
+      "height": 650
+    }
+  },
+  {
+    "test": "events-filters-context-and-keyboard",
+    "width": 768,
+    "filterCombinations": 12,
+    "defaultUpcoming": true,
+    "contextBackAndReload": true,
+    "calendarContext": true,
+    "singleLinks": 8,
+    "externalReturnRejected": true,
+    "expiredArchiveFallback": true
+  },
+  {
+    "test": "calendar-first-viewport",
+    "width": 1440,
+    "month": {
+      "x": 64,
+      "y": 370.1875,
+      "width": 1312,
+      "height": 49
+    },
+    "grid": {
+      "x": 64,
+      "y": 528.1875,
+      "width": 1312,
+      "height": 650
+    }
+  },
+  {
+    "test": "events-filters-context-and-keyboard",
+    "width": 1440,
+    "filterCombinations": 12,
+    "defaultUpcoming": true,
+    "contextBackAndReload": true,
+    "calendarContext": true,
+    "singleLinks": 8,
+    "externalReturnRejected": true,
+    "expiredArchiveFallback": true
+  },
+  {
+    "test": "events-no-JS",
+    "allEightEventsVisible": true
+  }
+]

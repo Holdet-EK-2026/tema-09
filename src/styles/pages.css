@@ -167,7 +167,7 @@
   display: grid;
   gap: 22px;
 }
-.event-card {
+.event-card-link {
   position: relative;
   display: grid;
   grid-template-columns: 422px 114px minmax(0, 1fr);
@@ -901,7 +901,7 @@
     width: auto;
     padding-inline: 22px;
   }
-  .event-card {
+  .event-card-link {
     grid-template-columns: 35% 80px minmax(0, 1fr);
     gap: 16px;
   }
@@ -1243,7 +1243,7 @@
   .event-list {
     gap: 48px;
   }
-  .event-card {
+  .event-card-link {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -2138,7 +2138,7 @@
   }
 }
 /* Verificerede Luma-data bruger de eksisterende kort og tokens; tekst må vokse. */
-.official-card {
+.official-card .event-card-link {
   min-height: 280px;
 }
 .official-card .event-photo-link {
@@ -2345,7 +2345,7 @@
   }
 }
 @media (max-width: 600px) {
-  .official-card {
+  .official-card .event-card-link {
     min-height: 0;
   }
   .official-card .event-photo-link {
@@ -2553,5 +2553,63 @@
 @media (min-width: 1251px) {
   .inner-page:not(.version-legacy) .desktop-navigation {
     transform: translateY(4.5px);
+  }
+}
+
+.event-results-heading {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 24px 0;
+}
+.event-results-heading h2 {
+  font-size: 30px;
+}
+.event-results-heading p {
+  font-size: 16px;
+  color: var(--tekst);
+}
+.event-empty .button {
+  margin: 16px 12px 0 0;
+}
+.calendar-heading {
+  padding: 40px 64px 24px;
+  color: var(--bordeaux);
+}
+.calendar-heading h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.calendar-heading > p {
+  max-width: 60ch;
+  font-size: 19px;
+}
+.calendar-heading + .calendar-section .calendar-tabs {
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.official-calendar > div > h2:first-child {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+@media (min-width: 601px) and (max-width: 1250px) {
+  .calendar-heading {
+    padding-inline: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .calendar-heading {
+    padding: 24px;
+  }
+  .calendar-heading h1 {
+    font-size: 36px;
+  }
+  .calendar-heading > p {
+    font-size: 17px;
+  }
+  .event-results-heading h2 {
+    font-size: 26px;
   }
 }

@@ -907,12 +907,12 @@ dialog p {
   .event-status-filters button[aria-pressed="false"]:hover {
     background-color: rgb(114 47 55 / 8%);
   }
-  .event-card:has(a:hover) h3 a {
+  .event-card-link:hover h3 {
     text-decoration: underline;
     text-underline-offset: 0.2em;
   }
 }
-.event-card h3 a:focus-visible {
+.event-card-link:focus-visible h3 {
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }

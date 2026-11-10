@@ -1,3 +1,4 @@
+import { updateEventLinks } from "../lib/event-navigation.js";
 const select = document.querySelector("#calendar-month");
 const months = [...document.querySelectorAll("[data-calendar-month]")];
 function showMonth(value) {
@@ -5,6 +6,7 @@ function showMonth(value) {
     ? value
     : select.value;
   select.value = valid;
+  updateEventLinks(document, `/events/kalender/?month=${valid}`);
   months.forEach((month) => {
     month.hidden = month.dataset.calendarMonth !== valid;
   });

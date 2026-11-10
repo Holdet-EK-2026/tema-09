@@ -15,3 +15,5 @@ const past = event.status === 'past';
 </section>
 <section class="official-story"><div><h2>{past ? 'Om arrangementet' : 'En ny samtale.'}</h2>{event.paragraphs.map(paragraph=><p>{paragraph}</p>)}{event.sourceNote && <p class="source-note">{event.sourceNote}</p>}<p class="source-verification">Oplysninger kontrolleret mod den officielle Luma-side den 9. november 2026.</p><a href="https://luma.com/user/kinddesign">KindDesigns officielle Luma-profil ↗</a></div>{event.program && <div><h2>Program</h2><p class="program-timezone">Alle tider er lokale: {event.timezone}.</p><ol>{event.program.map(([time,label])=><li><time>{time}</time><span>{label}</span></li>)}</ol></div>}</section>
 <script src="../scripts/event-status.js"></script>
+
+<script src="../scripts/event-return.js"></script>

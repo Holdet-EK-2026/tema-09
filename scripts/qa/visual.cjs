@@ -5,7 +5,7 @@ const sharp = require(
 const fs = require("fs");
 (async () => {
   let metrics = [];
-  fs.mkdirSync("docs/qa/final-implementation/overlays",{recursive:true});
+  fs.mkdirSync("docs/qa/final-implementation/overlays", { recursive: true });
   const maps = [
     ["776-1817", "_om-kinddesign_", 1440],
     ["776-1873", "_kontakt_", 1440],

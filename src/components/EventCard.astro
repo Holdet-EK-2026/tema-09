@@ -2,15 +2,17 @@
 const {event, index} = Astro.props;
 const demo = event.isDemo;
 ---
-<article class:list={['event-card', !demo && 'official-card']} data-event-type={event.type} data-event-status={event.status} data-official-event={!demo ? '' : undefined} data-event-end={event.endAt}>
-  <a class="event-photo-link" href={`/events/${event.slug}/`} tabindex="-1" aria-hidden="true">{demo ? <img src={`/images/${event.image}.webp`} srcset={`/images/${event.image}-500.webp 500w, /images/${event.image}.webp ${event.image === 'ca544' ? 1000 : 1400}w`} sizes="(max-width:600px) calc(100vw - 48px), 422px" width="422" height="244" alt="" loading="lazy" /> : <img src={`/images/luma-${event.id}-600.webp`} srcset={`/images/luma-${event.id}-450.webp 450w, /images/luma-${event.id}-600.webp 600w, /images/luma-${event.id}-1200.webp ${event.coverWidth}w`} sizes="(max-width:600px) calc(100vw - 48px), 422px" width={event.coverWidth} height={event.coverHeight} alt="" loading="lazy" />}</a>
+<article class:list={['event-card', !demo && 'official-card']} data-event-type={event.type} data-event-status={event.status} data-official-event={!demo ? '' : undefined} data-event-end={event.endAt} hidden={!demo && event.status === 'past'}>
+  <a class="event-card-link" href={`/events/${event.slug}/`} aria-labelledby={`event-title-${event.slug}`} data-event-link>
+  <div class="event-photo-link" aria-hidden="true">{demo ? <img src={`/images/${event.image}.webp`} srcset={`/images/${event.image}-500.webp 500w, /images/${event.image}.webp ${event.image === 'ca544' ? 1000 : 1400}w`} sizes="(max-width:600px) calc(100vw - 48px), 422px" width="422" height="244" alt="" loading="lazy" /> : <img src={`/images/luma-${event.id}-600.webp`} srcset={`/images/luma-${event.id}-450.webp 450w, /images/luma-${event.id}-600.webp 600w, /images/luma-${event.id}-1200.webp ${event.coverWidth}w`} sizes="(max-width:600px) calc(100vw - 48px), 422px" width={event.coverWidth} height={event.coverHeight} alt="" loading="lazy" />}</div>
   <time class="event-date" datetime={event.date}><strong>{event.day}</strong><span>{demo ? 'NOV' : event.monthShort}</span>{!demo && <small>{event.year}</small>}</time>
   <div class="event-copy"><p class="event-type">{event.type.toUpperCase()}<span class="mobile-label"> · {demo ? `${event.day} NOV` : event.dateLabel}</span></p>
     {!demo && <p class="event-status-label" data-event-status-label>{event.status === 'past' ? 'Tidligere event · Afsluttet' : 'Kommende event'}</p>}
-    <h3><a href={`/events/${event.slug}/`}>{event.title}</a></h3><p class="event-description">{event.description}</p>
+    <h3 id={`event-title-${event.slug}`}>{event.title}</h3><p class="event-description">{event.description}</p>
     <p class="event-meta">{demo ? <><span class="mobile-label">{event.day}. november 2026 · </span>{event.time} · København · Sted bekræftes</> : <><time datetime={event.startAt}>{event.time}</time> · {event.city}<br /><span class="event-timezone">{event.timezone} · lokal tid</span></>}</p>
     {demo && index === 0 && <p class="event-example">EKSEMPELPROGRAM · Ikke et faktisk bookbart event</p>}
     {event.sourceNote && <p class="card-source-note">Kildeafvigelse i dato eller sluttid – se eventdetaljer.</p>}
-    <a class="button mobile-event-link" href={`/events/${event.slug}/`}>Se event ↗</a>
+    <span class="button mobile-event-link">Se event ↗</span>
   </div><span class="event-arrow" aria-hidden="true">↗</span>
+  </a>
 </article>

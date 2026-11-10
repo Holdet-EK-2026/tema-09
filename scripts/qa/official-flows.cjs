@@ -24,7 +24,7 @@ fs.mkdirSync(folder, { recursive: true });
     await page.goto(base + "/");
     await page.locator(".hero-cta").click();
     await page.waitForURL("**/events/");
-    assert.equal(await page.locator(".event-card:visible").count(), 8);
+    assert.equal(await page.locator(".event-card:visible").count(), 1);
     await page.locator('[data-status-filter="upcoming"]').click();
     assert.equal(await page.locator(".event-card:visible").count(), 1);
     assert(
@@ -45,8 +45,11 @@ fs.mkdirSync(folder, { recursive: true });
     await page.locator('[data-status-filter="past"]').click();
     assert.equal(await page.locator(".event-card:visible").count(), 7);
     await page.locator('[data-status-filter="upcoming"]').click();
-    await page.locator(".event-card:visible h3 a").click();
-    await page.waitForURL("**/events/from-ballet-to-technology/");
+    await page.locator(".event-card:visible .event-card-link").click();
+    await page.waitForURL(
+      (url) => url.pathname === "/events/from-ballet-to-technology/",
+    );
+    await page.waitForLoadState("load");
     assert.equal(
       await page.locator("[data-luma-register]").getAttribute("href"),
       "https://luma.com/cmapoye1",

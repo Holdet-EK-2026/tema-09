@@ -7,14 +7,24 @@ const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
 const base = process.env.KINDDESIGN_QA_BASE || "http://127.0.0.1:4321";
 fs.mkdirSync(folder, { recursive: true });
 async function movePointerOutsideGallery(page) {
-  const rect=await page.locator('.gallery-window').boundingBox();
-  const {width,height}=page.viewportSize();
-  const point=[{x:1,y:1},{x:width-1,y:height-1}].find(p=>p.x<rect.x||p.x>=rect.x+rect.width||p.y<rect.y||p.y>=rect.y+rect.height);
-  assert(point,'Viewport must have room outside the gallery');
-  await page.mouse.move(point.x,point.y);
-  await page.waitForFunction(()=>!document.querySelector('.gallery-window').matches(':hover'));
+  const rect = await page.locator(".gallery-window").boundingBox();
+  const { width, height } = page.viewportSize();
+  const point = [
+    { x: 1, y: 1 },
+    { x: width - 1, y: height - 1 },
+  ].find(
+    (p) =>
+      p.x < rect.x ||
+      p.x >= rect.x + rect.width ||
+      p.y < rect.y ||
+      p.y >= rect.y + rect.height,
+  );
+  assert(point, "Viewport must have room outside the gallery");
+  await page.mouse.move(point.x, point.y);
+  await page.waitForFunction(
+    () => !document.querySelector(".gallery-window").matches(":hover"),
+  );
 }
-
 
 (async () => {
   const browser = await chromium.launch({ channel: "chrome" });
