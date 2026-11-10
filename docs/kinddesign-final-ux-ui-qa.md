@@ -1,5 +1,7 @@
 # KindDesign – afsluttende UX/UI-audit og QA
 
+> Efterfølgende status: Den her beskrevne version blev publiceret 10. november 2026 efter særskilt godkendelse. Se [deployment og offentlig QA](deployment-ux-ui-2026-11-10.md). Rapporten nedenfor beskriver den oprindelige lokale leverance.
+
 10. november 2026 · Lokal branch `feature/ux-ui-final-qa`, startet fra `895b58e` med ren working tree. Opgaven omfatter lokale forbedringer, tests og commits. Ingen push, merge, deployment, database- eller rettighedsændring er udført i denne opgave.
 
 ## Resultat og status

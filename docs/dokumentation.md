@@ -1,6 +1,6 @@
 # KindDesign – teknisk dokumentation
 
-Opdateret 10. november 2026. Den seneste lokale version på `feature/ux-ui-final-qa` omfatter autoplay-rettelse, FAQ-accordion, navigation og indholdsoprydning. Se [den nye UX/UI-rapport](kinddesign-final-ux-ui-qa.md). Disse ændringer er ikke pushet eller deployet; publiceringsrapporten beskriver den eksisterende liveversion. [Samlet rapport](fase-2-6-rapport.md) beskriver verifikation, afgrænsninger og commits. Den tidligere dokumentation er bevaret i [fase 1-arkivet](arkiv/dokumentation-fase-1.md); [fase 1-rapporten](fase-1-rapport.md) er uændret.
+Opdateret 10. november 2026. Den seneste lokale version på `feature/ux-ui-final-qa` omfatter autoplay-rettelse, FAQ-accordion, navigation og indholdsoprydning. Se [den nye UX/UI-rapport](kinddesign-final-ux-ui-qa.md). UX/UI-versionen fra `3f2ce0b` er nu pushet og publiceret på det eksisterende site. Se [deploymentrapporten med offentlig QA](deployment-ux-ui-2026-11-10.md). [Samlet rapport](fase-2-6-rapport.md) beskriver verifikation, afgrænsninger og commits. Den tidligere dokumentation er bevaret i [fase 1-arkivet](arkiv/dokumentation-fase-1.md); [fase 1-rapporten](fase-1-rapport.md) er uændret.
 
 ## Teknologi og struktur
 
@@ -96,4 +96,4 @@ Efter brugerens screenshot er hele rækken under carousellen fjernet: pileknappe
 
 ## Seneste UX/UI-opgave · 10. november 2026
 
-Den efterfølgende instruks kræver synlig pause/play, pile og slidevisning. De er nu samlet i en kompakt kontrol i carousellen. Den tidligere brede række med hjælpetekst og prikker er ikke genindført. Ændringerne er lokale og dokumenteret i [UX/UI-rapporten](kinddesign-final-ux-ui-qa.md). Live-siden viser fortsat den tidligere publicerede version.
+Den efterfølgende instruks kræver synlig pause/play, pile og slidevisning. De er nu samlet i en kompakt kontrol i carousellen. Den tidligere brede række med hjælpetekst og prikker er ikke genindført. Ændringerne er dokumenteret i [UX/UI-rapporten](kinddesign-final-ux-ui-qa.md) og efterfølgende publiceret; [deploymentrapporten](deployment-ux-ui-2026-11-10.md) indeholder status og den afsluttende offentlige kontrol.

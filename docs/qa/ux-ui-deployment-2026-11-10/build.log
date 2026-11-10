@@ -1,0 +1,49 @@
+
+> kinddesign@0.1.0 build
+> node ./node_modules/astro/bin/astro.mjs build --outDir /tmp/kinddesign-ux-publish-3f2ce0b
+
+17:44:36 [types] Generated 38ms
+17:44:36 [build] output: "static"
+17:44:36 [build] mode: "static"
+17:44:36 [build] directory: /tmp/kinddesign-ux-publish-3f2ce0b/
+17:44:36 [build] Collecting build info...
+17:44:36 [build] ✓ Completed in 52ms.
+17:44:36 [build] Building static entrypoints...
+17:44:36 [vite] ✓ built in 146ms
+17:44:36 [vite] ✓ built in 98ms
+17:44:36 [build] Rearranging server assets...
+
+ generating static routes
+17:44:36   ├─ /404.html (+10ms)
+17:44:36   ├─ /events/kalender/index.html (+4ms)
+17:44:36   ├─ /events/from-ballet-to-technology/index.html (+1ms)
+17:44:36   ├─ /events/ai-skillsharing/index.html (+1ms)
+17:44:36   ├─ /events/real-talk/index.html (+1ms)
+17:44:36   ├─ /events/meetup-barcelona/index.html (+1ms)
+17:44:36   ├─ /events/meetup-berlin/index.html (+0ms)
+17:44:36   ├─ /events/meetup-cph-jul/index.html (+1ms)
+17:44:36   ├─ /events/meetup-nordhavn-2025/index.html (+1ms)
+17:44:36   ├─ /events/meetup-koebenhavn-september-2025/index.html (+1ms)
+17:44:36   ├─ /events/design-og-nye-forbindelser/index.html (+0ms)
+17:44:36   ├─ /events/ideer-paa-papir/index.html (+0ms)
+17:44:36   ├─ /events/design-i-virkeligheden/index.html (+0ms)
+17:44:36   ├─ /events/et-bord-nye-ansigter/index.html (+1ms)
+17:44:36   ├─ /events/index.html (+3ms)
+17:44:36   ├─ /kalender/from-ballet-to-technology.ics (+1ms)
+17:44:36   ├─ /kalender/design-og-nye-forbindelser/index.html (+1ms)
+17:44:36   ├─ /kalender/ideer-paa-papir/index.html (+6ms)
+17:44:36   ├─ /kalender/design-i-virkeligheden/index.html (+0ms)
+17:44:36   ├─ /kalender/et-bord-nye-ansigter/index.html (+0ms)
+17:44:36   ├─ /kontakt/index.html (+1ms)
+17:44:36   ├─ /ny-her/index.html (+1ms)
+17:44:36   ├─ /om-kinddesign/index.html (+1ms)
+17:44:36   ├─ /tilmelding/design-og-nye-forbindelser/index.html (+0ms)
+17:44:36   ├─ /tilmelding/ideer-paa-papir/index.html (+0ms)
+17:44:36   ├─ /tilmelding/design-i-virkeligheden/index.html (+0ms)
+17:44:36   ├─ /tilmelding/et-bord-nye-ansigter/index.html (+0ms)
+17:44:36   ├─ /index.html (+6ms)
+17:44:36 ✓ Completed in 58ms.
+
+17:44:36 [build] ✓ Completed in 336ms.
+17:44:36 [build] 27 page(s) built in 388ms
+17:44:36 [build] Complete!

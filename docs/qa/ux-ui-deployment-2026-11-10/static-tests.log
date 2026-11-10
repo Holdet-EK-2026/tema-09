@@ -1,0 +1,16 @@
+
+> kinddesign@0.1.0 test
+> node scripts/check-build.js && node scripts/qa/luma-config.cjs
+
+27 HTML-sider: titler, h1, sprog, lokale links, ankre og assets består.
+{
+  verifiedSources: 8,
+  upcomingAsOf2026_11_09: 1,
+  pastAsOf2026_11_09: 7,
+  demosWithoutLumaMapping: 4,
+  tokyoLocalTime: true,
+  statusBoundary: true,
+  calendarUTCAndUTF8Folding: true,
+  sourceConflictsExplicit: true,
+  externalBookingsPerformed: 0
+}

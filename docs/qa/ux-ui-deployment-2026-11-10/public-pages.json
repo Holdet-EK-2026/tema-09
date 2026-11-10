@@ -1,0 +1,956 @@
+[
+  {
+    "route": "/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2936,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 144,
+          "height": 690
+        },
+        {
+          "name": "gallery-section carousel-ready",
+          "top": 834,
+          "height": 836
+        },
+        {
+          "name": "community-section",
+          "top": 1670,
+          "height": 874
+        },
+        {
+          "name": "site-footer",
+          "top": 2544,
+          "height": 392
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/events/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 7699,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "events-section",
+          "top": 434,
+          "height": 6965.0625
+        },
+        {
+          "name": "site-footer",
+          "top": 7399.0625,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "unloaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2248,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 144,
+          "height": 688.78125
+        },
+        {
+          "name": "calendar-section",
+          "top": 832.78125,
+          "height": 822.375
+        },
+        {
+          "name": "site-footer",
+          "top": 1872.15625,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 3397,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "about-section",
+          "top": 434,
+          "height": 2662.59375
+        },
+        {
+          "name": "site-footer",
+          "top": 3096.59375,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "unloaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2163,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 144,
+          "height": 811.78125
+        },
+        {
+          "name": "welcome-steps",
+          "top": 955.78125,
+          "height": 464.03125
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1419.8125,
+          "height": 367
+        },
+        {
+          "name": "site-footer",
+          "top": 1786.8125,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2000,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 144,
+          "height": 290
+        },
+        {
+          "name": "contact-section",
+          "top": 434,
+          "height": 1266.25
+        },
+        {
+          "name": "site-footer",
+          "top": 1700.25,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "unloaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2734,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 144,
+          "height": 1387.09375
+        },
+        {
+          "name": "official-story",
+          "top": 1531.09375,
+          "height": 827.28125
+        },
+        {
+          "name": "site-footer",
+          "top": 2358.375,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 3025,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-visible",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 779.5
+        },
+        {
+          "name": "site-footer",
+          "top": 2739.5,
+          "height": 285
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/events/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 4557,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "events-section",
+          "top": 497,
+          "height": 3806.0625
+        },
+        {
+          "name": "site-footer",
+          "top": 4303.0625,
+          "height": 254
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "unloaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2604,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 116,
+          "height": 842.96875
+        },
+        {
+          "name": "calendar-section",
+          "top": 958.96875,
+          "height": 1072.1875
+        },
+        {
+          "name": "site-footer",
+          "top": 2319.15625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2989,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 107,
+          "height": 415
+        },
+        {
+          "name": "about-section",
+          "top": 522,
+          "height": 2212.921875
+        },
+        {
+          "name": "site-footer",
+          "top": 2734.921875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "unloaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2083,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 116,
+          "height": 695
+        },
+        {
+          "name": "welcome-steps",
+          "top": 811,
+          "height": 554.1875
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1365.1875,
+          "height": 432.75
+        },
+        {
+          "name": "site-footer",
+          "top": 1797.9375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1961,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "contact-section",
+          "top": 497,
+          "height": 1210
+        },
+        {
+          "name": "site-footer",
+          "top": 1707,
+          "height": 254
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "unloaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2076,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 1145.21875
+        },
+        {
+          "name": "official-story",
+          "top": 1261.21875,
+          "height": 530
+        },
+        {
+          "name": "site-footer",
+          "top": 1791.21875,
+          "height": 285
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 3003,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-visible",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 758
+        },
+        {
+          "name": "site-footer",
+          "top": 2718,
+          "height": 285
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/events/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 4935,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "events-section",
+          "top": 497,
+          "height": 4183.796875
+        },
+        {
+          "name": "site-footer",
+          "top": 4680.796875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "unloaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2563,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 116,
+          "height": 851.59375
+        },
+        {
+          "name": "calendar-section",
+          "top": 967.59375,
+          "height": 1072.1875
+        },
+        {
+          "name": "site-footer",
+          "top": 2277.78125,
+          "height": 285
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2070,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 107,
+          "height": 415
+        },
+        {
+          "name": "about-section",
+          "top": 522,
+          "height": 1293.96875
+        },
+        {
+          "name": "site-footer",
+          "top": 1815.96875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "unloaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2028,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 116,
+          "height": 686
+        },
+        {
+          "name": "welcome-steps",
+          "top": 802,
+          "height": 508
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1310,
+          "height": 432.75
+        },
+        {
+          "name": "site-footer",
+          "top": 1742.75,
+          "height": 285
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1961,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 107,
+          "height": 390
+        },
+        {
+          "name": "contact-section",
+          "top": 497,
+          "height": 1210
+        },
+        {
+          "name": "site-footer",
+          "top": 1707,
+          "height": 254
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "unloaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  },
+  {
+    "route": "/events/from-ballet-to-technology/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1895,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "official-detail",
+          "top": 116,
+          "height": 1020.828125
+        },
+        {
+          "name": "official-story",
+          "top": 1136.828125,
+          "height": 472.96875
+        },
+        {
+          "name": "site-footer",
+          "top": 1609.796875,
+          "height": 285
+        }
+      ]
+    },
+    "violations": [],
+    "fonts": [
+      {
+        "family": "Bricolage Grotesque",
+        "status": "loaded"
+      },
+      {
+        "family": "DM Sans",
+        "status": "loaded"
+      }
+    ],
+    "consoleErrors": []
+  }
+]
