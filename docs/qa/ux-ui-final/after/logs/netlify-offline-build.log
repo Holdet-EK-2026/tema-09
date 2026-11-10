@@ -1,5 +1,5 @@
 ​
-Netlify Build                                                 
+Netlify Build
 ────────────────────────────────────────────────────────────────
 ​
 ❯ Version
@@ -18,7 +18,7 @@ Netlify Build
 ❯ Context
   deploy-preview
 ​
-build.command from netlify.toml                               
+build.command from netlify.toml
 ────────────────────────────────────────────────────────────────
 ​
 $ npm run build && npm test
@@ -37,35 +37,35 @@ $ npm run build && npm test
 13:06:22 [vite] ✓ built in 87ms
 13:06:22 [build] Rearranging server assets...
 
- generating static routes 
-13:06:22   ├─ /404.html (+8ms) 
-13:06:22   ├─ /events/kalender/index.html (+4ms) 
-13:06:22   ├─ /events/from-ballet-to-technology/index.html (+1ms) 
-13:06:22   ├─ /events/ai-skillsharing/index.html (+1ms) 
-13:06:22   ├─ /events/real-talk/index.html (+1ms) 
-13:06:22   ├─ /events/meetup-barcelona/index.html (+1ms) 
-13:06:22   ├─ /events/meetup-berlin/index.html (+1ms) 
-13:06:22   ├─ /events/meetup-cph-jul/index.html (+1ms) 
-13:06:22   ├─ /events/meetup-nordhavn-2025/index.html (+1ms) 
-13:06:22   ├─ /events/meetup-koebenhavn-september-2025/index.html (+1ms) 
-13:06:22   ├─ /events/design-og-nye-forbindelser/index.html (+1ms) 
-13:06:22   ├─ /events/ideer-paa-papir/index.html (+0ms) 
-13:06:22   ├─ /events/design-i-virkeligheden/index.html (+0ms) 
-13:06:22   ├─ /events/et-bord-nye-ansigter/index.html (+0ms) 
-13:06:22   ├─ /events/index.html (+1ms) 
-13:06:22   ├─ /kalender/from-ballet-to-technology.ics (+1ms) 
-13:06:22   ├─ /kalender/design-og-nye-forbindelser/index.html (+0ms) 
-13:06:22   ├─ /kalender/ideer-paa-papir/index.html (+0ms) 
-13:06:22   ├─ /kalender/design-i-virkeligheden/index.html (+0ms) 
-13:06:22   ├─ /kalender/et-bord-nye-ansigter/index.html (+0ms) 
-13:06:22   ├─ /kontakt/index.html (+1ms) 
-13:06:22   ├─ /ny-her/index.html (+1ms) 
-13:06:22   ├─ /om-kinddesign/index.html (+1ms) 
-13:06:22   ├─ /tilmelding/design-og-nye-forbindelser/index.html (+1ms) 
-13:06:22   ├─ /tilmelding/ideer-paa-papir/index.html (+0ms) 
-13:06:22   ├─ /tilmelding/design-i-virkeligheden/index.html (+0ms) 
-13:06:22   ├─ /tilmelding/et-bord-nye-ansigter/index.html (+0ms) 
-13:06:22   ├─ /index.html (+1ms) 
+ generating static routes
+13:06:22   ├─ /404.html (+8ms)
+13:06:22   ├─ /events/kalender/index.html (+4ms)
+13:06:22   ├─ /events/from-ballet-to-technology/index.html (+1ms)
+13:06:22   ├─ /events/ai-skillsharing/index.html (+1ms)
+13:06:22   ├─ /events/real-talk/index.html (+1ms)
+13:06:22   ├─ /events/meetup-barcelona/index.html (+1ms)
+13:06:22   ├─ /events/meetup-berlin/index.html (+1ms)
+13:06:22   ├─ /events/meetup-cph-jul/index.html (+1ms)
+13:06:22   ├─ /events/meetup-nordhavn-2025/index.html (+1ms)
+13:06:22   ├─ /events/meetup-koebenhavn-september-2025/index.html (+1ms)
+13:06:22   ├─ /events/design-og-nye-forbindelser/index.html (+1ms)
+13:06:22   ├─ /events/ideer-paa-papir/index.html (+0ms)
+13:06:22   ├─ /events/design-i-virkeligheden/index.html (+0ms)
+13:06:22   ├─ /events/et-bord-nye-ansigter/index.html (+0ms)
+13:06:22   ├─ /events/index.html (+1ms)
+13:06:22   ├─ /kalender/from-ballet-to-technology.ics (+1ms)
+13:06:22   ├─ /kalender/design-og-nye-forbindelser/index.html (+0ms)
+13:06:22   ├─ /kalender/ideer-paa-papir/index.html (+0ms)
+13:06:22   ├─ /kalender/design-i-virkeligheden/index.html (+0ms)
+13:06:22   ├─ /kalender/et-bord-nye-ansigter/index.html (+0ms)
+13:06:22   ├─ /kontakt/index.html (+1ms)
+13:06:22   ├─ /ny-her/index.html (+1ms)
+13:06:22   ├─ /om-kinddesign/index.html (+1ms)
+13:06:22   ├─ /tilmelding/design-og-nye-forbindelser/index.html (+1ms)
+13:06:22   ├─ /tilmelding/ideer-paa-papir/index.html (+0ms)
+13:06:22   ├─ /tilmelding/design-i-virkeligheden/index.html (+0ms)
+13:06:22   ├─ /tilmelding/et-bord-nye-ansigter/index.html (+0ms)
+13:06:22   ├─ /index.html (+1ms)
 13:06:22 ✓ Completed in 44ms.
 
 13:06:22 [build] ✓ Completed in 264ms.
@@ -90,7 +90,7 @@ $ npm run build && npm test
 ​
 (build.command completed in 1.2s)
 ​
-Netlify Build Complete                                        
+Netlify Build Complete
 ────────────────────────────────────────────────────────────────
 ​
 (Netlify Build completed in 1.2s)

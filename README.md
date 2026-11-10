@@ -2,7 +2,9 @@
 
 Statisk Astro-website baseret på KindDesigns aktive Figma-prototype. Forside, carousel, Events og filtre, kalender, otte officielle eventdetaljer og fire tydelige demoer, Om KindDesign, Ny her, Kontakt og lokale tilmeldings-/kalenderdemoer er implementeret.
 
-**Status:** Premium 3D/glass-carousel og et manuelt verificeret Luma-katalog med ét kommende og syv tidligere events pr. 9. november 2026. Tilmelding til det kommende Tokyo-event går direkte til Luma. Kontakt sender intet. Supabase-CRUD er fortsat et obligatorisk, uopfyldt læringsmål, som mangler projektadgang og credentials. Siden er publiceret på [Netlify](https://kinddesign-holdet-ek-2026.netlify.app).
+**Seneste lokale version:** På `feature/ux-ui-final-qa` er autoplay, FAQ, navigation og indholdsoprydning verificeret. Disse ændringer er ikke publiceret. Se [UX/UI-audit og QA](docs/kinddesign-final-ux-ui-qa.md).
+
+**Publiceret version:** Premium 3D/glass-carousel og et manuelt verificeret Luma-katalog med ét kommende og syv tidligere events pr. 9. november 2026. Tilmelding til det kommende Tokyo-event går direkte til Luma. Kontakt sender intet. Supabase-CRUD er fortsat et obligatorisk, uopfyldt læringsmål, som mangler projektadgang og credentials. Siden er publiceret på [Netlify](https://kinddesign-holdet-ek-2026.netlify.app).
 
 ## Kør lokalt
 
@@ -33,7 +35,7 @@ Kun Astro er direkte applikationsdependency. Scripts kalder Astro via Node, så 
 - `docs/source-assets/`, `docs/source-fonts/`: bevarede originaler.
 - `docs/qa/`: screenshots, overlays, browser- og Lighthouse-resultater.
 
-[Afsluttende carousel-/Luma-rapport](docs/final-implementation-rapport.md) · [Fase 2–6-historik](docs/fase-2-6-rapport.md) · [Teknisk dokumentation](docs/dokumentation.md) · [Fase 1-reference](docs/fase-1-rapport.md)
+[Seneste UX/UI-rapport](docs/kinddesign-final-ux-ui-qa.md) · [Afsluttende carousel-/Luma-rapport](docs/final-implementation-rapport.md) · [Fase 2–6-historik](docs/fase-2-6-rapport.md) · [Teknisk dokumentation](docs/dokumentation.md) · [Fase 1-reference](docs/fase-1-rapport.md)
 
 Koden er pushet til `main` og `feature/fase-2-6`. Den testede build er publiceret direkte til Netlify. Automatisk GitHub-deployment er ikke aktiveret: organisationen blokerer deploy keys, og Netlify-appen er ikke installeret på repositoryet. Se [publiceringsrapporten](docs/publicering-rapport.md). Prototypen har fortsat `noindex, nofollow`. Det lokale eventkatalog kræver ingen API-nøgler.
 
