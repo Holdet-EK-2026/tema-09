@@ -1,0 +1,188 @@
+
+> kinddesign@0.1.0 test:browser
+> node scripts/qa/pages.cjs && node scripts/qa/flows.cjs && node scripts/qa/official-flows.cjs && node scripts/qa/carousel.cjs && node scripts/qa/smoke.cjs && node scripts/qa/ux-interactions.cjs
+
+[]
+[
+  {
+    width: 390,
+    filters: true,
+    filterReloadAndBack: true,
+    eventFlows: 4,
+    calendarDemos: 4,
+    contactValidationAndReset: true,
+    posts: [],
+    errors: []
+  },
+  {
+    width: 768,
+    filters: true,
+    filterReloadAndBack: true,
+    eventFlows: 4,
+    calendarDemos: 4,
+    contactValidationAndReset: true,
+    posts: [],
+    errors: []
+  },
+  {
+    width: 1440,
+    filters: true,
+    filterReloadAndBack: true,
+    eventFlows: 4,
+    calendarDemos: 4,
+    contactValidationAndReset: true,
+    posts: [],
+    errors: []
+  }
+]
+[
+  {
+    width: 390,
+    filtersAndEmptyState: true,
+    history: true,
+    officialJourneyAndInterceptedLumaDestination: true,
+    calendarMonthAndUTCDownload: true,
+    pastRegistrationRemoved: true,
+    conflictsVisible: true,
+    expiredClientGuard: true,
+    expiredHeroCountdown: true,
+    externalBookings: 0,
+    errors: []
+  },
+  {
+    width: 768,
+    filtersAndEmptyState: true,
+    history: true,
+    officialJourneyAndInterceptedLumaDestination: true,
+    calendarMonthAndUTCDownload: true,
+    pastRegistrationRemoved: true,
+    conflictsVisible: true,
+    expiredClientGuard: true,
+    expiredHeroCountdown: true,
+    externalBookings: 0,
+    errors: []
+  },
+  {
+    width: 1440,
+    filtersAndEmptyState: true,
+    history: true,
+    officialJourneyAndInterceptedLumaDestination: true,
+    calendarMonthAndUTCDownload: true,
+    pastRegistrationRemoved: true,
+    conflictsVisible: true,
+    expiredClientGuard: true,
+    expiredHeroCountdown: true,
+    externalBookings: 0,
+    errors: []
+  }
+]
+Real autoplay: 390 [
+  { index: 0, elapsedMs: 0 },
+  { index: 1, elapsedMs: 4485 },
+  { index: 2, elapsedMs: 8985 }
+]
+Real autoplay: 768 [
+  { index: 0, elapsedMs: 0 },
+  { index: 1, elapsedMs: 4500 },
+  { index: 2, elapsedMs: 9001 }
+]
+Real autoplay: 1440 [
+  { index: 0, elapsedMs: 0 },
+  { index: 1, elapsedMs: 4502 },
+  { index: 2, elapsedMs: 9001 }
+]
+Carousel: all checks passed
+[
+  {
+    keyboardSkipNavAndFilter: true,
+    faqKeyboard: true,
+    membershipConceptRemoved: true,
+    width: 390,
+    demoNavCurrent: true,
+    contactErrorAndConfirmationAxe: 0,
+    registrationConfirmationAxe: 0,
+    custom404: true,
+    errors: []
+  },
+  {
+    keyboardSkipNavAndFilter: true,
+    faqKeyboard: true,
+    membershipConceptRemoved: true,
+    width: 1440,
+    demoNavCurrent: true,
+    contactErrorAndConfirmationAxe: 0,
+    registrationConfirmationAxe: 0,
+    custom404: true,
+    errors: []
+  },
+  {
+    noJavaScriptContactSafe: true,
+    staticCarouselFallback: true,
+    retinaHero: 'http://127.0.0.1:4323/images/1207b-1200.webp'
+  },
+  {
+    noJavaScriptGalleryPhotos: 6,
+    noJavaScriptKeyboardScroll: true,
+    retinaGallery: 'http://127.0.0.1:4323/images/gallery-3c8b7-1600.webp'
+  }
+]
+UX interactions: [
+  {
+    width: 390,
+    faqClosedInitially: true,
+    contentPreserved: true,
+    ariaLinks: true,
+    oneAnswerAtATime: true,
+    enterAndSpace: true,
+    rapidToggleAndReducedMotion: true,
+    openFAQAxeViolations: 0,
+    navRoutesAndKeyboard: 5,
+    stableHoverGeometry: true,
+    activeNavVisible: true,
+    inlineMobileNavigation: '4 visible links; no hidden menu or focus trap',
+    prototypePromotionsRemoved: true,
+    foundersPreserved: true,
+    contactDemoHonest: true,
+    mutations: [],
+    errors: []
+  },
+  {
+    width: 768,
+    faqClosedInitially: true,
+    contentPreserved: true,
+    ariaLinks: true,
+    oneAnswerAtATime: true,
+    enterAndSpace: true,
+    rapidToggleAndReducedMotion: true,
+    openFAQAxeViolations: 0,
+    navRoutesAndKeyboard: 5,
+    stableHoverGeometry: true,
+    activeNavVisible: true,
+    inlineMobileNavigation: '4 visible links; no hidden menu or focus trap',
+    prototypePromotionsRemoved: true,
+    foundersPreserved: true,
+    contactDemoHonest: true,
+    mutations: [],
+    errors: []
+  },
+  {
+    width: 1440,
+    faqClosedInitially: true,
+    contentPreserved: true,
+    ariaLinks: true,
+    oneAnswerAtATime: true,
+    enterAndSpace: true,
+    rapidToggleAndReducedMotion: true,
+    openFAQAxeViolations: 0,
+    navRoutesAndKeyboard: 5,
+    stableHoverGeometry: true,
+    activeNavVisible: true,
+    inlineMobileNavigation: '4 visible links; no hidden menu or focus trap',
+    prototypePromotionsRemoved: true,
+    foundersPreserved: true,
+    contactDemoHonest: true,
+    mutations: [],
+    errors: []
+  },
+  { noJavaScriptFAQ: 'All original answers visible' }
+]

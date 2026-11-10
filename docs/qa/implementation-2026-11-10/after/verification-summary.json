@@ -1,0 +1,44 @@
+{
+  "codeCommit": "1dd5dbb",
+  "branch": "feature/ux-ui-refinement",
+  "pages": {
+    "cases": 270,
+    "routes": 27,
+    "widths": [
+      320,
+      375,
+      390,
+      430,
+      768,
+      1024,
+      1440,
+      1536,
+      1920,
+      2560
+    ],
+    "errors": 0,
+    "failedResources": 0,
+    "overflow": 0,
+    "axeScansWCAG22": 46,
+    "axeViolations": 0
+  },
+  "refinementRecords": 84,
+  "mediaRecords": 30,
+  "nativeZoomChecks": 13,
+  "lighthouse": {
+    "measurements": 16,
+    "performanceMin": 90,
+    "performanceMax": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "maxCLS": 0
+  },
+  "externalWrites": false,
+  "pushMergeDeploy": false,
+  "contactFollowup": {
+    "pages": 10,
+    "flows": 3,
+    "lighthouse": 2,
+    "externalProfileRequest": "intercepted locally; messaging not verified"
+  }
+}

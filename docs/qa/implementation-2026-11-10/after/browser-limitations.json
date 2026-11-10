@@ -1,0 +1,19 @@
+{
+  "Safari": {
+    "installed": true,
+    "webdriver": "not run: session creation rejected because Allow remote automation is disabled",
+    "computerUse": "not run: Computer Use was not approved to use Safari",
+    "settingsChanged": false
+  },
+  "Firefox": {
+    "installed": false,
+    "status": "not run"
+  },
+  "physicalMobile": "not run",
+  "spokenScreenReader": "not run",
+  "retry": {
+    "suite": "test:refinement",
+    "initial": "Chrome launch timeout before assertions",
+    "repeat": "passed: URL validation, 84 refinement checks, 30 media checks"
+  }
+}

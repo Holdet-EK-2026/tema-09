@@ -1,0 +1,24 @@
+{
+  route: '/kontakt/',
+  mode: 'mobile',
+  scores: {
+    performance: 98,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 2476.165,
+  CLS: 0
+}
+{
+  route: '/kontakt/',
+  mode: 'desktop',
+  scores: {
+    performance: 99,
+    accessibility: 100,
+    'best-practices': 100,
+    seo: 63
+  },
+  LCP: 941.9921999999999,
+  CLS: 0
+}

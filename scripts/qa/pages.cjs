@@ -49,26 +49,15 @@ const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
     ]),
     "/findes-ikke/",
   ];
-  const intermediate = [
-    "/",
-    "/events/",
-    "/events/kalender/",
-    "/om-kinddesign/",
-    "/ny-her/",
-    "/kontakt/",
-    ...official.slice(0, 3).map((slug) => `/events/${slug}/`),
-    "/events/meetup-berlin/",
-    "/events/design-og-nye-forbindelser/",
-    "/tilmelding/design-og-nye-forbindelser/",
+  const widths = process.env.KINDDESIGN_QA_WIDTHS?.split(",").map(Number) || [
+    320, 375, 390, 430, 768, 1024, 1440, 1536, 1920, 2560,
   ];
-  for (const width of [320, 390, 480, 600, 601, 768, 900, 1024, 1440]) {
+  for (const width of widths) {
     const context = await b.newContext({
       viewport: { width, height: 900 },
       reducedMotion: "reduce",
     });
-    for (const route of [390, 768, 1440].includes(width)
-      ? routes
-      : intermediate) {
+    for (const route of routes) {
       if (selected && !selected.includes(route)) continue;
       const p = await context.newPage();
       const errors = [];
@@ -80,6 +69,17 @@ const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
       });
       const response = await p.goto(base + route, {
         waitUntil: "networkidle",
+      });
+      await p.evaluate(async () => {
+        for (
+          let y = 0;
+          y < document.documentElement.scrollHeight;
+          y += innerHeight - 150
+        ) {
+          scrollTo(0, y);
+          await new Promise((resolve) => setTimeout(resolve, 25));
+        }
+        scrollTo(0, 0);
       });
       if (route === "/") {
         await p.locator(".gallery-window").scrollIntoViewIfNeeded();
@@ -132,7 +132,7 @@ const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
       let violations = [];
       if ([390, 1440].includes(width) && !route.startsWith("/kalender/")) {
         const axe = await new AxeBuilder({ page: p })
-          .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+          .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
           .analyze();
         violations = axe.violations.map((v) => ({
           id: v.id,
@@ -140,11 +140,10 @@ const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
           targets: v.nodes.map((n) => n.target),
         }));
       }
-      if ([390, 768, 1440].includes(width))
-        await p.screenshot({
-          path: `${folder}/${route === "/" ? "forside" : route.replaceAll("/", "_")}-${width}.png`,
-          fullPage: true,
-        });
+      await p.screenshot({
+        path: `${folder}/${route === "/" ? "forside" : route.replaceAll("/", "_")}-${width}.png`,
+        fullPage: true,
+      });
       report.push({
         route,
         width,

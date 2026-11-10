@@ -1,0 +1,7 @@
+
+> kinddesign@0.1.0 test:refinement
+> node scripts/qa/event-navigation.cjs && node scripts/qa/refinement.cjs && node scripts/qa/media.cjs
+
+Internal event return URLs: validation and canonicalization passed
+Refinement checks passed: 84
+Media checks passed: 30
