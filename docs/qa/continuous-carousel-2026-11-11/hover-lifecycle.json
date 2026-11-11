@@ -1,0 +1,7 @@
+{
+  "hoverPause": true,
+  "pointerLeaveResumes": true,
+  "reinitializations": 5,
+  "phaseDeltaOverOneSecond": 0.08333333333332948,
+  "singleClock": true
+}

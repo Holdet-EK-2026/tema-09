@@ -1,0 +1,34 @@
+[
+  {
+    "width": 390,
+    "before": {
+      "x": 0,
+      "y": 230,
+      "width": 390,
+      "height": 440
+    },
+    "after": {
+      "x": 0,
+      "y": 230,
+      "width": 390,
+      "height": 440
+    },
+    "CLS": 0
+  },
+  {
+    "width": 1440,
+    "before": {
+      "x": 0,
+      "y": 90,
+      "width": 1440,
+      "height": 720
+    },
+    "after": {
+      "x": 0,
+      "y": 90,
+      "width": 1440,
+      "height": 720
+    },
+    "CLS": 0
+  }
+]

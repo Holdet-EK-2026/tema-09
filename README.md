@@ -2,7 +2,7 @@
 
 Statisk Astro-website baseret på KindDesigns aktive Figma-prototype. Forside, carousel, Events og filtre, kalender, otte officielle eventdetaljer og fire tydelige demoer, Om KindDesign, Ny her, Kontakt og lokale tilmeldings-/kalenderdemoer er implementeret.
 
-**Seneste lokale forbedring:** `feature/ux-ui-refinement` retter header, carousel-fokus, teksttilpasning, Events/kalender, retur-kontekst og billeder. 270 layoutkontroller og de samlede regressionstests består. Se [implementeringsrapporten](docs/kinddesign-ux-ui-implementation-2026-11-10.md). Denne runde er ikke pushet eller deployet.
+**Seneste lokale forbedring:** `feature/continuous-3d-carousel` bygger videre på den lokale UX-runde med kontinuerlig 3D-bevægelse. Se [carouselrapport, optagelser og QA](docs/kinddesign-continuous-carousel-2026-11-11.md) og [UX-runden](docs/kinddesign-final-refinement-2026-11-11.md). Disse nye lokale ændringer er ikke publiceret.
 
 **Senest dokumenterede publicering:** UX/UI-versionen fra `3f2ce0b` er udgivet på [Netlify](https://kinddesign-holdet-ek-2026.netlify.app) og testet offentligt ved 390/768/1440 px. Se [deployment og offentlig QA](docs/deployment-ux-ui-2026-11-10.md) og [UX/UI-audit](docs/kinddesign-final-ux-ui-qa.md).
 

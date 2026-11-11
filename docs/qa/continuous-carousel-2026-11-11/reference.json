@@ -1,0 +1,9 @@
+{
+  "url": "https://lgbiocapitalpartners.com/",
+  "browser": "Native Google Chrome, observed via browser UI",
+  "observedTrack": ".publication-track",
+  "computedAnimation": "34s linear infinite logo-marquee",
+  "computedTransformExample": "matrix(1, 0, 0, 1, -1804.96, 0)",
+  "principle": "constant translation, repeated sequence, no discrete dwell",
+  "kindDesignAdaptation": "one requestAnimationFrame clock; 12 seconds per card; continuous depth/rotation/scale from centre distance; recycle at zero opacity"
+}
