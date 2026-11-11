@@ -1,0 +1,18 @@
+[
+  {
+    "base": "https://kinddesign-holdet-ek-2026.netlify.app",
+    "scenario": "stationary pointer while scrolling",
+    "state": {
+      "reason": "hover",
+      "autoplay": "paused"
+    }
+  },
+  {
+    "base": "http://127.0.0.1:4323",
+    "scenario": "stationary pointer while scrolling",
+    "state": {
+      "reason": "none",
+      "autoplay": "running"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "width": 390,
+    "filters": true,
+    "filterReloadAndBack": true,
+    "eventFlows": 4,
+    "calendarDemos": 4,
+    "contactValidationAndReset": true,
+    "officialProfileHandoff": true,
+    "posts": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "filters": true,
+    "filterReloadAndBack": true,
+    "eventFlows": 4,
+    "calendarDemos": 4,
+    "contactValidationAndReset": true,
+    "officialProfileHandoff": true,
+    "posts": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "filters": true,
+    "filterReloadAndBack": true,
+    "eventFlows": 4,
+    "calendarDemos": 4,
+    "contactValidationAndReset": true,
+    "officialProfileHandoff": true,
+    "posts": [],
+    "errors": []
+  }
+]

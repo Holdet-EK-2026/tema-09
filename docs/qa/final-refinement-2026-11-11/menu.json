@@ -1,0 +1,22 @@
+[
+  {
+    "width": 320,
+    "menu": "passed"
+  },
+  {
+    "width": 390,
+    "menu": "passed"
+  },
+  {
+    "width": 768,
+    "menu": "passed"
+  },
+  {
+    "width": 1440,
+    "menu": "passed"
+  },
+  {
+    "width": 1920,
+    "menu": "passed"
+  }
+]

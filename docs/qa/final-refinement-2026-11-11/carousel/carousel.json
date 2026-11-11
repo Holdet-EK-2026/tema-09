@@ -1,0 +1,167 @@
+[
+  {
+    "width": 390,
+    "focusPreservingExplicitPlay": true,
+    "automaticChanges": [
+      {
+        "index": 3,
+        "elapsedMs": 4413
+      },
+      {
+        "index": 4,
+        "elapsedMs": 8906
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "pausedAndReducedMotionAxeViolations": 0,
+    "realBrowserTime": true,
+    "automaticChangesWithoutCarouselInput": [
+      {
+        "index": 0,
+        "elapsedMs": 0
+      },
+      {
+        "index": 1,
+        "elapsedMs": 4483
+      },
+      {
+        "index": 2,
+        "elapsedMs": 8983
+      }
+    ],
+    "cls": 0,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "focusPreservingExplicitPlay": true,
+    "automaticChanges": [
+      {
+        "index": 3,
+        "elapsedMs": 4406
+      },
+      {
+        "index": 4,
+        "elapsedMs": 8907
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "pausedAndReducedMotionAxeViolations": 0,
+    "realBrowserTime": true,
+    "automaticChangesWithoutCarouselInput": [
+      {
+        "index": 0,
+        "elapsedMs": 0
+      },
+      {
+        "index": 1,
+        "elapsedMs": 4500
+      },
+      {
+        "index": 2,
+        "elapsedMs": 9000
+      }
+    ],
+    "cls": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "focusPreservingExplicitPlay": true,
+    "automaticChanges": [
+      {
+        "index": 3,
+        "elapsedMs": 4406
+      },
+      {
+        "index": 4,
+        "elapsedMs": 8905
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "pausedAndReducedMotionAxeViolations": 0,
+    "realBrowserTime": true,
+    "automaticChangesWithoutCarouselInput": [
+      {
+        "index": 0,
+        "elapsedMs": 0
+      },
+      {
+        "index": 1,
+        "elapsedMs": 4500
+      },
+      {
+        "index": 2,
+        "elapsedMs": 9000
+      }
+    ],
+    "cls": 0,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "controlledTime": true,
+    "interval4500ms": true,
+    "twoAutomaticChanges": true,
+    "automaticWrap": true,
+    "hoverPause": true,
+    "focusPause": true,
+    "manualResume8000ms": true,
+    "visiblePausePlay": true,
+    "hiddenTabPause": "simulated visibilitychange contract",
+    "offscreenPause": true,
+    "reducedMotion": true,
+    "keyboardLoopBothDirections": true,
+    "duplicateInitSafe": true,
+    "removalAndReinitCleanup": true,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "controlledTime": true,
+    "interval4500ms": true,
+    "twoAutomaticChanges": true,
+    "automaticWrap": true,
+    "hoverPause": true,
+    "focusPause": true,
+    "manualResume8000ms": true,
+    "visiblePausePlay": true,
+    "hiddenTabPause": "simulated visibilitychange contract",
+    "offscreenPause": true,
+    "reducedMotion": true,
+    "keyboardLoopBothDirections": true,
+    "duplicateInitSafe": true,
+    "removalAndReinitCleanup": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "controlledTime": true,
+    "interval4500ms": true,
+    "twoAutomaticChanges": true,
+    "automaticWrap": true,
+    "hoverPause": true,
+    "focusPause": true,
+    "manualResume8000ms": true,
+    "visiblePausePlay": true,
+    "hiddenTabPause": "simulated visibilitychange contract",
+    "offscreenPause": true,
+    "reducedMotion": true,
+    "keyboardLoopBothDirections": true,
+    "duplicateInitSafe": true,
+    "removalAndReinitCleanup": true,
+    "errors": []
+  },
+  {
+    "nativeMobileTouchSwipe": true,
+    "pointerHoldPause": true,
+    "touchAutoplayResume": true,
+    "noAccidentalNavigation": true
+  }
+]

@@ -1,0 +1,1067 @@
+[
+  {
+    "route": "/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 3080,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 96,
+          "height": 690
+        },
+        {
+          "name": "gallery-section carousel-ready",
+          "top": 786,
+          "height": 897
+        },
+        {
+          "name": "community-section",
+          "top": 1683,
+          "height": 989
+        },
+        {
+          "name": "site-footer",
+          "top": 2672,
+          "height": 408
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2764,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 96,
+          "height": 290
+        },
+        {
+          "name": "events-section",
+          "top": 386,
+          "height": 2010.125
+        },
+        {
+          "name": "site-footer",
+          "top": 2396.125,
+          "height": 367.90625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2500,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-heading",
+          "top": 96,
+          "height": 243.953125
+        },
+        {
+          "name": "calendar-section",
+          "top": 339.953125,
+          "height": 922.5625
+        },
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 1262.515625,
+          "height": 627
+        },
+        {
+          "name": "site-footer",
+          "top": 2106.515625,
+          "height": 393.15625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 3810,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 96,
+          "height": 290
+        },
+        {
+          "name": "about-section",
+          "top": 386,
+          "height": 3055.59375
+        },
+        {
+          "name": "site-footer",
+          "top": 3441.59375,
+          "height": 367.90625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2302,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 96,
+          "height": 885.703125
+        },
+        {
+          "name": "welcome-steps",
+          "top": 981.703125,
+          "height": 491.03125
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1472.734375,
+          "height": 436
+        },
+        {
+          "name": "site-footer",
+          "top": 1908.734375,
+          "height": 393.15625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2130,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 96,
+          "height": 290
+        },
+        {
+          "name": "contact-section",
+          "top": 386,
+          "height": 1376.125
+        },
+        {
+          "name": "site-footer",
+          "top": 1762.125,
+          "height": 367.90625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2888,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 96,
+          "height": 690
+        },
+        {
+          "name": "gallery-section carousel-ready",
+          "top": 786,
+          "height": 836
+        },
+        {
+          "name": "community-section",
+          "top": 1622,
+          "height": 874
+        },
+        {
+          "name": "site-footer",
+          "top": 2496,
+          "height": 392
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2564,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 96,
+          "height": 290
+        },
+        {
+          "name": "events-section",
+          "top": 386,
+          "height": 1877.9375
+        },
+        {
+          "name": "site-footer",
+          "top": 2263.9375,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2269,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-heading",
+          "top": 96,
+          "height": 183.96875
+        },
+        {
+          "name": "calendar-section",
+          "top": 279.96875,
+          "height": 814.375
+        },
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 1094.34375,
+          "height": 582
+        },
+        {
+          "name": "site-footer",
+          "top": 1893.34375,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 3349,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 96,
+          "height": 290
+        },
+        {
+          "name": "about-section",
+          "top": 386,
+          "height": 2662.59375
+        },
+        {
+          "name": "site-footer",
+          "top": 3048.59375,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2115,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 96,
+          "height": 811.78125
+        },
+        {
+          "name": "welcome-steps",
+          "top": 907.78125,
+          "height": 464.03125
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1371.8125,
+          "height": 367
+        },
+        {
+          "name": "site-footer",
+          "top": 1738.8125,
+          "height": 375.765625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2010,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 96,
+          "height": 290
+        },
+        {
+          "name": "contact-section",
+          "top": 386,
+          "height": 1323.4375
+        },
+        {
+          "name": "site-footer",
+          "top": 1709.4375,
+          "height": 300.140625
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 3025,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 779.5
+        },
+        {
+          "name": "site-footer",
+          "top": 2739.5,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2069,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 116,
+          "height": 390
+        },
+        {
+          "name": "events-section",
+          "top": 506,
+          "height": 1309.125
+        },
+        {
+          "name": "site-footer",
+          "top": 1815.125,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2749,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-heading",
+          "top": 116,
+          "height": 243.578125
+        },
+        {
+          "name": "calendar-section",
+          "top": 359.578125,
+          "height": 1036.1875
+        },
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 1395.765625,
+          "height": 780
+        },
+        {
+          "name": "site-footer",
+          "top": 2463.765625,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2998,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 116,
+          "height": 415
+        },
+        {
+          "name": "about-section",
+          "top": 531,
+          "height": 2212.921875
+        },
+        {
+          "name": "site-footer",
+          "top": 2743.921875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2083,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 116,
+          "height": 695
+        },
+        {
+          "name": "welcome-steps",
+          "top": 811,
+          "height": 554.1875
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1365.1875,
+          "height": 432.75
+        },
+        {
+          "name": "site-footer",
+          "top": 1797.9375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1970,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 116,
+          "height": 390
+        },
+        {
+          "name": "contact-section",
+          "top": 506,
+          "height": 1210
+        },
+        {
+          "name": "site-footer",
+          "top": 1716,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 3003,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 758
+        },
+        {
+          "name": "site-footer",
+          "top": 2718,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1906,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 116,
+          "height": 390
+        },
+        {
+          "name": "events-section",
+          "top": 506,
+          "height": 1146.1875
+        },
+        {
+          "name": "site-footer",
+          "top": 1652.1875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2628,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-heading",
+          "top": 116,
+          "height": 173.1875
+        },
+        {
+          "name": "calendar-section",
+          "top": 289.1875,
+          "height": 1036.1875
+        },
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 1325.375,
+          "height": 780
+        },
+        {
+          "name": "site-footer",
+          "top": 2343.375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2079,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 116,
+          "height": 415
+        },
+        {
+          "name": "about-section",
+          "top": 531,
+          "height": 1293.96875
+        },
+        {
+          "name": "site-footer",
+          "top": 1824.96875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2028,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 116,
+          "height": 686
+        },
+        {
+          "name": "welcome-steps",
+          "top": 802,
+          "height": 508
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1310,
+          "height": 432.75
+        },
+        {
+          "name": "site-footer",
+          "top": 1742.75,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1970,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 116,
+          "height": 390
+        },
+        {
+          "name": "contact-section",
+          "top": 506,
+          "height": 1210
+        },
+        {
+          "name": "site-footer",
+          "top": 1716,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "height": 3003,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 758
+        },
+        {
+          "name": "site-footer",
+          "top": 2718,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "height": 1906,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 116,
+          "height": 390
+        },
+        {
+          "name": "events-section",
+          "top": 506,
+          "height": 1146.1875
+        },
+        {
+          "name": "site-footer",
+          "top": 1652.1875,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/events/kalender/",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "height": 2628,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "calendar-heading",
+          "top": 116,
+          "height": 173.1875
+        },
+        {
+          "name": "calendar-section",
+          "top": 289.1875,
+          "height": 1036.1875
+        },
+        {
+          "name": "calendar-editorial official-calendar",
+          "top": 1325.375,
+          "height": 780
+        },
+        {
+          "name": "site-footer",
+          "top": 2343.375,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "height": 2024,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero about-hero",
+          "top": 116,
+          "height": 415
+        },
+        {
+          "name": "about-section",
+          "top": 531,
+          "height": 1238.78125
+        },
+        {
+          "name": "site-footer",
+          "top": 1769.78125,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "height": 2028,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "welcome-section",
+          "top": 116,
+          "height": 686
+        },
+        {
+          "name": "welcome-steps",
+          "top": 802,
+          "height": 508
+        },
+        {
+          "name": "welcome-faq",
+          "top": 1310,
+          "height": 432.75
+        },
+        {
+          "name": "site-footer",
+          "top": 1742.75,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "height": 1970,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "page-hero",
+          "top": 116,
+          "height": 390
+        },
+        {
+          "name": "contact-section",
+          "top": 506,
+          "height": 1210
+        },
+        {
+          "name": "site-footer",
+          "top": 1716,
+          "height": 254
+        }
+      ]
+    },
+    "violations": []
+  }
+]

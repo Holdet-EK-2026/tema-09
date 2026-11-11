@@ -1,0 +1,62 @@
+[
+  {
+    "width": 390,
+    "faqClosedInitially": true,
+    "contentPreserved": true,
+    "ariaLinks": true,
+    "oneAnswerAtATime": true,
+    "enterAndSpace": true,
+    "rapidToggleAndReducedMotion": true,
+    "openFAQAxeViolations": 0,
+    "navRoutesAndKeyboard": 5,
+    "stableHoverGeometry": true,
+    "activeNavVisible": true,
+    "inlineMobileNavigation": "Disclosure menu; four links after explicit opening",
+    "prototypePromotionsRemoved": true,
+    "foundersPreserved": true,
+    "contactDemoHonest": true,
+    "mutations": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "faqClosedInitially": true,
+    "contentPreserved": true,
+    "ariaLinks": true,
+    "oneAnswerAtATime": true,
+    "enterAndSpace": true,
+    "rapidToggleAndReducedMotion": true,
+    "openFAQAxeViolations": 0,
+    "navRoutesAndKeyboard": 5,
+    "stableHoverGeometry": true,
+    "activeNavVisible": true,
+    "inlineMobileNavigation": "Disclosure menu; four links after explicit opening",
+    "prototypePromotionsRemoved": true,
+    "foundersPreserved": true,
+    "contactDemoHonest": true,
+    "mutations": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "faqClosedInitially": true,
+    "contentPreserved": true,
+    "ariaLinks": true,
+    "oneAnswerAtATime": true,
+    "enterAndSpace": true,
+    "rapidToggleAndReducedMotion": true,
+    "openFAQAxeViolations": 0,
+    "navRoutesAndKeyboard": 5,
+    "stableHoverGeometry": true,
+    "activeNavVisible": true,
+    "inlineMobileNavigation": "Disclosure menu; four links after explicit opening",
+    "prototypePromotionsRemoved": true,
+    "foundersPreserved": true,
+    "contactDemoHonest": true,
+    "mutations": [],
+    "errors": []
+  },
+  {
+    "noJavaScriptFAQ": "All original answers visible"
+  }
+]
