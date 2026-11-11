@@ -1,0 +1,1127 @@
+[
+  {
+    "route": "/",
+    "width": 768,
+    "logo": {
+      "x": 24,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 212.03125,
+      "y": 30,
+      "width": 343.921875,
+      "height": 56
+    },
+    "cta": {
+      "x": 631.0625,
+      "y": 30,
+      "width": 112.9375,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/"
+    ],
+    "scrollWidth": 768,
+    "errors": []
+  },
+  {
+    "route": "/events/",
+    "width": 768,
+    "logo": {
+      "x": 24,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 212.03125,
+      "y": 30,
+      "width": 343.921875,
+      "height": 56
+    },
+    "cta": {
+      "x": 631.0625,
+      "y": 30,
+      "width": 112.9375,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/events/"
+    ],
+    "scrollWidth": 768,
+    "errors": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 768,
+    "logo": {
+      "x": 24,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 212.03125,
+      "y": 30,
+      "width": 343.921875,
+      "height": 56
+    },
+    "cta": {
+      "x": 631.0625,
+      "y": 30,
+      "width": 112.9375,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/om-kinddesign/"
+    ],
+    "scrollWidth": 768,
+    "errors": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 768,
+    "logo": {
+      "x": 24,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 212.03125,
+      "y": 30,
+      "width": 343.921875,
+      "height": 56
+    },
+    "cta": {
+      "x": 631.0625,
+      "y": 30,
+      "width": 112.9375,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/kontakt/"
+    ],
+    "scrollWidth": 768,
+    "errors": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 768,
+    "logo": {
+      "x": 24,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 212.03125,
+      "y": 30,
+      "width": 343.921875,
+      "height": 56
+    },
+    "cta": {
+      "x": 631.0625,
+      "y": 30,
+      "width": 112.9375,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/ny-her/"
+    ],
+    "scrollWidth": 768,
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 1024,
+    "logo": {
+      "x": 46.078125,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 299.578125,
+      "y": 30,
+      "width": 424.84375,
+      "height": 56
+    },
+    "cta": {
+      "x": 812.921875,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/"
+    ],
+    "scrollWidth": 1024,
+    "errors": []
+  },
+  {
+    "route": "/events/",
+    "width": 1024,
+    "logo": {
+      "x": 46.078125,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 299.578125,
+      "y": 30,
+      "width": 424.84375,
+      "height": 56
+    },
+    "cta": {
+      "x": 812.921875,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/events/"
+    ],
+    "scrollWidth": 1024,
+    "errors": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 1024,
+    "logo": {
+      "x": 46.078125,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 299.578125,
+      "y": 30,
+      "width": 424.84375,
+      "height": 56
+    },
+    "cta": {
+      "x": 812.921875,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/om-kinddesign/"
+    ],
+    "scrollWidth": 1024,
+    "errors": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 1024,
+    "logo": {
+      "x": 46.078125,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 299.578125,
+      "y": 30,
+      "width": 424.84375,
+      "height": 56
+    },
+    "cta": {
+      "x": 812.921875,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/kontakt/"
+    ],
+    "scrollWidth": 1024,
+    "errors": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 1024,
+    "logo": {
+      "x": 46.078125,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 299.578125,
+      "y": 30,
+      "width": 424.84375,
+      "height": 56
+    },
+    "cta": {
+      "x": 812.921875,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/ny-her/"
+    ],
+    "scrollWidth": 1024,
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "logo": {
+      "x": 64.796875,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 488.875,
+      "y": 30,
+      "width": 462.25,
+      "height": 56
+    },
+    "cta": {
+      "x": 1210.203125,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/"
+    ],
+    "scrollWidth": 1440,
+    "errors": []
+  },
+  {
+    "route": "/events/",
+    "width": 1440,
+    "logo": {
+      "x": 64.796875,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 488.875,
+      "y": 30,
+      "width": 462.25,
+      "height": 56
+    },
+    "cta": {
+      "x": 1210.203125,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/events/"
+    ],
+    "scrollWidth": 1440,
+    "errors": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 1440,
+    "logo": {
+      "x": 64.796875,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 488.875,
+      "y": 30,
+      "width": 462.25,
+      "height": 56
+    },
+    "cta": {
+      "x": 1210.203125,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/om-kinddesign/"
+    ],
+    "scrollWidth": 1440,
+    "errors": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 1440,
+    "logo": {
+      "x": 64.796875,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 488.875,
+      "y": 30,
+      "width": 462.25,
+      "height": 56
+    },
+    "cta": {
+      "x": 1210.203125,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/kontakt/"
+    ],
+    "scrollWidth": 1440,
+    "errors": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 1440,
+    "logo": {
+      "x": 64.796875,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 488.875,
+      "y": 30,
+      "width": 462.25,
+      "height": 56
+    },
+    "cta": {
+      "x": 1210.203125,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/ny-her/"
+    ],
+    "scrollWidth": 1440,
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 1920,
+    "logo": {
+      "x": 70,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 721.65625,
+      "y": 30,
+      "width": 476.6875,
+      "height": 56
+    },
+    "cta": {
+      "x": 1685,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/"
+    ],
+    "scrollWidth": 1920,
+    "errors": []
+  },
+  {
+    "route": "/events/",
+    "width": 1920,
+    "logo": {
+      "x": 70,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 721.65625,
+      "y": 30,
+      "width": 476.6875,
+      "height": 56
+    },
+    "cta": {
+      "x": 1685,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/events/"
+    ],
+    "scrollWidth": 1920,
+    "errors": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 1920,
+    "logo": {
+      "x": 70,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 721.65625,
+      "y": 30,
+      "width": 476.6875,
+      "height": 56
+    },
+    "cta": {
+      "x": 1685,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/om-kinddesign/"
+    ],
+    "scrollWidth": 1920,
+    "errors": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 1920,
+    "logo": {
+      "x": 70,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 721.65625,
+      "y": 30,
+      "width": 476.6875,
+      "height": 56
+    },
+    "cta": {
+      "x": 1685,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/kontakt/"
+    ],
+    "scrollWidth": 1920,
+    "errors": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 1920,
+    "logo": {
+      "x": 70,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 721.65625,
+      "y": 30,
+      "width": 476.6875,
+      "height": 56
+    },
+    "cta": {
+      "x": 1685,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/ny-her/"
+    ],
+    "scrollWidth": 1920,
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 2560,
+    "logo": {
+      "x": 70,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 1041.65625,
+      "y": 30,
+      "width": 476.6875,
+      "height": 56
+    },
+    "cta": {
+      "x": 2325,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/"
+    ],
+    "scrollWidth": 2560,
+    "errors": []
+  },
+  {
+    "route": "/events/",
+    "width": 2560,
+    "logo": {
+      "x": 70,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 1041.65625,
+      "y": 30,
+      "width": 476.6875,
+      "height": 56
+    },
+    "cta": {
+      "x": 2325,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/events/"
+    ],
+    "scrollWidth": 2560,
+    "errors": []
+  },
+  {
+    "route": "/om-kinddesign/",
+    "width": 2560,
+    "logo": {
+      "x": 70,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 1041.65625,
+      "y": 30,
+      "width": 476.6875,
+      "height": 56
+    },
+    "cta": {
+      "x": 2325,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/om-kinddesign/"
+    ],
+    "scrollWidth": 2560,
+    "errors": []
+  },
+  {
+    "route": "/kontakt/",
+    "width": 2560,
+    "logo": {
+      "x": 70,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 1041.65625,
+      "y": 30,
+      "width": 476.6875,
+      "height": 56
+    },
+    "cta": {
+      "x": 2325,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/kontakt/"
+    ],
+    "scrollWidth": 2560,
+    "errors": []
+  },
+  {
+    "route": "/ny-her/",
+    "width": 2560,
+    "logo": {
+      "x": 70,
+      "y": 13,
+      "width": 90,
+      "height": 90
+    },
+    "nav": {
+      "x": 1041.65625,
+      "y": 30,
+      "width": 476.6875,
+      "height": 56
+    },
+    "cta": {
+      "x": 2325,
+      "y": 30,
+      "width": 165,
+      "height": 56
+    },
+    "links": [
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      },
+      {
+        "height": 56,
+        "weight": "700"
+      }
+    ],
+    "current": [
+      "/ny-her/"
+    ],
+    "scrollWidth": 2560,
+    "errors": []
+  }
+]

@@ -118,7 +118,9 @@ fs.mkdirSync(folder, { recursive: true });
           width !== 390,
         );
         if (width === 390) await page.locator(".menu-toggle").click();
-        const active = page.locator(`${nav} a[aria-current=page]`);
+        const active = page.locator(
+          ".site-header a[aria-current=page]:visible",
+        );
         if (width === 390 && route === "/")
           assert.equal(await active.count(), 0);
         else {
@@ -150,8 +152,13 @@ fs.mkdirSync(folder, { recursive: true });
           "100% 1px",
         );
         await page.keyboard.press("Tab");
-        if (width === 390 && await page.locator(".menu-toggle").getAttribute("aria-expanded") === "false") {
-          await page.locator(".menu-toggle").focus(); await page.keyboard.press("Enter");
+        if (
+          width === 390 &&
+          (await page.locator(".menu-toggle").getAttribute("aria-expanded")) ===
+            "false"
+        ) {
+          await page.locator(".menu-toggle").focus();
+          await page.keyboard.press("Enter");
         }
         await link.focus();
         assert.notEqual(
@@ -216,7 +223,8 @@ fs.mkdirSync(folder, { recursive: true });
         navRoutesAndKeyboard: 5,
         stableHoverGeometry: true,
         activeNavVisible: true,
-        inlineMobileNavigation: "Disclosure menu; four links after explicit opening",
+        inlineMobileNavigation:
+          "Disclosure menu; four links after explicit opening",
         prototypePromotionsRemoved: true,
         foundersPreserved: true,
         contactDemoHonest: true,

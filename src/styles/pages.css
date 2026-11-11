@@ -2,17 +2,6 @@
 [hidden] {
   display: none !important;
 }
-.inner-page .site-header {
-  position: relative;
-  height: 107px;
-  padding-right: 65px;
-}
-.inner-page .site-header nav {
-  font-weight: 400;
-}
-.inner-page .site-header .new-link {
-  margin-left: 22px;
-}
 .inner-page h1,
 .inner-page h2,
 .inner-page h3 {
@@ -473,9 +462,6 @@
   font-size: 24px;
   margin: 24px 0;
 }
-.inner-page.version-legacy .site-header {
-  height: 116px;
-}
 .inner-page.version-legacy h1,
 .inner-page.version-legacy h2,
 .inner-page.version-legacy h3 {
@@ -861,12 +847,6 @@
   margin-right: 20px;
 }
 @media (min-width: 601px) and (max-width: 1250px) {
-  .inner-page .site-header {
-    padding-inline: 32px;
-  }
-  .inner-page .site-header .new-link {
-    margin-left: 0;
-  }
   .inner-page .site-footer,
   .inner-page.version-legacy .site-footer {
     grid-template-columns: 100px 1fr 170px;
@@ -1123,17 +1103,6 @@
   }
 }
 @media (max-width: 600px) {
-  .inner-page .site-header,
-  .inner-page.version-legacy .site-header {
-    height: 144px;
-    padding: 18px;
-  }
-  .inner-page .brand {
-    margin: 0;
-  }
-  .inner-page .site-header .new-link {
-    margin: 0;
-  }
   .inner-page .site-footer,
   .inner-page.version-legacy .site-footer {
     height: auto;
@@ -1867,7 +1836,6 @@
   margin-top: 0;
   color: var(--tekst);
 }
-.brand img,
 .footer-brand img {
   object-fit: contain;
 }
@@ -2552,9 +2520,6 @@
 
 /* V2-headeren bevarer sin højde; links følger samme optiske linje som legacy. */
 @media (min-width: 1251px) {
-  .inner-page:not(.version-legacy) .desktop-navigation {
-    transform: translateY(4.5px);
-  }
 }
 
 .event-results-heading {
@@ -2637,10 +2602,40 @@
 }
 
 /* Filtre er sekundære i forhold til sidens primære handlinger. */
-.event-filters, .event-status-filters { display:flex; flex-wrap:wrap; gap:8px; }
-.event-filters button, .event-status-filters button { width:auto; flex:0 0 auto; min-width:0; min-height:44px; padding:8px 16px; font-size:16px; line-height:1.25; border-radius:24px; }
-.calendar-link { font-size:17px; min-height:44px; display:inline-flex; align-items:center; }
-.page-hero h1 { font-size:clamp(38px,6vw,86px); }
-.contact-profile { font-weight:700; padding-block:8px; }
+.event-filters,
+.event-status-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.event-filters button,
+.event-status-filters button {
+  width: auto;
+  flex: 0 0 auto;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  border-radius: 24px;
+}
+.calendar-link {
+  font-size: 17px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.page-hero h1 {
+  font-size: clamp(38px, 6vw, 86px);
+}
+.contact-profile {
+  font-weight: 700;
+  padding-block: 8px;
+}
 
-.page-hero > img { height:100%; top:0; object-fit:cover; object-position:center; }
+.page-hero > img {
+  height: 100%;
+  top: 0;
+  object-fit: cover;
+  object-position: center;
+}

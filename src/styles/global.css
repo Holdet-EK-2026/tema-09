@@ -90,47 +90,6 @@ button:focus-visible,
   line-height: 1.25;
   padding: 16px 20px;
 }
-.site-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 116px;
-  background: var(--salvie);
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  padding: 0 65px 0 var(--gutter);
-}
-.brand {
-  flex-shrink: 0;
-  width: 90px;
-  height: 90px;
-  align-self: flex-start;
-  margin-top: 12px;
-}
-.site-header nav {
-  width: 895px;
-  margin-left: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 160px) 187px;
-  gap: 17px;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-.site-header .new-link {
-  background: var(--lyseblaa);
-  border: 1px solid var(--lyseblaa);
-  border-radius: 28px;
-  min-height: 56px;
-  padding: 15px 19px;
-  font-size: 17px;
-  font-weight: 400;
-  margin-left: 22px;
-  width: 165px;
-}
 .hero {
   position: relative;
   min-height: 1000px;
@@ -379,19 +338,6 @@ dialog p {
   :root {
     --gutter: 32px;
   }
-  .site-header {
-    padding-right: 32px;
-  }
-  .site-header nav {
-    width: auto;
-    grid-template-columns: repeat(4, auto) auto;
-    gap: 24px;
-    font-size: 15px;
-  }
-  .site-header .new-link {
-    margin-left: 0;
-    width: auto;
-  }
   .hero h1 {
     font-size: clamp(80px, 10.97vw, 137px);
   }
@@ -462,54 +408,6 @@ dialog p {
   }
   .mobile-label {
     display: inline;
-  }
-  .site-header {
-    position: relative;
-    height: 144px;
-    padding: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: stretch;
-  }
-  .brand {
-    width: 54px;
-    height: 54px;
-    margin: 0 0 0 calc(50% - 20px);
-  }
-  .brand img {
-    width: 54px;
-    height: 54px;
-    border-radius: 18px;
-  }
-  .site-header nav {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 4px;
-    margin: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.45;
-    height: 44px;
-  }
-  .site-header nav > a {
-    padding: 12px 4px;
-    text-align: center;
-  }
-  .site-header .home-link {
-    display: none;
-  }
-  .site-header .new-link {
-    grid-column: 3;
-    grid-row: 1;
-    background: none;
-    border: 0;
-    margin: 0;
-    width: auto;
-    padding: 12px 4px;
-    font-size: 14px;
-    min-height: 0;
   }
   .contact-link {
     grid-column: 4;
@@ -781,16 +679,7 @@ dialog p {
 }
 
 /* Visuel rækkefølge og tabrækkefølge skal følge hinanden på begge layouts. */
-.site-header nav.mobile-navigation {
-  display: none;
-}
 @media (max-width: 600px) {
-  .site-header nav.desktop-navigation {
-    display: none;
-  }
-  .site-header nav.mobile-navigation {
-    display: grid;
-  }
 }
 
 .sr-only {
@@ -815,7 +704,6 @@ dialog p {
   }
 }
 
-.brand img,
 .footer-brand img {
   object-fit: contain;
 }
@@ -831,26 +719,7 @@ dialog p {
 :root {
   --interaction-duration: 240ms;
 }
-.site-header nav a {
-  text-decoration: none;
-}
-.site-header .nav-label {
-  display: inline-block;
-  padding-bottom: 4px;
-  margin-bottom: -4px;
-  background: linear-gradient(currentColor, currentColor) left bottom / 0% 1px
-    no-repeat;
-  transition: background-size var(--interaction-duration) ease;
-}
-.site-header nav a[aria-current="page"] .nav-label,
-.site-header nav a:focus-visible .nav-label {
-  background-size: 100% 1px;
-}
-.site-header nav a[aria-current="page"] {
-  color: var(--tekst);
-}
 .button,
-.site-header .new-link,
 .carousel-tools button,
 .event-filters button,
 .event-status-filters button,
@@ -884,9 +753,6 @@ dialog p {
   text-decoration-color: currentColor;
 }
 @media (hover: hover) {
-  .site-header nav a:hover .nav-label {
-    background-size: 100% 1px;
-  }
   .site-footer nav a:hover,
   .back-link:hover,
   .calendar-link:hover,
@@ -897,8 +763,7 @@ dialog p {
   .calendar-source a:hover {
     text-decoration-color: currentColor;
   }
-  .button:hover,
-  .site-header .new-link:hover {
+  .button:hover {
     box-shadow: inset 0 0 0 2px currentColor;
   }
   .carousel-tools button:not(:disabled):hover,
@@ -925,9 +790,7 @@ button:disabled {
   cursor: not-allowed;
 }
 @media (prefers-reduced-motion: reduce) {
-  .site-header .nav-label,
   .button,
-  .site-header .new-link,
   .site-footer nav a,
   .back-link,
   .calendar-link,

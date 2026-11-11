@@ -8,14 +8,14 @@ function current(href) {
 ---
 <header class="site-header">
   <a href="/" class="brand" aria-label="KindDesign – forside"><img src="/images/af5ee.webp" srcset="/images/af5ee-124.webp 124w, /images/af5ee.webp 248w" sizes="(max-width:600px) 54px, 90px" width="90" height="90" alt="KindDesign" /></a>
-  {path.startsWith('/ny-her') && <span class="mobile-brand-name mobile-label">KindDesign</span>}
   <nav class="desktop-navigation" aria-label="Hovednavigation">
     <a class="home-link" href="/" aria-current={current('/') ? 'page' : undefined}><span class="nav-label">Forside</span></a>
     <a href="/events/" aria-current={current('/events/') ? 'page' : undefined}><span class="nav-label">Events</span></a>
     <a href="/om-kinddesign/" aria-current={current('/om-kinddesign/') ? 'page' : undefined}><span class="nav-label"><span class="desktop-label">Om Kind Design</span><span class="mobile-label">Om os</span></span></a>
     <a class="contact-link" href="/kontakt/" aria-current={current('/kontakt/') ? 'page' : undefined}><span class="nav-label">Kontakt</span></a>
-    <a class="new-link" href="/ny-her/" aria-current={current('/ny-her/') ? 'page' : undefined}><span class="nav-label">Ny her?</span><span class="desktop-label" aria-hidden="true">&nbsp; ↗</span></a>
+
   </nav>
+  <a class="header-cta new-link" href="/ny-her/" aria-current={current('/ny-her/') ? 'page' : undefined}><span class="nav-label">Ny her?</span><span aria-hidden="true">↗</span></a>
   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" hidden>Menu <span aria-hidden="true">☰</span></button>
   <nav id="mobile-menu" class="mobile-navigation" aria-label="Hovednavigation">
     <a href="/events/" aria-current={current('/events/') ? 'page' : undefined}><span class="nav-label">Events</span></a>
