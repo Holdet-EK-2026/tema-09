@@ -24,6 +24,7 @@ fs.mkdirSync(folder, { recursive: true });
       "/kalender/design-og-nye-forbindelser/",
     ]) {
       await page.goto(base + route);
+      if (width === 390) await page.locator(".menu-toggle").click();
       assert.equal(
         (
           await page
@@ -107,7 +108,18 @@ fs.mkdirSync(folder, { recursive: true });
         .locator("#indhold")
         .evaluate((node) => node === document.activeElement),
     );
+    if (width === 390) {
+      await page.locator(".menu-toggle").focus();
+      await page.keyboard.press("Enter");
+    }
     const nav = width === 390 ? ".mobile-navigation" : ".desktop-navigation";
+    if (
+      width === 390 &&
+      !(await page.locator(".mobile-navigation").isVisible())
+    ) {
+      await page.locator(".menu-toggle").focus();
+      await page.keyboard.press("Enter");
+    }
     await page.locator(nav + ' a[href="/events/"]').focus();
     await page.keyboard.press("Enter");
     await page.waitForURL("**/events/");
@@ -118,6 +130,13 @@ fs.mkdirSync(folder, { recursive: true });
       await page.locator(".event-card:visible").getAttribute("data-event-type"),
       "Talk",
     );
+    if (
+      width === 390 &&
+      !(await page.locator(".mobile-navigation").isVisible())
+    ) {
+      await page.locator(".menu-toggle").focus();
+      await page.keyboard.press("Enter");
+    }
     await page.locator(nav + ' a[href="/ny-her/"]').focus();
     await page.keyboard.press("Enter");
     await page.waitForURL("**/ny-her/");

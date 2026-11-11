@@ -244,3 +244,12 @@
     height: 960px;
   }
 }
+
+/* Every frame defines a continuous position; CSS must never ease discrete slots. */
+[data-carousel].carousel-continuous .gallery-card {
+  transition: none;
+}
+/* Caption emphasis follows the same continuous centre-distance as the photo. */
+.carousel-continuous .gallery-card[aria-hidden="true"] figcaption {
+  visibility: visible;
+}

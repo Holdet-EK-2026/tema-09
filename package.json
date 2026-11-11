@@ -8,9 +8,10 @@
     "build": "node ./node_modules/astro/bin/astro.mjs build",
     "preview": "node ./node_modules/astro/bin/astro.mjs preview",
     "test": "node scripts/check-build.js && node scripts/qa/luma-config.cjs",
-    "test:browser": "node scripts/qa/pages.cjs && node scripts/qa/flows.cjs && node scripts/qa/official-flows.cjs && node scripts/qa/carousel.cjs && node scripts/qa/smoke.cjs && node scripts/qa/ux-interactions.cjs",
+    "test:browser": "node scripts/qa/pages.cjs && node scripts/qa/flows.cjs && node scripts/qa/official-flows.cjs && node scripts/qa/continuous-carousel.cjs && node scripts/qa/smoke.cjs && node scripts/qa/ux-interactions.cjs",
     "test:lighthouse": "node scripts/qa/lighthouse.cjs",
-    "test:refinement": "node scripts/qa/event-navigation.cjs && node scripts/qa/refinement.cjs && node scripts/qa/media.cjs"
+    "test:refinement": "node scripts/qa/event-navigation.cjs && node scripts/qa/refinement.cjs && node scripts/qa/media.cjs",
+    "test:carousel": "node scripts/qa/continuous-carousel.cjs"
   },
   "dependencies": {
     "astro": "7.4.8"

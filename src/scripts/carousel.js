@@ -1,191 +1,195 @@
 const instances = new Map();
-
 function initCarousel(carousel) {
   if (instances.has(carousel)) return;
   const cards = [...carousel.querySelectorAll(".gallery-card")];
   const viewport = carousel.querySelector(".gallery-window");
-  const status = carousel.querySelector("[data-carousel-status]");
-  const controls = carousel.querySelector(".carousel-tools");
   const toggle = carousel.querySelector("[data-carousel-toggle]");
-  const toggleLabel = carousel.querySelector("[data-carousel-toggle-label]");
+  const label = carousel.querySelector("[data-carousel-toggle-label]");
   const position = carousel.querySelector("[data-carousel-position]");
+  const status = carousel.querySelector("[data-carousel-status]");
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)");
   const controller = new AbortController();
   const options = { signal: controller.signal };
-  const frames = new Set();
+  let phase = 0,
+    frame = 0,
+    last = null,
+    visible = false,
+    hovered = false;
+  let focused = false,
+    explicitPlay = false,
+    userPaused = false,
+    pointer = null,
+    target = null;
   let disposed = false;
-  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
-  const interval = 4500;
-  const interactionDelay = 8000;
-  let activeIndex = Number(carousel.dataset.activeIndex) || 0;
-  let timer;
-  let visible = false;
-  let hovered = false;
-  let focused = carousel.contains(document.activeElement);
-  let userPaused = carousel.dataset.userPaused === "true";
-  // Afspil overstyrer kun fokuspausen i den aktuelle fokusindgang.
-  let playThroughFocus = false;
-  let pointerToggleStarts = null;
-  let resumeAt = 0;
-  let pointer = null;
-  let suppressClickUntil = 0;
-
-  function frame(callback) {
-    const id = requestAnimationFrame(() => {
-      frames.delete(id);
-      if (!disposed) callback();
-    });
-    frames.add(id);
-  }
-  function render(announce = false) {
+  const mod = (n, m) => ((n % m) + m) % m;
+  function render() {
+    const width = viewport.clientWidth;
+    const step = width <= 600 ? 195 : Math.max(240, Math.min(300, width / 5.5));
+    const active = mod(Math.round(phase), cards.length);
     cards.forEach((card, index) => {
-      // Den nærmeste cirkulære afstand holder begge sider sammen gennem sidste/første.
       const slot =
-        ((index - activeIndex + cards.length + 3) % cards.length) - 3;
-      const wrapping = Math.abs(Number(card.dataset.slot ?? slot) - slot) > 1;
-      card.classList.toggle("is-wrapping", wrapping);
-      card.dataset.slot = slot;
-      card.classList.toggle("is-active", slot === 0);
-      card.setAttribute("aria-hidden", String(slot !== 0));
-      if (wrapping)
-        frame(() => frame(() => card.classList.remove("is-wrapping")));
+        mod(index - phase + cards.length / 2, cards.length) - cards.length / 2;
+      const distance = Math.abs(slot);
+      const focus = Math.exp(-0.6 * slot * slot);
+      card.style.setProperty("--x", `${slot * step}px`);
+      card.style.setProperty("--z", `${-220 + 280 * focus}px`);
+      card.style.setProperty("--angle", `${-28 * Math.tanh(slot / 1.5)}deg`);
+      card.style.setProperty("--scale", String(0.6 + 0.4 * focus));
+      card.style.opacity = String(Math.max(0, Math.min(1, (3 - distance) * 2)));
+      card.style.zIndex = String(Math.round(focus * 100));
+      card.classList.toggle("is-active", index === active);
+      card.setAttribute("aria-hidden", String(index !== active));
     });
-    carousel.dataset.activeIndex = activeIndex;
-    position.textContent = `${activeIndex + 1} / ${cards.length}`;
-    if (announce)
-      status.textContent = `Billede ${activeIndex + 1} af ${cards.length}.`;
+    carousel.dataset.phase = String(phase);
+    carousel.dataset.activeIndex = String(active);
+    position.textContent = `${active + 1} / ${cards.length}`;
   }
-  function offersPlay() {
-    return userPaused || (focused && !playThroughFocus);
-  }
-  function schedule() {
-    clearTimeout(timer);
-    if (disposed) return;
-    carousel.dataset.userPaused = String(userPaused);
-    carousel.dataset.reducedMotion = String(reducedMotion.matches);
-    toggle.disabled = reducedMotion.matches;
-    toggle.setAttribute(
-      "aria-label",
-      reducedMotion.matches
-        ? "Automatik fra via systemets indstillinger"
-        : offersPlay()
-          ? "Afspil automatiske billedskift"
-          : "Sæt automatiske billedskift på pause",
-    );
-    toggleLabel.textContent = reducedMotion.matches
-      ? "Automatik fra"
-      : offersPlay()
-        ? "Afspil"
-        : "Pause";
-    const reason = !visible
+  function reason() {
+    return !visible
       ? "offscreen"
       : document.hidden
         ? "hidden-tab"
-        : reducedMotion.matches
+        : reduced.matches
           ? "reduced-motion"
           : userPaused
             ? "user"
-            : hovered && !playThroughFocus
-              ? "hover"
-              : focused && !playThroughFocus
+            : pointer
+              ? "pointer"
+              : !explicitPlay && focused
                 ? "focus"
-                : pointer
-                  ? "pointer"
+                : !explicitPlay && hovered
+                  ? "hover"
                   : "none";
-    const blocked = reason !== "none";
+  }
+  function tick(now) {
+    frame = 0;
+    const dt = last === null ? 0 : Math.min(now - last, 50);
+    last = now;
+    if (target !== null) {
+      const delta = target - phase;
+      phase += Math.sign(delta) * Math.min(Math.abs(delta), dt / 350);
+      if (Math.abs(target - phase) < 0.0001) {
+        phase = target;
+        target = null;
+      }
+    } else if (reason() === "none") phase += dt / 12000;
+    if (target === null) phase = mod(phase, cards.length);
+    render();
+    if (visible && !document.hidden && (target !== null || reason() === "none"))
+      frame = requestAnimationFrame(tick);
+    else last = null;
+  }
+  function schedule() {
+    if (disposed) return;
+    const why = reason();
+    carousel.dataset.pauseReason = why;
+    carousel.dataset.autoplay = why === "none" ? "running" : "paused";
+    carousel.dataset.userPaused = String(userPaused);
+    carousel.dataset.reducedMotion = String(reduced.matches);
+    const offersPlay = userPaused || (!explicitPlay && (focused || hovered));
+    toggle.disabled = reduced.matches;
+    label.textContent = reduced.matches
+      ? "Automatik fra"
+      : offersPlay
+        ? "Afspil"
+        : "Pause";
     toggle.setAttribute(
-      "aria-description",
-      reason === "focus"
-        ? "Billedskift er stoppet, mens fokus er i galleriet. Vælg Afspil for at starte."
-        : reason === "hover"
-          ? "Midlertidigt stoppet, mens markøren er over billederne."
-          : "",
+      "aria-label",
+      reduced.matches
+        ? "Automatik fra via systemets indstillinger"
+        : offersPlay
+          ? "Afspil kontinuerlig bevægelse"
+          : "Sæt kontinuerlig bevægelse på pause",
     );
-    carousel.dataset.pauseReason = reason;
-    carousel.dataset.autoplay = blocked ? "paused" : "running";
-    if (!blocked)
-      timer = setTimeout(
-        () => {
-          if (!carousel.isConnected) return destroy();
-          move(1, false);
-        },
-        Math.max(interval, resumeAt - performance.now()),
-      );
-  }
-  function select(index, manual = true) {
-    activeIndex = (index + cards.length) % cards.length;
-    if (manual) {
-      playThroughFocus = false;
-      resumeAt = performance.now() + interactionDelay;
+    if (
+      why === "offscreen" ||
+      why === "hidden-tab" ||
+      (why !== "none" && target === null)
+    ) {
+      cancelAnimationFrame(frame);
+      frame = 0;
+      last = null;
+    } else if (!frame) {
+      last = null;
+      frame = requestAnimationFrame(tick);
     }
-    render(manual);
+  }
+  function manual(direction) {
+    userPaused = true;
+    explicitPlay = false;
+    target =
+      direction > 0
+        ? Math.floor(phase + 0.001) + 1
+        : Math.ceil(phase - 0.001) - 1;
+    // Keep the target in the same unwrapped coordinate system during manual motion.
+    if (target < 0) {
+      phase += cards.length;
+      target += cards.length;
+    }
+    if (reduced.matches) {
+      phase = mod(target, cards.length);
+      target = null;
+      render();
+    }
+    status.textContent = `Billede ${mod(Math.round(target ?? phase), cards.length) + 1} af ${cards.length}.`;
     schedule();
   }
-  function move(direction, manual = true) {
-    select(activeIndex + direction, manual);
-  }
-  function toggleAutoplay(event) {
-    if (reducedMotion.matches) {
-      status.textContent =
-        "Automatiske billedskift er slået fra via systemets indstillinger.";
-      return;
-    }
-    // Pointerdown husker knappens handling før klikket selv flytter fokus.
-    const start =
-      event?.detail > 0 && pointerToggleStarts !== null
-        ? pointerToggleStarts
-        : offersPlay();
-    pointerToggleStarts = null;
-    userPaused = !start;
-    playThroughFocus = start && focused;
-    if (!userPaused) resumeAt = 0;
-    status.textContent = userPaused
-      ? "Automatiske billedskift er sat på pause."
-      : "Automatiske billedskift er aktiveret. Flyt markøren væk fra billederne for at afspille.";
-    schedule();
-  }
-  carousel
-    .querySelector("[data-carousel-previous]")
-    .addEventListener("click", () => move(-1), options);
-  carousel
-    .querySelector("[data-carousel-next]")
-    .addEventListener("click", () => move(1), options);
-  toggle.addEventListener(
-    "pointerdown",
-    () => {
-      pointerToggleStarts = offersPlay();
-    },
-    options,
-  );
+  let requestedPlay = null;
   toggle.addEventListener(
     "pointercancel",
     () => {
-      pointerToggleStarts = null;
+      requestedPlay = null;
     },
     options,
   );
-  toggle.addEventListener("click", toggleAutoplay, options);
+  toggle.addEventListener(
+    "pointerdown",
+    () => {
+      requestedPlay = userPaused || (!explicitPlay && (focused || hovered));
+    },
+    options,
+  );
+  toggle.addEventListener(
+    "click",
+    () => {
+      const start =
+        requestedPlay ??
+        (userPaused || (!explicitPlay && (focused || hovered)));
+      requestedPlay = null;
+      userPaused = !start;
+      explicitPlay = start;
+      target = null;
+      schedule();
+    },
+    options,
+  );
+  carousel
+    .querySelector("[data-carousel-previous]")
+    .addEventListener("click", () => manual(-1), options);
+  carousel
+    .querySelector("[data-carousel-next]")
+    .addEventListener("click", () => manual(1), options);
   viewport.addEventListener(
     "keydown",
-    (event) => {
-      // Native knapper håndterer selv Enter/Space. Galleriets genveje gælder selve regionen.
-      if (event.target !== viewport) return;
-      if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
-        event.preventDefault();
-        move(event.key === "ArrowRight" ? 1 : -1);
-      } else if (event.key === "Home" || event.key === "End") {
-        event.preventDefault();
-        select(event.key === "Home" ? 0 : cards.length - 1);
-      } else if (event.key === " ") {
-        event.preventDefault();
-        toggleAutoplay();
+    (e) => {
+      if (e.target.closest("button")) return;
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+        e.preventDefault();
+        manual(e.key === "ArrowRight" ? 1 : -1);
+      }
+      if (e.code === "Space") {
+        e.preventDefault();
+        userPaused = !userPaused;
+        explicitPlay = !userPaused;
+        schedule();
       }
     },
     options,
   );
   viewport.addEventListener(
     "pointermove",
-    (event) => {
-      if (event.pointerType === "mouse") {
+    (e) => {
+      if (e.pointerType === "mouse" && !e.target.closest(".carousel-tools")) {
         hovered = true;
         schedule();
       }
@@ -194,18 +198,16 @@ function initCarousel(carousel) {
   );
   viewport.addEventListener(
     "pointerleave",
-    (event) => {
-      if (event.pointerType === "mouse") {
-        hovered = false;
-        schedule();
-      }
+    () => {
+      hovered = false;
+      schedule();
     },
     options,
   );
   carousel.addEventListener(
     "focusin",
-    (event) => {
-      if (!carousel.contains(event.relatedTarget)) playThroughFocus = false;
+    (e) => {
+      if (!carousel.contains(e.relatedTarget)) explicitPlay = false;
       focused = true;
       schedule();
     },
@@ -213,70 +215,58 @@ function initCarousel(carousel) {
   );
   carousel.addEventListener(
     "focusout",
-    (event) => {
-      focused = carousel.contains(event.relatedTarget);
+    (e) => {
+      focused = carousel.contains(e.relatedTarget);
+      if (!focused) explicitPlay = false;
       schedule();
     },
     options,
   );
   viewport.addEventListener(
     "pointerdown",
-    (event) => {
-      if (event.target.closest("button")) return;
-      if (!event.isPrimary || event.button !== 0) return;
-      pointer = { id: event.pointerId, x: event.clientX, y: event.clientY };
-      viewport.setPointerCapture(event.pointerId);
+    (e) => {
+      if (e.target.closest("button") || e.button > 0) return;
+      pointer = { id: e.pointerId, x: e.clientX, y: e.clientY };
+      viewport.setPointerCapture(e.pointerId);
       schedule();
     },
     options,
   );
-  viewport.addEventListener(
-    "pointerup",
-    (event) => {
-      if (!pointer || pointer.id !== event.pointerId) return;
-      const dx = event.clientX - pointer.x;
-      const dy = event.clientY - pointer.y;
-      pointer = null;
-      resumeAt = performance.now() + interactionDelay;
-      if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) {
-        suppressClickUntil = performance.now() + 400;
-        move(dx < 0 ? 1 : -1);
-      } else schedule();
-    },
-    options,
-  );
-  viewport.addEventListener(
-    "pointercancel",
-    () => {
-      pointer = null;
-      resumeAt = performance.now() + interactionDelay;
-      schedule();
-    },
-    options,
-  );
+  function release(e) {
+    if (!pointer || pointer.id !== e.pointerId) return;
+    const dx = e.clientX - pointer.x,
+      dy = e.clientY - pointer.y;
+    pointer = null;
+    if (
+      e.type === "pointerup" &&
+      Math.abs(dx) > 45 &&
+      Math.abs(dx) > Math.abs(dy)
+    )
+      manual(dx < 0 ? 1 : -1);
+    else schedule();
+  }
+  viewport.addEventListener("pointerup", release, options);
+  viewport.addEventListener("pointercancel", release, options);
   viewport.addEventListener(
     "lostpointercapture",
     () => {
-      if (pointer) {
-        pointer = null;
-        schedule();
-      }
+      pointer = null;
+      schedule();
     },
     options,
   );
-  viewport.addEventListener(
-    "click",
-    (event) => {
-      if (performance.now() < suppressClickUntil) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-    },
-    { ...options, capture: true },
-  );
   document.addEventListener("visibilitychange", schedule, options);
-  reducedMotion.addEventListener("change", schedule, options);
-  const visibilityObserver = new IntersectionObserver(
+  reduced.addEventListener(
+    "change",
+    () => {
+      target = null;
+      render();
+      schedule();
+    },
+    options,
+  );
+  window.addEventListener("resize", render, options);
+  const visibility = new IntersectionObserver(
     (entries) => {
       visible =
         entries[0].isIntersecting && entries[0].intersectionRatio >= 0.25;
@@ -285,55 +275,49 @@ function initCarousel(carousel) {
     },
     { threshold: 0.25 },
   );
-  visibilityObserver.observe(viewport);
-  // Hent først de store fotovarianter, når brugeren nærmer sig selve galleriet.
-  const photoObserver = new IntersectionObserver(
+  visibility.observe(viewport);
+  const photos = new IntersectionObserver(
     (entries) => {
       if (!entries[0].isIntersecting) return;
-      const photos = [...carousel.querySelectorAll("img[data-gallery-source]")];
-      photos.forEach((photo) => {
-        photo.src = photo.dataset.gallerySource;
-        photo.srcset = photo.dataset.gallerySrcset;
+      const images = [...carousel.querySelectorAll("img[data-gallery-source]")];
+      images.forEach((img) => {
+        img.src = img.dataset.gallerySource;
+        img.srcset = img.dataset.gallerySrcset;
       });
-      Promise.all(photos.map((photo) => photo.decode().catch(() => {}))).then(
+      Promise.all(images.map((img) => img.decode().catch(() => {}))).then(
         () => {
           if (!disposed) carousel.dataset.photosReady = "true";
         },
       );
-      photoObserver.disconnect();
+      photos.disconnect();
     },
     { rootMargin: "150px" },
   );
-  photoObserver.observe(viewport);
-  const removalObserver = new MutationObserver(() => {
+  photos.observe(viewport);
+  const removal = new MutationObserver(() => {
     if (!carousel.isConnected) destroy();
   });
-  // Fanger også en fjernet wrapper, selv når ingen Astro-navigation finder sted.
-  removalObserver.observe(document.body, { childList: true, subtree: true });
+  removal.observe(document.body, { childList: true, subtree: true });
   function destroy() {
     disposed = true;
-    clearTimeout(timer);
-    frames.forEach(cancelAnimationFrame);
-    frames.clear();
+    cancelAnimationFrame(frame);
     controller.abort();
-    visibilityObserver.disconnect();
-    photoObserver.disconnect();
-    removalObserver.disconnect();
+    visibility.disconnect();
+    photos.disconnect();
+    removal.disconnect();
     instances.delete(carousel);
-    carousel.dataset.autoplay = "stopped";
   }
   instances.set(carousel, destroy);
-  controls.hidden = false;
-  carousel.classList.add("carousel-ready");
+  carousel.querySelector(".carousel-tools").hidden = false;
+  carousel.classList.add("carousel-ready", "carousel-continuous");
   render();
   schedule();
 }
-
 function initialize() {
   document.querySelectorAll("[data-carousel]").forEach(initCarousel);
 }
 function cleanup() {
-  [...instances.values()].forEach((destroy) => destroy());
+  [...instances.values()].forEach((fn) => fn());
 }
 initialize();
 document.addEventListener("astro:page-load", initialize);
