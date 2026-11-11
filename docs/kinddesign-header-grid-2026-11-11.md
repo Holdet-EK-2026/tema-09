@@ -36,3 +36,9 @@ Production build og `npm test` består med 27 statiske HTML-sider, lokale links,
 `header-grid.cjs` kan gentage målinger og screenshots. Den tidligere regressionstest er opdateret til at finde aktuelt synligt headerlink, fordi CTA'en nu med vilje ligger uden for navgruppen. Der er ikke ændret testforventninger til geometri for at skjule fejl: den nye test kræver ens koordinater på alle sider og reel centrering ved alle fem bredder.
 
 Ingen nye dependencies, fotos eller fonte. Denne opgave omfatter desktopnavigation; der er ikke gentaget en fuld carousel-, Safari- eller skærmlæseraudit.
+
+## Efterfølgende godkendt deployment
+
+Efter særskilt godkendelse er `941933b` pushet på `feature/desktop-header-grid` og publiceret på det eksisterende [KindDesign-site](https://kinddesign-holdet-ek-2026.netlify.app/). Deploy-ID `6af480bbce1a3201a3e13d66`: ready/live. Ingen merge eller force-push. Production build og statiske tests er gentaget før publicering.
+
+Den offentlige version består samme 25 placeringskontroller: identiske rektangler på de fem sider ved hver bredde, centreret linkgruppe, fælles vertikalt centrum, præcis ét aktuelt synligt link og ingen overlap, overflow eller registrerede JavaScript-fejl. [Offentlige målinger og 10 screenshots](qa/header-grid-2026-11-11/public/measurements.json).
