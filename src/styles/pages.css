@@ -2635,3 +2635,12 @@
   text-decoration: underline;
   text-underline-offset: 0.25em;
 }
+
+/* Filtre er sekundære i forhold til sidens primære handlinger. */
+.event-filters, .event-status-filters { display:flex; flex-wrap:wrap; gap:8px; }
+.event-filters button, .event-status-filters button { width:auto; flex:0 0 auto; min-width:0; min-height:44px; padding:8px 16px; font-size:16px; line-height:1.25; border-radius:24px; }
+.calendar-link { font-size:17px; min-height:44px; display:inline-flex; align-items:center; }
+.page-hero h1 { font-size:clamp(38px,6vw,86px); }
+.contact-profile { font-weight:700; padding-block:8px; }
+
+.page-hero > img { height:100%; top:0; object-fit:cover; object-position:center; }

@@ -1,4 +1,5 @@
 ---
+import "../styles/navigation.css";
 const path = Astro.url.pathname;
 function current(href) {
   if (href === '/events/' && (path.startsWith('/tilmelding/') || path.startsWith('/kalender/'))) return true;
@@ -15,10 +16,13 @@ function current(href) {
     <a class="contact-link" href="/kontakt/" aria-current={current('/kontakt/') ? 'page' : undefined}><span class="nav-label">Kontakt</span></a>
     <a class="new-link" href="/ny-her/" aria-current={current('/ny-her/') ? 'page' : undefined}><span class="nav-label">Ny her?</span><span class="desktop-label" aria-hidden="true">&nbsp; ↗</span></a>
   </nav>
-  <nav class="mobile-navigation" aria-label="Hovednavigation">
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" hidden>Menu <span aria-hidden="true">☰</span></button>
+  <nav id="mobile-menu" class="mobile-navigation" aria-label="Hovednavigation">
     <a href="/events/" aria-current={current('/events/') ? 'page' : undefined}><span class="nav-label">Events</span></a>
     <a href="/om-kinddesign/" aria-current={current('/om-kinddesign/') ? 'page' : undefined}><span class="nav-label">Om os</span></a>
     <a class="new-link" href="/ny-her/" aria-current={current('/ny-her/') ? 'page' : undefined}><span class="nav-label">Ny her?</span></a>
     <a class="contact-link" href="/kontakt/" aria-current={current('/kontakt/') ? 'page' : undefined}><span class="nav-label">Kontakt</span></a>
   </nav>
 </header>
+
+<script src="../scripts/navigation.js"></script>

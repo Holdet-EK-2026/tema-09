@@ -1,8 +1,8 @@
 ---
-const {title, subtitle, about = false} = Astro.props;
+const {title, subtitle, about = false, image = "0bb08-2880-optimized", imageAlt = "Deltagere i samtale til et KindDesign-arrangement"} = Astro.props;
 ---
 <section class:list={['page-hero', about && 'about-hero']} aria-labelledby="page-title">
-  <img src="/images/0bb08-2880-optimized.webp" srcset="/images/0bb08-640.webp 640w, /images/0bb08-1600-optimized.webp 1600w, /images/0bb08-2880-optimized.webp 2880w" sizes="(max-width:600px) 600px, 100vw" width="2880" height="1909" alt="Deltagere i samtale til et KindDesign-arrangement" fetchpriority="high" />
+  <img src={`/images/${image}.webp`} srcset={image === "0bb08-2880-optimized" ? "/images/0bb08-640.webp 640w, /images/0bb08-1600-optimized.webp 1600w, /images/0bb08-2880-optimized.webp 2880w" : undefined} sizes="100vw" width="1400" height="1000" alt={imageAlt} fetchpriority="high" />
   <div class="page-hero-shade"></div>
   <h1 id="page-title">{title}</h1><p>{subtitle}</p>
 </section>

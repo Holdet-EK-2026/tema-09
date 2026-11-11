@@ -19,8 +19,7 @@ function initCarousel(carousel) {
   let activeIndex = Number(carousel.dataset.activeIndex) || 0;
   let timer;
   let visible = false;
-  let hovered =
-    matchMedia("(hover: hover)").matches && viewport.matches(":hover");
+  let hovered = false;
   let focused = carousel.contains(document.activeElement);
   let userPaused = carousel.dataset.userPaused === "true";
   // Afspil overstyrer kun fokuspausen i den aktuelle fokusindgang.
@@ -85,7 +84,7 @@ function initCarousel(carousel) {
           ? "reduced-motion"
           : userPaused
             ? "user"
-            : hovered
+            : hovered && !playThroughFocus
               ? "hover"
               : focused && !playThroughFocus
                 ? "focus"
@@ -184,7 +183,7 @@ function initCarousel(carousel) {
     options,
   );
   viewport.addEventListener(
-    "pointerenter",
+    "pointermove",
     (event) => {
       if (event.pointerType === "mouse") {
         hovered = true;
