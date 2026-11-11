@@ -1,0 +1,192 @@
+[
+  {
+    "route": "/",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 3080,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 96,
+          "height": 690
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-continuous carousel-visible",
+          "top": 786,
+          "height": 897
+        },
+        {
+          "name": "community-section",
+          "top": 1683,
+          "height": 989
+        },
+        {
+          "name": "site-footer",
+          "top": 2672,
+          "height": 408
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2888,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 96,
+          "height": 690
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-continuous carousel-visible",
+          "top": 786,
+          "height": 836
+        },
+        {
+          "name": "community-section",
+          "top": 1622,
+          "height": 874
+        },
+        {
+          "name": "site-footer",
+          "top": 2496,
+          "height": 392
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 3025,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-continuous carousel-visible",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 779.5
+        },
+        {
+          "name": "site-footer",
+          "top": 2739.5,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 3003,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-continuous carousel-visible",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 758
+        },
+        {
+          "name": "site-footer",
+          "top": 2718,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "failures": [],
+    "data": {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "height": 3003,
+      "controlsClipped": false,
+      "h1": 1,
+      "images": true,
+      "sections": [
+        {
+          "name": "hero",
+          "top": 0,
+          "height": 1000
+        },
+        {
+          "name": "gallery-section carousel-ready carousel-continuous carousel-visible",
+          "top": 1000,
+          "height": 960
+        },
+        {
+          "name": "community-section",
+          "top": 1960,
+          "height": 758
+        },
+        {
+          "name": "site-footer",
+          "top": 2718,
+          "height": 285
+        }
+      ]
+    },
+    "violations": []
+  }
+]

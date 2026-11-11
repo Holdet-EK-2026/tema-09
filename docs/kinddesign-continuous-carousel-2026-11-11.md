@@ -38,3 +38,9 @@ Playwrights officielle FFmpeg blev hentet til den isolerede QA-mappe for optagel
 ## Begrænsninger
 
 Mobil er Chrome touch-emulation, ikke en fysisk telefon. Safari, Firefox og skærmlæser er ikke gentestet. Et statisk screenshot beviser ikke kontinuitet; optagelser og tidsserier er det relevante bevægelsesbevis. Der er ingen ændring af billeder, øvrigt sideindhold, Luma, kontaktintegration eller eksterne systemer. Den eksisterende liveversion er uændret i denne opgave.
+
+## Efterfølgende godkendt publicering
+
+Efter brugerens særskilte godkendelse blev `6543826` pushet på `feature/continuous-3d-carousel` og publiceret på det eksisterende [KindDesign-site](https://kinddesign-holdet-ek-2026.netlify.app/). Deploy-ID: `6af47dd1c5d07a7948bde56f`, status ready/live. Ingen merge eller force-push. Production build og statiske tests blev gentaget til bestået før publicering.
+
+Den fulde kontinuerlige carouseltest består også offentligt ved 390/1440: 15,5 sekunders kontinuitet, sidste/første i normal hastighed, fokusbevarende Pause/Play, pile, tastatur, touch/swipe, reduced-motion og offscreen. [Offentlige resultater](qa/continuous-carousel-deploy-2026-11-11/public-carousel.json). Forsiden består ved 320/390/768/1440/1920 uden registrerede JS-/ressourcefejl eller overflow og uden automatiske axe-fund i de scannede bredder. [Offentlig sidematrix](qa/continuous-carousel-deploy-2026-11-11/public-pages.json).
