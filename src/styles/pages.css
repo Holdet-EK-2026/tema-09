@@ -2654,3 +2654,5 @@
 .event-status-filters button {
   transition: box-shadow var(--interaction-duration) ease;
 }
+/* Secondary calendar navigation uses the shared bordeaux-on-sand palette. */
+.calendar-link, .calendar-tabs a:not([aria-current]) { color:var(--bordeaux); background:transparent; border:1px solid var(--bordeaux); }
