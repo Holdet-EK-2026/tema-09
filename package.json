@@ -11,7 +11,9 @@
     "test:browser": "node scripts/qa/pages.cjs && node scripts/qa/flows.cjs && node scripts/qa/official-flows.cjs && node scripts/qa/continuous-carousel.cjs && node scripts/qa/smoke.cjs && node scripts/qa/ux-interactions.cjs",
     "test:lighthouse": "node scripts/qa/lighthouse.cjs",
     "test:refinement": "node scripts/qa/event-navigation.cjs && node scripts/qa/refinement.cjs && node scripts/qa/media.cjs",
-    "test:carousel": "node scripts/qa/continuous-carousel.cjs"
+    "test:carousel": "node scripts/qa/continuous-carousel.cjs",
+    "test:dependencies": "node scripts/qa/dependency-compatibility.cjs",
+    "test:auth": "node --env-file-if-exists=.env scripts/qa/release-auth.cjs"
   },
   "dependencies": {
     "@astrojs/netlify": "8.2.13",
@@ -20,5 +22,9 @@
   },
   "engines": {
     "node": ">=22.23.4"
+  },
+  "overrides": {
+    "glob": "14.0.5",
+    "minimatch": "11.0.8"
   }
 }
