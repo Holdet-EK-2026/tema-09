@@ -808,3 +808,12 @@ button:disabled {
     transition: none;
   }
 }
+
+/* Group feedback: one primary action palette and a distinct global footer. */
+body .button:not(.secondary), body .hero-cta { background:var(--bordeaux); color:var(--sand); border-color:var(--bordeaux); white-space:normal; }
+body .button.secondary { color:var(--bordeaux); background:transparent; border:1px solid currentColor; }
+body .button:disabled, body .button[aria-disabled="true"] { opacity:.55; cursor:not-allowed; }
+.site-footer, .inner-page .site-footer { background:var(--sand); color:var(--tekst); }
+.site-footer h2, .site-footer nav a { color:var(--bordeaux); }
+.community-section { background:var(--salvie); }
+@media(max-width:600px) { .hero h1 { font-size:clamp(56px,17vw,72px); line-height:1.05; } }
