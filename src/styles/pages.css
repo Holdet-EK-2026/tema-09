@@ -2640,7 +2640,17 @@
   object-position: center;
 }
 
-.calendar-day.has-event { display:flex; flex-direction:column; gap:4px; }
-.calendar-day.has-event a { flex:1; min-height:44px; }
+.calendar-day.has-event {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.calendar-day.has-event a {
+  flex: 1;
+  min-height: 44px;
+}
 /* Filter state changes keep foreground/background contrast intact together. */
-.event-filters button, .event-status-filters button { transition:box-shadow var(--interaction-duration) ease; }
+.event-filters button,
+.event-status-filters button {
+  transition: box-shadow var(--interaction-duration) ease;
+}

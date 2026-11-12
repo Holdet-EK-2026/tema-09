@@ -101,33 +101,34 @@ export const demoEvents = eventData.map((event) => ({
   status: "demo",
   lumaUrl: null,
 }));
+export function toDisplayEvent(event) {
+  const parts = eventDateParts(event.startAt, event.timezone);
+  return {
+    ...event,
+    isDemo: false,
+    status: getEventStatus(event),
+    date: `${parts.year}-${parts.month}-${parts.day}`,
+    day: Number(parts.day),
+    year: parts.year,
+    month: new Intl.DateTimeFormat("da-DK", {
+      month: "long",
+      timeZone: event.timezone,
+    }).format(new Date(event.startAt)),
+    monthShort: new Intl.DateTimeFormat("da-DK", {
+      month: "short",
+      timeZone: event.timezone,
+    })
+      .format(new Date(event.startAt))
+      .replace(".", "")
+      .toUpperCase(),
+    dateLabel: formatEventDate(event.startAt, event.timezone),
+    time:
+      clock(event.startAt, event.timezone) +
+      (event.endTimeUnclear ? "" : "–" + clock(event.endAt, event.timezone)),
+  };
+}
 export const officialEvents = verifiedLumaEvents
-  .map((event) => {
-    const parts = eventDateParts(event.startAt, event.timezone);
-    return {
-      ...event,
-      isDemo: false,
-      status: getEventStatus(event),
-      date: `${parts.year}-${parts.month}-${parts.day}`,
-      day: Number(parts.day),
-      year: parts.year,
-      month: new Intl.DateTimeFormat("da-DK", {
-        month: "long",
-        timeZone: event.timezone,
-      }).format(new Date(event.startAt)),
-      monthShort: new Intl.DateTimeFormat("da-DK", {
-        month: "short",
-        timeZone: event.timezone,
-      })
-        .format(new Date(event.startAt))
-        .replace(".", "")
-        .toUpperCase(),
-      dateLabel: formatEventDate(event.startAt, event.timezone),
-      time:
-        clock(event.startAt, event.timezone) +
-        (event.endTimeUnclear ? "" : "–" + clock(event.endAt, event.timezone)),
-    };
-  })
+  .map(toDisplayEvent)
   .sort((a, b) => new Date(b.startAt) - new Date(a.startAt));
 export const events = [...officialEvents, ...demoEvents];
 export const listedEvents = officialEvents;

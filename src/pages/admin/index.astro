@@ -1,0 +1,40 @@
+---
+import InnerLayout from '../../components/InnerLayout.astro';
+---
+<InnerLayout title="Eventadministration" description="Beskyttet administration af KindDesign-events.">
+<section class="admin-section" aria-labelledby="admin-title">
+<h1 id="admin-title">Eventadministration</h1>
+<p id="admin-status" role="status">Indlæser sikker adgang…</p>
+<button class="button secondary" id="admin-retry" type="button" hidden>Prøv igen</button>
+<form id="admin-login" hidden>
+ <h2>Log ind</h2><p>Kun godkendte administratorer har adgang.</p>
+ <label>E-mail<input name="email" type="email" autocomplete="username" required /></label>
+ <label>Adgangskode<input name="password" type="password" autocomplete="current-password" required /></label>
+ <button class="button" type="submit">Log ind</button>
+</form>
+<div id="admin-workspace" hidden>
+ <div class="admin-actions"><button class="button" id="admin-new" type="button">Opret event</button><button class="button secondary" id="admin-logout" type="button">Log ud</button><button class="button secondary" id="admin-reload" type="button">Genindlæs</button></div>
+ <h2>Events</h2><ul id="admin-events"></ul>
+ <form id="admin-editor" hidden>
+  <h2 id="editor-title">Opret event</h2>
+  <label>Slug (kan ikke ændres efter oprettelse)<input name="slug" required pattern="[a-z0-9]+(-[a-z0-9]+)*" /></label>
+  <label>Titel<input name="title" required maxlength="250" /></label>
+  <label>Beskrivelse<textarea name="description" required maxlength="10000"></textarea></label>
+  <label>Kategori<select name="category"><option>Meetup</option><option>Workshop</option><option>Talk</option></select></label>
+  <label>Start (UTC)<input name="starts_at" type="datetime-local" required /></label>
+  <label>Slut (UTC)<input name="ends_at" type="datetime-local" required /></label>
+  <label>Eventets IANA-tidszone<input name="timezone" placeholder="Europe/Copenhagen" required /></label>
+  <label>Sted<input name="location" required /></label><label>By<input name="city" required /></label><label>Adresse<input name="address" /></label>
+  <label>Billed-URL (eksisterende /images/ eller HTTPS)<input name="image_url" required /></label><label>Billedbeskrivelse<input name="image_alt" required /></label>
+  <label>Direkte Luma-link<input name="luma_url" type="url" required pattern="https://luma.com/[A-Za-z0-9_-]+" /></label>
+  <label>Synlighed<select name="status"><option value="draft">Draft – kun administratorer</option><option value="published">Publiceret</option></select></label>
+  <div class="admin-actions"><button class="button" type="submit">Gem event</button><button class="button secondary" id="admin-cancel" type="button">Annullér</button></div>
+ </form>
+</div>
+<noscript>Administration kræver JavaScript. Ingen data er sendt.</noscript>
+</section>
+</InnerLayout>
+<style>
+.admin-section{max-width:900px;margin:40px auto;padding:24px}.admin-section h1{font-size:clamp(30px,5vw,48px)}.admin-section form{display:grid;gap:16px;max-width:640px}.admin-section label{display:grid;gap:8px}.admin-section input,.admin-section textarea,.admin-section select{width:100%;min-width:0;padding:12px;border:1px solid var(--bordeaux);border-radius:8px;background:var(--sand);font:inherit}.admin-section textarea{min-height:120px}.admin-actions{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}#admin-events{padding:0;list-style:none}#admin-events li{padding:16px 0;border-bottom:1px solid var(--bordeaux)}#admin-events button{margin:8px 12px 0 0;min-height:44px}.admin-section [hidden]{display:none!important}
+</style>
+<script src="../../scripts/admin.js"></script>

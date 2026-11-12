@@ -14,6 +14,8 @@
     "test:carousel": "node scripts/qa/continuous-carousel.cjs"
   },
   "dependencies": {
+    "@astrojs/netlify": "8.2.13",
+    "@supabase/supabase-js": "2.119.0",
     "astro": "7.4.8"
   },
   "engines": {

@@ -6,3 +6,5 @@ dist/
 .DS_Store
 !.env.example
 .netlify/
+
+.node_modules-*/

@@ -157,8 +157,20 @@ body:not(.inner-page) .site-header {
 }
 
 /* Primary CTA token shared with the site's actions. */
-.site-header .header-cta { background:var(--bordeaux); color:var(--sand); border-color:var(--bordeaux); }
-@media(max-width:600px) {
- body:not(.inner-page) .site-header { position:relative; inset:auto; }
- .site-header { min-height:76px; padding:10px 24px; padding-top:max(10px,env(safe-area-inset-top)); gap:10px; }
+.site-header .header-cta {
+  background: var(--bordeaux);
+  color: var(--sand);
+  border-color: var(--bordeaux);
+}
+@media (max-width: 600px) {
+  body:not(.inner-page) .site-header {
+    position: relative;
+    inset: auto;
+  }
+  .site-header {
+    min-height: 76px;
+    padding: 10px 24px;
+    padding-top: max(10px, env(safe-area-inset-top));
+    gap: 10px;
+  }
 }

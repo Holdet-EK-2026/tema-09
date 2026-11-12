@@ -12,6 +12,22 @@ async function htmlFiles(folder) {
   return files;
 }
 const files = await htmlFiles(root);
+const redirects = await fs
+  .readFile(path.join(root, "_redirects"), "utf8")
+  .catch(() => "");
+const serverBuild =
+  redirects.includes("/.netlify/functions/") ||
+  (await fs.access(path.resolve(".netlify/v1/functions/ssr")).then(
+    () => true,
+    () => false,
+  ));
+const isDynamic = (pathname) =>
+  serverBuild &&
+  (pathname === "/" ||
+    pathname === "/events/" ||
+    pathname === "/events/kalender/" ||
+    /^\/events\/[a-z0-9-]+\/$/.test(pathname) ||
+    /^\/kalender\/[a-z0-9-]+\.ics$/.test(pathname));
 const broken = [];
 const documents = new Map();
 for (const file of files) documents.set(file, await fs.readFile(file, "utf8"));
@@ -57,6 +73,7 @@ for (const [file, html] of documents) {
       root,
       pathname.endsWith("/") ? pathname + "index.html" : pathname,
     );
+    if (isDynamic(pathname)) continue;
     let target = destination;
     try {
       const stat = await fs.stat(target);

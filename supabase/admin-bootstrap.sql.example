@@ -1,0 +1,7 @@
+-- Run only as the project owner after creating the intended person in Supabase Auth.
+-- Replace the value with that person's verified Auth user UUID. Never use a browser key.
+-- No administrator is automatically inferred from an email address or signup.
+insert into public.event_admins (user_id)
+values ('REPLACE_WITH_VERIFIED_AUTH_USER_UUID'::uuid)
+on conflict (user_id) do nothing;
+-- In the Supabase Auth settings, disable public user signups before handing over admin access.

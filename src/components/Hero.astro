@@ -1,5 +1,7 @@
 ---
-import {nextEvent} from "../data/events.js";
+import {publishedEvents} from "../lib/event-repository.js";
+const {events}=await publishedEvents();
+const nextEvent=events.filter(e=>e.status==='upcoming').sort((a,b)=>new Date(a.startAt)-new Date(b.startAt))[0];
 ---
 <section class="hero" aria-labelledby="hero-title">
   <picture class="hero-photo">
