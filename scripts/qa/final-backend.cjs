@@ -114,8 +114,10 @@ const assert = require("node:assert/strict");
   const calendar = await p.request.get(
     base + "/kalender/from-ballet-to-technology.ics",
   );
-  assert.equal(calendar.status(), 200);
-  assert((await calendar.text()).includes("BEGIN:VCALENDAR"));
+  const tokyo = verifiedLumaEvents.find(e => e.id === "cmapoye1");
+  const upcoming = Date.now() < Date.parse(tokyo.endAt);
+  assert.equal(calendar.status(), upcoming ? 200 : 404);
+  if (upcoming) assert((await calendar.text()).includes("BEGIN:VCALENDAR"));
   await browser.close();
   console.log({
     responsiveCases: cases,

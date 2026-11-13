@@ -6,6 +6,11 @@ const fs = require("node:fs");
 const folder = process.env.KINDDESIGN_QA_OUTPUT || "docs/qa/ux-ui-final/after";
 fs.mkdirSync(folder, { recursive: true });
 (async () => {
+  const { verifiedLumaEvents } = await import("../../src/data/luma-events.js");
+  // A fixed date requires the local QA server to use the same clock.
+  const now = process.env.KINDDESIGN_QA_NOW ? Date.parse(process.env.KINDDESIGN_QA_NOW) : Date.now();
+  const upcoming = verifiedLumaEvents.filter(e => Date.parse(e.endAt) > now).length;
+  const tokyoUpcoming = now < Date.parse(verifiedLumaEvents.find(e => e.id === "cmapoye1").endAt);
   const browser = await chromium.launch({ channel: "chrome" });
   const results = [];
   for (const width of [390, 768, 1440]) {
@@ -14,6 +19,7 @@ fs.mkdirSync(folder, { recursive: true });
       reducedMotion: "reduce",
     });
     const page = await context.newPage();
+    await page.clock.install({ time: new Date(now) });
     const errors = [];
     let bookings = 0;
     page.on("pageerror", (e) => errors.push(e.message));
@@ -24,14 +30,16 @@ fs.mkdirSync(folder, { recursive: true });
     await page.goto(base + "/");
     await page.locator(".hero-cta").click();
     await page.waitForURL("**/events/");
-    assert.equal(await page.locator(".event-card:visible").count(), 1);
+    assert.equal(await page.locator(".event-card:visible").count(), upcoming);
     await page.locator('[data-status-filter="upcoming"]').click();
-    assert.equal(await page.locator(".event-card:visible").count(), 1);
-    assert(
-      (await page.locator(".event-card:visible").innerText()).includes(
-        "From Ballet",
-      ),
-    );
+    assert.equal(await page.locator(".event-card:visible").count(), upcoming);
+    if (upcoming) {
+      assert(
+        (await page.locator(".event-card:visible").innerText()).includes(
+          "From Ballet",
+        ),
+      );
+    }
     await page.locator('[data-filter="Workshop"]').click();
     assert.equal(await page.locator(".event-card:visible").count(), 0);
     assert(await page.locator("[data-event-empty]").isVisible());
@@ -43,63 +51,71 @@ fs.mkdirSync(folder, { recursive: true });
     assert(await page.locator("[data-event-empty]").isVisible());
     await page.locator("[data-reset-filters]").click();
     await page.locator('[data-status-filter="past"]').click();
-    assert.equal(await page.locator(".event-card:visible").count(), 7);
-    await page.locator('[data-status-filter="upcoming"]').click();
-    await page.locator(".event-card:visible .event-card-link").click();
+    assert.equal(await page.locator(".event-card:visible").count(), verifiedLumaEvents.length - upcoming);
+    await page.locator('[data-status-filter="all"]').click();
+    await page.locator('.event-card-link[href^="/events/from-ballet-to-technology/"]').click();
     await page.waitForURL(
       (url) => url.pathname === "/events/from-ballet-to-technology/",
     );
     await page.waitForLoadState("load");
-    assert.equal(
-      await page.locator("[data-luma-register]").getAttribute("href"),
-      "https://luma.com/cmapoye1",
-    );
-    assert(
-      (await page.locator(".official-facts").innerText()).includes(
-        "Asia/Tokyo",
-      ),
-    );
-    assert(
-      (await page.locator(".official-facts").innerText()).includes(
-        "18.30–20.00",
-      ),
-    );
-    assert(
-      (await page.locator("[data-registration-terms]").innerText()).includes(
-        "JP¥1.000",
-      ),
-    );
-    assert(
-      (await page.locator("[data-registration-terms]").innerText()).includes(
-        "godkendelse",
-      ),
-    );
-    assert(
-      (await page.locator("[data-luma-register]").innerText()).includes(
-        "Anmod om plads",
-      ),
-    );
-    const download = page.locator("[data-calendar-download]");
-    const response = await context.request.get(
-      new URL(await download.getAttribute("href"), page.url()).href,
-    );
-    assert.equal(response.status(), 200);
-    const ics = await response.text();
-    assert(ics.includes("DTSTART:20261113T093000Z"));
-    assert(ics.includes("DTEND:20261113T110000Z"));
-    // Verificér selve afgangen uden at kontakte Luma eller gennemføre en reservation.
-    let destination;
-    await page.route("https://luma.com/cmapoye1", (route) => {
-      destination = route.request().url();
-      return route.fulfill({
-        status: 200,
-        contentType: "text/html",
-        body: "<!doctype html><title>Lokal testdestination</title><p>Ingen booking udført.</p>",
+    if (tokyoUpcoming) {
+      assert.equal(
+        await page.locator("[data-luma-register]").getAttribute("href"),
+        "https://luma.com/cmapoye1",
+      );
+      assert(
+        (await page.locator(".official-facts").innerText()).includes(
+          "Asia/Tokyo",
+        ),
+      );
+      assert(
+        (await page.locator(".official-facts").innerText()).includes(
+          "18.30–20.00",
+        ),
+      );
+      assert(
+        (await page.locator("[data-registration-terms]").innerText()).includes(
+          "JP¥1.000",
+        ),
+      );
+      assert(
+        (await page.locator("[data-registration-terms]").innerText()).includes(
+          "godkendelse",
+        ),
+      );
+      assert(
+        (await page.locator("[data-luma-register]").innerText()).includes(
+          "Anmod om plads",
+        ),
+      );
+      const download = page.locator("[data-calendar-download]");
+      const response = await context.request.get(
+        new URL(await download.getAttribute("href"), page.url()).href,
+      );
+      assert.equal(response.status(), 200);
+      const ics = await response.text();
+      assert(ics.includes("DTSTART:20261113T093000Z"));
+      assert(ics.includes("DTEND:20261113T110000Z"));
+      // Verificér selve afgangen uden at kontakte Luma eller gennemføre en reservation.
+      let destination;
+      await page.route("https://luma.com/cmapoye1", (route) => {
+        destination = route.request().url();
+        return route.fulfill({
+          status: 200,
+          contentType: "text/html",
+          body: "<!doctype html><title>Lokal testdestination</title><p>Ingen booking udført.</p>",
+        });
       });
-    });
-    await page.locator("[data-luma-register]").click();
-    await page.waitForURL("https://luma.com/cmapoye1");
-    assert.equal(destination, "https://luma.com/cmapoye1");
+      await page.locator("[data-luma-register]").click();
+      await page.waitForURL("https://luma.com/cmapoye1");
+      assert.equal(destination, "https://luma.com/cmapoye1");
+    } else {
+      assert.equal(await page.locator("[data-luma-register]").count(), 0);
+      assert.equal(await page.locator("[data-calendar-download]").count(), 0);
+      assert(await page.locator(".event-ended-note").isVisible());
+      const expiredICS = await context.request.get(base + "/kalender/from-ballet-to-technology.ics");
+      assert.equal(expiredICS.status(), 404);
+    }
     await page.goto(base + "/events/ai-skillsharing/");
     assert.equal(await page.locator("[data-luma-register]").count(), 0);
     assert.equal(await page.locator("[data-calendar-download]").count(), 0);
@@ -118,6 +134,7 @@ fs.mkdirSync(folder, { recursive: true });
       ),
     );
     await page.goto(base + "/events/kalender/");
+    await page.locator("#calendar-month").selectOption("2026-11");
     assert.equal(
       await page
         .locator("[data-calendar-month]:visible")
@@ -140,29 +157,36 @@ fs.mkdirSync(folder, { recursive: true });
     await page.goBack();
     assert.equal(await page.locator("#calendar-month").inputValue(), "2026-11");
     await page.goto(base + "/events/from-ballet-to-technology/"); // Klientens minutkontrol testes med browserens clock på en frisk navigation.
-    await page.clock.install({ time: new Date("2026-11-14T12:00:00Z") });
+    await page.clock.setFixedTime(new Date("2026-11-14T12:00:00Z"));
     await page.reload();
     assert.equal(await page.locator("[data-luma-register]").count(), 0);
     assert(await page.locator("[data-calendar-download]").isHidden());
     assert(await page.locator("[data-registration-terms]").isHidden());
     await page.goto(base + "/");
-    assert.equal(
-      await page.locator("[data-countdown-value]").textContent(),
-      "Afsluttet",
-    );
-    assert(
-      (await page.locator(".hero-event").textContent()).includes(
-        "AFHOLDT EVENT",
-      ),
-    );
+    if (upcoming) {
+      assert.equal(
+        await page.locator("[data-countdown-value]").textContent(),
+        "Afsluttet",
+      );
+      assert(
+        (await page.locator(".hero-event").textContent()).includes(
+          "AFHOLDT EVENT",
+        ),
+      );
+    } else {
+      assert.equal(await page.locator("[data-countdown-value]").count(), 0);
+      assert.equal(await page.locator(".hero-event").count(), 0);
+      assert.equal(await page.locator(".countdown").getAttribute("href"), "/events/");
+    }
     assert.equal(errors.length, 0);
     assert.equal(bookings, 0);
     results.push({
       width,
       filtersAndEmptyState: true,
       history: true,
-      officialJourneyAndInterceptedLumaDestination: true,
-      calendarMonthAndUTCDownload: true,
+      officialJourneyAndInterceptedLumaDestination: tokyoUpcoming,
+      calendarMonthAndUTCDownload: tokyoUpcoming,
+      expiredServerGuard: !tokyoUpcoming,
       pastRegistrationRemoved: true,
       conflictsVisible: true,
       expiredClientGuard: true,
