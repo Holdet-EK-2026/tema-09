@@ -20,8 +20,9 @@ body:not(.inner-page) .site-header {
 }
 .site-header .brand {
   justify-self: start;
-  width: 90px;
-  height: 90px;
+  width: 140px;
+  height: auto;
+  aspect-ratio: 1062 / 616;
   margin: 0;
 }
 .site-header .brand img {
@@ -123,8 +124,8 @@ body:not(.inner-page) .site-header {
     gap: 16px;
   }
   .site-header .brand {
-    width: 54px;
-    height: 54px;
+    width: 96px;
+    height: auto;
   }
   .site-header .desktop-navigation,
   .site-header .header-cta {
