@@ -31,32 +31,6 @@
   width: fit-content;
   max-width: 100%;
 }
-.inner-page .site-footer {
-  height: 254px;
-  padding: 28px 70px;
-  grid-template-columns: 116px 638px 1fr;
-  gap: 58px;
-}
-.inner-page .site-footer h2 {
-  font-size: 30px;
-  line-height: 1.2;
-}
-.inner-page .site-footer nav {
-  gap: 12px;
-  font-size: 20px;
-  line-height: 1.2;
-}
-.inner-page .site-footer > p {
-  left: 70px;
-  top: 211px;
-}
-.inner-page .footer-brand {
-  margin: 0;
-}
-.inner-page .footer-brand img {
-  width: 116px;
-  height: 116px;
-}
 .page-hero {
   position: relative;
   height: 390px;
@@ -222,31 +196,6 @@
 .mobile-event-link {
   display: none !important;
 }
-.new-banner {
-  margin: 48px -16px 0;
-  min-height: 188px;
-  border-radius: 20px;
-  background: var(--lyseblaa);
-  display: grid;
-  grid-template-columns: 354px 1fr auto;
-  gap: 42px;
-  align-items: center;
-  padding-right: 30px;
-}
-.new-banner img {
-  width: 354px;
-  height: 188px;
-  border-radius: 16px;
-  object-fit: cover;
-}
-.new-banner h2 {
-  font-size: 34px;
-  margin-bottom: 14px;
-}
-.new-banner p {
-  font-size: 21px;
-  color: var(--tekst);
-}
 .about-section {
   padding: 60px 46px 47px;
   color: var(--bordeaux);
@@ -357,7 +306,6 @@
   display: none;
 }
 .contact-section {
-  min-height: 1210px;
   display: grid;
   grid-template-columns: minmax(0, 530px) minmax(0, 715px);
   column-gap: 50px;
@@ -377,7 +325,7 @@
   height: 460px;
   object-fit: cover;
   border-radius: 24px;
-  margin-top: 100px;
+  margin-top: 32px;
   margin-left: -17px;
 }
 .contact-form {
@@ -475,19 +423,6 @@
   font-size: 17px;
   min-height: 56px;
   padding: 16px 20px;
-}
-.inner-page.version-legacy .site-footer {
-  height: 285px;
-  padding: 40px 64px;
-  grid-template-columns: 124px 608px 1fr;
-  gap: 62px;
-}
-.inner-page.version-legacy .site-footer h2 {
-  font-size: 32px;
-}
-.inner-page.version-legacy .site-footer > p {
-  top: 235px;
-  left: 64px;
 }
 .welcome-section {
   background: var(--lyseblaa);
@@ -847,15 +782,6 @@
   margin-right: 20px;
 }
 @media (min-width: 601px) and (max-width: 1250px) {
-  .inner-page .site-footer,
-  .inner-page.version-legacy .site-footer {
-    grid-template-columns: 100px 1fr 170px;
-    gap: 30px;
-    padding-inline: 32px;
-  }
-  .inner-page .site-footer h2 {
-    font-size: 26px;
-  }
   .page-hero h1 {
     font-size: 72px;
   }
@@ -902,25 +828,6 @@
   }
   .event-arrow {
     display: none;
-  }
-  .new-banner {
-    grid-template-columns: 30% 1fr;
-    gap: 24px;
-    padding: 0 20px 20px 0;
-  }
-  .new-banner img {
-    width: 100%;
-    grid-row: span 2;
-    height: 100%;
-  }
-  .new-banner > div {
-    padding-top: 20px;
-  }
-  .new-banner h2 {
-    font-size: 30px;
-  }
-  .new-banner .button {
-    grid-column: 2;
   }
   .about-section {
     padding-inline: 32px;
@@ -1103,26 +1010,6 @@
   }
 }
 @media (max-width: 600px) {
-  .inner-page .site-footer,
-  .inner-page.version-legacy .site-footer {
-    height: auto;
-    padding: 24px;
-    gap: 16px;
-  }
-  .inner-page .site-footer h2 {
-    font-size: 24px;
-    line-height: 1.05;
-  }
-  .inner-page .site-footer nav {
-    font-size: 18px;
-    line-height: 1.45;
-  }
-  .inner-page .site-footer > p,
-  .inner-page.version-legacy .site-footer > p {
-    position: static;
-    font-size: 12px;
-    line-height: 1.45;
-  }
   .inner-page .button,
   .inner-page.version-legacy .button {
     font-size: 16px;
@@ -1257,23 +1144,6 @@
     display: inline-flex !important;
     margin-top: 16px;
     width: 180px !important;
-  }
-  .new-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin: 48px -16px 0;
-    padding: 24px;
-    gap: 24px;
-  }
-  .new-banner img {
-    display: none;
-  }
-  .new-banner h2 {
-    font-size: 32px;
-  }
-  .new-banner p {
-    font-size: 20px;
   }
   .about-section {
     padding: 24px;
@@ -1782,10 +1652,6 @@
     min-height: 56px;
     font-size: 17px;
   }
-  .new-banner p {
-    font-size: 20px;
-    line-height: 1.25;
-  }
   .founders-intro h2 {
     font-size: 38px;
     line-height: 1.25;
@@ -1835,9 +1701,6 @@
   font-size: 23px;
   margin-top: 0;
   color: var(--tekst);
-}
-.footer-brand img {
-  object-fit: contain;
 }
 @media (min-width: 601px) and (max-width: 900px) {
   .values {
@@ -1949,25 +1812,6 @@
   .event-copy .event-example {
     line-height: 18px;
   }
-  .new-banner {
-    margin: 28px 0 0;
-    gap: 16px;
-    border-radius: 0;
-  }
-  .new-banner h2 {
-    font-size: 30px;
-    line-height: 38px;
-    margin-bottom: 16px;
-  }
-  .new-banner p {
-    font-size: 19px;
-    line-height: 24px;
-  }
-  .new-banner .button {
-    width: 170px;
-    min-height: 56px;
-    font-size: 17px;
-  }
   .about-intro h2 {
     line-height: 43px;
   }
@@ -1999,10 +1843,6 @@
   .mobile-about-actions .button {
     min-height: 56px;
     font-size: 17px;
-  }
-  .inner-page.version-legacy .site-footer h2 {
-    font-size: 30px;
-    line-height: 1.05;
   }
 }
 @media (max-width: 600px) {
@@ -2656,3 +2496,30 @@
 }
 /* Secondary calendar navigation uses the shared bordeaux-on-sand palette. */
 .calendar-link, .calendar-tabs a:not([aria-current]) { color:var(--bordeaux); background:transparent; border:1px solid var(--bordeaux); }
+
+/* A compact invitation, with blue as an accent rather than a competing section. */
+.new-banner {
+  margin: 40px 0 0;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  border: 1px solid rgb(114 47 55 / 20%);
+  border-top: 6px solid var(--lyseblaa);
+  border-radius: 20px;
+  background: var(--sand);
+}
+.new-banner img { width: 180px; height: 150px; object-fit: cover; border-radius: 12px; }
+.new-banner h2 { font-size: clamp(26px, 2.3vw, 32px); line-height: 1.2; margin-bottom: 12px; }
+.new-banner p { font-size: 18px; line-height: 1.5; color: var(--tekst); }
+@media (max-width: 1024px) {
+  .new-banner { grid-template-columns: 140px minmax(0, 1fr); }
+  .new-banner img { width: 140px; height: 100%; grid-row: span 2; }
+  .new-banner .button { grid-column: 2; }
+}
+@media (max-width: 600px) {
+  .new-banner { grid-template-columns: minmax(0, 1fr); padding: 20px; gap: 20px; }
+  .new-banner img { width: 100%; height: auto; aspect-ratio: 16 / 9; grid-row: auto; }
+  .new-banner .button { grid-column: 1; }
+}

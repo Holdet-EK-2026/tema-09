@@ -35,7 +35,7 @@ const assert = require("node:assert/strict");
       const footer = await page
         .locator(".site-footer")
         .evaluate((e) => getComputedStyle(e).backgroundColor);
-      assert.equal(footer, "rgb(232, 220, 198)");
+      assert.equal(footer, "rgb(114, 47, 55)");
       if (route === "/") {
         const h1 = await page.locator("#hero-title").boundingBox(),
           header = await page.locator(".site-header").boundingBox();

@@ -282,38 +282,6 @@ button:focus-visible,
   justify-content: flex-start;
   white-space: nowrap;
 }
-.site-footer {
-  background: var(--salvie);
-  height: 285px;
-  position: relative;
-  padding: 40px 64px;
-  display: grid;
-  grid-template-columns: 124px 608px 1fr;
-  column-gap: 62px;
-}
-.footer-brand {
-  margin-top: 4px;
-}
-.site-footer h2 {
-  font-size: 32px;
-  line-height: 1.25;
-  color: var(--bordeaux);
-  margin-top: 6px;
-}
-.site-footer nav {
-  display: flex;
-  flex-direction: column;
-  gap: 17.5px;
-  font-size: 18px;
-  line-height: 1.25;
-}
-.site-footer > p {
-  position: absolute;
-  left: 64px;
-  top: 235px;
-  font-size: 15px;
-  line-height: 1.25;
-}
 dialog {
   border: 1px solid var(--bordeaux);
   border-radius: 24px;
@@ -369,17 +337,6 @@ dialog p {
   .community-body {
     font-size: 19px;
   }
-  .site-footer {
-    grid-template-columns: 100px 1fr 170px;
-    gap: 30px;
-    padding-inline: 32px;
-  }
-  .site-footer h2 {
-    font-size: 26px;
-  }
-  .site-footer > p {
-    left: 32px;
-  }
 }
 @media (min-width: 1441px) {
   .hero h1 {
@@ -394,9 +351,6 @@ dialog p {
   .community-photo {
     width: 100%;
     height: 500px;
-  }
-  .site-footer {
-    grid-template-columns: 124px minmax(608px, 1fr) 456px;
   }
 }
 @media (max-width: 600px) {
@@ -577,32 +531,6 @@ dialog p {
     padding: 14px;
     justify-content: center;
   }
-  .site-footer {
-    height: auto;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .footer-brand {
-    display: none;
-  }
-  .site-footer h2 {
-    font-size: 30px;
-    line-height: 1.05;
-    margin: 0;
-    overflow-wrap: break-word;
-  }
-  .site-footer nav {
-    display: contents;
-    font-size: 18px;
-    line-height: 1.45;
-  }
-  .site-footer > p {
-    position: static;
-    font-size: 11px;
-    line-height: 1.45;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -641,20 +569,11 @@ dialog p {
   .community-body {
     line-height: 25px;
   }
-  .site-footer > p {
-    line-height: 16px;
-  }
   .community-copy h2 {
     line-height: 40px;
   }
   .community-body p + p {
     margin-top: 25px;
-  }
-  .site-footer h2 {
-    line-height: 31px;
-  }
-  .site-footer nav {
-    line-height: 26px;
   }
 }
 @media (min-width: 1251px) {
@@ -702,10 +621,6 @@ dialog p {
   [data-carousel].carousel-ready .gallery-card {
     transition: none;
   }
-}
-
-.footer-brand img {
-  object-fit: contain;
 }
 .countdown [data-countdown-value] {
   font-variant-numeric: tabular-nums;
@@ -826,15 +741,6 @@ body .button:disabled,
 body .button[aria-disabled="true"] {
   opacity: 0.55;
   cursor: not-allowed;
-}
-.site-footer,
-.inner-page .site-footer {
-  background: var(--sand);
-  color: var(--tekst);
-}
-.site-footer h2,
-.site-footer nav a {
-  color: var(--bordeaux);
 }
 .community-section {
   background: var(--salvie);
