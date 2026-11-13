@@ -48,6 +48,15 @@
 .carousel-tools button:disabled {
   cursor: default;
 }
+.carousel-toggle .carousel-motion-reason {
+  max-width: 120px;
+  white-space: normal;
+  font-size: 11px;
+  line-height: 1.3;
+}
+.carousel-motion-reason[hidden] {
+  display: none;
+}
 .carousel-position {
   min-width: 40px;
   text-align: center;

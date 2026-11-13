@@ -8,6 +8,12 @@ function initCarousel(carousel) {
   const position = carousel.querySelector("[data-carousel-position]");
   const status = carousel.querySelector("[data-carousel-status]");
   const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+  const motionReason =
+    toggle.querySelector(".carousel-motion-reason") ||
+    document.createElement("small");
+  motionReason.className = "carousel-motion-reason";
+  motionReason.textContent = "Reduceret bevægelse";
+  toggle.append(motionReason);
   const controller = new AbortController();
   const options = { signal: controller.signal };
   let phase = 0,
@@ -63,6 +69,13 @@ function initCarousel(carousel) {
   }
   function tick(now) {
     frame = 0;
+    // Synchronize controls before another frame if a browser updates the query
+    // before delivering its change event. Never animate against that preference.
+    if (carousel.dataset.reducedMotion !== String(reduced.matches)) {
+      target = null;
+      schedule();
+      return;
+    }
     const dt = last === null ? 0 : Math.min(now - last, 50);
     last = now;
     if (target !== null) {
@@ -88,6 +101,10 @@ function initCarousel(carousel) {
     carousel.dataset.reducedMotion = String(reduced.matches);
     const offersPlay = userPaused || (!explicitPlay && (focused || hovered));
     toggle.disabled = reduced.matches;
+    motionReason.hidden = !reduced.matches;
+    toggle.title = reduced.matches
+      ? "Din browser melder reduceret bevægelse. Brug pilene eller swipe for at skifte billede."
+      : "";
     label.textContent = reduced.matches
       ? "Automatik fra"
       : offersPlay
@@ -96,7 +113,7 @@ function initCarousel(carousel) {
     toggle.setAttribute(
       "aria-label",
       reduced.matches
-        ? "Automatik fra via systemets indstillinger"
+        ? "Automatik fra: Din browser melder reduceret bevægelse. Brug pilene eller swipe."
         : offersPlay
           ? "Afspil kontinuerlig bevægelse"
           : "Sæt kontinuerlig bevægelse på pause",
@@ -135,6 +152,14 @@ function initCarousel(carousel) {
     schedule();
   }
   let requestedPlay = null;
+  let handledTouchAt = -Infinity;
+  function changePlayback(start) {
+    requestedPlay = null;
+    userPaused = !start;
+    explicitPlay = start;
+    target = null;
+    schedule();
+  }
   toggle.addEventListener(
     "pointercancel",
     () => {
@@ -150,16 +175,35 @@ function initCarousel(carousel) {
     options,
   );
   toggle.addEventListener(
+    "pointerup",
+    (e) => {
+      if (e.pointerType !== "touch") return;
+      // iOS can suppress the synthesized click when focus changes the label.
+      // Apply the captured touch intent once, without waiting for that click.
+      handledTouchAt = e.timeStamp;
+      changePlayback(
+        requestedPlay ?? (userPaused || (!explicitPlay && (focused || hovered))),
+      );
+      e.preventDefault();
+    },
+    options,
+  );
+  toggle.addEventListener(
+    "keydown",
+    (e) => {
+      if (e.key === "Enter" || e.code === "Space") requestedPlay = null;
+    },
+    options,
+  );
+  toggle.addEventListener(
     "click",
-    () => {
+    (e) => {
+      // Ignore only a duplicate compatibility click, never keyboard activation.
+      if (e.detail > 0 && e.timeStamp - handledTouchAt < 500) return;
       const start =
         requestedPlay ??
         (userPaused || (!explicitPlay && (focused || hovered)));
-      requestedPlay = null;
-      userPaused = !start;
-      explicitPlay = start;
-      target = null;
-      schedule();
+      changePlayback(start);
     },
     options,
   );
@@ -256,15 +300,13 @@ function initCarousel(carousel) {
     options,
   );
   document.addEventListener("visibilitychange", schedule, options);
-  reduced.addEventListener(
-    "change",
-    () => {
-      target = null;
-      render();
-      schedule();
-    },
-    options,
-  );
+  function motionChange() {
+    target = null;
+    render();
+    schedule();
+  }
+  // Keep this MediaQueryList subscription explicit across embedded browser lifecycles.
+  reduced.addEventListener("change", motionChange);
   window.addEventListener("resize", render, options);
   const visibility = new IntersectionObserver(
     (entries) => {
@@ -302,6 +344,7 @@ function initCarousel(carousel) {
     disposed = true;
     cancelAnimationFrame(frame);
     controller.abort();
+    reduced.removeEventListener("change", motionChange);
     visibility.disconnect();
     photos.disconnect();
     removal.disconnect();
