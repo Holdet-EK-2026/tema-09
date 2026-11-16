@@ -14,7 +14,7 @@ const nextEvent=events.filter(e=>e.status==='upcoming').sort((a,b)=>new Date(a.s
   <div class="hero-intro">
     <h1 id="hero-title"><span>KIND</span> <span>DESIGN</span></h1>
     <p class="hero-tagline"><span>Mød andre kreative.</span> <span>Find dit fællesskab.</span></p>
-    <a class="button hero-cta" href="/events/">Find dit næste event<span class="desktop-label">&nbsp;</span> ↗</a>
+    <a class="button hero-cta" href={nextEvent ? "/events/" : "https://luma.com/user/kinddesign"}>{nextEvent ? "Find dit næste event" : "Se kommende events på Luma"}<span class="desktop-label">&nbsp;</span> ↗</a>
 
 
   </div>

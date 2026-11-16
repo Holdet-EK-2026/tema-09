@@ -1,8 +1,9 @@
 export function syncEventStatus() {
   let changed = false;
   document.querySelectorAll("[data-official-event]").forEach((node) => {
+    const end = Date.parse(node.dataset.eventEnd);
     if (
-      Date.parse(node.dataset.eventEnd) > Date.now() ||
+      !Number.isFinite(end) || end > Date.now() ||
       node.dataset.eventStatus === "past"
     )
       return;

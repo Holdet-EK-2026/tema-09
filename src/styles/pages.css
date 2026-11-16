@@ -378,7 +378,6 @@
   outline-offset: 3px;
 }
 .form-notice {
-  order: 10;
   font-size: 15px;
   color: var(--tekst);
 }
@@ -2432,13 +2431,12 @@
 }
 
 .contact-profile {
-  display: block;
+  display: inline-flex;
   width: fit-content;
   margin-top: 16px;
   font-size: 18px;
   line-height: 1.4;
-  text-decoration: underline;
-  text-underline-offset: 0.25em;
+  text-decoration: none;
 }
 
 /* Filtre er sekundære i forhold til sidens primære handlinger. */
@@ -2522,4 +2520,16 @@
   .new-banner { grid-template-columns: minmax(0, 1fr); padding: 20px; gap: 20px; }
   .new-banner img { width: 100%; height: auto; aspect-ratio: 16 / 9; grid-row: auto; }
   .new-banner .button { grid-column: 1; }
+}
+
+/* The mobile agenda exposes the same month/event data without tiny grid labels. */
+.calendar-agenda { display: none; }
+.contact-form #contact-demo-heading { font-size: 24px; line-height: 1.2; }
+.contact-profile.button { padding: 12px 20px; font-size: 17px; text-align: center; }
+@media (max-width: 720px) {
+  .calendar-day a span { display: none; }
+  .calendar-agenda { display: grid; gap: 12px; list-style: none; padding: 0; margin: 24px 0 0; }
+  .calendar-agenda a { display: grid; gap: 8px; padding: 16px; border: 1px solid var(--bordeaux); border-radius: 16px; color: var(--bordeaux); text-decoration: none; font-size: 17px; font-weight: 700; }
+  .calendar-agenda .agenda-date, .calendar-agenda .agenda-meta { font-size: 14px; font-weight: 400; line-height: 1.4; }
+  .calendar-agenda a:hover { text-decoration: underline; }
 }

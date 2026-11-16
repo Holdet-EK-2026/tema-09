@@ -37,6 +37,7 @@ function applyFilter() {
   const noUpcoming =
     date === "upcoming" &&
     !cards.some((card) => card.dataset.eventStatus === "upcoming");
+  empty.querySelector("[data-official-next]").hidden = !noUpcoming;
   empty.querySelector("h3").textContent = noUpcoming
     ? "Der er ingen verificerede kommende events."
     : "Ingen events matcher dit filter.";

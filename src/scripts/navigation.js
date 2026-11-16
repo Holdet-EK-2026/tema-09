@@ -2,7 +2,7 @@ const header = document.querySelector('.site-header');
 const toggle = header?.querySelector('.menu-toggle');
 const menu = header?.querySelector('.mobile-navigation');
 if (toggle && menu) {
-  const mobile = matchMedia('(max-width: 600px)');
+  const mobile = matchMedia('(max-width: 720px)');
   function close(restore = false) {
     toggle.setAttribute('aria-expanded', 'false');
     menu.hidden = mobile.matches;

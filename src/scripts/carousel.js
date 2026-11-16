@@ -13,7 +13,7 @@ function initCarousel(carousel) {
     document.createElement("small");
   motionReason.className = "carousel-motion-reason";
   motionReason.textContent = "Reduceret bevægelse";
-  toggle.append(motionReason);
+  toggle.append(document.createTextNode(" "), motionReason);
   const controller = new AbortController();
   const options = { signal: controller.signal };
   let phase = 0,
@@ -113,10 +113,10 @@ function initCarousel(carousel) {
     toggle.setAttribute(
       "aria-label",
       reduced.matches
-        ? "Automatik fra: Din browser melder reduceret bevægelse. Brug pilene eller swipe."
+        ? "Automatik fra — Reduceret bevægelse"
         : offersPlay
           ? "Afspil kontinuerlig bevægelse"
-          : "Sæt kontinuerlig bevægelse på pause",
+          : "Pause — Sæt kontinuerlig bevægelse på pause",
     );
     if (
       why === "offscreen" ||
