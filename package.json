@@ -13,7 +13,9 @@
     "test:refinement": "node scripts/qa/event-navigation.cjs && node scripts/qa/refinement.cjs && node scripts/qa/media.cjs",
     "test:carousel": "node scripts/qa/continuous-carousel.cjs",
     "test:dependencies": "node scripts/qa/dependency-compatibility.cjs",
-    "test:auth": "node --env-file-if-exists=.env scripts/qa/release-auth.cjs"
+    "test:auth": "node --env-file-if-exists=.env scripts/qa/release-auth.cjs",
+    "test:storage": "node --env-file-if-exists=.env scripts/qa/storage-upload.cjs",
+    "test:admin-storage": "node scripts/qa/admin-storage.cjs"
   },
   "dependencies": {
     "@astrojs/netlify": "8.2.13",

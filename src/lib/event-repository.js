@@ -30,7 +30,7 @@ export function displayRow(row) {
       : undefined,
     coverWidth: row.details?.coverWidth,
     coverHeight: row.details?.coverHeight,
-    legacyCover: row.details?.id === row.id,
+    legacyCover: row.details?.id === row.id && row.image_url === `/images/luma-${row.id}-1200.webp`,
   });
 }
 export async function publishedEvents(clientFactory = databaseClient) {

@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import { inspectImage, uploadEventImage, removeEventImage } from "../lib/event-images.js";
 const url = import.meta.env.PUBLIC_SUPABASE_URL,
   key = import.meta.env.PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 const status = document.querySelector("#admin-status"),
@@ -6,6 +7,12 @@ const status = document.querySelector("#admin-status"),
   workspace = document.querySelector("#admin-workspace"),
   editor = document.querySelector("#admin-editor");
 const retry = document.querySelector("#admin-retry");
+const imageFile = document.querySelector("#admin-image-file"),
+  imagePreview = document.querySelector("#admin-image-preview"),
+  imageStatus = document.querySelector("#admin-image-status"),
+  imageClear = document.querySelector("#admin-image-clear");
+let selectedImage = null, imageInfo = null, previewUrl = null, pendingUpload = null,
+  imageRevision = 0, saving = false;
 let client,
   editing = null,
   rows = [],
@@ -15,6 +22,7 @@ const message = (text) => {
   retry.hidden = true;
 };
 function hidePrivate() {
+  clearImageChoice();
   workspace.hidden = true;
   editor.hidden = true;
   document.querySelector("#admin-events").replaceChildren();
@@ -22,8 +30,69 @@ function hidePrivate() {
   editing = null;
 }
 function busy(form, value) {
-  form.querySelectorAll("button").forEach((b) => (b.disabled = value));
+  form.querySelectorAll("button, input, select, textarea").forEach((b) => (b.disabled = value));
 }
+function clearImageChoice(keepFile = false) {
+  ++imageRevision;
+  if (previewUrl) URL.revokeObjectURL(previewUrl);
+  previewUrl = null;
+  selectedImage = null;
+  imageInfo = null;
+  if (!keepFile) imageFile.value = "";
+  imageFile.setCustomValidity("");
+  imageFile.disabled = false;
+  imagePreview.removeAttribute("src");
+  imagePreview.hidden = true;
+  imageClear.hidden = true;
+  imageStatus.textContent = "";
+  editor.elements.image_url.required = true;
+  editor.elements.image_url.readOnly = false;
+}
+async function discardUpload() {
+  if (!pendingUpload) return true;
+  try {
+    await removeEventImage(client, pendingUpload);
+    pendingUpload = null;
+    imageFile.disabled = false;
+    return true;
+  } catch {
+    imageStatus.textContent = "Det ubrugte upload kunne ikke ryddes op. Prøv at gemme eller annullere igen, når forbindelsen virker.";
+    return false;
+  }
+}
+imageFile.addEventListener("change", async () => {
+  const file = imageFile.files[0];
+  if (!await discardUpload()) return;
+  clearImageChoice(true);
+  if (!file) return;
+  const mine = imageRevision;
+  imageFile.setCustomValidity("Billedet kontrolleres. Vent et øjeblik.");
+  imageStatus.textContent = "Kontrollerer billedet…";
+  const objectUrl = URL.createObjectURL(file);
+  try {
+    const info = await inspectImage(file, objectUrl);
+    if (mine !== imageRevision) { URL.revokeObjectURL(objectUrl); return; }
+    selectedImage = file;
+    imageInfo = info;
+    imageFile.setCustomValidity("");
+    previewUrl = objectUrl;
+    imagePreview.src = objectUrl;
+    imagePreview.hidden = false;
+    imageClear.hidden = false;
+    editor.elements.image_url.required = false;
+    editor.elements.image_url.readOnly = true;
+    imageStatus.textContent = `${file.name} · ${info.width} × ${info.height} px. Klar til upload ved Gem event.`;
+  } catch (error) {
+    URL.revokeObjectURL(objectUrl);
+    if (mine !== imageRevision) return;
+    imageFile.setCustomValidity(error.message);
+    imageStatus.textContent = error.message;
+    imageClear.hidden = false;
+  }
+});
+imageClear.addEventListener("click", async () => {
+  if (await discardUpload()) clearImageChoice();
+});
 function fail(error) {
   message(
     error?.code === "23505"
@@ -93,7 +162,9 @@ async function load() {
       : "Ingen events endnu. Opret det første event.",
   );
 }
-function openEditor(row) {
+async function openEditor(row) {
+  if (saving || !await discardUpload()) return;
+  clearImageChoice();
   editing = row?.id || null;
   editor.reset();
   for (const field of editor.elements) {
@@ -182,6 +253,7 @@ if (!url || !key) {
   document
     .querySelector("#admin-logout")
     .addEventListener("click", async () => {
+      if (saving || !await discardUpload()) return;
       ++revision;
       hidePrivate();
       const { error } = await client.auth.signOut();
@@ -193,16 +265,18 @@ if (!url || !key) {
   document
     .querySelector("#admin-new")
     .addEventListener("click", () => openEditor(null));
-  document.querySelector("#admin-cancel").addEventListener("click", () => {
+  document.querySelector("#admin-cancel").addEventListener("click", async () => {
+    if (saving || !await discardUpload()) return;
+    clearImageChoice();
     editor.hidden = true;
     editing = null;
   });
   document
     .querySelector("#admin-reload")
-    .addEventListener("click", () => access());
+    .addEventListener("click", async () => { if (await discardUpload()) access(); });
   editor.addEventListener("submit", async (e) => {
     e.preventDefault();
-    if (!editor.reportValidity()) return;
+    if (saving || !editor.reportValidity()) return;
     const fields = Object.fromEntries(new FormData(editor));
     Object.keys(fields).forEach((k) => (fields[k] = fields[k].trim()));
     try {
@@ -218,7 +292,7 @@ if (!url || !key) {
       return;
     }
     if (
-      !/^https:\/\/.+/.test(fields.image_url) &&
+      !selectedImage && !/^https:\/\/.+/.test(fields.image_url) &&
       !/^\/images\/[a-zA-Z0-9._-]+$/.test(fields.image_url)
     ) {
       message(
@@ -226,26 +300,45 @@ if (!url || !key) {
       );
       return;
     }
-    busy(editor, true);
+    saving = true;
+    busy(workspace, true);
+    const mine = revision;
+    message(selectedImage ? "Uploader billede og gemmer event…" : "Gemmer event…");
     try {
+      if (selectedImage) {
+        pendingUpload ||= await uploadEventImage(client, selectedImage);
+        fields.image_url = pendingUpload.url;
+        fields.details = {
+          ...(rows.find(row => row.id === editing)?.details || {}),
+          coverWidth: imageInfo.width, coverHeight: imageInfo.height,
+        };
+      }
+      if (mine !== revision) { await discardUpload(); return; }
       const query = editing
         ? client.from("events").update(fields).eq("id", editing)
         : client.from("events").insert(fields);
       const { error, data } = await query.select("id");
       if (error || data.length !== 1) {
+        await discardUpload();
         fail(error);
         return;
       }
       editor.hidden = true;
+      pendingUpload = null;
+      clearImageChoice();
       editing = null;
       await load();
       message(
         "Eventet er gemt. Publicerede ændringer vises ved næste sideindlæsning.",
       );
     } catch {
+      await discardUpload();
       fail();
     } finally {
-      busy(editor, false);
+      saving = false;
+      busy(workspace, false);
+      // Retain the same file until a failed cleanup is retried or the event is saved.
+      imageFile.disabled = Boolean(pendingUpload);
     }
   });
   client.auth.onAuthStateChange((event) => {
@@ -258,7 +351,9 @@ if (!url || !key) {
       setTimeout(() => access(), 0);
     }
   });
-  retry.addEventListener("click", () => access().catch(() => fail()));
+  retry.addEventListener("click", async () => {
+    if (await discardUpload()) access().catch(() => fail());
+  });
   access().catch(() => {
     hidePrivate();
     login.hidden = false;
