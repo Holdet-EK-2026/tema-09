@@ -4,12 +4,17 @@ import DemoEventDetail from '../../components/DemoEventDetail.astro';
 import OfficialEventDetail from '../../components/OfficialEventDetail.astro';
 import {demoEvents} from '../../data/events.js';
 import {publishedEvents} from '../../lib/event-repository.js';
-export const prerender=false;
-const demo=demoEvents.find(e=>e.slug===Astro.params.slug);
-const result=demo ? {events:[],error:null} : await publishedEvents();
-const event=demo || result.events.find(e=>e.slug===Astro.params.slug);
-if(!event) Astro.response.status=result.error ? 503 : 404;
+export const prerender=true;
+export async function getStaticPaths() {
+  const {events,error}=await publishedEvents();
+  if(error) throw new Error(error);
+  return [...events,...demoEvents].map(event=>({
+    params:{slug:event.slug},
+    props:{event},
+  }));
+}
+const {event}=Astro.props;
 ---
 <InnerLayout title={event?.title || "Event ikke tilgængeligt"} description={event?.description || "Find KindDesigns events."} version="legacy">
-  {event ? (event.isDemo ? <DemoEventDetail event={event} /> : <OfficialEventDetail event={event} />) : <section class="events-section"><h1>{result.error ? "Events kunne ikke hentes" : "Eventet findes ikke"}</h1><p>{result.error || "Se de aktuelle arrangementer i oversigten."}</p><a class="button" href="/events/">Se events</a></section>}
+  {event.isDemo ? <DemoEventDetail event={event} /> : <OfficialEventDetail event={event} />}
 </InnerLayout>

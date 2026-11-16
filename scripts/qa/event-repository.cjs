@@ -11,11 +11,7 @@ const assert = require("node:assert/strict");
     const { publishedEvents, displayRow } = await server.ssrLoadModule(
       "/src/lib/event-repository.js",
     );
-    const { createClient } = await import("@supabase/supabase-js");
-    const broken = () =>
-      createClient("http://127.0.0.1:1", "sb_publishable_unavailable", {
-        auth: { persistSession: false },
-      });
+    const broken = async () => { throw new Error("Network unavailable"); };
     const result = await publishedEvents(broken);
     assert.deepEqual(result.events, []);
     assert.match(result.error, /kunne ikke hentes/);
@@ -27,7 +23,25 @@ const assert = require("node:assert/strict");
     const uploaded = displayRow({...legacy,image_url:"https://example.test/storage/v1/object/public/event-images/events/new.webp",details:{...legacy.details,coverWidth:1000,coverHeight:750}});
     assert.equal(uploaded.legacyCover,false,"New uploaded photos must not use the old Luma srcset");
     assert.equal(uploaded.coverWidth,1000);
-    console.log("Repository live read and network error state: passed");
+    for (const response of [new Response("error", {status:503}), new Response("invalid"), Response.json({}), Response.json([{...legacy,status:"draft"}])]) {
+      assert.match((await publishedEvents(async()=>response)).error,/kunne ikke hentes/);
+    }
+    const controlled = await publishedEvents(async(endpoint,options)=>{
+      const url=new URL(endpoint);
+      assert.equal(url.searchParams.get("status"),"eq.published");
+      assert.equal(url.searchParams.get("order"),"starts_at.desc");
+      assert.ok(options.headers.apikey);
+      return Response.json([{...legacy,status:"published"}]);
+    });
+    assert.equal(controlled.events[0].slug,"qa");
+    for(const event of normal.events){
+      assert.ok(event.imageUrl.includes("/storage/v1/object/public/event-images/events/"));
+      assert.equal(event.imageSrcset.split(", ").length,3);
+      assert.ok(event.coverWidth>0 && event.coverHeight>0);
+    }
+    const changed=displayRow({...legacy,image_url:"https://example.test/new.webp",details:{...legacy.details,imageSources:[{url:normal.events[0].imageUrl,width:600}]}});
+    assert.equal(changed.imageSrcset,undefined,"Stale sources must not replace the selected image");
+    console.log("PASS: eight live events, REST contract, failure/draft handling and responsive Storage sources");
   } finally {
     await server.close();
   }

@@ -3,9 +3,9 @@ import InnerLayout from '../../components/InnerLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import EventCard from '../../components/EventCard.astro';
 import {publishedEvents} from '../../lib/event-repository.js';
-export const prerender=false;
+export const prerender=true;
 const {events:listedEvents,error}=await publishedEvents();
-if(error) Astro.response.status=503;
+if(error) throw new Error(error);
 ---
 <InnerLayout title="Events" description="Se KindDesigns officielle events og tidligere arrangementer. Find detaljer og tilmelding hos Luma.">
   <PageHero title="EVENTS" subtitle="Mød andre kreative. Find dit næste event." />

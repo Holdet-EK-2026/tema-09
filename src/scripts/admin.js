@@ -310,7 +310,7 @@ if (!url || !key) {
         fields.image_url = pendingUpload.url;
         fields.details = {
           ...(rows.find(row => row.id === editing)?.details || {}),
-          coverWidth: imageInfo.width, coverHeight: imageInfo.height,
+          coverWidth: imageInfo.width, coverHeight: imageInfo.height, imageSources: [],
         };
       }
       if (mine !== revision) { await discardUpload(); return; }
@@ -329,7 +329,7 @@ if (!url || !key) {
       editing = null;
       await load();
       message(
-        "Eventet er gemt. Publicerede ændringer vises ved næste sideindlæsning.",
+        "Eventet er gemt. Eventændringer vises på hjemmesiden efter næste production-build og udgivelse.",
       );
     } catch {
       await discardUpload();

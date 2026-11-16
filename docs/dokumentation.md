@@ -1,14 +1,16 @@
 # KindDesign – teknisk dokumentation
 
-Opdateret 11. november 2026. Den seneste **lokale** version på `feature/ux-ui-refinement` implementerer 13 af de 16 auditfund; kontakt/indeksering afventer ejer, og valgfri tekstpolish er fravalgt. Se [implementering og afsluttende QA](kinddesign-ux-ui-implementation-2026-11-10.md) og [den autoritative audit](kinddesign-ux-ui-deep-audit-2026-11-10.md). Denne forbedringsrunde er ikke pushet eller deployet.
+Dataflow opdateret 16. november 2026 på `feature/final-ux-supabase`; se kursusafsnittet nederst. Følgende statusafsnit beskriver den historiske UX/UI-runde fra 11. november.
 
-Den senest dokumenterede publicerede UX/UI-version er `3f2ce0b`; [deploymentrapporten](deployment-ux-ui-2026-11-10.md) beskriver den tidligere offentlige QA. [Forrige UX/UI-rapport](kinddesign-final-ux-ui-qa.md), [fase 2–6](fase-2-6-rapport.md), [fase 1-arkivet](arkiv/dokumentation-fase-1.md) og [fase 1-rapporten](fase-1-rapport.md) er bevaret som historik.
+Den daværende **lokale** version på `feature/ux-ui-refinement` implementerer 13 af de 16 auditfund; kontakt/indeksering afventer ejer, og valgfri tekstpolish er fravalgt. Se [implementering og afsluttende QA](kinddesign-ux-ui-implementation-2026-11-10.md) og [den autoritative audit](kinddesign-ux-ui-deep-audit-2026-11-10.md). Denne forbedringsrunde er ikke pushet eller deployet.
+
+Den tidligere dokumenterede publicerede UX/UI-version er `3f2ce0b`; [deploymentrapporten](deployment-ux-ui-2026-11-10.md) beskriver den tidligere offentlige QA. [Forrige UX/UI-rapport](kinddesign-final-ux-ui-qa.md), [fase 2–6](fase-2-6-rapport.md), [fase 1-arkivet](arkiv/dokumentation-fase-1.md) og [fase 1-rapporten](fase-1-rapport.md) er bevaret som historik.
 
 ## Teknologi og struktur
 
-Astro 7.4.8 genererer 27 statiske HTML-sider inklusive 404 og en kalenderfil til det kommende officielle event. HTML, CSS og Vanilla JavaScript er applikationens teknologier; Astro er eneste direkte npm-dependency. Ingen React, Tailwind, egen TypeScript, serverfunktioner eller database er nødvendige for de dokumenterede demoflows. Node skal være mindst 22.23.4; `.nvmrc`, `engines` og Netlify bruger denne version.
+Astro 7.4.8 genererer 28 statiske HTML-sider inklusive 404. Netlify-adapteren håndterer det dynamiske ICS-endpoint, og Supabase leverer events, Auth og Storage. HTML, CSS og Vanilla JavaScript er applikationens teknologier; der bruges ikke React eller Tailwind. Node skal være mindst 22.23.4; `.nvmrc`, `engines` og Netlify bruger denne version.
 
-`BaseLayout.astro` indeholder dokument, dansk sprog, metadata, fontpreloads og skip-link. `InnerLayout.astro` genbruger Header/Footer og indlæser global CSS før underside-CSS. Rækkefølgen er vigtig: generelle resets må ikke overskrive sidernes spacing. Forsiden henter ikke underside-CSS. `PageHero` og `EventCard` genbruges. `src/data/events.js` samler otte verificerede Luma-events fra `luma-events.js` og fire tydeligt adskilte Figma-eksempel-events; Astro bygger detail- og demoruter med `getStaticPaths()`.
+`BaseLayout.astro` indeholder dokument, dansk sprog, metadata, fontpreloads og skip-link. `InnerLayout.astro` genbruger Header/Footer og indlæser global CSS før underside-CSS. Rækkefølgen er vigtig: generelle resets må ikke overskrive sidernes spacing. Forsiden henter ikke underside-CSS. `PageHero` og `EventCard` genbruges. `src/lib/event-repository.js` henter publicerede events fra Supabase. `src/data/events.js` indeholder fælles visningslogik og fire tydeligt adskilte Figma-eksempel-events; `luma-events.js` bevares som verificeret migrations- og testreference. Astro bygger detail- og demoruter med `getStaticPaths()`.
 
 Farverne er fortsat salvie #A5B39B, sand #E8DCC6, bordeaux #722F37, lyseblå #C0E7F6 og tekst #280E11. Grid fordeler kolonner, Flexbox stabler indhold, og media queries vælger mobilkompositionen ved 600 px. Mellembredder må vokse efter indholdet. Der er ingen identificeret 768 px-Figma-frame; tablet følger de eksisterende responsive principper.
 
@@ -102,3 +104,11 @@ Efter brugerens screenshot er hele rækken under carousellen fjernet: pileknappe
 ## Seneste UX/UI-opgave · 10. november 2026
 
 Den efterfølgende instruks kræver synlig pause/play, pile og slidevisning. De er nu samlet i en kompakt kontrol i carousellen. Den tidligere brede række med hjælpetekst og prikker er ikke genindført. Ændringerne er dokumenteret i [UX/UI-rapporten](kinddesign-final-ux-ui-qa.md) og efterfølgende publiceret; [deploymentrapporten](deployment-ux-ui-2026-11-10.md) indeholder status og den afsluttende offentlige kontrol.
+
+## Kursusforløbets dataflow · 16. november 2026
+
+PDF'ernes API → JSON → cards/props → Layout-mønster anvendes på KindDesigns egne events; T8-produkteksemplet er ikke tilføjet som en uvedkommende webshop. `publishedEvents()` bruger REST `fetch` med publicerbar `apikey` fra miljøvariablerne og filteret `status=eq.published`. RLS beskytter tabellen uafhængigt af klientfilteret.
+
+Forside, eventoversigt, kalender og eventdetaljer bygges som statisk HTML fra Supabase ved build. De officielle detaljesider bruger `getStaticPaths()` med `params.slug` og `props.event`; indholdet læses via `Astro.props`. En databasefejl stopper buildet frem for at udgive en tom oversigt. Oprettelse, redigering, publicering og afpublicering kræver nyt build og udgivelse. Adminpanelet oplyser dette. Kalenderens ICS-endpoint kontrollerer fortsat eventets aktuelle status dynamisk.
+
+De otte migrerede events bruger nu 24 originale WebP-filer i den eksisterende offentlige Storage-bucket `event-images`, tre responsive størrelser pr. event. `supabase/event-image-manifest.json` registrerer kildefil, Storage-sti, faktiske dimensioner og SHA-256. Alle 24 offentlige filer er kontrolleret mod originalernes bytes. Lokale billedassets bevares. Seed-data og den versionerede billedmigration bruger samme referencer. Storage-oprydning beskytter også de responsive billedreferencer mod sletning. Auth og admin-upload bruger fortsat Supabase SDK; der er ikke oprettet administrator eller ændret rettigheder til en bruger.

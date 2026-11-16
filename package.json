@@ -15,7 +15,8 @@
     "test:dependencies": "node scripts/qa/dependency-compatibility.cjs",
     "test:auth": "node --env-file-if-exists=.env scripts/qa/release-auth.cjs",
     "test:storage": "node --env-file-if-exists=.env scripts/qa/storage-upload.cjs",
-    "test:admin-storage": "node scripts/qa/admin-storage.cjs"
+    "test:admin-storage": "node scripts/qa/admin-storage.cjs",
+    "test:static-events": "node scripts/qa/static-events.cjs"
   },
   "dependencies": {
     "@astrojs/netlify": "8.2.13",
